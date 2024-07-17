@@ -1,0 +1,36 @@
+.gts-gnb{
+  display: flex;
+  min-width: $contentWidthPc;
+  align-items: center;
+  justify-content: space-between;
+  height: $gnbHeight;
+  padding: 0 $gnbPad;
+  border-bottom: 1px solid $gray02;
+  box-sizing: border-box;
+  @include flex-between;
+  .logo{
+    display: inline-block;
+  }
+  .menu-list{
+    display: inline-block;
+    margin-left: 20px;
+    ul{
+      display: flex;
+      gap: 10px;
+      li{
+        display: inline-block;
+      }
+    }
+  }
+  .gnb-menu{
+    display: inline-block;
+    ul{
+      li{
+        display: inline-block;
+      }
+    }
+  }
+  .mypage{
+    display: inline-block;
+  }
+}

@@ -1,0 +1,33 @@
+.gts-lnb{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: $lnbWidth;
+  height: 100%;
+  transition: all $lnbDuration;
+  border-right: 1px solid $gray02;
+  [class*="toggle-"]{
+    background-color: green;
+  }
+  .toggle-open{
+    position: absolute;
+    right: -50px;
+  }
+  @include tab;
+  .tab-container{
+    .header{
+      display: flex;
+      justify-content: space-around;
+      .tab{
+        flex: 1 1 auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 30px;
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+}

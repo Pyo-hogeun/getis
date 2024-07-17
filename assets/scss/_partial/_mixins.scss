@@ -1,0 +1,23 @@
+@mixin flex-between{
+  &.flex-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .prefix{}
+    .suffix{}
+  }
+}
+@mixin tab{
+  .tab-container{
+    .tab{
+    }
+    .tab-content-wrap{
+      .tab-content{
+        display: none;
+        &.on{
+          display: block;
+        }
+      }
+    }
+  }
+}

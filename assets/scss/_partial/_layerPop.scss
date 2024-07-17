@@ -1,0 +1,18 @@
+.layer-pop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(255,255,255,.8);
+  z-index: 4;
+  display: none;
+  &.show{
+    display: block;
+  }
+  .container{
+    width: calc($contentWidthPc - $contentPadPc*2);
+    margin: auto;
+  }
+}

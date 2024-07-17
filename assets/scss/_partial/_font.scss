@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Hyundai Sans Text KR';
+    font-weight: 700;
+    font-display: swap;
+    src: local('HyundaiSansTextKR Bold'),
+    url('./fonts/HyundaiSansTextKRBold.woff2') format('woff2'),
+    url('./fonts/HyundaiSansTextKRBold.woff') format('woff'),
+    url('./fonts/HyundaiSansTextKRBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hyundai Sans Text KR';
+    font-weight: 500;
+    font-display: swap;
+    src: local('HyundaiSansTextKR Medium'),
+    url('./fonts/HyundaiSansTextKRMedium.woff2') format('woff2'),
+    url('./fonts/HyundaiSansTextKRMedium.woff') format('woff'),
+    url('./fonts/HyundaiSansTextKRMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hyundai Sans Text KR';
+    font-weight: 400;
+    font-display: swap;
+    src: local('HyundaiSansTextKR Regular'),
+    url('./fonts/HyundaiSansTextKRRegular.woff2') format('woff2'),
+    url('./fonts/HyundaiSansTextKRRegular.woff') format('woff'),
+    url('./fonts/HyundaiSansTextKRRegular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Hyundai Sans Head KR';
+   font-weight: 700;
+   font-display: swap;
+   src: local('Hyundai Sans Head KR'),
+   url('./fonts/HyundaiSansTextKRBold.woff2') format('woff2'),
+   url('./fonts/HyundaiSansTextKRBold.woff') format('woff'),
+   url('./fonts/HyundaiSansTextKRBold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Hyundai Sans Head KR';
+   font-weight: 500;
+   font-display: swap;
+   src: local('Hyundai Sans Head KR'),
+   url('./fonts/HyundaiSansTextKRMedium.woff2') format('woff2'),
+   url('./fonts/HyundaiSansTextKRMedium.woff') format('woff'),
+   url('./fonts/HyundaiSansTextKRMedium.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Hyundai Sans Head KR';
+   font-weight: 400;
+   font-display: swap;
+   src: local('Hyundai Sans Head KR'),
+   url('./fonts/HyundaiSansHeadKRRegular.woff2') format('woff2'),
+   url('./fonts/HyundaiSansHeadKRRegular.woff') format('woff'),
+   url('./fonts/HyundaiSansHeadKRRegular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Hyundai Sans Head KR';
+   font-weight: 300;
+   font-display: swap;
+   src: local('Hyundai Sans Head KR'),
+   url('./fonts/HyundaiSansHeadKRLight.woff2') format('woff2'),
+   url('./fonts/HyundaiSansHeadKRLight.woff') format('woff'),
+   url('./fonts/HyundaiSansHeadKRLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// DM Serif Display
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+

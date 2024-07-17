@@ -1,0 +1,60 @@
+[class*=icon] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon-language{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_language.png');
+}
+.icon-search{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_search.png');
+}
+.icon-profile{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_profile.png');
+}
+.icon-search-close{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_search_close.png');
+}
+.icon-search-reset{
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/icon_search_reset.png');
+}
+.icon-delete-list{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_delete_list.png');
+}
+.icon-location-arrow{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_location_arrow.png');
+}
+.icon-no-result{
+  width: 48px;
+  height: 48px;
+  background-image: url('../images/icon_no_result.png');
+}
+.icon-back{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_back.png');
+}
+.icon-hamburger{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_menu_hamburger.png');
+}
+.icon-close-layer{
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon_close_layer.png');
+}

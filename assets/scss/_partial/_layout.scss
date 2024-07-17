@@ -1,0 +1,17 @@
+.content-wrap{
+  position: relative;
+  min-width: $contentWidthPc;
+  height: calc(100vh - $gnbHeight);
+  .container{
+    margin-left: $lnbWidth;
+    transition: all $lnbDuration;
+  }
+  &.fold-lnb{
+    .gts-lnb{
+      left: -$lnbWidth;
+    }
+    .container{
+      margin-left: 0;
+    }
+  }
+}
