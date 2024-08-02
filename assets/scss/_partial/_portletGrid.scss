@@ -1,0 +1,21 @@
+.portlet-grid.grid{
+  min-width: #{750+30}px;
+  .grid-item{
+    width: 250px;
+    height: 250px;
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+    &.width-2{
+      width: 510px;
+    }
+    &.width-3{
+      width: 770px;
+    }
+    &.height-2{
+      height: 510px;
+    }
+    &.height-3{
+      height: 770px;
+    }
+  }
+}

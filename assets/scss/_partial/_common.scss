@@ -1,3 +1,52 @@
 html, body{
   font-family: 'Pretendard', sans-serif;
 }
+
+// 공통 간격용 class
+@for $i from 1 to 20 {
+  .mt-#{5*$i}{
+    margin-top: #{5*$i}px;
+  }
+  .mb-#{5*$i}{
+    margin-bottom: #{5*$i}px;
+  }
+  .mr-#{5*$i}{
+    margin-right: #{5*$i}px;
+  }
+  .ml-#{5*$i}{
+    margin-left: #{5*$i}px;
+  }
+  .pt-#{5*$i}{
+    padding-top: #{5*$i}px;
+  }
+  .pb-#{5*$i}{
+    padding-bottom: #{5*$i}px;
+  }
+  .pr-#{5*$i}{
+    padding-right: #{5*$i}px;
+  }
+  .pl-#{5*$i}{
+    padding-left: #{5*$i}px;
+  }
+}
+
+// 스크롤 스타일
+body, html, div{
+  &::-webkit-scrollbar-thumb{
+    background-color: #dddddd;
+    border-radius: 4px;
+    transition: all 3s;
+  }
+  &::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+  }
+  &:hover{
+    &::-webkit-scrollbar-thumb{
+      background-color: #aaaaaa;
+    }
+    &::-webkit-scrollbar{
+      background-color: #eeeeee;
+    }
+  }
+}

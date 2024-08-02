@@ -1,0 +1,26 @@
+.gts-select{
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  height: $inputHeight;
+  min-width: 140px;
+  padding-left: 10px;
+  color: #333333;
+  font-size: 14px;
+  appearance: none;
+  background-image: url('../images/icon_select_arrow.png');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  &:hover{
+    background-color: #f7f7f7;
+  }
+  &:disabled{
+    background-color: #f7f7f7;
+    color: #aaaaaa;
+  }
+  &:focus{
+    outline: none;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}

@@ -1,0 +1,33 @@
+input[type="checkbox"].gts-chk{
+  width: 0;
+  height: 0;
+  & + label{
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    &:before{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #dddddd;
+      background-color: #ffffff;
+    }
+    &:hover{
+      &:before{
+        border: 1px solid $primary;
+      }
+    }
+  }
+  &:checked + label{
+    &:before{
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}

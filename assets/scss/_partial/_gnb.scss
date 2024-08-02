@@ -1,24 +1,71 @@
 .gts-gnb{
+  position: fixed;
   display: flex;
-  min-width: $contentWidthPc;
+  min-width: $contentWidthPcMin;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   height: $gnbHeight;
-  padding: 0 $gnbPad;
+  padding: 0 $gnbPad 0 0;
   border-bottom: 1px solid $gray02;
   box-sizing: border-box;
+  background-color: $secondary;
+  z-index: 1;
   @include flex-between;
-  .logo{
-    display: inline-block;
+  .prefix{
+    display: inline-flex;
+    height: $gnbHeight;
+    align-items: center;
+  }
+  .home{
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 265px;
+    .toggle-lnb{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 57px;
+      border-right: 1px solid #405780;
+    }
+    h1{
+      display: inline-block;
+      line-height: 1;
+      margin: 0 0 0 28px;
+      a{
+        display: inline-block;
+      }
+    }
   }
   .menu-list{
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 50px;
     ul{
       display: flex;
       gap: 10px;
       li{
         display: inline-block;
+        a{
+          display: inline-flex;
+          border: 1px solid #aaaaaa;
+          color: #aaaaaa;
+          height: 32px;
+          padding: 0 10px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          font-size: 13px;
+        }
+        &.on{
+          a{
+            border-color: yellow;
+            color: yellow;
+            font-weight: 700;
+          }
+        }
       }
     }
   }

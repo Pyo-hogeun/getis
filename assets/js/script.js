@@ -25,33 +25,46 @@ function lnbToggle(){
     }
   })
 }
-function tab(){
-  const tabs = document.querySelectorAll('.tab');
+function tab(target){
+  const tabs = document.querySelectorAll(`${target} .tab`);
   const tabContents = document.querySelectorAll('.tab-content');
-  if(tabs.length > 0){
-    tabs.forEach(function(e){ 
-      e.addEventListener('click', function(e){
-        e.preventDefault();
-        let targetTab = false;
-        if(!!e.target.dataset.tab){
-          //target이 있을때만
-          targetTab = document.querySelector(`.${e.target.dataset.tab}`);
-          tabContents.forEach(e => {
-            e.classList.remove('on');
-          });
-          if(!targetTab.classList.contains('on')){
-            targetTab.classList.add('on')
-          }
+  tabs.forEach(function(e){ 
+    let targetTab = false;
+    e.addEventListener('click', function(e){
+      e.preventDefault();
+      if(e.target.dataset.tab){
+        //target이 있을때만
+        tabs.forEach(e => {
+          e.classList.remove('on');
+        })
+        this.classList.add('on');
+        targetTab = document.querySelector(`.${e.target.dataset.tab}`);
+        tabContents.forEach(e => {
+          e.classList.remove('on');
+        });
+        if(!targetTab.classList.contains('on')){
+          targetTab.classList.add('on')
         }
-      })
+      }
     })
-  } else {
-    console.log('no tab');
-  }
+  })
 }
-
+function lnbAccordion(){
+  const lnbAccordions = document.querySelectorAll('.has-depth');
+  lnbAccordions.forEach(function(acc){
+    acc.addEventListener('click', function(e){
+      e.preventDefault();
+      if(!this.classList.contains('open')){
+        this.classList.add('open');
+      } else {
+        this.classList.remove('open');
+      }
+    })
+  })
+}
 
 document.addEventListener('DOMContentLoaded', function(){
   lnbToggle();
-  tab();
+  tab('.gts-lnb');
+  lnbAccordion();
 })

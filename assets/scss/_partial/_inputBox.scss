@@ -15,11 +15,11 @@
       border-color: $primary;
     }
     &::placeholder{
-      color: $gray03;
+      // color: $gray03;
     }
     &:disabled{
       color: #D7D7D7;
-      background-color: $gray01;
+      // background-color: $gray01;
     }
   }
   .btn-reset{

@@ -1,26 +1,37 @@
 
-$gnbHeight: 80px;
+$gnbHeight: 60px;
 $gnbHeightTablet: 72px;
 $gnbHeightMobile: 54px;
 $footerHeight: 60px;
 $topBannerHeight: 54px;
-$gnbPad: 40px;
+$gnbPad: 80px;
 $searchWidth: 420px;
-$lnbWidth: 256px;
+$lnbWidth: 265px;
+$lnbWidthFolded: 57px;
 
 $lnbDuration: 0.3s;
 
-$contentWidthPc: 1280px;
-$contentPadPc: 16px;
+$contentWidthPcMax: 1886px;
+$contentWidthPcMin: 800px;
+$contentPadPc: 46px;
 $contentPadTablet: 24px;
 $contentPadMobile: 20px;
 
+$inputHeight: 32px;
+
 // color
-$gray01: #F3F3F3;
-$gray02: #B6B6B6;
-$gray03: #A5A5A5;
-$gray04: #808080;
-$gray05: #444444;
-$gray06: #1B1B1B;
-$red: #E63312;
-$primary: #5584FF;
+$gray01: #F7F7F7;
+$gray02: #DDDDDD;
+//main
+$primary: #2665d6;
+$secondary: #002c5f;
+//feedback
+$success: #20bf7a;
+$success2: #407fef;
+$warning: #ffe32d;
+$danger: #ff5252; 
+//background
+$blue01: #F6F9FB;
+$blue02: #F1F6FB; //카드형UI배경
+$scada: #D5E4F6; //스카다에서 원활한 상태
+

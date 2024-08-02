@@ -2,59 +2,80 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
+  vertical-align: middle;
 }
-.icon-language{
+.icon-star{
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icon_star.png');
+}
+.icon-favorite-star{
   width: 24px;
   height: 24px;
-  background-image: url('../images/icon_language.png');
+  background-image: url('../images/icon_favorite_star.png');
+}
+.icon-time{
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icon_time.png');
+}
+.icon-allmenu{
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icon_allmenu.png');
+}
+.icon-toggle-arrow-down{
+  width: 9px;
+  height: 6px;
+  background-image: url('../images/icon_toggle_arrow_down.png');
+}
+.icon-lnb-toggle{
+  width: 36px;
+  height: 36px;
+  background-image: url('../images/icon_lnb_toggle.png');
+}
+.icon-delete{
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon_delete.png');
+}
+.icon-infomation{
+ width: 20px;
+ height: 20px;
+ background-image: url('../images/icon_infomation.png'); 
+}
+.icon-breadcrumb-arrow{
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/icon_breadcrumb_arrow.png');
+}
+.icon-new-page{
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon_new_page.png');
 }
 .icon-search{
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-image: url('../images/icon_search.png');
 }
-.icon-profile{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_profile.png');
+.icon-excel-download{
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icon_excel_download.png');
 }
-.icon-search-close{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_search_close.png');
+.icon-excel-upload{
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icon_excel_upload.png');
 }
-.icon-search-reset{
-  width: 18px;
-  height: 18px;
-  background-image: url('../images/icon_search_reset.png');
+.icon-create{
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon_create.png');
 }
-.icon-delete-list{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_delete_list.png');
-}
-.icon-location-arrow{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_location_arrow.png');
-}
-.icon-no-result{
-  width: 48px;
-  height: 48px;
-  background-image: url('../images/icon_no_result.png');
-}
-.icon-back{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_back.png');
-}
-.icon-hamburger{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_menu_hamburger.png');
-}
-.icon-close-layer{
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/icon_close_layer.png');
+.icon-remove{
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icon_remove.png');
 }

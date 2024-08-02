@@ -1,8 +1,12 @@
-@mixin flex-between{
+@mixin flex-between($justify : space-between, $align : center){
   &.flex-group{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @if $justify {
+      justify-content: #{$justify};
+    }
+    @if $align {
+      align-items: #{$align};
+    }
     .prefix{}
     .suffix{}
   }

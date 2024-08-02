@@ -9,10 +9,15 @@
 @import './_partial/lnb';
 @import './_partial/editableTab';
 @import './_partial/openContentsStatusBar';
+@import './_partial/portletGrid';
+@import './_partial/listSearchBox';
+@import './_partial/list';
 
 
 // 컴포넌트
 @import './_partial/button';
-@import './_partial/inputBox';
+// @import './_partial/inputBox';
+@import './_partial/select';
+@import './_partial/checkbox';
 @import './_partial/dim';
 @import './_partial/layerPop';
