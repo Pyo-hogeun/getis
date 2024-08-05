@@ -36,7 +36,7 @@ let htmlTemplate = `<html lang="ko">
       padding: 10px;
     }
     ul{
-      width: 360px;
+      width: 500px;
     }
     li{
       list-style: none;
@@ -48,8 +48,8 @@ let htmlTemplate = `<html lang="ko">
     }
     iframe{
       position: fixed;
-      left: 360px;
-      width: calc(100vw - 360px);
+      left: 500px;
+      width: calc(100vw - 520px);
       height: 100vh;
       right:10px;
       top: 0;
@@ -61,14 +61,24 @@ let htmlTemplate = `<html lang="ko">
 </head>
 <body>`;
 const category = fs.readdirSync(dir);
+category.forEach((item)=>{
+  console.log('item ',item);
+  if(item !== '.DS_Store'){
+    const file = fs.readdirSync(dir+'/'+item);
+    htmlFileList[item] = file;
+  }
+})
 
 // let categoryKey = htmlFileList.keys(htmlFileList);
-htmlTemplate += `<h2>GETIS2.0</h2><div class="wrap"><ul>`;
-category.forEach((item)=>{
-  
-  htmlTemplate += `<li><a href="./html/${item}" target="viewer" class="link"> ${item}</a><a href="./html/${item}" target="_blank" class="tag">새창열기</a></li>`;
-});
-htmlTemplate += `</ul></div>`;
+for( let key in htmlFileList){
+  // console.log('key: ',htmlFileList[key]);
+  htmlTemplate += `<div class="wrap"><h2>${key}</h2><ul>`;
+  htmlFileList[key].forEach((item)=>{
+    
+    htmlTemplate += `<li><a href="./html/${key}/${item}" target="viewer" class="link"> ${item}</a><a href="./html/${key}/${item}" target="_blank" class="tag">새창열기</a></li>`;
+  });
+  htmlTemplate += `</ul></div>`;
+}
 
 htmlTemplate += `<script>
 console.log('script');
@@ -85,7 +95,7 @@ links.forEach((item, index)=>{
 </script>`
 
 // const css = 
-const iframe = '<iframe src="./html/excutive-chair.html" name="viewer"></iframe>';
+const iframe = '<iframe src="./html/common/styleguide.html" name="viewer"></iframe>';
 htmlTemplate += iframe;
 
 let euckrStr = iconv.encode(htmlTemplate, 'euc-kr');

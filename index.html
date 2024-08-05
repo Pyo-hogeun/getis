@@ -32,7 +32,7 @@
       padding: 10px;
     }
     ul{
-      width: 360px;
+      width: 500px;
     }
     li{
       list-style: none;
@@ -44,8 +44,8 @@
     }
     iframe{
       position: fixed;
-      left: 360px;
-      width: calc(100vw - 360px);
+      left: 500px;
+      width: calc(100vw - 520px);
       height: 100vh;
       right:10px;
       top: 0;
@@ -55,7 +55,7 @@
     }
   </style>
 </head>
-<body><h2>GETIS2.0</h2><div class="wrap"><ul><li><a href="./html/layout.html" target="viewer" class="link"> layout.html</a><a href="./html/layout.html" target="_blank" class="tag">새창열기</a></li><li><a href="./html/list_01.html" target="viewer" class="link"> list_01.html</a><a href="./html/list_01.html" target="_blank" class="tag">새창열기</a></li><li><a href="./html/styleguide.html" target="viewer" class="link"> styleguide.html</a><a href="./html/styleguide.html" target="_blank" class="tag">새창열기</a></li></ul></div><script>
+<body><div class="wrap"><h2>COMMON</h2><ul><li><a href="./html/COMMON/layout.html" target="viewer" class="link"> layout.html</a><a href="./html/COMMON/layout.html" target="_blank" class="tag">새창열기</a></li><li><a href="./html/COMMON/list_type_01.html" target="viewer" class="link"> list_type_01.html</a><a href="./html/COMMON/list_type_01.html" target="_blank" class="tag">새창열기</a></li><li><a href="./html/COMMON/list_type_02.html" target="viewer" class="link"> list_type_02.html</a><a href="./html/COMMON/list_type_02.html" target="_blank" class="tag">새창열기</a></li><li><a href="./html/COMMON/styleguide.html" target="viewer" class="link"> styleguide.html</a><a href="./html/COMMON/styleguide.html" target="_blank" class="tag">새창열기</a></li></ul></div><script>
 console.log('script');
 let links = document.querySelectorAll('a.link');
 links.forEach((item, index)=>{
@@ -67,4 +67,4 @@ links.forEach((item, index)=>{
     e.target.classList.add('on');
   })
 })
-</script><iframe src="./html/excutive-chair.html" name="viewer"></iframe>
+</script><iframe src="./html/common/styleguide.html" name="viewer"></iframe>
