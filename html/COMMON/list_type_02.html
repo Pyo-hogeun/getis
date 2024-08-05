@@ -434,7 +434,7 @@
             </a>
           </div>
         </div>
-        <div class="table-wrap mt-10">
+        <div class="table-wrap mt-10" style="height: calc(50vh - 200px)">
           <table>
             <colgroup>
               <col style="width: 40px">
@@ -717,7 +717,7 @@
         </div>
       </div>
 
-      <div class="standard-table" style="height: 20vh">
+      <div class="standard-table" style="height: calc(50vh - 200px)">
         <table>
           <colgroup>
             <col style="width: 150px">
@@ -806,15 +806,53 @@
   </div>
 </body>
 <script>
-  let gridElement = document.querySelector('.grid')
-  let msnry = new Masonry(gridElement, {
-    itemSelector: '.grid-item',
-    columnWidth: 250,
-    gutter: 10
-  });
+  const toggleFoldList = document.querySelector('.grid-size-toggle .btn-toggle-up');
+  const toggleSpreadList = document.querySelector('.grid-size-toggle .btn-toggle-down');
+  const list = document.querySelector('.list-wrap .table-wrap');
+  const infoArea = document.querySelector('.standard-table');
+  let currentStep = 1;
+  const gap = '200px';
+  let step = {
+    0:{
+      list : `calc(70vh - ${gap})`,
+      infoArea : `calc(30vh - ${gap})`
+    },
+    1:{
+      list : `calc(50vh - ${gap})`,
+      infoArea : `calc(50vh - ${gap})`
+    },
+    2:{
+      list : `calc(30vh - ${gap})`,
+      infoArea : `calc(70vh - ${gap})`
+    }
+  };
 
-  // 화면사이즈 조정
-  windowResizer('.list-wrap', '.hanlder', 'horizontal');
+  toggleFoldList.addEventListener('click', function(e){
+    e.preventDefault();
+    toggleSpreadList.classList.remove('disabled');
+    if(currentStep < 2){
+      currentStep += 1;
+      console.log('currentStep', currentStep);
+      list.style.height = step[currentStep].list;
+      infoArea.style.height = step[currentStep].infoArea;
+    } 
+    if(currentStep == 2){
+      this.classList.add('disabled');
+    }
+  });
+  toggleSpreadList.addEventListener('click', function(e){
+    e.preventDefault();
+    toggleFoldList.classList.remove('disabled');
+    if(currentStep > 0){
+      currentStep -= 1;
+      console.log(step[currentStep].list);
+      list.style.height = step[currentStep].list;
+      infoArea.style.height = step[currentStep].infoArea;
+    }
+    if(currentStep == 0){
+      this.classList.add('disabled');
+    }
+  });
 </script>
 
 </html>

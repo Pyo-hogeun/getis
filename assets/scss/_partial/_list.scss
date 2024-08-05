@@ -41,7 +41,7 @@
     overflow: auto;
     border-radius: 4px;
     border: 1px solid #dddddd;
-    height: 50vh;
+    min-height: 80px;
     table{
       width: 100%;
       min-width: $contentWidthPcMin;

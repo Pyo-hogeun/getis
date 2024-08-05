@@ -15,6 +15,10 @@
       &.btn-toggle-down{
         background-image: url('../images/icon_resize_toggle_arrow_down.png');
       }
+      &.disabled{
+        cursor: default;
+        opacity: 0.3;
+      }
     }
   }
 }
