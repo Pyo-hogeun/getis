@@ -95,7 +95,7 @@ links.forEach((item, index)=>{
 </script>`
 
 // const css = 
-const iframe = '<iframe src="./html/common/list_type_01.html" name="viewer"></iframe>';
+const iframe = '<iframe src="../../html/COMMON/list_type_01.html" name="viewer"></iframe>';
 htmlTemplate += iframe;
 
 let euckrStr = iconv.encode(htmlTemplate, 'euc-kr');
