@@ -84,10 +84,18 @@
         top: 0;
         z-index: 1;
       }
+      tbody{
+        tr{
+          &:hover{
+            background-color: $listHoverBg;
+          }
+        }
+      }
     }
   }
   .list-footer{
-    @include flex-between;
+    margin-top: 15px;
+    @include flex-between($center: 'true');
     .gts-select.step{
       min-width: 80px;
     }

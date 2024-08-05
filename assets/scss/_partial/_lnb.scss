@@ -55,7 +55,7 @@
       }
     }
     .body{
-      height: calc(100vh - $gnbHeight - 48px - 110px);
+      height: calc(100vh - $gnbHeight - 48px - 70px);
       overflow-y: auto;
       .tab-content{
         &.all-menu, &.favorite-menu{
@@ -196,25 +196,27 @@
     }
     .footer{
       position: absolute;
-      bottom: 30px;
-      left: 30px;
-      right: 30px;
-      [class*=btn-]{
-        color: #002c5f;
-      }
-      .btn-tutorial{
-        background-color: #c5ccdb;
-        border: 1px solid #a1acc2;
-        font-size: 13px;
-        font-weight: 700;
-      }
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      background-color: #e3e7f1;
+      padding: 0 30px;
       .btn-group{
         display: flex;
+        justify-content: center;
         gap: 5px;
-        margin-top: 8px;
+        margin-top: 10px;
         .btn{
-          flex: 1 1 50%;
+          flex: 0 1 100px;
           border: 1px solid #a1acc2;
+          color: #002c5f;
+          font-size: 13px;
+          font-weight: 400;
+          &:hover{
+            color: $primary;
+            font-weight: 700;
+          }
         }
       }
     }

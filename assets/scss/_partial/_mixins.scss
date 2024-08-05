@@ -1,4 +1,4 @@
-@mixin flex-between($justify : space-between, $align : center){
+@mixin flex-between($justify : space-between, $align : center, $center: 'false'){
   &.flex-group{
     display: flex;
     @if $justify {
@@ -7,7 +7,16 @@
     @if $align {
       align-items: #{$align};
     }
+    @if $center == 'true'{
+      position: relative;
+    }
     .prefix{}
+    .center{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
     .suffix{}
   }
 }

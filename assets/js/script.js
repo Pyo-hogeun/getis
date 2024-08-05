@@ -62,7 +62,25 @@ function lnbAccordion(){
     })
   })
 }
+function windowResizer(target, handler, direction){
+  const resizeHandler = document.querySelector(handler);
+  const resizeTarget = document.querySelector(target);
+  let defaultPositionInfo = {
+    x : 0,
+    y : 0,
+    aTargetHeight : 0,
+    aTargetWidth : 0,
+    bTargetHeight : 0,
+    bTargetWidth : 0
+  }
+  const handlerMouseDown = (e) => {
+    defaultPositionInfo.x = e.clientX;
+    defaultPositionInfo.y = e.clientY;
+    console.log(defaultPositionInfo.x , defaultPositionInfo.y, resizeTarget.offsetHeight);
+  }
 
+  document.querySelector(handler).addEventListener('mousedown', handlerMouseDown);
+}
 document.addEventListener('DOMContentLoaded', function(){
   lnbToggle();
   tab('.gts-lnb');

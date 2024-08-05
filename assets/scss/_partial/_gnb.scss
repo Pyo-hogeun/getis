@@ -12,6 +12,9 @@
   background-color: $secondary;
   z-index: 1;
   @include flex-between;
+  &.flex-group{
+    position: fixed;
+  }
   .prefix{
     display: inline-flex;
     height: $gnbHeight;
@@ -37,6 +40,15 @@
       margin: 0 0 0 28px;
       a{
         display: inline-block;
+        .logo{
+          font-size: 0;
+          display: inline-block;
+          width: 96px;
+          height: 45px;
+          background-image: url('../images/logo_getis.png');
+          background-repeat: no-repeat;
+          background-size: 96px 56px;
+        }
       }
     }
   }
@@ -79,5 +91,15 @@
   }
   .mypage{
     display: inline-block;
+    a{
+      font-size: 13px;
+      color: #ffffff;
+      .name{
+        font-weight: 700;
+      }
+      .department{
+        color: #aaaaaa;
+      }
+    }
   }
 }
