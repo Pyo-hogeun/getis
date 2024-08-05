@@ -385,16 +385,32 @@
       </div>
       <div class="list-search-box mt-10">
         <div class="search-item">
-          <label for="filter1" class="request">레이블입력</label>
+          <label for="filter1" class="require">레이블입력</label>
           <select name="" id="filter1" class="gts-select">
             <option value="">선택해주세요</option>
             <option value="">선택해주세요</option>
             <option value="">선택해주세요</option>
             <option value="">선택해주세요</option>
           </select>
+          <input type="text" class="gts-input" value="입력값" readonly>
         </div>
         <div class="search-item ml-30">
-          <label for="filter1" class="request">레이블입력</label>
+          <label for="filter2" class="require">조회화면</label>
+          <input type="text" class="gts-input w-70" value="100">
+          <input type="text" class="gts-input w-70" value="100">
+        </div>
+        <div class="search-item ml-30">
+          <label for="" class="require">조회화면</label>
+          <input type="text" class="gts-input icon-search" value="100">
+        </div>
+        <div class="search-item ml-30">
+          <label for="" class="require">조회화면</label>
+          <input type="date" class="gts-input icon-calendar" value="24-08-05" placeholder="YYYY-MM-DD">
+          ~
+          <input type="date" class="gts-input icon-calendar" value="24-08-05" placeholder="YYYY-MM-DD">
+        </div>
+        <div class="search-item ml-30">
+          <label for="filter1" class="require">레이블입력</label>
           <select name="" id="filter1" class="gts-select" disabled>
             <option value="">선택해주세요</option>
             <option value="">선택해주세요</option>
@@ -700,15 +716,6 @@
   </div>
 </body>
 <script>
-  let gridElement = document.querySelector('.grid')
-  let msnry = new Masonry(gridElement, {
-    itemSelector: '.grid-item',
-    columnWidth: 250,
-    gutter: 10
-  });
-
-  // 화면사이즈 조정
-  windowResizer('.list-wrap', '.hanlder', 'horizontal');
 </script>
 
 </html>

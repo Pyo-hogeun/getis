@@ -29,7 +29,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('html', function () {
-	return gulp.src('html/*.html')
+	return gulp.src('html/**/*.html')
 		.pipe(browserSync.stream());
 });
 
