@@ -378,6 +378,9 @@
           <a href="" target="blank" class="new-page">
             <i class="icon-new-page"></i>
           </a>
+          <a href="" target="blank" class="new-window">
+            <i class="icon-new-window"></i>
+          </a>
         </div>
       </div>
       <div class="list-search-box mt-10">
@@ -437,10 +440,10 @@
               <col style="width: 40px">
               <col style="width: 300px">
               <col style="width: 200px">
-              <col style="width: 50px">
+              <col style="width: 250px">
               <col style="width: 200px">
-              <col style="width: 50px">
-              <col style="width: 50px">
+              <col style="width: 250px">
+              <col style="width: 250px">
             </colgroup>
             <thead class="sticky">
               <tr>
@@ -458,7 +461,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="selected">
                 <td>
                   <input type="checkbox" name="" id="chk2" class="gts-chk">
                   <label for="chk2">
@@ -695,6 +698,110 @@
       </div>
 
       <!-- <button type="button" class="hanlder">핸들러</button> -->
+
+      <!-- 상세정보 -->
+      <div class="table-header flex-group mt-40 mb-10">
+        <div class="prefix">
+          <div class="capsule-tab">
+            <a href="" class="tab on">기본정보</a>
+            <a href="" class="tab">부가정보</a>
+            <a href="" class="tab">업무설명</a>
+            <a href="" class="tab">첨부파일</a>
+          </div>
+        </div>
+        <div class="suffix">
+          <div class="grid-size-toggle">
+            <a href="" class="btn-toggle-up"></a>
+            <a href="" class="btn-toggle-down"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="standard-table" style="height: 20vh">
+        <table>
+          <colgroup>
+            <col style="width: 150px">
+            <col style="width: auto">
+            <col style="width: 150px">
+            <col style="width: auto">
+            <col style="width: 30%">
+          </colgroup>
+          <tr>
+            <th>
+              <span class="request">모듈명</span>
+            </th>
+            <td>
+              <select name="" id="" class="gts-select">
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+              </select>
+            </td>
+            <th>
+              <span class="request">단위업무명</span>
+            </th>
+            <td>
+              <input type="text" class="gts-input w-140" >
+            </td>
+            <td rowspan="6" class="align-v-t">
+              <div class="img-list mt-15 ml-15">
+                <div class="img-item">
+                  <!-- <img /> 여기에 이미지 대입 -->
+                </div>
+                <div class="img-item">
+                  <!-- <img /> 여기에 이미지 대입 -->
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>단위업무코드</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+            <th>영문약어</th>
+            <td><input type="text" class="gts-input w-140" value="MEP"></td>
+          </tr>
+          <tr>
+            <th>상위업무코드</th>
+            <td><input type="text" class="gts-input w-140" value="AAA" disabled></td>
+            <th>업무구분</th>
+            <td>
+              <select name="" id="" class="gts-select">
+                <option value="">시스템/모듈</option>
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>단위업무코드</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+            <th>영문약어</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+          </tr>
+          <tr>
+            <th>적용여부</th>
+            <td><input type="text" class="gts-input w-140" value="프레스" readonly></td>
+            <th>표시순서</th>
+            <td>
+              <select name="" id="" class="gts-select">
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>적용시작일</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+            <th>적용종료일</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-footer flex-group align-r mt-16">
+        <a href="" class="btn primary">저장</a>
+      </div>
     </div>
   </div>
 </body>
