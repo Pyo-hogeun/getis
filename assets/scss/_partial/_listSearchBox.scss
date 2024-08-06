@@ -2,22 +2,14 @@
   position: relative;
   border: 1px solid #dddddd;
   border-radius: 4px;
-  padding: 8px 108px 8px 18px;
+  padding: 10px 110px 10px 20px;
   .search-item{
     display: inline-block;
-    margin: 2px;
     label{
       margin-right: 10px;
       font-size: 14px;
       font-weight: 700;
       color: #333333;
-    }
-  }
-  .require{
-    &:before{
-      content: '*';
-      color: #ff5252;
-      margin: 2px;
     }
   }
   .btn-search{

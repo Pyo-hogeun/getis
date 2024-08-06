@@ -1,0 +1,14 @@
+.require{
+  &:before{
+    content: '*';
+    color: #ff5252;
+    margin: 2px;
+  }
+}
+.require-suffix{
+  &:after{
+    content: '*';
+    color: #ff5252;
+    margin: 2px;
+  }
+}

@@ -1,7 +1,8 @@
-.table-header{
+.table-header {
   @include flex-between;
-  .grid-size-toggle{
-    a{
+
+  .grid-size-toggle {
+    a {
       display: inline-block;
       width: 30px;
       height: 26px;
@@ -9,52 +10,62 @@
       border-radius: 4px;
       background-repeat: no-repeat;
       background-position: center;
-      &.btn-toggle-up{
+
+      &.btn-toggle-up {
         background-image: url('../images/icon_resize_toggle_arrow_up.png');
       }
-      &.btn-toggle-down{
+
+      &.btn-toggle-down {
         background-image: url('../images/icon_resize_toggle_arrow_down.png');
       }
-      &.disabled{
+
+      &.disabled {
         cursor: default;
         opacity: 0.3;
       }
     }
   }
 }
-.standard-table{
+
+.standard-table {
   border: 1px solid #dddddd;
   border-radius: 4px;
   overflow: auto;
-  table{
+  transition: height $listFoldDuration;
+
+  table {
     width: 100%;
-    th{
+    th {
       font-size: 13px;
       font-weight: 700;
       color: #333333;
       background-color: #f8f8f8;
+      text-align: left;
     }
-    td{
-    }
-    tr{
-      th, td{
+    tr {
+      th,
+      td {
         min-height: 27px;
-        padding: 6px 6px 6px 14px;
         border-right: 1px solid #dddddd;
         border-bottom: 1px solid #dddddd;
+        padding: 2px 2px 2px 16px;
       }
     }
   }
 }
-.table-footer{
+
+.table-footer {
   margin-top: 16px;
-  &.flex-group{
+
+  &.flex-group {
     @include flex-between();
-    &.align-r{
+
+    &.align-r {
       @include flex-between($justify: flex-end);
     }
   }
-  a.btn{
+
+  a.btn {
     min-width: 80px;
   }
 }
