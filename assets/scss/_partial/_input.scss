@@ -48,9 +48,9 @@ input.gts-input {
 
     &::-webkit-calendar-picker-indicator {
       position: absolute;
-      left: 0;
+      right: 0;
       top: 0;
-      width: 100%;
+      width: 30px;
       height: 100%;
       background: transparent;
       color: transparent;
