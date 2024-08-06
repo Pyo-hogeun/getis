@@ -34,6 +34,7 @@ let htmlTemplate = `<html lang="ko">
       position: sticky;
       top: 0;
       padding: 10px;
+      margin-bottom: 0;
     }
     ul{
       width: 500px;
