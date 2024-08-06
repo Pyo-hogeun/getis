@@ -832,7 +832,6 @@
     toggleSpreadList.classList.remove('disabled');
     if(currentStep < 2){
       currentStep += 1;
-      console.log('currentStep', currentStep);
       list.style.height = step[currentStep].list;
       infoArea.style.height = step[currentStep].infoArea;
     } 
@@ -845,7 +844,6 @@
     toggleFoldList.classList.remove('disabled');
     if(currentStep > 0){
       currentStep -= 1;
-      console.log(step[currentStep].list);
       list.style.height = step[currentStep].list;
       infoArea.style.height = step[currentStep].infoArea;
     }
