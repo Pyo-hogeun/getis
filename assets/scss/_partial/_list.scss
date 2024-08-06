@@ -1,7 +1,6 @@
 .list-wrap{
   .list-topper{
-    @include flex-between;
-    margin-top: 20px;
+    @include flex-between($align:flex-end);
     .table-title{
       display: inline-block;
       font-size: 14px;
@@ -45,7 +44,6 @@
     transition: height $listFoldDuration;
     table{
       width: 100%;
-      min-width: $contentWidthPcMin;
       table-layout: fixed;
       th, td{
         text-align: center;
@@ -76,7 +74,7 @@
         }
         &:last-child{
           th, td{
-            border-bottom: 0;
+            // border-bottom: 0;
           }
         }
       }
@@ -100,10 +98,16 @@
     .gts-select.step{
       min-width: 80px;
     }
+    a.btn{
+      min-width: 80px;
+    }
     .total{
       display: inline-block;
       font-size: 12px;
       color: #777777;
     }
+  }
+  .table-group{
+    overflow: auto;
   }
 }

@@ -1,0 +1,12 @@
+.list-wrap-folder{
+  .list-topper{
+    @include flex-between($align:flex-end);
+    margin-top: 20px;
+    .table-title{
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      color: #333333;
+    }
+  }
+}
