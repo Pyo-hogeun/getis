@@ -9,11 +9,15 @@ $searchWidth: 420px;
 $lnbWidth: 265px;
 $lnbWidthFolded: 57px;
 
+// z index
+$zindexGnb : 3;
+$zindexLnb : 2;
+$zindexListSticky: 1;
+
 $lnbDuration: 0.3s;
 $listFoldDuration: 0.03s;
 
-$contentWidthPcMax: 1886px;
-$contentWidthPcMin: 800px;
+$contentWidthPcMin: 1886px;
 $contentPadPc: 46px;
 $contentPadTablet: 24px;
 $contentPadMobile: 20px;

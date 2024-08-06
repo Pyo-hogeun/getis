@@ -3,8 +3,7 @@ body{
 }
 .content-wrap{
   position: absolute;
-  width: 100%;
-  max-width: $contentWidthPcMax;
+  width: calc(100% - 34px);
   min-width: $contentWidthPcMin;
   min-height: calc(100vh - $gnbHeight);
   top: $gnbHeight;
@@ -37,7 +36,6 @@ body{
         color: #777777;
         vertical-align: middle;
         &.current{
-          margin-left: 16px;
           color: #777777;
           font-weight: 700;
         }

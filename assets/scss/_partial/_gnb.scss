@@ -10,7 +10,7 @@
   border-bottom: 1px solid $gray02;
   box-sizing: border-box;
   background-color: $secondary;
-  z-index: 2;
+  z-index: $zindexGnb;
   @include flex-between;
   &.flex-group{
     position: fixed;
