@@ -23,13 +23,6 @@ function lnbToggle(){
     e.preventDefault();
     console.log($contentWrap.classList.contains('fold-lnb'));
 
-    console.log('$gridContainers', $gridContainers);
-    if($gridContainers){
-      $gridContainers.forEach(function(e){
-        e.style.width = "";
-      })
-    }
-
     if(!$contentWrap.classList.contains('fold-lnb')){
       $contentWrap.classList.add('fold-lnb');
     } else {
@@ -113,8 +106,10 @@ function gridColResize(){
   }
   function handlerMouseMove(e){
     let move = e.clientX - posX;
-    gridContainers[0].style.flexBasis = gridWidthFirst + move;
-    gridContainers[1].style.flexBasis = gridWidthSecond - move;
+
+    console.log(gridWidthFirst);
+    gridContainers[0].style.flexBasis = gridWidthFirst + move + 'px';
+    gridContainers[1].style.flexBasis = gridWidthSecond - move + 'px';
   }
   function handlerMouseUp(){
     document.removeEventListener('mousemove', handlerMouseMove);

@@ -1,0 +1,27 @@
+.code-list-tree-wrap{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  gap: 20px;
+  .code-list{
+    flex: 1 0 50%;
+    border: 1px solid $gray02;
+    border-radius: 4px;
+    overflow-y: auto;
+    padding-left: 20px;
+    padding-right: 10px;
+    .depth--1{
+      >li{
+        padding-right: 20px;
+      }
+    }
+  }
+  .code-detail{
+    table{
+      width: 100%;
+      td{
+        padding-left: 24px;
+      }
+    }
+  }
+}
