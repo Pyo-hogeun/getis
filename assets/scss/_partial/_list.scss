@@ -85,6 +85,17 @@
         top: 0;
         z-index: $zindexListSticky;
       }
+      .editable{
+        box-shadow: 0 0 2px 1px #78a2ef;
+        td{
+          &:first-child{
+            border-left: 1px solid #78a2ef;
+          }
+          &:last-child{
+            border-right: 1px solid #78a2ef;
+          }
+        }
+      }
       tbody{
         tr{
           &.selected{

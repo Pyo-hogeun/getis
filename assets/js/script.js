@@ -81,6 +81,39 @@ function windowResizer(target, handler, direction){
 
   document.querySelector(handler).addEventListener('mousedown', handlerMouseDown);
 }
+
+// 화면 가로사이즈 조절
+function gridColResize(){
+  const handler = document.querySelector('button.handler');
+  const gridContainers = document.querySelectorAll('.grid-container');
+  
+
+  let posX = 0;
+  let gridWidthFirst = 0;
+  let gridWidthSecond = 0;
+
+  handler.addEventListener('mousedown', handlerMouseDown);
+  function handlerMouseDown(e){
+    posX = e.clientX;
+    gridWidthFirst = gridContainers[0].clientWidth;
+    gridWidthSecond = gridContainers[1].clientWidth;
+    
+    console.log('posX:', posX, 'w1:', gridWidthFirst, 'w2:', gridWidthSecond);
+    document.addEventListener('mousemove', handlerMouseMove);
+    document.addEventListener('mouseup', handlerMouseUp);
+  }
+  function handlerMouseMove(e){
+    let move = e.clientX - posX;
+    // console.log('move', move);
+    gridContainers[0].style.width = gridWidthFirst + move;
+    gridContainers[1].style.width = gridWidthSecond - move;
+  }
+  function handlerMouseUp(){
+    console.log('MouseUp');
+    document.removeEventListener('mousemove', handlerMouseMove);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function(){
   lnbToggle();
   tab('.gts-lnb');
