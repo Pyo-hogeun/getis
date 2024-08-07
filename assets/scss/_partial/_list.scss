@@ -6,6 +6,7 @@
       font-size: 14px;
       font-weight: 700;
       color: #333333;
+      white-space: nowrap;
     }
     .list-count{
       position: relative;
@@ -15,6 +16,7 @@
       font-weight: 700;
       margin-left: 14px;
       padding-left: 14px;
+      white-space: nowrap;
       .count{
         color: $danger;
       }
@@ -89,6 +91,11 @@
             background-color: $listHoverBg;
           }
         }
+      }
+    }
+    &.layout-fixed{
+      table{
+        min-width: 100%;
       }
     }
   }

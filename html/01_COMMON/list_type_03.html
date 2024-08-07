@@ -438,6 +438,12 @@
 
       <div class="grid-wrap" style="height: 80vh">
         <div class="grid-container col-3">
+          <!--
+            description
+            grid 시스템은 화면 각 그리드 사이즈를 'col-숫자'로 지정할수 있습니다. 단, 그리드 안에 숫자 총합은 12여야 합니다.
+            예 ) col-3 / col-9
+            예 ) col-6 / col-6
+          -->
           <div class="list-wrap">
             <div class="list-topper mt-15 flex-group">
               <div class="prefix">
@@ -447,14 +453,19 @@
                 <a href="" class="btn tertiary">권한생성</a>
               </div>
             </div>
-            <div class="table-group mt-10" style="height: calc(80vh - 42px)">
+            <div class="table-group mt-10 pr-5" style="height: calc(80vh - 42px)">
               <!-- 코드테이블 -->
-              <div class="table-wrap">
+              <!--
+                description
+                가로스크롤을 위해 'layout-fixed'를 붙이고
+                col 마다 절대값 사이즈를 지정
+              -->
+              <div class="table-wrap layout-fixed">
                 <table>
                   <colgroup>
                     <col style="width: 40px">
-                    <col style="width: 30%">
-                    <col style="">
+                    <col style="min-width: 100px">
+                    <col style="width: 200px">
                   </colgroup>
                   <thead>
                     <tr>
@@ -507,12 +518,14 @@
               </div>
 
               <!-- 코드테이블 -->
-              <div class="table-wrap mt-15">
+              <div class="table-wrap layout-fixed mt-15">
                 <table>
                   <colgroup>
                     <col style="width: 40px">
-                    <col style="width: 30%">
-                    <col style="">
+                    <col style="min-width: 100px">
+                    <col style="width: 150px;">
+                    <col style="width: 150px;">
+                    <col style="width: 150px;">
                   </colgroup>
                   <thead>
                     <tr>
@@ -521,6 +534,8 @@
                         <label for="chk21"></label>
                       </th>
                       <th>코드</th>
+                      <th>용도</th>
+                      <th>용도</th>
                       <th>용도</th>
                     </tr>
                   </thead>
@@ -532,13 +547,7 @@
                       </td>
                       <td>01</td>
                       <td>툴링 생산관리(MEC)</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="checkbox" name="" id="chk32" class="gts-chk">
-                        <label for="chk32"></label>
-                      </td>
-                      <td>02</td>
+                      <td>툴링 생산관리(MEC)</td>
                       <td>툴링 생산관리(MEC)</td>
                     </tr>
                     <tr>
@@ -546,7 +555,9 @@
                         <input type="checkbox" name="" id="chk32" class="gts-chk">
                         <label for="chk32"></label>
                       </td>
-                      <td>03</td>
+                      <td>01</td>
+                      <td>툴링 생산관리(MEC)</td>
+                      <td>툴링 생산관리(MEC)</td>
                       <td>툴링 생산관리(MEC)</td>
                     </tr>
                     <tr>
@@ -554,7 +565,19 @@
                         <input type="checkbox" name="" id="chk32" class="gts-chk">
                         <label for="chk32"></label>
                       </td>
-                      <td>04</td>
+                      <td>01</td>
+                      <td>툴링 생산관리(MEC)</td>
+                      <td>툴링 생산관리(MEC)</td>
+                      <td>툴링 생산관리(MEC)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="" id="chk32" class="gts-chk">
+                        <label for="chk32"></label>
+                      </td>
+                      <td>01</td>
+                      <td>툴링 생산관리(MEC)</td>
+                      <td>툴링 생산관리(MEC)</td>
                       <td>툴링 생산관리(MEC)</td>
                     </tr>
                   </tbody>
@@ -565,12 +588,12 @@
               </div>
 
               <!-- 코드테이블 -->
-              <div class="table-wrap mt-15">
+              <div class="table-wrap layout-fixed mt-15">
                 <table>
                   <colgroup>
                     <col style="width: 40px">
-                    <col style="width: 30%">
-                    <col style="">
+                    <col style="min-width: 100px">
+                    <col style="width: 200px;">
                   </colgroup>
                   <thead>
                     <tr>
@@ -621,14 +644,14 @@
               <div class="table-footer mt-5 flex-group align-r">
                 <a href="" class="btn tertiary">코드관리</a>
               </div>
-              
+
               <!-- 코드테이블 -->
-              <div class="table-wrap mt-15">
+              <div class="table-wrap layout-fixed mt-15">
                 <table>
                   <colgroup>
                     <col style="width: 40px">
-                    <col style="width: 30%">
-                    <col style="">
+                    <col style="min-width: 100px">
+                    <col style="width: 200px;">
                   </colgroup>
                   <thead>
                     <tr>
@@ -1074,6 +1097,37 @@
   </div>
 </body>
 <script>
+  function gridColResize(){
+    const handler = document.querySelector('button.handler');
+    const gridContainers = document.querySelectorAll('.grid-container');
+    
+
+    let posX = 0;
+    let gridWidthFirst = 0;
+    let gridWidthSecond = 0;
+
+    handler.addEventListener('mousedown', handlerMouseDown);
+    function handlerMouseDown(e){
+      posX = e.clientX;
+      gridWidthFirst = gridContainers[0].clientWidth;
+      gridWidthSecond = gridContainers[1].clientWidth;
+      
+      console.log('posX:', posX, 'w1:', gridWidthFirst, 'w2:', gridWidthSecond);
+      document.addEventListener('mousemove', handlerMouseMove);
+      document.addEventListener('mouseup', handlerMouseUp);
+    }
+    function handlerMouseMove(e){
+      let move = e.clientX - posX;
+      // console.log('move', move);
+      gridContainers[0].style.width = gridWidthFirst + move;
+      gridContainers[1].style.width = gridWidthSecond - move;
+    }
+    function handlerMouseUp(){
+      console.log('MouseUp');
+      document.removeEventListener('mousemove', handlerMouseMove);
+    }
+  }
+  gridColResize();
 </script>
 
 </html>
