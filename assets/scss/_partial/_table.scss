@@ -53,7 +53,25 @@
     }
   }
 }
-
+.minimal-table{
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  table {
+    tr {
+      th,
+      td {
+        font-size: 13px;
+        font-weight: 400;
+        min-height: 27px;
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding: 2px 2px 2px 16px;
+        color: #333333;
+        text-align: left;
+      }
+    }
+  }
+}
 .table-footer {
   &.flex-group {
     @include flex-between();

@@ -3,6 +3,7 @@
   gap: 5px;
   .grid-container{
     min-width: 150px;
+    transition: width $listFoldDuration;
     @for $n from 1 to 12{
       &.col-#{$n}{
         width: calc(((100% / 12) * $n) - 5px);

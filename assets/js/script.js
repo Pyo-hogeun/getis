@@ -3,6 +3,10 @@ function lnbToggle(){
   const $toggleClose = document.querySelector('.toggle-close');
   const $toggleLnb = document.querySelector('.toggle-lnb');
   const $contentWrap = document.querySelector('.content-wrap');
+
+  // 조절 그리드 유무
+  const $gridContainers = document.querySelectorAll('.grid-container');
+
   // lnb 열기
   $toggleOpen?.addEventListener('click', function(e){
     e.preventDefault();
@@ -18,6 +22,14 @@ function lnbToggle(){
   $toggleLnb.addEventListener('click', function(e){
     e.preventDefault();
     console.log($contentWrap.classList.contains('fold-lnb'));
+
+    console.log('$gridContainers', $gridContainers);
+    if($gridContainers){
+      $gridContainers.forEach(function(e){
+        e.style.width = "";
+      })
+    }
+
     if(!$contentWrap.classList.contains('fold-lnb')){
       $contentWrap.classList.add('fold-lnb');
     } else {
@@ -87,7 +99,6 @@ function gridColResize(){
   const handler = document.querySelector('button.handler');
   const gridContainers = document.querySelectorAll('.grid-container');
   
-
   let posX = 0;
   let gridWidthFirst = 0;
   let gridWidthSecond = 0;
@@ -97,19 +108,15 @@ function gridColResize(){
     posX = e.clientX;
     gridWidthFirst = gridContainers[0].clientWidth;
     gridWidthSecond = gridContainers[1].clientWidth;
-    
-    console.log('posX:', posX, 'w1:', gridWidthFirst, 'w2:', gridWidthSecond);
     document.addEventListener('mousemove', handlerMouseMove);
     document.addEventListener('mouseup', handlerMouseUp);
   }
   function handlerMouseMove(e){
     let move = e.clientX - posX;
-    // console.log('move', move);
-    gridContainers[0].style.width = gridWidthFirst + move;
-    gridContainers[1].style.width = gridWidthSecond - move;
+    gridContainers[0].style.flexBasis = gridWidthFirst + move;
+    gridContainers[1].style.flexBasis = gridWidthSecond - move;
   }
   function handlerMouseUp(){
-    console.log('MouseUp');
     document.removeEventListener('mousemove', handlerMouseMove);
   }
 }
