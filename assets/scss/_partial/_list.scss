@@ -118,6 +118,9 @@
     }
     a.btn{
       min-width: 80px;
+      &.sm{
+        min-width: 0;
+      }
     }
     .total{
       display: inline-block;
