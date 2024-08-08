@@ -12,7 +12,7 @@ input[type="checkbox"].gts-chk{
       position: absolute;
       display: inline-block;
       box-sizing: border-box;
-      left: 0;
+      left: 2px;
       top: 0;
       width: 18px;
       height: 18px;
@@ -24,6 +24,11 @@ input[type="checkbox"].gts-chk{
         border: 1px solid $primary;
       }
     }
+  }
+  &.no-text + label{
+    padding-left: 0;
+    width: 18px;
+    height: 18px;
   }
   &:checked + label{
     &:before{

@@ -1,0 +1,40 @@
+.table-accordion{
+  a{
+    position: relative;
+    padding-left: 20px;
+    margin-left: 9px;
+    cursor: default;
+    &:before{
+      content: '';
+        position: absolute;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-image: url(../images/icon_menu_small.png);
+    }
+    &.has-depth{
+      &:before {
+        background-image: url(../images/icon_plus.png);
+        
+      }
+      &.open {
+        &:before {
+          background-image: url(../images/icon_minus.png);
+        }
+      }
+    }
+
+  }
+  $intend : 20;
+  @for $i from 1 to 5{
+    tr.depth-#{$i}{
+      .has-depth, a{
+        margin-left: #{(($i - 1) * $intend) + 9}px;
+      }
+    }
+  }
+}

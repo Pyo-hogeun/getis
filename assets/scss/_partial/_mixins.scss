@@ -1,36 +1,72 @@
-@mixin flex-between($justify : space-between, $align : center, $center: 'false'){
-  &.flex-group{
+@mixin flex-between($justify : space-between, $align : center, $center: 'false') {
+  &.flex-group {
     display: flex;
+
     @if $justify {
       justify-content: #{$justify};
     }
+
     @if $align {
       align-items: #{$align};
     }
-    @if $center == 'true'{
+
+    @if $center=='true' {
       position: relative;
     }
-    .prefix{}
-    .center{
+
+    .prefix {}
+
+    .center {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
-    .suffix{}
+
+    .suffix {}
   }
 }
-@mixin tab{
-  .tab-container{
-    .tab{
-    }
-    .tab-content-wrap{
-      .tab-content{
+
+@mixin tab {
+  .tab-container {
+    .tab {}
+
+    .tab-content-wrap {
+      .tab-content {
         display: none;
-        &.on{
+
+        &.on {
           display: block;
         }
       }
     }
+  }
+}
+
+@mixin align {
+
+  // 공통 정렬 class
+  &.align-v-t {
+    vertical-align: top;
+  }
+
+  &.align-v-m {
+    vertical-align: middle;
+  }
+
+  &.align-v-b {
+    vertical-align: middle;
+  }
+
+  &.align-l {
+    text-align: left;
+  }
+
+  &.align-c {
+    text-align: center;
+  }
+
+  &.align-r {
+    text-align: right;
   }
 }

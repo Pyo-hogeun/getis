@@ -59,6 +59,18 @@ function lnbAccordion(){
   lnbAccordions.forEach(function(acc){
     acc.addEventListener('click', function(e){
       e.preventDefault();
+      let trg = this.dataset.target;
+      let depth = this.dataset.depth;
+      if(trg){
+        let targets = document.querySelectorAll('tr[data-menu="'+trg+'"]');
+        let targetsChild = document.querySelectorAll('[data-menu="'+trg+'"] ~ tr[data-]')
+        targets.forEach(function(e){
+          console.log('targets', e.style.display);
+
+          e.style.display !== 'none'?e.style.display='none'
+            :e.style.display = '';
+        })
+      }
       if(!this.classList.contains('open')){
         this.classList.add('open');
       } else {

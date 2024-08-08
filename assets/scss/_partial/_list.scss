@@ -50,6 +50,7 @@
       th, td{
         text-align: center;
         border: 1px solid #dddddd;
+        @include align;
         &:first-child{
           border-left: 0;
         }
