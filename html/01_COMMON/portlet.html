@@ -353,11 +353,11 @@
 </body>
 <script>
   let gridElement = document.querySelector('.grid')
-  // let msnry = new Masonry(gridElement, {
-  //   itemSelector: '.grid-item',
-  //   columnWidth: 373,
-  //   gutter: 10
-  // });
+  let msnry = new Masonry(gridElement, {
+    itemSelector: '.grid-item',
+    columnWidth: 373,
+    gutter: 10
+  });
   window.addEventListener('resize', function(){
     console.log('resize!!');
     // msnry.layout();
