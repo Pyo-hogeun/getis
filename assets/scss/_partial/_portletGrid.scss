@@ -11,9 +11,38 @@
   .grid-item{
     width: $itemWidth;
     height: $itemHeight;
-    background-color: yellowgreen;
+    background-color: #ffffff;
     margin-bottom: 10px;
-    font-size: 50px;
+    border: 1px solid $gray02;
+    border-radius: 4px;
+    .title{
+      font-size: 14px;
+      font-weight: 700;
+      color: #333333;
+      height: 40px;
+      padding: 0 20px;
+      background-color: #fafafa;
+      border-bottom: 1px solid #dddddd;
+      @include flex-between;
+    }
+    .front, .rear{
+      display: none;
+    }
+    &.dragging{
+      background-color: green;
+      opacity: .3;
+    }
+    &.dragover{
+      position: relative;
+      background-color: darkcyan;
+      display: flex;
+      .front, .rear{
+        display: inline-block;
+        flex: 1 1 50%;
+        background-color: yellow;
+        opacity: 0.3;
+      }
+    }
     @for $i from 2 to 3{
       &.by-#{$i}-width{
         width: calc(($itemWidth * $i) + ($gap * ($i - 1)));

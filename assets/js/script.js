@@ -127,9 +127,13 @@ function gridColResize(){
     document.removeEventListener('mousemove', handlerMouseMove);
   }
 }
-
+function drop(e){
+  console.log('drop!!');
+}
 document.addEventListener('DOMContentLoaded', function(){
   lnbToggle();
   tab('.gts-lnb');
   lnbAccordion();
-})
+});
+
+

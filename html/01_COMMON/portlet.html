@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
   <!-- masonry.js -->
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
   <script src="../../assets/js/script.js"></script>
 
   <title>GETIS</title>
@@ -336,32 +337,123 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
     <div class="container">
       <div class="portlet-grid grid">
-        <div class="grid-item">slot 1</div>
-        <div class="grid-item">slot 2</div>
-        <div class="grid-item by-2-width">slot 3</div>
-        <div class="grid-item by-2-height">slot 4</div>
-        <div class="grid-item">slot 5</div>
-        <div class="grid-item">slot 6</div>
+        <div class="grid-item" draggable="true">
+          <div class="title flex-group">
+            <div class="prefix">타이틀명</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="setting"></i></a>
+                <a href=""><i class="refresh"></i></a>
+                <a href=""><i class="move"></i></a>
+                <a href=""><i class="delete"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item" draggable="true">
+          <div class="title">slot2</div>
+        </div>
+        <div class="grid-item by-2-width" draggable="true">
+          <div class="title">slot3</div>
+        </div>
+        <div class="grid-item by-2-height" draggable="true">
+          <div class="title">slot4</div>
+        </div>
+        <div class="grid-item" draggable="true">
+          <div class="title">slot5</div>
+        </div>
+        <div class="grid-item" draggable="true">
+          <div class="title">slot6</div>
+        </div>
       </div>
     </div>
   </div>
 </body>
 <script>
-  let gridElement = document.querySelector('.grid')
-  let msnry = new Masonry(gridElement, {
-    itemSelector: '.grid-item',
-    columnWidth: 373,
-    gutter: 10
-  });
-  window.addEventListener('resize', function(){
-    console.log('resize!!');
-    // msnry.layout();
-  })
+  
+  function setGrid(){
+    console.log('set Grid');
+    let msnry;
+    let gridElement;
+    gridElement = document.querySelector('.grid');
+    msnry = new Masonry(gridElement, {
+      itemSelector: '.grid-item',
+      columnWidth: 373,
+      gutter: 10
+    });
+    // draggable
+    let dragged;
+    let dropTargetWidth;
+    document.addEventListener('drag', function (e) {
+      dragged = e.target;
+    });
+    document.addEventListener('dragstart', function (e) {
+      e.target.classList.add('dragging');
+    });
+    document.addEventListener('dragend', function (e) {
+      e.target.classList.remove('dragging');
+    });
+    document.addEventListener("dragover", function (e) {
+      // 드롭을 허용하기 위해 기본 동작 취소
+      e.preventDefault();
+  
+      if (e.target.classList.contains("grid-item")) {
+  
+        if( e.offsetX < dropTargetWidth / 2){
+          e.target.style.border = '1px solid red'
+        } else {
+          e.target.style.border = '1px solid blue'
+        }
+      }
+      
+      
+  
+      dropTargetWidth = e.target.clientWidth;
+    }, false
+    );
+    document.addEventListener('dragenter', function (e) {
+      // 드래그 가능한 요소가 대상 위로 오면 강조
+      if (e.target.classList.contains("grid-item")) {
+        e.target.classList.add("dragover");
+      }
+    });
+    document.addEventListener('dragleave', function (e) {
+      if (e.target.classList.contains("grid-item")) {
+        e.target.classList.remove("dragover");
+        e.target.style.border = '';
+      }
+    });
+    document.addEventListener('drop', function (e) {
+      e.target.classList.remove("dragover");
+      e.target.style.border = '';
+      if (e.target.classList.contains("grid-item")) {
+        console.log('X', e.offsetX);
+        console.log('width', dropTargetWidth);
+        if( e.offsetX < dropTargetWidth / 2){
+          e.target.before(dragged);
+        } else {
+          e.target.after(dragged);
+        }
+        msnry.destroy();
+        destroyGrid();
+        setGrid();
+      }
+    })
+  }
+  function destroyGrid(){
+    document.removeEventListener('drag');
+    document.removeEventListener('dragstart');
+    document.removeEventListener('dragend');
+    document.removeEventListener('dragenter');
+    document.removeEventListener('dragleave');
+    document.removeEventListener('drop');
+  }
+  setGrid();
 </script>
 
 </html>
