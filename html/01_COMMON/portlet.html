@@ -341,23 +341,23 @@
     </div>
     <div class="container">
       <div class="portlet-grid grid">
-        <div class="grid-item">slot 1</div>
-        <div class="grid-item">slot 2</div>
-        <div class="grid-item by-2-width">slot 3</div>
-        <div class="grid-item by-2-height">slot 4</div>
-        <div class="grid-item">slot 5</div>
-        <div class="grid-item">slot 6</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item by-2-width">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
       </div>
     </div>
   </div>
 </body>
 <script>
   let gridElement = document.querySelector('.grid')
-  let msnry = new Masonry(gridElement, {
-    itemSelector: '.grid-item',
-    columnWidth: 373,
-    gutter: 10
-  });
+  // let msnry = new Masonry(gridElement, {
+  //   itemSelector: '.grid-item',
+  //   columnWidth: 373,
+  //   gutter: 10
+  // });
   window.addEventListener('resize', function(){
     console.log('resize!!');
     // msnry.layout();

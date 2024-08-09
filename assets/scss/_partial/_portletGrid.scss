@@ -13,6 +13,7 @@
     height: $itemHeight;
     background-color: yellowgreen;
     margin-bottom: 10px;
+    font-size: 50px;
     @for $i from 2 to 3{
       &.by-#{$i}-width{
         width: calc(($itemWidth * $i) + ($gap * ($i - 1)));
