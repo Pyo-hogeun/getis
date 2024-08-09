@@ -4,22 +4,22 @@
   $gap: 10px;
   display: flex;
   flex-wrap: wrap;
-  width: calc(($itemWidth * 4) + ($gap * 3));
+  max-width: calc(($itemWidth * 4) + ($gap * 3));
+  min-width: calc(($itemWidth * 3) + ($gap * 2));
+  width: 100%;
   gap: $gap;
   .grid-item{
     width: $itemWidth;
     height: $itemHeight;
     background-color: yellowgreen;
+    margin-bottom: 10px;
     @for $i from 2 to 3{
-      &.by-#{$i}-parallel{
+      &.by-#{$i}-width{
         width: calc(($itemWidth * $i) + ($gap * ($i - 1)));
       }
-    }
-    &.height-2{
-      height: 510px;
-    }
-    &.height-3{
-      height: 770px;
+      &.by-#{$i}-height{
+        height: calc(($itemHeight * $i) + ($gap * ($i - 1)));
+      }
     }
   }
 }
