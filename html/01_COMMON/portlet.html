@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="../../assets/css/style.css">
-  <!-- masonry.js -->
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- packery.js -->
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+  <!-- draggie.js -->
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
 
   <script src="../../assets/js/script.js"></script>
 
@@ -354,6 +356,70 @@
               </div>
             </div>
           </div>
+          <div class="widget-container weather">
+            <div class="header">
+              <span class="region">서울</span>
+              <span class="date">2024-04-11 09:28 AM 기준</span>
+            </div>
+            <div class="status">
+              <div class="weather-img">
+                <i class="icon-cloud-sunny"></i>
+              </div>
+              <div class="temperature">
+                14&#8451
+              </div>
+              <div class="fine-dust">
+                <div class="label">미세먼지
+                  <span class="condition">좋음</span>
+                </div>
+
+                <div class="status-bar">
+                  <span class="bar" style="width: 30%">30%</span>
+                </div>
+              </div>
+              <div class="weather-quarters">
+                <ul>
+                  <li>
+                    <div class="time">06:00&nbsp;&nbsp;AM</div>
+                    <div class="weather">
+                      <i class="icon-weather-cloud-sm"></i>
+                      <span class="tempreture">
+                        11&#8451
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="time">12:00&nbsp;PM</div>
+                    <div class="weather">
+                      <i class="icon-weather-cloud-sm"></i>
+                      <span class="tempreture">
+                        11&#8451
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="time">06:00&nbsp;PM</div>
+                    <div class="weather">
+                      <i class="icon-weather-sunny-sm"></i>
+                      <span class="tempreture">
+                        23&#8451
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="time">12:00&nbsp;AM</div>
+                    <div class="weather">
+                      <i class="icon-weather-cloud-sm"></i>
+                      <span class="tempreture">
+                        11&#8451
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
         </div>
         <div class="grid-item" draggable="false">
           <div class="title flex-group">
@@ -418,102 +484,30 @@
   </div>
 </body>
 <script>
-
-  function drag(e){
-    if(e.target.classList.contains('handler-move')){
-      dragged = e.target.closest('.grid-item');
-    }
-  }
-  function dragstart(e) {
-    console.log('drag start');
-    
-    if(e.target.classList.contains('handler-move')){
-      console.log('is handler?');
-      console.log('get grid item', e.target.closest('.grid-item'));
-      // e.target.closest('.grid-item').props('draggable', true);
-      // e.target.closest('.grid-item').add('dragging');
-      // e.target.classList.add('dragging');
-    }
-  }
-  function dragend(e) {
-    e.target.classList.remove('dragging');
-  }
-  function dragover(e) {
-    // 드롭을 허용하기 위해 기본 동작 취소
-    e.preventDefault();
-
-    if (e.target.classList.contains("grid-item")) {
-
-      if (e.offsetX < dropTargetWidth / 2) {
-        e.target.classList.remove('rear');
-        e.target.classList.add('front');
-      } else {
-        e.target.classList.remove('front');
-        e.target.classList.add('rear');
-      }
-    }
-    dropTargetWidth = e.target.clientWidth;
-  }
-  function dragenter(e) {
-    // 드래그 가능한 요소가 대상 위로 오면 강조
-    if (e.target.classList.contains("grid-item")) {
-      e.target.classList.add("dragover");
-    }
-  }
-  function dragleave(e) {
-    if (e.target.classList.contains("grid-item")) {
-      e.target.classList.remove("dragover", "front", "rear");
-    }
-  }
-  function drop(e) {
-    console.log('drop!', e.target.classList);
-    
-    if(!!dragged && e.target.classList.contains('grid-item')){
-      e.target.classList.remove("dragover", "front", "rear");
-      if (e.target.classList.contains("grid-item")) {
-        if (e.offsetX < dropTargetWidth / 2) {
-          e.target.before(dragged);
-        } else {
-          e.target.after(dragged);
-        }
-        msnry.destroy();
-        destroyGrid();
-        setGrid();
-      }
-    }
-  }
-  
-  let msnry;
+  // draggable
+  let pckry;
+  let gridElement;
+  let dragged;
+  let dropTargetWidth;
   function setGrid() {
 
     console.log('set Grid');
-    let gridElement;
+
+
     gridElement = document.querySelector('.grid');
-    msnry = new Masonry(gridElement, {
+    gridItems = document.querySelectorAll('.grid-item');
+    pckry = new Packery(gridElement, {
       itemSelector: '.grid-item',
       columnWidth: 373,
       gutter: 10
     });
-    // draggable
-    let dragged;
-    let dropTargetWidth;
-    
-    
-    document.addEventListener('drag', drag );
-    document.addEventListener('dragstart', dragstart);
-    document.addEventListener('dragend', dragend);
-    document.addEventListener("dragover", dragover, false);
-    document.addEventListener('dragenter', dragenter);
-    document.addEventListener('dragleave', dragleave);
-    document.addEventListener('drop', drop);
-  }
-  function destroyGrid() {
-    document.removeEventListener('drag', drag);
-    document.removeEventListener('dragstart', dragstart);
-    document.removeEventListener('dragend', dragend);
-    document.removeEventListener('dragenter', dragenter);
-    document.removeEventListener('dragleave', dragleave);
-    document.removeEventListener('drop', drop);
+    pckry.getItemElements().forEach(function (gridItem) {
+      var draggie = new Draggabilly(gridItem, {
+        containment: '.grid',
+        handle: '.handler-move'
+      });
+      pckry.bindDraggabillyEvents(draggie);
+    });
   }
   setGrid();
 </script>

@@ -1,0 +1,102 @@
+.widget-container{
+  position: relative;
+  padding: 12px;
+  height: calc(100% - 40px);
+  box-sizing: border-box;
+  &.weather{
+    color: #333333;
+    .header{
+      .region{
+        display: inline-block;
+        margin: 20px 20px 0 30px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .date{
+        font-size: 12px;
+        color: #777777;
+      }
+    }
+    .status{
+      position: absolute;
+      display: block;
+      width: 100%;
+      left: 0;
+      top: 140px;
+      .weather-img{
+        position: absolute;
+        display: inline-block;
+        left: 62px;
+        top: 0;
+      }
+      .temperature{
+        position: absolute;
+        display: inline-block;
+        right: 40px;
+        top: 30px;
+        font-size: 60px;
+        font-weight: 300;
+        color: $primary;
+      }
+      .fine-dust{
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 150px;
+        left: 42px;
+        right: 42px;
+        .label{
+          display: inline-block;
+          font-size: 12px;
+          color: #777777;
+          .condition{
+            color: #20bf7a;
+            margin-left: 5px;
+          }
+        }
+        .status-bar{
+          position: relative;
+          
+          width: 200px;
+          height: 16px;
+          border-radius: 20px;
+          background-color: #efefef;
+          .bar{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: #20bf7a;
+            border-radius: 20px;
+            font-size: 0;
+            color: transparent;
+          }
+
+        }
+      }
+      .weather-quarters{
+        position: absolute;
+        top: 196px;
+        left: 46px;
+        right: 46px;
+        >ul{
+          display: flex;
+          justify-content: space-between;
+          >li{
+            text-align: center;
+            .time{
+              font-size: 11px;
+              color: #777777;
+            }
+            .weather{
+              i{
+                vertical-align: bottom;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

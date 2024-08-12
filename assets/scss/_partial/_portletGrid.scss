@@ -12,7 +12,6 @@
     width: $itemWidth;
     height: $itemHeight;
     background-color: #ffffff;
-    margin-bottom: 10px;
     border: 1px solid $gray02;
     border-radius: 4px;
     overflow: hidden;
@@ -31,14 +30,24 @@
         gap: 12px;
         a{
           display: inline-block;
+          &.handler-move{
+            cursor: move;
+          }
         }
       }
     }
     .front, .rear{
       display: none;
     }
-    &.dragging{
-      opacity: .3;
+    &.is-dragging{
+      border-color: #72a5ff;
+      z-index: 1;
+      .title{
+        border-bottom-color: #72a5ff;
+        background-color: #f0f5fd;
+        color: #2565d6;
+        box-shadow: 0 2px 0 0 rgba(156, 189, 240, 0.3);
+      }
     }
     &.dragover{
       position: relative;
