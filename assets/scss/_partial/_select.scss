@@ -23,4 +23,11 @@
     border: 1px solid $primary;
     color: $primary;
   }
+  // 공통 사이즈 class
+  @for $i from 1 through 30 {
+    &.w-#{10*$i} {
+      min-width: #{10*$i}px;
+      width: #{10*$i}px;
+    }
+  }
 }

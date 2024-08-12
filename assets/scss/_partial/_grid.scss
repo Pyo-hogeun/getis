@@ -5,7 +5,7 @@
     min-width: 150px;
     transition: width $listFoldDuration;
     flex-grow: 1;
-    @for $n from 1 to 12{
+    @for $n from 1 through 12{
       &.col-#{$n}{
         width: calc(((100% / 12) * $n) - 5px);
         min-width: calc(80px * $n);

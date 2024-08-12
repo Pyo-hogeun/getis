@@ -342,43 +342,151 @@
     </div>
     <div class="container">
       <div class="portlet-grid grid">
-        <div class="grid-item" draggable="true">
+        <div class="grid-item" draggable="false">
           <div class="title flex-group">
-            <div class="prefix">타이틀명</div>
+            <div class="prefix">날씨</div>
             <div class="suffix">
               <div class="util-group">
-                <a href=""><i class="setting"></i></a>
-                <a href=""><i class="refresh"></i></a>
-                <a href=""><i class="move"></i></a>
-                <a href=""><i class="delete"></i></a>
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="grid-item" draggable="true">
-          <div class="title">slot2</div>
+        <div class="grid-item" draggable="false">
+          <div class="title flex-group">
+            <div class="prefix">검색</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid-item by-2-width" draggable="true">
-          <div class="title">slot3</div>
+        <div class="grid-item" draggable="false">
+          <div class="title flex-group">
+            <div class="prefix">권한신청현황</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid-item by-2-height" draggable="true">
-          <div class="title">slot4</div>
+        <div class="grid-item" draggable="false">
+          <div class="title flex-group">
+            <div class="prefix">포틀릿 항목명</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid-item" draggable="true">
-          <div class="title">slot5</div>
-        </div>
-        <div class="grid-item" draggable="true">
-          <div class="title">slot6</div>
+        <div class="grid-item by-3-width" draggable="false">
+          <div class="title flex-group">
+            <div class="prefix">나의업무
+              <select name="" id="" class="gts-select w-300 ml-20">
+                <option value="">나의 업무를 선택해주세요</option>
+                <option value="">나의 업무를 선택해주세요</option>
+                <option value="">나의 업무를 선택해주세요</option>
+              </select>
+            </div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </body>
 <script>
+
+  function drag(e){
+    if(e.target.classList.contains('handler-move')){
+      dragged = e.target.closest('.grid-item');
+    }
+  }
+  function dragstart(e) {
+    console.log('drag start');
+    
+    if(e.target.classList.contains('handler-move')){
+      console.log('is handler?');
+      console.log('get grid item', e.target.closest('.grid-item'));
+      // e.target.closest('.grid-item').props('draggable', true);
+      // e.target.closest('.grid-item').add('dragging');
+      // e.target.classList.add('dragging');
+    }
+  }
+  function dragend(e) {
+    e.target.classList.remove('dragging');
+  }
+  function dragover(e) {
+    // 드롭을 허용하기 위해 기본 동작 취소
+    e.preventDefault();
+
+    if (e.target.classList.contains("grid-item")) {
+
+      if (e.offsetX < dropTargetWidth / 2) {
+        e.target.classList.remove('rear');
+        e.target.classList.add('front');
+      } else {
+        e.target.classList.remove('front');
+        e.target.classList.add('rear');
+      }
+    }
+    dropTargetWidth = e.target.clientWidth;
+  }
+  function dragenter(e) {
+    // 드래그 가능한 요소가 대상 위로 오면 강조
+    if (e.target.classList.contains("grid-item")) {
+      e.target.classList.add("dragover");
+    }
+  }
+  function dragleave(e) {
+    if (e.target.classList.contains("grid-item")) {
+      e.target.classList.remove("dragover", "front", "rear");
+    }
+  }
+  function drop(e) {
+    console.log('drop!', e.target.classList);
+    
+    if(!!dragged && e.target.classList.contains('grid-item')){
+      e.target.classList.remove("dragover", "front", "rear");
+      if (e.target.classList.contains("grid-item")) {
+        if (e.offsetX < dropTargetWidth / 2) {
+          e.target.before(dragged);
+        } else {
+          e.target.after(dragged);
+        }
+        msnry.destroy();
+        destroyGrid();
+        setGrid();
+      }
+    }
+  }
   
-  function setGrid(){
+  let msnry;
+  function setGrid() {
+
     console.log('set Grid');
-    let msnry;
     let gridElement;
     gridElement = document.querySelector('.grid');
     msnry = new Masonry(gridElement, {
@@ -389,69 +497,23 @@
     // draggable
     let dragged;
     let dropTargetWidth;
-    document.addEventListener('drag', function (e) {
-      dragged = e.target;
-    });
-    document.addEventListener('dragstart', function (e) {
-      e.target.classList.add('dragging');
-    });
-    document.addEventListener('dragend', function (e) {
-      e.target.classList.remove('dragging');
-    });
-    document.addEventListener("dragover", function (e) {
-      // 드롭을 허용하기 위해 기본 동작 취소
-      e.preventDefault();
-  
-      if (e.target.classList.contains("grid-item")) {
-  
-        if( e.offsetX < dropTargetWidth / 2){
-          e.target.style.border = '1px solid red'
-        } else {
-          e.target.style.border = '1px solid blue'
-        }
-      }
-      
-      
-  
-      dropTargetWidth = e.target.clientWidth;
-    }, false
-    );
-    document.addEventListener('dragenter', function (e) {
-      // 드래그 가능한 요소가 대상 위로 오면 강조
-      if (e.target.classList.contains("grid-item")) {
-        e.target.classList.add("dragover");
-      }
-    });
-    document.addEventListener('dragleave', function (e) {
-      if (e.target.classList.contains("grid-item")) {
-        e.target.classList.remove("dragover");
-        e.target.style.border = '';
-      }
-    });
-    document.addEventListener('drop', function (e) {
-      e.target.classList.remove("dragover");
-      e.target.style.border = '';
-      if (e.target.classList.contains("grid-item")) {
-        console.log('X', e.offsetX);
-        console.log('width', dropTargetWidth);
-        if( e.offsetX < dropTargetWidth / 2){
-          e.target.before(dragged);
-        } else {
-          e.target.after(dragged);
-        }
-        msnry.destroy();
-        destroyGrid();
-        setGrid();
-      }
-    })
+    
+    
+    document.addEventListener('drag', drag );
+    document.addEventListener('dragstart', dragstart);
+    document.addEventListener('dragend', dragend);
+    document.addEventListener("dragover", dragover, false);
+    document.addEventListener('dragenter', dragenter);
+    document.addEventListener('dragleave', dragleave);
+    document.addEventListener('drop', drop);
   }
-  function destroyGrid(){
-    document.removeEventListener('drag');
-    document.removeEventListener('dragstart');
-    document.removeEventListener('dragend');
-    document.removeEventListener('dragenter');
-    document.removeEventListener('dragleave');
-    document.removeEventListener('drop');
+  function destroyGrid() {
+    document.removeEventListener('drag', drag);
+    document.removeEventListener('dragstart', dragstart);
+    document.removeEventListener('dragend', dragend);
+    document.removeEventListener('dragenter', dragenter);
+    document.removeEventListener('dragleave', dragleave);
+    document.removeEventListener('drop', drop);
   }
   setGrid();
 </script>
