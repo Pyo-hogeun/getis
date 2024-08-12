@@ -51,15 +51,15 @@
         border-bottom: 1px solid #dddddd;
         padding: 2px 2px 2px 16px;
         @include align;
-        &:last-child{
-          border-right: 0;
-        }
+        // &:last-child{
+        //   border-right: 0;
+        // }
       }
-      &:last-child{
-        th, td{
-          border-bottom: 0;
-        }
-      }
+      // &:last-child{
+      //   th, td{
+      //     border-bottom: 0;
+      //   }
+      // }
     }
   }
 }
