@@ -6,7 +6,7 @@
   height: calc(100vh - $gnbHeight);
   transition: left $lnbDuration;
   border-right: 1px solid #72a5ff;
-  background-color: #e3e7f1;
+  background-color: #f0f5fd;
   box-shadow: 2px 0 12px 0 rgba(62, 71, 104, 0.2);
   z-index: $zindexLnb;
   [class*="toggle-"]{
@@ -34,7 +34,7 @@
         color: #8590a6;
         font-size: 12px;
         &.on{
-          background-color: #e3e7f1;
+          background-color: #f0f5fd;
           color:#002c5f;
           font-weight: 600;
           .icon-star{
@@ -110,7 +110,7 @@
       left: 0;
       right: 0;
       height: 70px;
-      background-color: #e3e7f1;
+      background-color: #f0f5fd;
       padding: 0 30px;
       .btn-group{
         display: flex;
