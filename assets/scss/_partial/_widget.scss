@@ -3,6 +3,7 @@
   padding: 12px;
   height: calc(100% - 40px);
   box-sizing: border-box;
+
   &.weather{
     color: #333333;
     .header{
@@ -92,6 +93,56 @@
             .weather{
               i{
                 vertical-align: bottom;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.search{
+    .tab-container{
+      height: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      .header{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #dddddd;
+        gap: 23px;
+        .tab{
+          position: relative;
+          padding-bottom: 5px;
+          color: #777777;
+          font-size: 13px;
+          &.on{
+            font-weight: 700;
+            &:before{
+              content: '';
+              position: absolute;
+              bottom: -1px;
+              left: 0;
+              width: 100%;
+              border-bottom: 2px solid #777777;
+            }
+          }
+        }
+      }
+      .body{
+        .tab-content-wrap{
+          .tab-content{
+            .no-data{
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: calc(100% - 22px);
+              .text{
+                margin: 30px 0;
+                font-size: #333333;
+                font-size: 14px;
+                font-weight: 300;
               }
             }
           }

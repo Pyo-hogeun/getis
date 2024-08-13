@@ -433,6 +433,27 @@
               </div>
             </div>
           </div>
+          <div class="widget-container search">
+            <div class="tab-container">
+              <div class="header">
+                <a href="" class="tab on">내 결제함(999)</a>
+                <a href="" class="tab">진행함(999)</a>
+                <a href="" class="tab">연계시스템(999)</a>
+              </div>
+              <div class="body">
+                <div class="tab-content-wrap">
+                  <div class="tab-content">
+                    <div class="no-data">
+                      <img src="../../assets/images/icon_data_empty.png" alt="데이터 없음">
+                      <p class="text">“현재 항목에 데이터가 존재하지 않습니다.”</p>
+                    </div>
+                  </div>
+                  <div class="tab-content"></div>
+                  <div class="tab-content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="grid-item" draggable="false">
           <div class="title flex-group">
@@ -492,7 +513,6 @@
   function setGrid() {
 
     console.log('set Grid');
-
 
     gridElement = document.querySelector('.grid');
     gridItems = document.querySelectorAll('.grid-item');
