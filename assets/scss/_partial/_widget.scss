@@ -129,6 +129,7 @@
         }
       }
       .body{
+        height: calc(100% - 40px);
         .tab-content-wrap{
           .tab-content{
             .no-data{
@@ -144,6 +145,169 @@
                 font-size: 14px;
                 font-weight: 300;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.auth-apply{
+    .tab-container{
+      height: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      .header{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #dddddd;
+        gap: 23px;
+        .tab{
+          position: relative;
+          padding-bottom: 5px;
+          color: #777777;
+          font-size: 13px;
+          &.on{
+            font-weight: 700;
+            &:before{
+              content: '';
+              position: absolute;
+              bottom: -1px;
+              left: 0;
+              width: 100%;
+              border-bottom: 2px solid #777777;
+            }
+          }
+        }
+      }
+      .body{
+        position: relative;
+        height: calc(100% - 40px);
+        .tab-content-wrap{
+          height: 100%;
+          .tab-content{
+            height: 100%;
+            .no-data{
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: calc(100% - 22px);
+              .text{
+                margin: 30px 0;
+                font-size: #333333;
+                font-size: 14px;
+                font-weight: 300;
+              }
+            }
+            .list-wrap{
+              height: calc(100% - 70px);
+              .table-wrap{
+                height: 100%;
+                overflow-y: auto;
+              }
+              .list-footer{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(255,255,255,.5);
+                padding: 10px 0 10px 0;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.my-task{
+    .progress-step{
+      display: flex;
+      width: 100%;
+      margin-bottom: 16px;
+      margin-left: 92px;
+      .step{
+        position: relative;
+        flex : 0 0 185px;
+        border-bottom: 1px solid #2665d6;
+        &:before{
+          content: '';
+          display: inline-block;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: #2665d6;
+          left: -2px;
+          top: -2px;
+        }
+        &.current ~ .step{
+          border-bottom-color: #dddddd;
+          &:before{
+            background-color: #dddddd;
+          }
+        }
+        &.current + .step{
+          &:before{
+            background-color: #2665d6;
+          }
+        }
+        &:first-child{
+          display: none;
+        }
+        &:last-child{
+          &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #dddddd;
+            right: -2px;
+            top: -2px;
+          }
+          &.current{
+            &:after{
+              background-color: #2665d6;
+            }
+          }
+        }
+      }
+    }
+    .step-list{
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      .step-item{
+        flex: 0 0 177px;
+        padding: 16px 14px;
+        border-radius: 4px;
+        border: 1px solid #dddddd;
+        box-sizing: border-box;
+        > .title{
+          margin-bottom: 12px;
+          font-size: 13px;
+          font-weight: 700;
+          color: #2665d6;
+          text-align: center;
+        }
+        .task-list{
+          font-size: 13px;
+          color: #333333;
+          li{
+            margin-bottom: 10px;
+          }
+        }
+        &.current ~ .step-item{
+          > .title{
+            color: #777777;
+            font-weight: 700;
+          }
+          .task-list{
+            color: #dddddd;
+            li{
             }
           }
         }

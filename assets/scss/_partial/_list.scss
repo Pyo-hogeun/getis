@@ -1,4 +1,5 @@
 .list-wrap{
+  
   .list-topper{
     @include flex-between($align:flex-end);
     .table-title{
@@ -115,6 +116,7 @@
   .list-footer{
     margin-top: 15px;
     @include flex-between($center: 'true');
+    @include align;
     .gts-select.step{
       min-width: 80px;
     }

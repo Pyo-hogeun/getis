@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <!-- gnb -->
   <div class="gts-gnb flex-group">
     <div class="prefix">
       <div class="home">
@@ -53,8 +54,10 @@
       </div>
     </div>
   </div>
+  <!-- gnb -->
   <div class="content-wrap">
     <div class="gts-lnb">
+      <!-- tab -->
       <div class="tab-container">
         <div class="header">
           <a href="" class="tab on" data-tab="tab-1"><i class="icon-star"></i>즐겨찾기</a>
@@ -341,10 +344,12 @@
         </div>
 
       </div>
+      <!-- //tab -->
     </div>
     <div class="container">
+      <!-- portlet-grid , grid-->
       <div class="portlet-grid grid">
-        <div class="grid-item" draggable="false">
+        <div class="grid-item">
           <div class="title flex-group">
             <div class="prefix">날씨</div>
             <div class="suffix">
@@ -421,7 +426,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item" draggable="false">
+        <div class="grid-item">
           <div class="title flex-group">
             <div class="prefix">검색</div>
             <div class="suffix">
@@ -455,7 +460,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item" draggable="false">
+        <div class="grid-item">
           <div class="title flex-group">
             <div class="prefix">권한신청현황</div>
             <div class="suffix">
@@ -467,8 +472,107 @@
               </div>
             </div>
           </div>
+          <div class="widget-container auth-apply">
+            <div class="tab-container">
+              <div class="header">
+                <a href="" class="tab on">권한신청(999)</a>
+                <a href="" class="tab">권한진행(999)</a>
+                <a href="" class="tab">결재완료(999)</a>
+              </div>
+              <div class="body">
+                <div class="tab-content-wrap">
+                  <div class="tab-content">
+                    <div class="list-wrap mt-20">
+                      <div class="table-wrap">
+                        <table>
+                          <colgroup>
+                            <col style="width: 80px">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>신청자</th>
+                              <th>팀명</th>
+                              <th>직위</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="list-footer align-c">
+                        <a href="" class="btn primary">버튼명</a>
+                        <a href="" class="btn primary">버튼</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content"></div>
+                  <div class="tab-content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid-item" draggable="false">
+        <div class="grid-item">
           <div class="title flex-group">
             <div class="prefix">포틀릿 항목명</div>
             <div class="suffix">
@@ -480,8 +584,9 @@
               </div>
             </div>
           </div>
+          
         </div>
-        <div class="grid-item by-3-width" draggable="false">
+        <div class="grid-item by-3-width">
           <div class="title flex-group">
             <div class="prefix">나의업무
               <select name="" id="" class="gts-select w-300 ml-20">
@@ -499,8 +604,63 @@
               </div>
             </div>
           </div>
+          <div class="widget-container my-task">
+            <div class="progress-step">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step current"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+            <ul class="step-list">
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item current">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <!-- //portlet-grid , grid-->
     </div>
   </div>
 </body>
