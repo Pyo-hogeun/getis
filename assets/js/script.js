@@ -1,5 +1,5 @@
 function lnbToggle(){
-  const $toggleOpen = document.querySelector('.toggle-open');
+const $toggleOpen = document.querySelector('.toggle-open');
   const $toggleClose = document.querySelector('.toggle-close');
   const $toggleLnb = document.querySelector('.toggle-lnb');
   const $contentWrap = document.querySelector('.content-wrap');
@@ -19,7 +19,7 @@ function lnbToggle(){
     $contentWrap.classList.add('fold-lnb');
   })
   // lnb 토글
-  $toggleLnb.addEventListener('click', function(e){
+  $toggleLnb?.addEventListener('click', function(e){
     e.preventDefault();
     console.log($contentWrap.classList.contains('fold-lnb'));
 
@@ -130,10 +130,39 @@ function gridColResize(){
 function drop(e){
   console.log('drop!!');
 }
+
+function editFavorite(e){
+  console.log('edit!', e);
+}
+
+function combo(){
+  let combos = document.querySelectorAll('.combo');
+  combos?.forEach(function(combo){
+    combo.addEventListener('click',function(e){
+      if(this.classList.contains('focus')){
+        this.classList.remove('focus');
+      } else {
+        this.classList.add('focus');
+      }
+      // console.log(options);
+    });
+    let options = document.querySelectorAll('.options > li');
+    options?.forEach(function(e){
+      e.addEventListener('click', function(option){
+        console.log('option click');
+        let comboWrap = option.target.closest('.combo');
+        let selectedValue = option.target.innerHTML;
+        console.log(comboWrap.querySelector('.label'));
+        comboWrap.querySelector('.label').innerHTML = selectedValue;
+      });
+    })
+  });
+}
 document.addEventListener('DOMContentLoaded', function(){
   lnbToggle();
   tab('.gts-lnb');
   lnbAccordion();
+  combo();
 });
 
 

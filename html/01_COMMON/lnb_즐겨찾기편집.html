@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- packery.js -->
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+  <!-- draggie.js -->
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
   
   <script src="../../assets/js/script.js"></script>
 
@@ -142,7 +146,7 @@
               </ul>
               <div class="footer">
                 <div class="btn-group">
-                  <a href="" class="btn">즐겨찾기관리</a>
+                  <a href="" class="btn" onclick="editFavorite(this)">즐겨찾기관리</a>
                   <a href="" class="btn">Sitemap</a>
                 </div>
               </div>
@@ -151,7 +155,7 @@
               <div class="add">
                 <input type="text" class="gts-input w-180" placeholder="폴더명/메뉴명 입력">
               </div>
-              <ul class="depth--1">
+              <ul class="depth--1 grid">
                 <li class="">
                   <a href="" class="has-depth">사용자 직접생성 폴더</a>
                   <ul class="depth--2">
@@ -233,7 +237,7 @@
               </ul>
               <div class="footer">
                 <div class="btn-group">
-                  <a href="" class="btn">즐겨찾기관리</a>
+                  <a href="javascript:void(0)" class="btn" onclick="editFavorite(this)">즐겨찾기관리</a>
                   <a href="" class="btn">Sitemap</a>
                 </div>
               </div>
@@ -432,6 +436,30 @@
   </div>
 </body>
 <script>
+  // LNB draggable
+  let lnbFavEdit;
+  let lnbGridElement;
+  let lnbGridItems;
+  let lnbDragged;
+  let lnbDropTargetWidth;
+
+
+  let favItem = document.querySelectorAll('.favorite-menu.edit .depth--1 > li');
+  lnbGridElement = document.querySelector('.favorite-menu .grid');
+  lnbGridItems = document.querySelectorAll('.favorite-menu .grid.depth--1 > li');
+
+  lnbFavEdit = new Packery(lnbGridElement, {
+    itemSelector : '.favorite-menu .grid > li'
+  })
+
+  console.log('lnbFavEdit', lnbFavEdit);
+
+  // lnbFavEdit.forEach(function(e){
+  //   console.log('favItem',e);
+  //   let items = new Draggabilly(e, {
+  //     // handle: '.depth--1 > li'
+  //   })
+  // })
 </script>
 
 </html>
