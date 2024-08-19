@@ -1,0 +1,28 @@
+.toggle-radio{
+  display: inline-block;
+  color: #777777;
+  font-size: 14px;
+  input[type="checkbox"]{
+    display: none;
+    + label{
+      position: relative;
+      display: inline-block;
+      border: 1px solid #dddddd;
+      width: 44px;
+      height: 24px;
+      border-radius: 20px;
+      vertical-align: middle;
+      &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #062c5f;
+      }
+    }
+  }
+}
