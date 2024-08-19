@@ -1,9 +1,9 @@
 .menu-tree {
   .depth--1 {
     >li {
+      width: 100%;
       border-bottom: 1px solid #c1cadb;
       box-shadow: 0 1px 0 0 #eff1f7;
-
       >a {
         position: relative;
         display: block;

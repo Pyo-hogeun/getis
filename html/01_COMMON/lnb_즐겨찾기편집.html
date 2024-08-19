@@ -449,16 +449,13 @@
   lnbGridItems = document.querySelectorAll('.favorite-menu .grid.depth--1 > li');
 
   lnbFavEdit = new Packery(lnbGridElement, {
-    itemSelector : '.favorite-menu .grid > li'
+    itemSelector : '.favorite-menu .grid > li',
+    columnWidth : 225
   })
-
-  console.log('lnbFavEdit', lnbFavEdit);
-
-  // lnbFavEdit.forEach(function(e){
-  //   console.log('favItem',e);
-  //   let items = new Draggabilly(e, {
-  //     // handle: '.depth--1 > li'
-  //   })
+  // lnbFavEdit.getItemElements().forEach(function(item){
+  //   console.log('item', item);
+  //   // let draggie = new Draggabilly(item);
+  //   // lnbFavEdit.bindDraggabillyEvents(draggie);
   // })
 </script>
 
