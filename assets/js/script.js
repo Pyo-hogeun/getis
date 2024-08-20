@@ -40,13 +40,13 @@ function tab(target) {
     let targetTab = false;
     e.addEventListener('click', function (e) {
       e.preventDefault();
-      if (e.target.dataset.tab) {
+      if (this.dataset.tab) {
         //target이 있을때만
         tabs.forEach(e => {
           e.classList.remove('on');
         })
         this.classList.add('on');
-        targetTab = document.querySelector(`.${e.target.dataset.tab}`);
+        targetTab = document.querySelector(`.${this.dataset.tab}`);
         tabContents.forEach(e => {
           e.classList.remove('on');
         });
