@@ -5,6 +5,50 @@
 .theme-kia{
   .gts-gnb{
     background-color: $themeKiaBg;
+    .gnb-menu{
+      a{
+        .icon-istm{
+          background-image: url('../images/icon_istm_yellow.png');
+        }
+        .icon-app{
+          background-image: url('../images/icon_app_yellow.png');
+        }
+        .icon-memo{
+          background-image: url('../images/icon_memo_yellow.png');
+        }
+        .icon-help{
+          background-image: url('../images/icon_help_yellow.png');
+        }
+        .icon-language{
+          background-image: url('../images/icon_language_yellow.png');
+        }
+        .icon-mypage{
+          background-image: url('../images/icon_mypage_yellow.png');
+        }
+        &:hover{
+          &:hover{
+            .icon-istm{
+              background-image: url('../images/icon_istm_yellow_hover.png');
+            }
+            .icon-app{
+              background-image: url('../images/icon_app_yellow_hover.png');
+            }
+            .icon-memo{
+              background-image: url('../images/icon_memo_yellow_hover.png');
+            }
+            .icon-help{
+              background-image: url('../images/icon_help_yellow_hover.png');
+            }
+            .icon-language{
+              background-image: url('../images/icon_language_yellow_hover.png');
+            }
+            .icon-mypage{
+              background-image: url('../images/icon_mypage_yellow_hover.png');
+            }
+          }
+        }
+      }
+    }
   }
   .gts-lnb{
     background-color: $themeKiaLnbBg;

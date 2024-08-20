@@ -1,7 +1,7 @@
 .gts-gnb{
   position: fixed;
   display: flex;
-  min-width: $contentWidthPcMin;
+  min-width: 1600px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -120,15 +120,35 @@
   }
   .gnb-menu{
     display: inline-block;
-    margin-right: 10px;
-    //임시스타일
-    ul{
-      li{
+    > ul{
+      display: flex;
+      gap: 15px;
+      > li{
         display: inline-block;
-        margin: 0 5px;
         a{
+          display: inline-block;
           color: #aaaaaa;
           font-size: 13px;
+          &:hover{
+            .icon-istm{
+              background-image: url('../images/icon_istm_hover.png');
+            }
+            .icon-app{
+              background-image: url('../images/icon_app_hover.png');
+            }
+            .icon-memo{
+              background-image: url('../images/icon_memo_hover.png');
+            }
+            .icon-help{
+              background-image: url('../images/icon_help_hover.png');
+            }
+            .icon-language{
+              background-image: url('../images/icon_language_hover.png');
+            }
+            .icon-mypage{
+              background-image: url('../images/icon_mypage_hover.png');
+            }
+          }
         }
       }
     }
@@ -136,6 +156,7 @@
   .mypage{
     position: relative;
     display: inline-block;
+    margin-left: 80px;
     a{
       font-size: 13px;
       color: #ffffff;
