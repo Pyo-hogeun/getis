@@ -3,6 +3,7 @@ function lnbToggle() {
   const $toggleClose = document.querySelector('.toggle-close');
   const $toggleLnb = document.querySelector('.toggle-lnb');
   const $contentWrap = document.querySelector('.content-wrap');
+  const $lnbHeader = document.querySelector('.gts-lnb .tab-container .header');
 
   // 조절 그리드 유무
   const $gridContainers = document.querySelectorAll('.grid-container');
@@ -16,6 +17,8 @@ function lnbToggle() {
   $toggleClose?.addEventListener('click', function (e) {
     e.preventDefault();
     $contentWrap.classList.add('fold-lnb');
+    
+
   })
   // lnb 토글
   $toggleLnb?.addEventListener('click', function (e) {
@@ -23,8 +26,10 @@ function lnbToggle() {
 
     if (!$contentWrap.classList.contains('fold-lnb')) {
       $contentWrap.classList.add('fold-lnb');
+      $lnbHeader.classList.add('ani');
     } else {
       $contentWrap.classList.remove('fold-lnb');
+      $lnbHeader.classList.remove('ani');
     }
   })
 }
