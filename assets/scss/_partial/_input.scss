@@ -17,6 +17,11 @@ input.gts-input {
     background-color: #f7f7f7;
   }
 
+  &::placeholder{
+    color: #aaaaaa;
+    font-size: 13px;
+  }
+
   // 공통 사이즈 class
   @for $i from 1 through 30 {
     &.w-#{10*$i} {

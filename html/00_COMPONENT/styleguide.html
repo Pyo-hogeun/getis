@@ -5,13 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="../../assets/css/style.css">
-  
+
   <script src="../../assets/js/script.js"></script>
 
   <title>GETIS</title>
+  <style>
+    hr{
+      margin: 40px 0;
+    }
+  </style>
 </head>
 
-<body style="background-color: #ffffff;">
+<body style="background-color: #ffffff; padding: 10px;">
   <h2>BUTTON</h2>
   <div>
     <a href="" class="btn primary">primary</a>
@@ -47,6 +52,7 @@
     <input type="text" class="gts-input" value="스타일가이드 input">
     <input type="text" class="gts-input" disabled value="스타일가이드 input disabled">
     <input type="text" class="gts-input" readonly value="스타일가이드 input disabled">
+    <input type="text" class="gts-input" placeholder="place holder">
     <br><br>
     <input type="text" class="gts-input w-70" value="100">
     <input type="text" class="gts-input w-70" value="100">
@@ -76,6 +82,12 @@
     &nbsp;
     <input type="checkbox" name="" id="chk-guide2" class="gts-chk" checked>
     <label for="chk-guide2"></label>
+    <br><br>
+    <div class="toggle-radio">
+      <input type="checkbox" name="" id="toggleRadio01" class="gts-radio-toggle">
+      <label for="toggleRadio01" class="mr-10"></label>
+      비활성
+    </div>
   </div>
 
   <h2>INPUT - on table(사이즈가 다름)</h2>
@@ -99,6 +111,7 @@
   </div>
   <hr>
 
+
   <h2>PAGINATION</h2>
   <div class="pagination">
     <a href="" class="prev disabled"></a>
@@ -110,6 +123,167 @@
     <a href="" class="next"></a>
     <a href="" class="to-last"></a>
   </div>
+  <hr>
+
+  <h2>TABLE - standard</h2>
+  <div>
+    <div class="standard-table" style="max-height: 150px">
+      <table>
+        <colgroup>
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>
+              <span class="require-suffix">모듈명</span>
+            </th>
+            <td>
+              <select name="" id="" class="gts-select">
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+              </select>
+            </td>
+            <th>
+              <span class="require-suffix">단위업무명</span>
+            </th>
+            <td>
+              <input type="text" class="gts-input w-140">
+            </td>
+          </tr>
+          <tr>
+            <th>단위업무코드</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+            <th>영문약어</th>
+            <td><input type="text" class="gts-input w-140" value="MEP"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+
+  <h2>LIST</h2>
+  <div class="list-wrap mt-20">
+    <div class="list-topper mt-20 flex-group">
+      <div class="prefix">
+        <span class="table-title">프로그램 목록</span>
+        <span class="list-count">총 <em class="count">000</em>건</span>
+      </div>
+      <div class="suffix">
+        <a href="" class="btn tertiary">
+          <i class="icon-excel-download prefix"></i>
+          엑셀다운로드
+        </a>
+        <a href="" class="btn tertiary">
+          <i class="icon-excel-upload prefix"></i>
+          엑셀업로드
+        </a>
+        <a href="" class="btn black-border">
+          <i class="icon-create prefix"></i>
+          등록
+        </a>
+        <a href="" class="btn black-border">
+          <i class="icon-remove prefix"></i>
+          삭제
+        </a>
+      </div>
+    </div>
+    <div class="table-wrap mt-10">
+      <table>
+        <colgroup>
+          <col style="width: 80px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>신청자</th>
+            <th>팀명</th>
+            <th>직위</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+          <tr>
+            <td>홍길동</td>
+            <td>기준정보시스템팀</td>
+            <td>책임매니저</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="list-footer align-c">
+      <a href="" class="btn primary">버튼명</a>
+      <a href="" class="btn primary">버튼</a>
+    </div>
+  </div>
+  <hr>
+
+  <h2>TAB - capsule</h2>
+  <div class="capsule-tab">
+    <a href="" class="tab on">기본정보</a>
+    <a href="" class="tab">부가정보</a>
+    <a href="" class="tab">업무설명</a>
+    <a href="" class="tab">첨부파일</a>
+  </div>
+  <hr>
 </body>
 
 

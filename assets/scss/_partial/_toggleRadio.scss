@@ -15,6 +15,7 @@
       &:before{
         content: '';
         display: inline-block;
+        transition: $lnbDuration;
         position: absolute;
         left: 4px;
         top: 4px;
@@ -22,6 +23,13 @@
         height: 16px;
         border-radius: 50%;
         background-color: #062c5f;
+      }
+    }
+    &:checked{
+      & + label{
+        &:before{
+          left: 24px;
+        }
       }
     }
   }

@@ -5,9 +5,6 @@
   left: 0;
   bottom: 0;
   transition: background-color .2s;
-  background-color: rgba(0,0,0,0);
-  z-index: -1;
-  &.on{
-    background-color: rgba(0,0,0,.3);
-  }
+  background-color: rgba(0,0,0,.3);
+  z-index: $zindexDim;
 }

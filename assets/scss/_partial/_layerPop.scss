@@ -1,18 +1,48 @@
 .layer-pop{
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 720px;
   overflow: auto;
-  background-color: rgba(255,255,255,.8);
-  z-index: 4;
-  display: none;
-  &.show{
-    display: block;
+  background-color: #ffffff;
+  z-index: $zindexLayerPop;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  .header{
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    h3{
+      margin: 0;
+      color: #333333;
+      font-size: 19px;
+      line-height: 36px;
+      vertical-align: middle;
+    }
+    a.btn-close-pop{
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      top: 0;
+      width: 36px;
+      height: 36px;
+      background-image: url('../images/icon_close_pop.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
-  .container{
-    width: calc($contentWidthPcMin - $contentPadPc*2);
-    margin: auto;
+  .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+    .btn{
+      min-width: 62px;
+    }
   }
 }
