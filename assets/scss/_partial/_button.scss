@@ -17,7 +17,8 @@
     color: #ffffff;
     background-color: $primary;
     &.disabled{
-      // background-color: $gray02;
+      background-color: #eeeeee !important;
+      color: #aaaaaa;
     }
     &:hover{
       background-color: #0048A5;
@@ -26,12 +27,13 @@
   &.secondary{
     color: $primary;
     border: 1px solid $primary;
-    &.disabled{
-      // color: $gray03;
-      // background-color: $gray01;
-    }
     &:hover{
       background-color: #E3E3E3;
+    }
+    &.disabled{
+      background-color: #ffffff !important;
+      color: #aaaaaa;
+      border-color: #aaaaaa;
     }
   }
   &.tertiary{
@@ -41,6 +43,11 @@
     &:hover{
       color: #0048a5;
     }
+    &.disabled{
+      background-color: #ffffff !important;
+      color: #aaaaaa;
+      border-color: #dddddd;
+    }
   }
   &.black-border{
     border: 1px solid #777777;
@@ -48,11 +55,34 @@
   &.disabled{
     cursor: default;
   }
+  &.black-border{
+    &.disabled{
+      background-color: #eeeeee !important;
+      color: #aaaaaa;
+    }
+  }
   i.prefix{
     margin-right: 3px;
   }
   i.suffix{
     margin-left: 3px;
+  }
+  &.text-link{
+    font-size: 13px;
+    font-weight: 700;
+    color: $primary;
+    &:hover{
+      text-decoration: underline;
+    }
+    &.disabled{
+      color: #aaaaaa;
+      &:hover{
+        text-decoration: none;
+      }
+      .icon-link{
+        background-image: url('../images/icon_url_disabled.png');
+      }
+    }
   }
 }
 
