@@ -15,6 +15,7 @@
     border: 1px solid $gray02;
     border-radius: 4px;
     overflow: hidden;
+    transition: height $lnbDuration;
     > .title{
       font-size: 14px;
       font-weight: 700;
@@ -83,6 +84,29 @@
       }
       &.by-#{$i}-height{
         height: calc(($itemHeight * $i) + ($gap * ($i - 1)));
+      }
+    }
+    .toggle-expand{
+      display: inline-block;
+      position: absolute;
+      bottom: -1px;
+      left: 12px;
+      width: 40px;
+      height: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      text-align: center;
+      padding-top: 6px;
+      box-sizing: border-box;
+      i{
+        transition: all $lnbDuration;
+      }
+    }
+    &.expand{
+      i{
+        transform: rotate(180deg);
       }
     }
   }

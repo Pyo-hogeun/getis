@@ -774,6 +774,9 @@
               </li>
             </ul>
           </div>
+          <a href="javascript:void(0)" onclick="gridItemExpand(this);" class="toggle-expand">
+            <i class="icon-toggle-arrow-down"></i>
+          </a>
         </div>
       </div>
       <!-- //portlet-grid , grid-->
@@ -782,11 +785,11 @@
 </body>
 <script>
   // draggable
-  let pckry;
-  let gridElement;
-  let dragged;
-  let dropTargetWidth;
   function setGrid() {
+    let pckry;
+    let gridElement;
+    let dragged;
+    let dropTargetWidth;
 
     console.log('set Grid');
 
@@ -806,6 +809,18 @@
     });
   }
   setGrid();
+
+  function gridItemExpand(e){
+    let parent = e.closest('.grid-item');
+    if(parent.classList.contains('expand')){
+      parent.classList.remove('expand', 'by-2-height');
+    } else {
+      parent.classList.add('by-2-height', 'expand');
+    }
+    setTimeout(function(){
+      setGrid()
+    }, 500);
+  }
 </script>
 
 </html>
