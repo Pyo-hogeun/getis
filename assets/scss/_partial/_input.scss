@@ -21,7 +21,18 @@ input.gts-input {
     color: #aaaaaa;
     font-size: 13px;
   }
-
+  &:focus{
+    border-color: $primary;
+    color: $primary;
+    outline: none;
+  }
+  &.error{
+    border-color: $danger;
+    &:focus{
+      border-color: $danger;
+      color: #333333;
+    }
+  }
   // 공통 사이즈 class
   @for $i from 1 through 30 {
     &.w-#{10*$i} {

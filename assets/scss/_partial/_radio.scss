@@ -1,0 +1,41 @@
+.gts-radio{
+  position: relative;
+  display: none;
+  width: 0;
+  height: 0;
+  & + label{
+    position: relative;
+    font-size: 14px;
+    color: #333333;
+    &:before{
+      content: '';
+      display: inline-block;
+      border: 1px solid 
+      #dddddd;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    &:hover{
+      &:before{
+        border-color: $primary;
+      }
+    }
+  }
+  &:checked + label{
+    &:before{
+      border-color: $primary;
+      border-width: 4px;
+    }
+  }
+  &:disabled + label{
+    cursor: default;
+    color: #aaaaaa;
+    &:before{
+      border-color: #dddddd;
+    }
+  }
+}
