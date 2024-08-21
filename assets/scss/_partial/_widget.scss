@@ -314,4 +314,39 @@
       }
     }
   }
+  &.recent-board{
+    overflow-y: auto;
+    padding: 27px 20px 20px;
+    .board-content-list{
+      .item{
+        padding: 12px;
+        background-color: #f8f8f8;
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        cursor: pointer;
+        .header{
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+          .category{
+            color: $primary;
+          }
+          .author{
+            color: #777777;
+          }
+
+        }
+        .content-title{
+          white-space: nowrap;
+          margin: 10px 0 0 0;
+          font-size: 14px;
+          color: #333333;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
 }
