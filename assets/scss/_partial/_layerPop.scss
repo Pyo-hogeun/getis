@@ -4,12 +4,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  height: 720px;
+  height: 500px;
   overflow: auto;
   background-color: #ffffff;
   z-index: $zindexLayerPop;
   padding: 30px 40px;
   box-sizing: border-box;
+  &.w-800{
+    width: 800px;
+  }
+  // 공통 사이즈 class
+  @for $i from 1 through 10 {
+    &.w-#{100*$i} {
+      width: #{100*$i}px;
+    }
+  }
+  @for $i from 1 through 10 {
+    &.h-#{100*$i} {
+      height: #{100*$i}px;
+    }
+  }
   .header{
     position: relative;
     border-bottom: 1px solid #dddddd;
@@ -31,6 +45,13 @@
       background-image: url('../images/icon_close_pop.png');
       background-repeat: no-repeat;
       background-size: contain;
+    }
+  }
+  .body{
+    h4{
+      font-size: 16px;
+      color: #333333;
+      margin: 20px 0 10px 0;
     }
   }
   .footer{
