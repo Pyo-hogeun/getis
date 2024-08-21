@@ -1,0 +1,884 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- packery.js -->
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+  <!-- draggie.js -->
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+  <script src="../../assets/js/script.js"></script>
+
+  <title>GETIS</title>
+</head>
+
+<body>
+  <!-- gnb -->
+  <div class="gts-gnb flex-group">
+    <div class="prefix">
+      <div class="home">
+        <a href="" class="toggle-lnb">
+          <i class="icon-lnb-toggle"></i>
+        </a>
+        <h1>
+          <a href="">
+            <i class="logo">GETIS</i>
+          </a>
+        </h1>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li class="on"><a href="">툴링 생산관리</a></li>
+          <li><a href="">일반 관리</a></li>
+          <li><a href="">전동화 생산관리</a></li>
+          <li><a href="">협력사</a></li>
+          <li><a href="">공통</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="suffix">
+      <div class="gnb-menu">
+        <ul>
+          <li><a href=""><i class="icon-istm" title="ISTM"></i></a></li>
+          <li><a href=""><i class="icon-app" title="app"></i></a></li>
+          <li><a href=""><i class="icon-memo" title="memo"></i></a></li>
+          <li><a href=""><i class="icon-help" title="help"></i></a></li>
+          <li><a href=""><i class="icon-language" title="language"></i></a></li>
+          <li><a href=""><i class="icon-mypage" title="mypage"></i></a></li>
+        </ul>
+      </div>
+      <div class="mypage">
+        <a href=""><span class="name">홍길동</span>&nbsp;님<span class="department">(기준정보시스템팀)</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- /gnb -->
+  <div class="content-wrap">
+    <div class="gts-lnb">
+      <!-- tab -->
+      <div class="tab-container">
+        <div class="header">
+          <a href="" class="tab on" data-tab="tab-1"><i class="icon-star"></i>즐겨찾기</a>
+          <a href="" class="tab" data-tab="tab-2"><i class="icon-time"></i>최근메뉴</a>
+          <a href="" class="tab" data-tab="tab-3"><i class="icon-allmenu"></i>전체메뉴</a>
+        </div>
+        <div class="body">
+          <div class="tab-content-wrap">
+            <div class="tab-content tab-1 favorite-menu menu-tree on">
+              <ul class="depth--1">
+                <li class="">
+                  <a href="" class="has-depth">사용자 직접생성 폴더</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="selected-menu">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">가동관리</a></li>
+                    <li><a href="">no depth menu</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth">
+                    Folder 001
+                  </a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="">품목별 DIM'S 종합</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 NG 현황 조회</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 현황</a>
+                    </li>
+                    <li>
+                      <a href="">후드 힌지면 측정현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth open">
+                    Folder 002
+                  </a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="selected-menu">품목별 DIM'S 종합</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 NG 현황 조회</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 현황</a>
+                    </li>
+                    <li>
+                      <a href="">후드 힌지면 측정현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth">공장별 종합화면</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="">울산2공장</a>
+                    </li>
+                    <li>
+                      <a href="">광주2공장</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">즐겨찾기관리</a>
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-2 recent-menu">
+              <ul class="editable-list">
+                <li>
+                  <a href="" class="remove" title="삭제">
+                    <i class="icon-delete"></i>
+                  </a>
+                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
+                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
+                  <div class="date">22-04-16 07:14:44</div>
+                </li>
+                <li>
+                  <a href="" class="remove" title="삭제">
+                    <i class="icon-delete"></i>
+                  </a>
+                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
+                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
+                  <div class="date">22-04-16 07:14:44</div>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-3 all-menu menu-tree">
+              <ul class="depth--1">
+                <li class="">
+                  <a href="" class="has-depth open">가동관리</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="selected-menu">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">가동관리</a></li>
+                    <li><a href="">no depth menu</a></li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="" class="has-depth">품질관리</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">품질관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">품질관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">품질관리222글자수max 품질관리222글자수max</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">품질관리 depth max test</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="has-depth">품질관리222글자수max 품질관리222글자수max</a>
+                          <ul class="depth--2">
+                            <li>
+                              <a href="" class="has-depth">품질관리333</a>
+                              <ul class="depth--2">
+                                <li>
+                                  <a href="" class="has-depth">품질관리444</a>
+                                  <ul class="depth--2">
+                                    <li>
+                                      <a href="" class="has-depth">품질관리555</a>
+                                      <ul class="depth--2">
+                                        <li>
+                                          <a href="" class="has-depth">품질관리666</a>
+                                          <ul class="depth--2">
+                                            <li>
+                                              <a href="" class="has-depth">품질관리777</a>
+                                              <ul class="depth--2">
+                                                <li>
+                                                  <a href="" class="has-depth">품질관리888</a>
+                                                  <ul class="depth--2">
+                                                    <li>
+                                                      <a href="" class="has-depth">품질관리999</a>
+                                                      <ul class="depth--2">
+                                                        <li>
+                                                          <a href="" class="">품질관리00000000-- 메뉴길이 테스트</a>
+                                                        </li>
+                                                      </ul>
+                                                    </li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="" class="">운영관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- //tab -->
+    </div>
+    <div class="container">
+      <!-- portlet-grid , grid-->
+      <div class="portlet-grid grid">
+        <div class="grid-item">
+          <div class="title flex-group">
+            <div class="prefix">날씨</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container weather">
+            <div class="header">
+              <span class="region">서울</span>
+              <span class="date">2024-04-11 09:28 AM 기준</span>
+            </div>
+            <div class="status">
+              <div class="weather-img">
+                <i class="icon-cloud-sunny"></i>
+              </div>
+              <div class="temperature">
+                14&#8451
+              </div>
+              <div class="fine-dust">
+                <div class="label">미세먼지
+                  <span class="condition">좋음</span>
+                </div>
+
+                <div class="status-bar">
+                  <span class="bar" style="width: 30%">30%</span>
+                </div>
+              </div>
+              <div class="weather-quarters">
+                <ul>
+                  <li>
+                    <div class="time">06:00&nbsp;&nbsp;AM</div>
+                    <div class="weather">
+                      <i class="icon-weather-cloud-sm"></i>
+                      <span class="tempreture">
+                        11&#8451
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="time">12:00&nbsp;PM</div>
+                    <div class="weather">
+                      <i class="icon-weather-cloud-sm"></i>
+                      <span class="tempreture">
+                        11&#8451
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="time">06:00&nbsp;PM</div>
+                    <div class="weather">
+                      <i class="icon-weather-sunny-sm"></i>
+                      <span class="tempreture">
+                        23&#8451
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="time">12:00&nbsp;AM</div>
+                    <div class="weather">
+                      <i class="icon-weather-cloud-sm"></i>
+                      <span class="tempreture">
+                        11&#8451
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="title flex-group">
+            <div class="prefix">검색</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container search">
+            <div class="tab-container">
+              <div class="header">
+                <a href="" class="tab on">내 결제함(999)</a>
+                <a href="" class="tab">진행함(999)</a>
+                <a href="" class="tab">연계시스템(999)</a>
+              </div>
+              <div class="body">
+                <div class="tab-content-wrap">
+                  <div class="tab-content">
+                    <div class="no-data">
+                      <img src="../../assets/images/icon_data_empty.png" alt="데이터 없음">
+                      <p class="text">“현재 항목에 데이터가 존재하지 않습니다.”</p>
+                    </div>
+                  </div>
+                  <div class="tab-content"></div>
+                  <div class="tab-content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="title flex-group">
+            <div class="prefix">권한신청현황</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container auth-apply">
+            <div class="tab-container">
+              <div class="header">
+                <a href="" class="tab on">권한신청(999)</a>
+                <a href="" class="tab">권한진행(999)</a>
+                <a href="" class="tab">결재완료(999)</a>
+              </div>
+              <div class="body">
+                <div class="tab-content-wrap">
+                  <div class="tab-content">
+                    <div class="list-wrap mt-20">
+                      <div class="table-wrap">
+                        <table>
+                          <colgroup>
+                            <col style="width: 80px">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>신청자</th>
+                              <th>팀명</th>
+                              <th>직위</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                            <tr>
+                              <td>홍길동</td>
+                              <td>기준정보시스템팀</td>
+                              <td>책임매니저</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="list-footer align-c">
+                        <a href="" class="btn primary">버튼명</a>
+                        <a href="" class="btn primary">버튼</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content"></div>
+                  <div class="tab-content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item by-2-height">
+          <div class="title flex-group">
+            <div class="prefix">최신 게시글</div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container recent-board">
+            <div class="board-content-list">
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+              <div class="item">
+                <div class="header">
+                  <span class="category">뉴스</span>
+                  <span class="author">이최고 책임</span>
+                </div>
+                <p class="content-title">2024년 독감 예방접종 예약 안내2024년 독감 예방접종 예약 안내</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item by-3-width">
+          <div class="title flex-group">
+            <div class="prefix">나의업무
+              <select name="" id="" class="gts-select w-300 ml-20">
+                <option value="">나의 업무를 선택해주세요</option>
+                <option value="">나의 업무를 선택해주세요</option>
+                <option value="">나의 업무를 선택해주세요</option>
+              </select>
+            </div>
+            <div class="suffix">
+              <div class="util-group">
+                <a href=""><i class="icon-setting"></i></a>
+                <a href=""><i class="icon-refresh"></i></a>
+                <a href="" class="handler-move"><i class="icon-move"></i></a>
+                <a href=""><i class="icon-delete"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container my-task">
+            <div class="progress-step">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step current"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+            <ul class="step-list">
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item current">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+              <li class="step-item">
+                <div class="title">변경대상 확인/전개</div>
+                <ul class="task-list">
+                  <li>심의결과 확인/전개(현대)</li>
+                  <li>심의결과 확인/전개(기아)</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" onclick="gridItemExpand(this);" class="toggle-expand">
+            <i class="icon-toggle-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+      <!-- //portlet-grid , grid-->
+    </div>
+  </div>
+
+  <div class="dim"></div>
+
+  <!-- 최신 게시글 상세보기 팝업 -->
+  <div class="layer-pop w-800">
+    <div class="header">
+      <h3>최근 게시글</h3>
+      <a href="" class="btn-close-pop"></a>
+    </div>
+    <div class="body">
+      <div class="board-view">
+        <h4>24년 9월_전사교육(HAEducation) 공지</h4>
+
+        <div class="topper">
+          <div class="author">
+            <span class="label">작성자 : </span>
+            <span class="name">홍길동</span>
+          </div>
+          <div class="update">
+            <span class="label">작성일시 : </span>
+            <span class="date">2024.08.20</span>
+          </div>
+        </div>
+        <div class="board-content">
+<pre
+  style="font-size: 14px;color: #333333;line-height: 1.4"
+>
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다.
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다. 
+24년 9월_전사교육(HAEducation) 공지에 대한 내용을 노출합니다. 
+해당 영역은 게시글의 상세 내용이 노출되는 영역입니다.
+</pre>
+        </div>
+      </div>
+    </div>
+    <div class="footer pt-30">
+      <a href="" class="btn tertiary">닫기</a>
+      <a href="" class="btn primary ml-10">저장</a>
+    </div>
+  </div>
+
+
+</body>
+<script>
+  // draggable
+  function setGrid() {
+    let pckry;
+    let gridElement;
+    let dragged;
+    let dropTargetWidth;
+
+    console.log('set Grid');
+
+    gridElement = document.querySelector('.grid');
+    gridItems = document.querySelectorAll('.grid-item');
+    pckry = new Packery(gridElement, {
+      itemSelector: '.grid-item',
+      columnWidth: 373,
+      gutter: 10
+    });
+    pckry.getItemElements().forEach(function (gridItem) {
+      var draggie = new Draggabilly(gridItem, {
+        containment: '.grid',
+        handle: '.handler-move'
+      });
+      pckry.bindDraggabillyEvents(draggie);
+    });
+  }
+  setGrid();
+
+  function gridItemExpand(e){
+    let parent = e.closest('.grid-item');
+    if(parent.classList.contains('expand')){
+      parent.classList.remove('expand', 'by-2-height');
+    } else {
+      parent.classList.add('by-2-height', 'expand');
+    }
+    setTimeout(function(){
+      setGrid()
+    }, 500);
+  }
+</script>
+
+</html>

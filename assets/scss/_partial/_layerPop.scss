@@ -53,6 +53,10 @@
       color: #333333;
       margin: 20px 0 10px 0;
     }
+    .board-content{
+      max-height: calc(100% - 220px);
+      overflow-y: auto;
+    }
   }
   .footer{
     position: absolute;
