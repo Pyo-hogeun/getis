@@ -785,8 +785,8 @@
 </body>
 <script>
   // draggable
+  let pckry;
   function setGrid() {
-    let pckry;
     let gridElement;
     let dragged;
     let dropTargetWidth;
@@ -818,7 +818,7 @@
       parent.classList.add('by-2-height', 'expand');
     }
     setTimeout(function(){
-      setGrid()
+      pckry.shiftLayout();
     }, 500);
   }
 </script>
