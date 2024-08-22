@@ -24,7 +24,7 @@
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
-    height: 100%;
+    height: calc($gnbHeight - 1px);
     width: 265px;
     .toggle-lnb{
       display: inline-flex;
