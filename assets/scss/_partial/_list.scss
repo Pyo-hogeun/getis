@@ -48,9 +48,12 @@
     table{
       width: 100%;
       table-layout: fixed;
+      border-collapse: separate;
+	    border-spacing: 0;
       th, td{
         text-align: center;
-        border: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
         @include align;
         
       }
