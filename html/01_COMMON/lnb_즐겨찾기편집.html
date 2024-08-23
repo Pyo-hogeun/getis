@@ -9,7 +9,7 @@
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
   <!-- draggie.js -->
   <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-  
+
   <script src="../../assets/js/script.js"></script>
 
   <title>GETIS</title>
@@ -156,86 +156,31 @@
               <div class="add">
                 <input type="text" class="gts-input w-180" placeholder="폴더명/메뉴명 입력">
               </div>
-              <ul class="depth--1 grid">
-                <li class="">
-                  <a href="" class="has-depth">사용자 직접생성 폴더</a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="" class="has-depth open">가동관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
+
+              <div id="menu" class="menu">
+                <div class="menu-content">
+                  <ul id="menu-list">
+                    <li class="draggable" draggable="true">
+                      사용자 직접생성 폴더1 <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
+                      <ul class="sub-menu">
+                        <li class="draggable" draggable="true">메뉴 1.1</li>
+                        <li class="draggable" draggable="true">메뉴 1.2</li>
                       </ul>
                     </li>
-                    <li>
-                      <a href="" class="has-depth">가동관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="selected-menu">가동관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
+                    <li class="draggable" draggable="true">
+                      사용자 직접생성 폴더2 <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
+                      <ul class="sub-menu">
+                        <li class="draggable" draggable="true">메뉴 2.1</li>
+                        <li class="draggable" draggable="true">메뉴 2.2</li>
                       </ul>
                     </li>
-                    <li><a href="">가동관리</a></li>
-                    <li><a href="">no depth menu</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="has-depth">
-                    Folder 001
-                  </a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="">품목별 DIM'S 종합</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 NG 현황 조회</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 현황</a>
-                    </li>
-                    <li>
-                      <a href="">후드 힌지면 측정현황</a>
+                    <li class="draggable" draggable="true">
+                      사용자 직접생성 메뉴3
                     </li>
                   </ul>
-                </li>
-                <li>
-                  <a href="" class="has-depth open">
-                    Folder 002
-                  </a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="" class="selected-menu">품목별 DIM'S 종합</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 NG 현황 조회</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 현황</a>
-                    </li>
-                    <li>
-                      <a href="">후드 힌지면 측정현황</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="has-depth">공장별 종합화면</a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="">울산2공장</a>
-                    </li>
-                    <li>
-                      <a href="">광주2공장</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                </div>
+              </div>
+
               <div class="footer">
                 <div class="btn-group">
                   <a href="javascript:void(0)" class="btn" onclick="editFavorite(this)">즐겨찾기관리</a>
@@ -431,7 +376,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -450,17 +395,144 @@
   lnbGridItems = document.querySelectorAll('.favorite-menu .grid.depth--1 > li');
 
   lnbFavEdit = new Packery(lnbGridElement, {
-    itemSelector : '.favorite-menu .grid > li'
+    itemSelector: '.favorite-menu .grid > li'
   })
 
   console.log('lnbFavEdit', lnbFavEdit);
 
-  // lnbFavEdit.forEach(function(e){
-  //   console.log('favItem',e);
-  //   let items = new Draggabilly(e, {
-  //     // handle: '.depth--1 > li'
-  //   })
-  // })
+  // Menu Dragging
+
+  const menu = document.getElementById('menu');
+  let draggedItem = null;
+
+  // Draggable functionality
+  document.querySelectorAll('.draggable').forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      draggedItem = e.target;
+      e.target.classList.add('dragging');
+    });
+
+    item.addEventListener('dragend', (e) => {
+      e.target.classList.remove('dragging');
+      draggedItem = null;
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      console.log('dragover', e.target.classList);
+      if (e.target.tagName === 'LI' && e.target !== draggedItem) {
+        e.target.classList.add('drag-over');
+        const rect = e.target.getBoundingClientRect();
+        const offsetY = e.clientY - rect.top;
+        console.log('drag', offsetY, rect.height / 2);
+        if(offsetY < rect.height / 2){
+          // 윗쪽
+          e.target.classList.add('topper');
+          e.target.classList.remove('bottom');
+        } else {
+          // 아랫쪽
+          e.target.classList.add('bottom');
+          e.target.classList.remove('topper');
+        } 
+      }
+    });
+
+    item.addEventListener('dragleave', (e) => {
+      e.target.classList.remove('drag-over', 'topper');
+    });
+    item.addEventListener('drag', (e) => {
+      // console.log('drag', e.target);
+    })
+
+    item.addEventListener('drop', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      e.target.classList.remove('drag-over', 'topper');
+      e.target.style.backgroundColor = ''; // Reset background color
+
+      if (e.target.tagName === 'LI' && e.target !== draggedItem) {
+        const parent = e.target.parentNode;
+        const allItems = Array.from(parent.children);
+        const draggedIndex = allItems.indexOf(draggedItem);
+        const targetIndex = allItems.indexOf(e.target);
+
+        const rect = e.target.getBoundingClientRect();
+        const offsetY = e.clientY - rect.top;
+        console.log(offsetY, rect);
+        if ( offsetY > rect.height / 2) {
+          // 타겟의 아래쪽에 추가
+          parent.insertBefore(draggedItem, e.target.nextSibling);
+        } else {
+          // 윗쪽에 추가
+          parent.insertBefore(draggedItem, e.target);
+        } 
+        // else {
+        //   let submenu = document.createElement('ul');
+        //   submenu.classList.add('sub-menu');
+        //   submenu.appendChild(draggedItem);
+        //   let childItem = e.target.children;
+        //   for(let i=0; i < childItem.length; i++){
+        //     if(childItem[i].classList.contains('toggle-btn')){
+        //       return false
+        //     } else {
+        //       e.target.innerHTML += '<span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>';
+        //       console.log('children', e.target);
+        //     }
+        //   }
+        //   e.target.appendChild(submenu);
+        //   let addBtn = e.target.querySelector('.toggle-btn');
+        //   addBtn?handlerToggleBtn(addBtn):false;
+        // }
+      } else if (e.target.tagName === 'UL') {
+        const ul = e.target;
+        ul.appendChild(draggedItem);
+      }
+    });
+  });
+
+  // Menu Dragging
+  let isDragging = false;
+  let offsetX, offsetY;
+
+
+  function onMouseMove(e) {
+    if (isDragging) {
+      menu.style.left = `${e.clientX - offsetX}px`;
+      menu.style.top = `${e.clientY - offsetY}px`;
+    }
+  }
+
+  function onMouseUp() {
+    isDragging = false;
+    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('mouseup', onMouseUp);
+  }
+
+  // Toggle Sub-menu
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const subMenu = btn.nextElementSibling;
+      if (subMenu.style.display === 'none' || subMenu.style.display === '') {
+        subMenu.style.display = 'block';
+        btn.classList.add('open');
+      } else {
+        subMenu.style.display = 'none';
+        btn.classList.remove('open');
+      }
+    });
+  });
+  function handlerToggleBtn(btn){
+    const subMenu = btn.nextElementSibling;
+    if (subMenu.style.display === 'none' || subMenu.style.display === '') {
+      subMenu.style.display = 'block';
+      btn.classList.add('open');
+    } else {
+      subMenu.style.display = 'none';
+      btn.classList.remove('open');
+    }
+  }
+  
+
 </script>
 
 </html>

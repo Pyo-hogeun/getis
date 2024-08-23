@@ -9,9 +9,6 @@
   background-color: #f0f5fd;
   box-shadow: 2px 0 12px 0 rgba(62, 71, 104, 0.2);
   z-index: $zindexLnb;
-  [class*="toggle-"]{
-    background-color: yellow;
-  }
   .toggle-open{
     position: absolute;
     right: -50px;
