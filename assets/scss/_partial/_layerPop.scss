@@ -19,9 +19,9 @@
       width: #{100*$i}px;
     }
   }
-  @for $i from 1 through 10 {
-    &.h-#{100*$i} {
-      height: #{100*$i}px;
+  @for $i from 1 through 100 {
+    &.h-#{20*$i} {
+      height: #{20*$i}px;
     }
   }
   .header{

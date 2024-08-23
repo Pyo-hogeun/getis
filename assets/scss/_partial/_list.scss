@@ -52,12 +52,7 @@
         text-align: center;
         border: 1px solid #dddddd;
         @include align;
-        &:first-child{
-          border-left: 0;
-        }
-        &:last-child{
-          border-right: 0;
-        }
+        
       }
       th{
         padding: 6px 0;
@@ -70,6 +65,12 @@
         padding: 6px 0;
         font-size: 13px;
         color: #333333;
+        &:first-child{
+          border-left: 0;
+        }
+        &:last-child{
+          border-right: 0;
+        }
       }
       tr{
         &:first-child{
