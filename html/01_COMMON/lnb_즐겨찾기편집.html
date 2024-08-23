@@ -160,21 +160,21 @@
               <div id="menu" class="menu">
                 <div class="menu-content">
                   <ul id="menu-list">
-                    <li class="draggable" draggable="true">
+                    <li class="draggable" draggable="true" data-hasChild="true">
                       사용자 직접생성 폴더1 <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
                         <li class="draggable" draggable="true">메뉴 1.1</li>
                         <li class="draggable" draggable="true">메뉴 1.2</li>
                       </ul>
                     </li>
-                    <li class="draggable" draggable="true">
+                    <li class="draggable" draggable="true" data-hasChild="true">
                       사용자 직접생성 폴더2 <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
                         <li class="draggable" draggable="true">메뉴 2.1</li>
                         <li class="draggable" draggable="true">메뉴 2.2</li>
                       </ul>
                     </li>
-                    <li class="draggable" draggable="true">
+                    <li class="draggable" draggable="true" data-hasChild="false">
                       사용자 직접생성 메뉴3
                     </li>
                   </ul>
@@ -419,21 +419,25 @@
 
     item.addEventListener('dragover', (e) => {
       e.preventDefault();
-      console.log('dragover', e.target.classList);
+      // console.log('dragover', e.target.classList);
       if (e.target.tagName === 'LI' && e.target !== draggedItem) {
         e.target.classList.add('drag-over');
         const rect = e.target.getBoundingClientRect();
         const offsetY = e.clientY - rect.top;
-        console.log('drag', offsetY, rect.height / 2);
-        if(offsetY < rect.height / 2){
+        // console.log('drag', offsetY - rect.height / 2);
+        if(offsetY - rect.height / 2 < -5){
           // 윗쪽
           e.target.classList.add('topper');
           e.target.classList.remove('bottom');
-        } else {
+        } else if(offsetY - rect.height / 2 > 5){
           // 아랫쪽
           e.target.classList.add('bottom');
           e.target.classList.remove('topper');
-        } 
+        } else {
+          // 가운데
+          e.target.classList.remove('bottom');
+          e.target.classList.remove('topper');
+        }
       }
     });
 
@@ -458,31 +462,34 @@
 
         const rect = e.target.getBoundingClientRect();
         const offsetY = e.clientY - rect.top;
-        console.log(offsetY, rect);
-        if ( offsetY > rect.height / 2) {
+        if ( offsetY - rect.height / 2 > 5) {
           // 타겟의 아래쪽에 추가
           parent.insertBefore(draggedItem, e.target.nextSibling);
-        } else {
+        } else if ( offsetY - rect.height / 2 < -5){
           // 윗쪽에 추가
           parent.insertBefore(draggedItem, e.target);
-        } 
-        // else {
-        //   let submenu = document.createElement('ul');
-        //   submenu.classList.add('sub-menu');
-        //   submenu.appendChild(draggedItem);
-        //   let childItem = e.target.children;
-        //   for(let i=0; i < childItem.length; i++){
-        //     if(childItem[i].classList.contains('toggle-btn')){
-        //       return false
-        //     } else {
-        //       e.target.innerHTML += '<span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>';
-        //       console.log('children', e.target);
-        //     }
-        //   }
-        //   e.target.appendChild(submenu);
-        //   let addBtn = e.target.querySelector('.toggle-btn');
-        //   addBtn?handlerToggleBtn(addBtn):false;
-        // }
+        } else {
+          // 하위에 추가
+          let haschild = e.target.dataset.haschild;
+          let submenu = document.createElement('ul');
+          submenu.classList.add('sub-menu');
+          console.log(haschild);
+          if(haschild == 'false'){
+            // 하위메뉴가 없다면
+            let toggle = document.createElement('span');
+            toggle.classList.add('toggle-btn');
+            toggle.innerHTML = '<i class="icon-toggle-arrow-down"></i>';
+            submenu.appendChild(draggedItem);
+            e.target.appendChild(toggle);
+            e.target.appendChild(submenu);
+            let newBtn = e.target.querySelector('.toggle-btn');
+            handlerToggleBtn(newBtn);
+            e.target.dataset.haschild = 'true';
+          } else if(haschild == 'true'){
+            
+            e.target.querySelector('.sub-menu').appendChild(draggedItem);
+          }
+        }
       } else if (e.target.tagName === 'UL') {
         const ul = e.target;
         ul.appendChild(draggedItem);
@@ -522,14 +529,16 @@
     });
   });
   function handlerToggleBtn(btn){
-    const subMenu = btn.nextElementSibling;
-    if (subMenu.style.display === 'none' || subMenu.style.display === '') {
-      subMenu.style.display = 'block';
-      btn.classList.add('open');
-    } else {
-      subMenu.style.display = 'none';
-      btn.classList.remove('open');
-    }
+    btn.addEventListener('click', () => {
+      const subMenu = btn.nextElementSibling;
+      if (subMenu.style.display === 'none' || subMenu.style.display === '') {
+        subMenu.style.display = 'block';
+        btn.classList.add('open');
+      } else {
+        subMenu.style.display = 'none';
+        btn.classList.remove('open');
+      }
+    });
   }
   
 
