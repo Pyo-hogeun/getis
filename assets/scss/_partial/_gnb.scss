@@ -7,7 +7,7 @@
   width: 100%;
   height: $gnbHeight;
   padding: 0 $gnbPad 0 0;
-  border-bottom: 1px solid $gray02;
+  // border-bottom: 1px solid $gray02;
   box-sizing: border-box;
   background-color: $themeHyundaiBg;
   z-index: $zindexGnb;
@@ -24,7 +24,7 @@
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
-    height: calc($gnbHeight - 1px);
+    height: $gnbHeight;
     width: 265px;
     .toggle-lnb{
       display: inline-flex;
