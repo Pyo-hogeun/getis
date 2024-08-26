@@ -31,6 +31,7 @@
         gap: 2px;
         height: 48px;
         border-right: 1px solid #a1acc2;
+        border-bottom: 1px solid #a1acc2;
         box-sizing: border-box;
         background-color: #c4cad6;
         color: #8590a6;
@@ -39,6 +40,7 @@
           background-color: #f0f5fd;
           color:#002c5f;
           font-weight: 600;
+          border-bottom: 0;
           .icon-star{
             background-image: url(../images/icon_star_on.png);
           }
