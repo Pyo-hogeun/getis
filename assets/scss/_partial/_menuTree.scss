@@ -123,9 +123,17 @@
           position: relative;
           min-height: 5px;
           box-sizing: border-box;
+          padding-left: 20px;
           &:before{
-            content: '-';
+            content: '';
             display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background-image: url('../images/icon_menu_handler.png');
+            background-repeat: no-repeat;
           }
           .toggle-btn {
             position: absolute;
@@ -171,6 +179,9 @@
           line-height: 23px;
           font-size: 13px;
           color: #333333;
+          &:before{
+            top: 3px;
+          }
           .toggle-btn{
             top: 2px;
           }
