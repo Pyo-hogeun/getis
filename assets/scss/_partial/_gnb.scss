@@ -137,24 +137,15 @@
           display: inline-block;
           color: #aaaaaa;
           font-size: 13px;
+          i:last-child{
+            display: none;
+          }
           &:hover{
-            .icon-istm{
-              background-image: url('../images/icon_istm_hover.png');
+            i:first-child{
+              display: none;
             }
-            .icon-app{
-              background-image: url('../images/icon_app_hover.png');
-            }
-            .icon-memo{
-              background-image: url('../images/icon_memo_hover.png');
-            }
-            .icon-help{
-              background-image: url('../images/icon_help_hover.png');
-            }
-            .icon-language{
-              background-image: url('../images/icon_language_hover.png');
-            }
-            .icon-mypage{
-              background-image: url('../images/icon_mypage_hover.png');
+            i:last-child{
+              display: inline-block;
             }
           }
         }
