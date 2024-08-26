@@ -152,15 +152,23 @@ function combo() {
 // gnb
 function gnbSubmenu(){
   const gnbMenu = document.querySelectorAll('.gts-gnb .menu-list > ul > li');
+  const gnbSubMenu = document.querySelectorAll('.gts-gnb .menu-list > ul > li .sub-menu');
   gnbMenu.forEach(function(e){
     e.addEventListener('mouseenter', function(menu){
-      console.log(menu.target.querySelector('.sub-menu'));
-      if (menu.target.querySelector('.sub-menu')) menu.target.querySelector('.sub-menu').style.display = 'block';
-    });
-    e.addEventListener('mouseleave', function(menu){
-      if (menu.target.querySelector('.sub-menu')) menu.target.querySelector('.sub-menu').style.display = 'none';
+      let submenu = menu.target.querySelector('.sub-menu');
+      let siblings = menu.target.closest('ul').querySelectorAll('li');
+      siblings.forEach(function(siblings){
+        siblings.querySelector('.sub-menu')? siblings.querySelector('.sub-menu').style.display = 'none':false;
+      })
+      if (submenu) submenu.style.display = 'block';
     });
   });
+  gnbSubMenu.forEach(function(e){
+    e.addEventListener('mouseleave', function(menu){
+      menu.target.style.display = 'none';
+    });
+
+  })
 }
 document.addEventListener('DOMContentLoaded', function () {
   lnbToggle();

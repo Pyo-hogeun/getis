@@ -40,7 +40,7 @@
   .depth--2 {
     height: 0;
     overflow: hidden;
-
+    
     >li {
       >a {
         position: relative;
@@ -100,6 +100,7 @@
   .open+.depth--2 {
     height: auto;
     overflow: visible;
+    padding: 5px 0;
   }
 
   ///////////////////////////////// test
@@ -122,7 +123,10 @@
           position: relative;
           min-height: 5px;
           box-sizing: border-box;
-
+          &:before{
+            content: '-';
+            display: inline-block;
+          }
           .toggle-btn {
             position: absolute;
             display: inline-flex;
@@ -141,6 +145,17 @@
               }
             }
           }
+          .delete-btn {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            right: 22px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+          }
 
           /* Drag and drop styles */
         }
@@ -149,7 +164,7 @@
       .sub-menu {
         display: none;
         margin-top: 10px;
-        
+        padding-bottom: 15px;
         > li {
           padding-left: 20px;
           min-height: 23px;
@@ -157,7 +172,10 @@
           font-size: 13px;
           color: #333333;
           .toggle-btn{
-            top: 0;
+            top: 2px;
+          }
+          .delete-btn {
+            top: 3px;
           }
         }
       }
@@ -168,7 +186,7 @@
 
       .drag-over {
         border: 1px dashed #fff;
-        background-color: #c5ccdb;
+        background-color: #dce0e8;
         &.topper{
           position: relative;
           &:before{
@@ -178,7 +196,7 @@
             left: 0;
             width: 100%;
             display: block;
-            border-top: 2px solid red;
+            border-top: 2px solid $primary;
           }
         }
         &.bottom{
@@ -190,7 +208,7 @@
             left: 0;
             width: 100%;
             display: block;
-            border-top: 2px solid red;
+            border-top: 2px solid $primary;
           }
         }
       }

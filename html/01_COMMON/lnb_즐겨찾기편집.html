@@ -30,7 +30,16 @@
       </div>
       <div class="menu-list">
         <ul>
-          <li class="on"><a href="">툴링 생산관리</a></li>
+          <li class="on">
+            <a href="">툴링 생산관리</a>
+            <ul class="sub-menu">
+              <li><a href="">G-PAMS</a></li>
+              <li><a href="">프레스금현생산 관리</a></li>
+              <li><a href="">신소재금형생산관리</a></li>
+              <li><a href="" class="on">플라스틱금형생산관리</a></li>
+              <li><a href="" class="disabled">disabled</a></li>
+            </ul>
+          </li>
           <li><a href="">일반 관리</a></li>
           <li><a href="">전동화 생산관리</a></li>
           <li><a href="">협력사</a></li>
@@ -64,118 +73,49 @@
         </div>
         <div class="body">
           <div class="tab-content-wrap">
-            <div class="tab-content tab-1 favorite-menu menu-tree">
-              <ul class="depth--1">
-                <li class="">
-                  <a href="" class="has-depth">사용자 직접생성 폴더</a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="" class="has-depth open">가동관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="" class="has-depth">가동관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="selected-menu">가동관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="">가동관리</a></li>
-                    <li><a href="">no depth menu</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="has-depth">
-                    Folder 001
-                  </a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="">품목별 DIM'S 종합</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 NG 현황 조회</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 현황</a>
-                    </li>
-                    <li>
-                      <a href="">후드 힌지면 측정현황</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="has-depth open">
-                    Folder 002
-                  </a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="" class="selected-menu">품목별 DIM'S 종합</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 NG 현황 조회</a>
-                    </li>
-                    <li>
-                      <a href="">총용접점 현황</a>
-                    </li>
-                    <li>
-                      <a href="">후드 힌지면 측정현황</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="has-depth">공장별 종합화면</a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="">울산2공장</a>
-                    </li>
-                    <li>
-                      <a href="">광주2공장</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="footer">
-                <div class="btn-group">
-                  <a href="" class="btn" onclick="editFavorite(this)">즐겨찾기관리</a>
-                  <a href="" class="btn">Sitemap</a>
-                </div>
-              </div>
-            </div>
             <div class="tab-content tab-1 favorite-menu menu-tree edit on">
               <div class="add">
                 <input type="text" class="gts-input w-180" placeholder="폴더명/메뉴명 입력">
+                <span class="add-btn"><i class="icon-add-menu"></i></span>
               </div>
 
               <div id="menu" class="menu">
                 <div class="menu-content">
                   <ul id="menu-list">
                     <li class="draggable" draggable="true" data-hasChild="true">
-                      사용자 직접생성 폴더1 <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
+                      사용자 직접생성 폴더1 
+
+                      <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
+                      <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
-                        <li class="draggable" draggable="true">메뉴 1.1</li>
-                        <li class="draggable" draggable="true">메뉴 1.2</li>
+                        <li class="draggable" draggable="true">
+                          메뉴 1.1
+                          <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                        </li>
+                        <li class="draggable" draggable="true">
+                          메뉴 1.2
+                          <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                        </li>
                       </ul>
                     </li>
                     <li class="draggable" draggable="true" data-hasChild="true">
-                      사용자 직접생성 폴더2 <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
+                      사용자 직접생성 폴더2 
+                      <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
+                      <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
-                        <li class="draggable" draggable="true">메뉴 2.1</li>
-                        <li class="draggable" draggable="true">메뉴 2.2</li>
+                        <li class="draggable" draggable="true">
+                          메뉴 2.1
+                          <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                        </li>
+                        <li class="draggable" draggable="true">
+                          메뉴 2.2
+                          <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                        </li>
                       </ul>
                     </li>
                     <li class="draggable" draggable="true" data-hasChild="false">
                       사용자 직접생성 메뉴3
+                      <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
                     </li>
                   </ul>
                 </div>
@@ -184,192 +124,6 @@
               <div class="footer">
                 <div class="btn-group">
                   <a href="javascript:void(0)" class="btn" onclick="editFavorite(this)">즐겨찾기관리</a>
-                  <a href="" class="btn">Sitemap</a>
-                </div>
-              </div>
-            </div>
-            <div class="tab-content tab-2 recent-menu">
-              <ul class="editable-list">
-                <li>
-                  <a href="" class="remove" title="삭제">
-                    <i class="icon-delete"></i>
-                  </a>
-                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
-                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
-                  <div class="date">22-04-16 07:14:44</div>
-                </li>
-                <li>
-                  <a href="" class="remove" title="삭제">
-                    <i class="icon-delete"></i>
-                  </a>
-                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
-                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
-                  <div class="date">22-04-16 07:14:44</div>
-                </li>
-              </ul>
-              <div class="footer">
-                <div class="btn-group">
-                  <a href="" class="btn">Sitemap</a>
-                </div>
-              </div>
-            </div>
-            <div class="tab-content tab-3 all-menu menu-tree">
-              <ul class="depth--1">
-                <li class="">
-                  <a href="" class="has-depth open">가동관리</a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="" class="has-depth open">가동관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="" class="has-depth">가동관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="selected-menu">가동관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">가동관리222</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="">가동관리</a></li>
-                    <li><a href="">no depth menu</a></li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a href="" class="has-depth">품질관리</a>
-                  <ul class="depth--2">
-                    <li>
-                      <a href="" class="has-depth open">품질관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="">품질관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">품질관리222</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="" class="has-depth">품질관리</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="">품질관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="">품질관리222글자수max 품질관리222글자수max</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="" class="has-depth">품질관리 depth max test</a>
-                      <ul class="depth--2">
-                        <li>
-                          <a href="" class="">품질관리222</a>
-                        </li>
-                        <li>
-                          <a href="" class="has-depth">품질관리222글자수max 품질관리222글자수max</a>
-                          <ul class="depth--2">
-                            <li>
-                              <a href="" class="has-depth">품질관리333</a>
-                              <ul class="depth--2">
-                                <li>
-                                  <a href="" class="has-depth">품질관리444</a>
-                                  <ul class="depth--2">
-                                    <li>
-                                      <a href="" class="has-depth">품질관리555</a>
-                                      <ul class="depth--2">
-                                        <li>
-                                          <a href="" class="has-depth">품질관리666</a>
-                                          <ul class="depth--2">
-                                            <li>
-                                              <a href="" class="has-depth">품질관리777</a>
-                                              <ul class="depth--2">
-                                                <li>
-                                                  <a href="" class="has-depth">품질관리888</a>
-                                                  <ul class="depth--2">
-                                                    <li>
-                                                      <a href="" class="has-depth">품질관리999</a>
-                                                      <ul class="depth--2">
-                                                        <li>
-                                                          <a href="" class="">품질관리00000000-- 메뉴길이 테스트</a>
-                                                        </li>
-                                                      </ul>
-                                                    </li>
-                                                  </ul>
-                                                </li>
-                                              </ul>
-                                            </li>
-                                          </ul>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a href="" class="">운영관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-                <li class="">
-                  <a href="" class="">보전관리</a>
-                </li>
-              </ul>
-              <div class="footer">
-                <div class="btn-group">
                   <a href="" class="btn">Sitemap</a>
                 </div>
               </div>
@@ -540,7 +294,12 @@
       }
     });
   }
-  
+  function removeMenu(e){
+    if(confirm('삭제하시겠습니까?')){
+      e.parentNode.remove();
+    }
+    
+  }
 
 </script>
 

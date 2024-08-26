@@ -81,6 +81,7 @@
         }
         .sub-menu{
           position: absolute;
+          display: none;
           width: 170px;
           top: 0;
           margin-top: 39px;
@@ -97,7 +98,10 @@
               position: relative;
               display: block;
               font-size: 14px;
-              padding: 7px 8px;
+              padding: 7px 20px 7px 8px;
+              &:hover{
+                color: #2665d6;
+              }
               &.on{
                 color: #2665d6;
                 &:after{
@@ -111,6 +115,10 @@
                   background-image: url('../images/icon_check_blue.png');
                   background-repeat: no-repeat; 
                 }
+              }
+              &.disabled{
+                cursor: default;
+                color: #aaaaaa;
               }
             }
           }

@@ -105,8 +105,14 @@
           }
         }
         &.favorite-menu{
-          &.add{
-            
+          &.edit{
+            .add{
+              padding-bottom: 20px;
+              border-bottom: 1px solid #c1cadb;
+              .add-btn{
+                margin-left: 3px;
+              }
+            }
           }
         }
       }
