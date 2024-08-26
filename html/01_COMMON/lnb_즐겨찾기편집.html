@@ -118,9 +118,20 @@
                       <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
                       <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
-                        <li class="draggable" draggable="true">
+                        <li class="draggable" draggable="true" data-hasChild="true">
                           메뉴 1.1
-                          <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                          <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
+                          <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
+                          <ul class="sub-menu" style="display: block;">
+                            <li class="draggable" draggable="true">
+                              메뉴 1.1.1
+                              <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                            </li>
+                            <li class="draggable" draggable="true">
+                              메뉴 1.1.2
+                              <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
+                            </li>
+                          </ul>
                         </li>
                         <li class="draggable" draggable="true">
                           메뉴 1.2
