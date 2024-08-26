@@ -113,49 +113,49 @@
                 <div class="menu-content">
                   <ul id="menu-list">
                     <li class="draggable" draggable="true" data-hasChild="true">
-                      <input type="text" value="사용자 직접생성 폴더1" class="label">
+                      사용자 직접생성 폴더1 
 
                       <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
                       <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
                         <li class="draggable" draggable="true" data-hasChild="true">
-                          <input class="label" value="메뉴 1.1" placeholder="메뉴 1.1"/>
+                          메뉴 1.1
                           <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
                           <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                           <ul class="sub-menu" style="display: block;">
                             <li class="draggable" draggable="true">
-                              <input class="label" value="메뉴 1.1.1" placeholder="메뉴 1.1.1"/>
+                              메뉴 1.1.1
                               <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
                             </li>
                             <li class="draggable" draggable="true">
-                              <input class="label" value="메뉴 1.1.2" placeholder="메뉴 1.1.2"/>
+                              메뉴 1.1.2
                               <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
                             </li>
                           </ul>
                         </li>
                         <li class="draggable" draggable="true">
-                          <input class="label" value="메뉴 1.2" placeholder="메뉴 1.2"/>
+                          메뉴 1.2
                           <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
                         </li>
                       </ul>
                     </li>
                     <li class="draggable" draggable="true" data-hasChild="true">
-                      <input class="label" value="사용자 직접생성 폴더2 " placeholder="사용자 직접생성 폴더2 "/>
+                      사용자 직접생성 폴더2 
                       <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
                       <span class="toggle-btn"><i class="icon-toggle-arrow-down"></i></span>
                       <ul class="sub-menu">
                         <li class="draggable" draggable="true">
-                          <input class="label" value="메뉴 2.1" placeholder="메뉴 2.1"/>
+                          메뉴 2.1
                           <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
                         </li>
                         <li class="draggable" draggable="true">
-                          <input class="label" value="메뉴 2.2" placeholder="메뉴 2.2"/>
+                          메뉴 2.2
                           <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-menu"></i></span>
                         </li>
                       </ul>
                     </li>
                     <li class="draggable" draggable="true" data-hasChild="false">
-                      <input class="label" value="사용자 직접생성 메뉴3" placeholder="사용자 직접생성 메뉴3"/>
+                      사용자 직접생성 메뉴3
                       <span class="delete-btn" onclick="removeMenu(this)"><i class="icon-delete-folder"></i></span>
                     </li>
                   </ul>
@@ -290,11 +290,6 @@
         ul.appendChild(draggedItem);
       }
     });
-
-    item.addEventListener('click', function(e){
-      console.log('click', this, this.querySelector('.label'));
-      this.querySelector('.label').prop('contenteditable', true);
-    })
   });
 
   // Menu Dragging

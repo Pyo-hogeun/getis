@@ -168,14 +168,7 @@
           /* Drag and drop styles */
         }
       }
-      input.label{
-        background-color: transparent;
-        width: calc(100% - 40px);
-        font-size: 15px;
-        font-weight: 700;
-        border: 0;
-        color: #333333;
-      }
+
       .sub-menu {
         display: none;
         margin-top: 10px;
@@ -186,10 +179,6 @@
           line-height: 23px;
           font-size: 13px;
           color: #333333;
-          input.label{
-            font-size: 13px;
-            font-weight: 400;
-          }
           &:before{
             top: 3px;
           }
@@ -234,7 +223,6 @@
           }
         }
       }
-      
     }
 
 
