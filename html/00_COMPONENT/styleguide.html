@@ -66,6 +66,8 @@
     <input type="text" class="gts-input" placeholder="place holder">
     <input type="text" class="gts-input error" placeholder="place holder" value="입력오류">
     <br><br>
+    <input type="text" class="gts-input w-wide" placeholder="width 100%" value="">
+    <br><br>
     <input type="text" class="gts-input w-70" value="100">
     <input type="text" class="gts-input w-70" value="100">
     <br><br>
@@ -200,6 +202,44 @@
         </tbody>
       </table>
     </div>
+    <h3>가운데 정렬</h3>
+    <div class="standard-table align-c" style="max-height: 150px">
+      <table>
+        <colgroup>
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>
+              <span class="require-suffix">모듈명</span>
+            </th>
+            <td>
+              <select name="" id="" class="gts-select">
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+                <option value="">롤링생산관리</option>
+              </select>
+            </td>
+            <th>
+              <span class="require-suffix">단위업무명</span>
+            </th>
+            <td>
+              <input type="text" class="gts-input w-140">
+            </td>
+          </tr>
+          <tr>
+            <th>단위업무코드</th>
+            <td><input type="text" class="gts-input w-140" value="프레스"></td>
+            <th>영문약어</th>
+            <td><input type="text" class="gts-input w-140" value="MEP"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <hr>
 
@@ -249,7 +289,7 @@
           </tr>
           <tr>
             <td>홍길동</td>
-            <td>기준정보시스템팀</td>
+            <td class="blank"></td>
             <td>책임매니저</td>
           </tr>
           <tr>

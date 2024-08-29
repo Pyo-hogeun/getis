@@ -3,7 +3,7 @@ html, body, input, pre{
 }
 
 // 공통 간격용 class
-@for $i from 1 through 30 {
+@for $i from 0 through 30 {
   .mt-#{5*$i}{
     margin-top: #{5*$i}px;
   }

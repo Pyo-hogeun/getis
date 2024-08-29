@@ -32,7 +32,6 @@
   border-radius: 4px;
   overflow: auto;
   transition: height $listFoldDuration;
-
   table {
     width: 100%;
     th {
@@ -61,6 +60,18 @@
       //   }
       // }
     }
+  }
+  &.align-c{
+   table{
+    thead, tbody{
+      tr{
+        th, td{
+          padding: 2px;
+          text-align: center;
+        }
+      }
+    }
+   } 
   }
 }
 .minimal-table{

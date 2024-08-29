@@ -40,6 +40,9 @@ input.gts-input {
       width: #{10*$i}px;
     }
   }
+  &.w-wide{
+    width: 100%;
+  }
 
   &.icon-search {
     padding-right: 35px;

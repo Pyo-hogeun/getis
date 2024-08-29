@@ -32,7 +32,9 @@
       }
     }
     .suffix{
+      flex: 1 1 50%;
       display: flex;
+      justify-content: flex-end;
       gap: 5px;
       .btn{
         color: #333333;
@@ -45,6 +47,7 @@
     border: 1px solid #dddddd;
     min-height: 80px;
     transition: height $listFoldDuration;
+    
     table{
       width: 100%;
       table-layout: fixed;
@@ -73,6 +76,9 @@
         }
         &:last-child{
           border-right: 0;
+        }
+        &.blank{
+          background-color: #efefef;
         }
       }
       tr{
@@ -108,12 +114,35 @@
           &.selected, &:hover{
             background-color: $listHoverBg;
           }
+          &.has-rowspan{
+            td{
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+          }
+          .inner-table{
+            .tr{
+              padding: 5px 0;
+              border-bottom: 1px solid #dddddd;
+              &:last-child{
+                border-bottom: 0;
+              }
+            }
+          }
         }
       }
     }
     &.layout-fixed{
       table{
         min-width: 100%;
+      }
+    }
+    &.align-l{
+      table{
+        th, td{
+          text-align: left;
+          padding-left: 4px;
+        }
       }
     }
   }

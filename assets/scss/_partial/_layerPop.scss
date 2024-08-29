@@ -4,8 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  height: 500px;
-  overflow: auto;
+  min-height: 500px;
+  max-height: calc(90vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #ffffff;
   z-index: $zindexLayerPop;
   padding: 30px 40px;
@@ -14,7 +16,7 @@
     width: 800px;
   }
   // 공통 사이즈 class
-  @for $i from 1 through 10 {
+  @for $i from 1 through 20 {
     &.w-#{100*$i} {
       width: #{100*$i}px;
     }
@@ -48,6 +50,12 @@
     }
   }
   .body{
+    margin-left: -40px;
+    width: calc(100% + (40px * 2));
+    padding: 0 40px;
+    max-height: 65vh;
+    box-sizing: border-box;
+    overflow-y: auto;
     h4{
       font-size: 16px;
       color: #333333;
@@ -59,13 +67,12 @@
     }
   }
   .footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #ffffff;
     text-align: center;
-    padding-bottom: 30px;
     .btn{
       min-width: 62px;
     }

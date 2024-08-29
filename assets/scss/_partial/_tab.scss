@@ -1,4 +1,4 @@
-.editable-tab{
+.tab-wrap{
   display: flex;
   border-bottom: 1px solid #dddddd;
   font-size: 0;
@@ -10,7 +10,7 @@
     min-width: 150px;
     font-size: 14px;
     color: #777777;
-    padding: 8px 34px 6px 16px;
+    padding: 8px 16px;
     background-color: #fafafa;
     border: 1px solid #dddddd;
     border-top-left-radius: 4px;
