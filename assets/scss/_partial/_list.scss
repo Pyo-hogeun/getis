@@ -92,6 +92,11 @@
             // border-bottom: 0;
           }
         }
+        &.divide{
+          td{
+            border-top: 1px solid #999;
+          }
+        }
       }
       .sticky{
         position: sticky;
@@ -145,6 +150,7 @@
         }
       }
     }
+    
   }
   .list-footer{
     margin-top: 15px;
