@@ -77,5 +77,6 @@
     .btn{
       min-width: 62px;
     }
+    @include flex-between
   }
 }

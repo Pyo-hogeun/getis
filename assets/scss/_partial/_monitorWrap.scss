@@ -1,0 +1,24 @@
+.monitor-wrap{
+  .grid-container{
+    .header{
+      @include flex-between;
+      h3{
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+      }
+    }
+  }
+  .chart-group{
+    display: flex;
+    justify-content: space-between;
+    .chart-item{
+      flex: 0 0 250px;
+      height: 250px;
+      border: 1px solid #efefef;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+  }
+}
