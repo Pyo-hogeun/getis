@@ -452,211 +452,536 @@
         <div class="list-topper mt-10 mb-10 flex-group">
           <div class="suffix">
             <a href="" class="btn black-border">
-              <i class="icon-create prefix"></i>
-              등록
+              환산세트 옵션
             </a>
             <a href="" class="btn black-border">
-              <i class="icon-remove prefix"></i>
-              삭제
+              저장
+            </a>
+            <a href="" class="btn black-border">
+              개정
             </a>
           </div>
         </div>
-        <div class="list-wrap">
-          <div class="table-wrap" style="height: 45vh;">
-            <table>
-              <colgroup>
-                <col style="width: 40px">
-              </colgroup>
-              <thead class="sticky">
+        <div class="table-wrap" style="height: 45vh;">
+          <table class="layout-fixed">
+            <colgroup>
+              <col style="width: 190px"> <!-- PART NAME -->
+              <col style="width: 110px"> <!-- 공정 -->
+              <col style="width: 90px"> <!-- 공정명 -->
+              <col style="width: 90px"> <!-- 다이타입 -->
+              <col style="width: 90px"> <!-- 환산세트 -->
+              <col style="width: 90px"> <!-- 내외작구분 -->
+              <col style="width: 90px"> <!-- 예산총액 -->
 
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="checkbox" name="" id="chk2" class="gts-chk">
-                    <label for="chk2"></label>
-                  </td>
-                  <td>
-                    <!-- PART_NO -->
-                    <input type="text" class="gts-input w-140" value="71112-K6700">
-                  </td>
-                  <td>
-                    <!-- PART NAME -->
-                    <input type="text" class="gts-input w-100" value="MEMBER ASSY-DASH LWR SIDE,LH">
-                  </td>
-                  <td>
-                    <!-- 재질 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">SGACUD-E 60/60</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 내/외관 -->
-                    <select name="" id="" class="gts-select w-70">
-                      <option value="">내관</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 두께 -->
-                    <input type="text" class="gts-input w-50" value="0.65">
-                  </td>
-                  <td>
-                    <!-- 비교차 -->
-                    <input type="text" class="gts-input w-50" value="4">
-                  </td>
-                  <td>
-                    <!-- 목표차 -->
-                    <input type="text" class="gts-input w-50" value="4">
-                  </td>
-                  <td>
-                    <!-- 실적 -->
-                    <input type="text" class="gts-input w-50" value="4">
-                  </td>
-                  <td>
-                    <!-- BLK'G유무 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">오실레이터</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- BLK'G라인 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">1BL1</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- HEM'G유무 -->
-                    <select name="" id="" class="gts-select w-70">
-                      <option value="">미사용</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 제작처 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">HMC시작1</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 생산라인 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">미사용</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 개발담당 -->
-                    <input type="text" class="gts-input w-90" value="김현대">
-                  </td>
-                  <td>
-                    <!-- 선행담당 -->
-                    <input type="text" class="gts-input w-90" value="김현대">
-                  </td>
-                  <td>
-                    <!-- OPS 사용유무 -->
-                    <select name="" id="" class="gts-select w-70">
-                      <option value="">미사용</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- OPS 첨부 -->
-                    <a href="" class="btn tertiary">업로드</a>
-                  </td>
+              <col style="width: 60px"> <!-- 금형사이즈 -->
+              <col style="width: 60px"> <!-- 금형사이즈 -->
+              <col style="width: 60px"> <!-- 금형사이즈 -->
+              <col style="width: 60px"> <!-- 금형사이즈 -->
+              <col style="width: 60px"> <!-- 금형사이즈 -->
+              <col style="width: 60px"> <!-- 금형사이즈 -->
 
-                </tr>
-                <tr class="selected">
-                  <td>
-                    <input type="checkbox" name="" id="chk3" class="gts-chk" checked>
-                    <label for="chk3"></label>
-                  </td>
-                  <td>
-                    <!-- PART_NO -->
-                    <input type="text" class="gts-input w-140" value="71112-K6700">
-                  </td>
-                  <td>
-                    <!-- PART NAME -->
-                    <input type="text" class="gts-input w-100" value="MEMBER ASSY-DASH LWR SIDE,LH">
-                  </td>
-                  <td>
-                    <!-- 재질 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">SGACUD-E 60/60</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 내/외관 -->
-                    <select name="" id="" class="gts-select w-70">
-                      <option value="">내관</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 두께 -->
-                    <input type="text" class="gts-input w-50" value="0.65">
-                  </td>
-                  <td>
-                    <!-- 비교차 -->
-                    <input type="text" class="gts-input w-50" value="4">
-                  </td>
-                  <td>
-                    <!-- 목표차 -->
-                    <input type="text" class="gts-input w-50" value="4">
-                  </td>
-                  <td>
-                    <!-- 실적 -->
-                    <input type="text" class="gts-input w-50" value="4">
-                  </td>
-                  <td>
-                    <!-- BLK'G유무 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">오실레이터</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- BLK'G라인 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">1BL1</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- HEM'G유무 -->
-                    <select name="" id="" class="gts-select w-70">
-                      <option value="">미사용</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 제작처 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">HMC시작1</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 생산라인 -->
-                    <select name="" id="" class="gts-select w-100">
-                      <option value="">미사용</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- 개발담당 -->
-                    <input type="text" class="gts-input w-90" value="김현대">
-                  </td>
-                  <td>
-                    <!-- 선행담당 -->
-                    <input type="text" class="gts-input w-90" value="김현대">
-                  </td>
-                  <td>
-                    <!-- OPS 사용유무 -->
-                    <select name="" id="" class="gts-select w-70">
-                      <option value="">미사용</option>
-                    </select>
-                  </td>
-                  <td>
-                    <!-- OPS 첨부 -->
-                    <a href="" class="btn tertiary">업로드</a>
-                  </td>
+              <col style="min-width: 60px"> <!-- 재질 -->
+              <col style="min-width: 60px"> <!-- 재질 -->
+              <col style="min-width: 60px"> <!-- 재질 -->
+              <col style="min-width: 60px"> <!-- 재질 -->
+            </colgroup>
+            <thead class="sticky">
+              <tr>
+                <th rowspan="2">PART NAME</th>
+                <th rowspan="2">공정</th>
+                <th rowspan="2">공정명</th>
+                <th rowspan="2">다이타입</th>
+                <th rowspan="2">환산세트</th>
+                <th rowspan="2">내외작구분</th>
+                <th rowspan="2">예산총액</th>
+                <th colspan="6">금형사이즈</th>
+                <th rowspan="2">금형중량</th>
+                <th colspan="4">재질</th>
+              </tr>
+              <tr>
+                <th colspan="3">HOOK제외</th>
+                <th colspan="3">HOOK포함</th>
 
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                <th>UPR(DIE)</th>
+                <th>LWR(B/H)</th>
+                <th>PAD(PCH)</th>
+                <th>PAD(PCH)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <!-- PART NAME -->
+                  <input type="text" class="gts-input w-180" value="MEMBER ASSY-DASH LWR SIDE,LH">
+                </td>
+                <td>
+                  <!-- 공정 -->
+                  <input type="text" class="gts-input w-100" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 공정명 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 다이타입 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 환산세트 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 내외작구분 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 예산총액 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+
+                <!-- 금형사이즈 -->
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+
+                <td>
+                  <!-- 금형중량 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- PART NAME -->
+                  <input type="text" class="gts-input w-180" value="MEMBER ASSY-DASH LWR SIDE,LH">
+                </td>
+                <td>
+                  <!-- 공정 -->
+                  <input type="text" class="gts-input w-100" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 공정명 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 다이타입 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 환산세트 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 내외작구분 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 예산총액 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+
+                <!-- 금형사이즈 -->
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+
+                <td>
+                  <!-- 금형중량 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- PART NAME -->
+                  <input type="text" class="gts-input w-180" value="MEMBER ASSY-DASH LWR SIDE,LH">
+                </td>
+                <td>
+                  <!-- 공정 -->
+                  <input type="text" class="gts-input w-100" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 공정명 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 다이타입 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 환산세트 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 내외작구분 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 예산총액 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+
+                <!-- 금형사이즈 -->
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+
+                <td>
+                  <!-- 금형중량 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- PART NAME -->
+                  <input type="text" class="gts-input w-180" value="MEMBER ASSY-DASH LWR SIDE,LH">
+                </td>
+                <td>
+                  <!-- 공정 -->
+                  <input type="text" class="gts-input w-100" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 공정명 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 다이타입 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 환산세트 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 내외작구분 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- 예산총액 -->
+                  <input type="text" class="gts-input w-80" value="" placeholder="입력">
+                </td>
+
+                <!-- 금형사이즈 -->
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK제회 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+                <td>
+                  <!-- HOOK포함 -->
+                  <input type="text" class="gts-input w-50" value="" placeholder="입력">
+                </td>
+
+                <td>
+                  <!-- 금형중량 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+                <td>
+                  <!-- 재질 -->
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide" value="" placeholder="입력">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+
+      <h3>Detail</h3>
+      <div class="standard-table">
+        <table>
+          <colgroup>
+            <col style="width: 50px">
+            <col style="width: 100px">
+            <col style="width: 100px">
+            <col style="width: 100px">
+            <col style="width: 100px">
+
+            <col style="width: 50px">
+            <col style="width: 100px">
+            <col style="width: 100px">
+            <col style="width: 100px">
+            <col style="width: 100px">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th colspan="2"><span>작성자</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th><span>작성일자</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th colspan="2"><span>예산총계</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th><span>설계자</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th colspan="2"><span>PART NAME</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th><span>공정</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th colspan="2"><span>작번</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th><span>환산세트</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th colspan="2"><span>공정명</span></th>
+              <td colspan="3"><input type="text" class="gts-input w-wide" placeholder="입력"></td>
+              <th colspan="2"><span>MASTER</span></th>
+              <td colspan="3"><input type="text" class="gts-input w-wide" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th colspan="2"><span>내외작구분</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th><span>시작일자</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th colspan="2"><span>완료일자</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th><span>완료여부</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th colspan="2"><span>금형사이즈</span></th>
+              <th><span>좌우(장축)</span></th>
+              <th><span>전후(단축)</span></th>
+              <th><span>높이</span></th>
+              <th rowspan="2" colspan="2"><span>금형재질</span></th>
+              <th><span>LWR</span></th>
+              <th><span>UPR</span></th>
+              <th><span>PAD</span></th>
+            </tr>
+            <tr>
+              <th rowspan="2"></th>
+              <th><span>HOOK 제외</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th><span>HOOK 포함</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th></th>
+              <th><span>도금</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th colspan="2"><span>구분</span></th>
+              <th><span>LWR</span></th>
+              <th><span>UPR</span></th>
+              <th><span>총합</span></th>
+              <th colspan="2" rowspan="2"><span>스틸재질</span></th>
+              <th><span>TRIM</span></th>
+              <th><span>FLANGE</span></th>
+              <th><span>RESTRIKE</span></th>
+            </tr>
+            <tr>
+              <th colspan="2" rowspan="2"><span>금형 중량</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <th></th>
+              <th><span>표면처리</span></th>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+              <td><input type="text" class="gts-input" placeholder="입력"></td>
+            </tr>
+            <tr>
+              <th colspan="2"><span>비고</span></th>
+              <td colspan="8"><input type="text" class="gts-input w-wide" placeholder="입력"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
