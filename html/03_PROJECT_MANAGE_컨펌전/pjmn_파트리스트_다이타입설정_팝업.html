@@ -427,16 +427,12 @@
   <div class="dim"></div>
 
   <!-- 파트리스트 파트등록 팝업 -->
-  <div class="layer-pop w-1000">
+  <div class="layer-pop w-1000 die-type-setting">
     <div class="header">
       <h3>파트리스트 등록</h3>
       <a href="" class="btn-close-pop"></a>
     </div>
     <div class="body">
-      <!-- <div class="tab-wrap mt-10">
-        <div class="tab">파트 등록</div>
-        <div class="tab on">다이타입 설정</div>
-      </div> -->
       <div class="capsule-tab mt-20 mb-20">
         <a href="" class="tab on">파트 등록</a>
         <a href="" class="tab">다이타입 설정</a>
@@ -444,7 +440,7 @@
 
       <div class="grid-wrap">
         <div class="grid-container col-8">
-          <div class="standard-table">
+          <div class="standard-table mb-10">
             <table>
               <colgroup>
                 <col style="width: 100px;">
@@ -462,437 +458,426 @@
               </tbody>
             </table>
           </div>
-          <div class="list-wrap">
-            <div class="list-topper mt-10 mb-10 flex-group">
-              <div class="suffix">
-                <a href="" class="btn black-border">
-                  <i class="icon-create prefix"></i>
-                  등록
-                </a>
-                <a href="" class="btn black-border">
-                  <i class="icon-remove prefix"></i>
-                  삭제
-                </a>
-              </div>
-            </div>
-            <div class="list-wrap">
-              <div class="table-wrap" style="height: 58vh;">
-                <table>
-                  <colgroup>
-                    <col style="width: 60px">
-                    <col style="width: 140px">
-                    <col style="width: 140px">
-                    <col style="width: 140px">
-                    <col style="width: 140px">
-                    <col style="width: 140px">
-                  </colgroup>
-                  <thead class="sticky">
-                    <tr>
-                      <th rowspan="2">다이타입</th>
-                      <th colspan="5">PART NAME</th>
-                    </tr>
-                    <tr>
-                      <th>열묶음</th>
-                      <th>열묶음</th>
-                      <th>열묶음</th>
-                      <th>열묶음</th>
-                      <th>열묶음</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- 싱글 -->
-                    <tr>
-                      <td>싱글</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /싱글 -->
-                    <!-- 트윈 -->
-                    <tr class="divide">
-                      <td>트윈</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /트윈 -->
-                    <!-- 더블 -->
-                    <tr class="divide">
-                      <td>더블</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /더블 -->
-                    <!-- 갱 -->
-                    <tr class="divide">
-                      <td>갱</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value="">SIDE ORT LH</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /갱 -->
-                    <!-- 트리플 -->
-                    <tr class="divide">
-                      <td>트리플</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /트리플 -->
-                    <!-- 쿼드러플 -->
-                    <tr class="divide">
-                      <td>쿼드러플</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /쿼드러플 -->
-                    <!-- 다캐비티 -->
-                    <tr class="divide">
-                      <td>다캐비티</td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                      <td>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130 mb-5">
-                          <option value=""></option>
-                        </select>
-                        <select name="" id="" class="gts-select w-130">
-                          <option value=""></option>
-                        </select>
-                      </td>
-                    </tr>
-                    <!-- /다캐비티 -->
-                  </tbody>
-                </table>
-              </div>
+          <div class="list-wrap die-type-list">
+            <a href="" class="btn btn-add-column">
+              + 열추가
+            </a>
+            <div class="table-wrap" style="height: 62.4vh;">
+              <table>
+                <colgroup>
+                  <col style="width: 60px">
+                  <col style="width: 140px">
+                  <col style="width: 140px">
+                  <col style="width: 140px">
+                  <col style="width: 140px">
+                  <col style="width: 140px">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th rowspan="2">다이타입</th>
+                    <th colspan="5">PART NAME</th>
+                  </tr>
+                  <tr>
+                    <th>열묶음</th>
+                    <th>열묶음</th>
+                    <th>열묶음</th>
+                    <th>열묶음</th>
+                    <th>열묶음</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 싱글 -->
+                  <tr>
+                    <td>싱글</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /싱글 -->
+                  <!-- 트윈 -->
+                  <tr class="divide">
+                    <td>트윈</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /트윈 -->
+                  <!-- 더블 -->
+                  <tr class="divide">
+                    <td>더블</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /더블 -->
+                  <!-- 갱 -->
+                  <tr class="divide">
+                    <td>갱</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value="">SIDE ORT LH</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /갱 -->
+                  <!-- 트리플 -->
+                  <tr class="divide">
+                    <td>트리플</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /트리플 -->
+                  <!-- 쿼드러플 -->
+                  <tr class="divide">
+                    <td>쿼드러플</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /쿼드러플 -->
+                  <!-- 다캐비티 -->
+                  <tr class="divide">
+                    <td>다캐비티</td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130 mb-5">
+                        <option value=""></option>
+                      </select>
+                      <select name="" id="" class="gts-select w-130">
+                        <option value=""></option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- /다캐비티 -->
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
