@@ -42,15 +42,7 @@
   .app-list{
     flex: 0 0 240px;
     box-sizing: border-box;
-    .search-app{
-      width: 100%;
-      input{
-        width: 100%;
-        background-image: url('../images/icon_search_gray.png');
-        background-repeat: no-repeat;
-        background-position: right 5px center;
-      }
-    }
+    
     >ul{
       height: calc(100% - 42px);
       overflow-y: auto;

@@ -12,5 +12,29 @@
     .list-topper{
       margin-bottom: 5px;
     }
+    .trade-btn-group{
+      margin-left: 20px;
+      margin-right: 25px;
+      .btn{
+        margin: 3px 0;
+      }
+      .btn.to-left{
+        img{
+          transform: rotate(90deg);
+        }
+      }
+      .btn.to-right{
+        img{
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+  .list-search-box{
+    display: block;
+    .search-item{
+      display: flex;
+      align-items: center;
+    }
   }
 }
