@@ -50,15 +50,34 @@
         border-bottom: 1px solid #dddddd;
         padding: 2px 2px 2px 16px;
         @include align;
-        // &:last-child{
-        //   border-right: 0;
-        // }
+        // 공통 간격용 class
+        @for $i from 0 through 30 {
+          &.mt-#{5*$i}{
+            margin-top: #{5*$i}px;
+          }
+          &.mb-#{5*$i}{
+            margin-bottom: #{5*$i}px;
+          }
+          &.mr-#{5*$i}{
+            margin-right: #{5*$i}px;
+          }
+          &.ml-#{5*$i}{
+            margin-left: #{5*$i}px;
+          }
+          &.pt-#{5*$i}{
+            padding-top: #{5*$i}px;
+          }
+          &.pb-#{5*$i}{
+            padding-bottom: #{5*$i}px;
+          }
+          &.pr-#{5*$i}{
+            padding-right: #{5*$i}px;
+          }
+          &.pl-#{5*$i}{
+            padding-left: #{5*$i}px;
+          }
+        }
       }
-      // &:last-child{
-      //   th, td{
-      //     border-bottom: 0;
-      //   }
-      // }
     }
   }
   &.align-c{
@@ -89,6 +108,33 @@
         padding: 2px 2px 2px 16px;
         color: #333333;
         text-align: left;
+        // 공통 간격용 class
+        @for $i from 0 through 30 {
+          &.mt-#{5*$i}{
+            margin-top: #{5*$i}px;
+          }
+          &.mb-#{5*$i}{
+            margin-bottom: #{5*$i}px;
+          }
+          &.mr-#{5*$i}{
+            margin-right: #{5*$i}px;
+          }
+          &.ml-#{5*$i}{
+            margin-left: #{5*$i}px;
+          }
+          &.pt-#{5*$i}{
+            padding-top: #{5*$i}px;
+          }
+          &.pb-#{5*$i}{
+            padding-bottom: #{5*$i}px;
+          }
+          &.pr-#{5*$i}{
+            padding-right: #{5*$i}px;
+          }
+          &.pl-#{5*$i}{
+            padding-left: #{5*$i}px;
+          }
+        }
       }
     }
   }
