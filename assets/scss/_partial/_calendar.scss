@@ -1,0 +1,90 @@
+.gts-calendar-toolbar{
+  display: flex;
+  position:relative;
+  margin-bottom: 16px;
+  border-top: 1px solid #DDD;
+  padding-top: 10px;
+  .prefix{
+    display: flex;
+    flex: 1 1 50%;
+    align-items: flex-end;
+  }
+  .center{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .suffix{
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .btn + .btn{
+      margin-left: 5px;
+    }
+  }
+  button{
+    width: 44px;
+    height: 24px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    font-size: 11px;
+    color: #777;
+    &.gts-calendar-prev-month, 
+    &.gts-calendar-next-month{
+      border: 0;
+      font-size: 14px;
+    }
+  }
+  .rbc-toolbar-label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .icon-calendar{
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+.rbc-calendar{
+  .rbc-month-view{
+    border-radius: 4px;
+    overflow: hidden;
+    .rbc-month-header{
+      .rbc-header{
+        background-color: #4c556b;
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 6px 0;
+      }
+    }
+    .rbc-date-cell{
+      padding: 7px;
+      text-align: left;
+      font-size: 12px;
+      color: #777;
+      &.rbc-current{
+        .rbc-button-link{
+          position: relative;
+          text-decoration: underline;
+          &:after{
+            position: absolute;
+            right: -30px;
+            content: '오늘';
+          }
+        }
+      }
+    }
+    .rbc-off-range-bg{
+      background-color: #f8f8f8;
+    }
+    .rbc-today{
+      background-color: #f4f8fc;
+    }
+    
+  }
+}
