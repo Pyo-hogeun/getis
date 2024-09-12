@@ -360,6 +360,44 @@
     <a href="" class="tab">첨부파일</a>
   </div>
   <hr>
+
+  <!-- chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <h2>CHART doughnut</h2>
+  <div class="chart-doughnut" style="width: 125px;">
+    <canvas id="chartDoughnutHalf"></canvas>
+    <label for="chartDoughnutHalf">
+      <span class="title">Gauge 01</span>
+      <span class="value">80%</span>
+    </label>
+  </div>
+  <script>
+    const ctxDhg = document.getElementById('chartDoughnutHalf');
+    const DataDoughnut = {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+            label: ['진행'],
+            data: [80, 20],
+            backgroundColor: ['#34d2d8', '#DDD']
+          }]
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        borderWidth: 0,
+        cutout: '60%',
+        plugins: {
+          tooltip: {
+            enabled: false,
+          }
+        }
+      }
+    }
+    const doughnutChart = new Chart(ctxDhg, DataDoughnut);
+
+  </script>
+  
 </body>
 
 

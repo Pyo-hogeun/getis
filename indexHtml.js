@@ -103,7 +103,7 @@ let euckrStr = iconv.encode(htmlTemplate, 'euc-kr');
 // fs.writeFile('index.html', euckrStr, 'binary', ()=>{
 //   console.log('성공');
 // });
-fs.writeFile('sitemap.html', htmlTemplate, ()=>{
+fs.writeFile('index.html', htmlTemplate, ()=>{
   console.log('성공');
 });
 // console.log(htmlTemplate);

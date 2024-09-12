@@ -1,7 +1,9 @@
 html, body, input, pre{
   font-family: 'Pretendard', sans-serif;
 }
-
+abbr{
+  text-decoration: none;
+}
 // 공통 간격용 class
 @for $i from 0 through 30 {
   .mt-#{5*$i}{
