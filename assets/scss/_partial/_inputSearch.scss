@@ -7,3 +7,21 @@
     background-position: right 5px center;
   }
 }
+.search-input-with-button{
+  display: flex;
+  input{
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    &:focus{
+      &+button{
+        border-color: $primary;
+      }
+    }
+  }
+  button{
+    border: 1px solid #dddddd;
+    border-width: 1px 1px 1px 0;
+    background-color: transparent;
+  }
+}
