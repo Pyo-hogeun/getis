@@ -1,16 +1,18 @@
 .part-list-manage{
-  margin-top: 10px;
   .trade-group{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
   .trade-item{
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     .list-topper{
-      margin-bottom: 5px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
     }
     .trade-btn-group{
       margin-left: 20px;
