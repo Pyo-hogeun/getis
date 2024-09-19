@@ -599,11 +599,13 @@
       <a href="" class="btn-close-pop"></a>
     </div>
     <div class="body">
-      <div class="standard-table task-add-table align-c">
+      <div class="standard-table task-add-table align-c dark-header">
         <table>
           <colgroup>
-            <col style="width: 50px;">
             <col style="width: 80px;">
+            <col style="width: 160px;">
+            <col style="width: auto;">
+            <col style="width: 160px;">
           </colgroup>
           <thead>
             <tr>
@@ -614,26 +616,26 @@
           </thead>
           <tbody>
             <tr>
-              <th rowspan="2">입력</th>
+              <td rowspan="2">입력</td>
               <td>업무리스트</td>
-              <th>업무분류</th>
               <td>
-                <select name="" id="" class="gts-select">
+                <select name="" id="" class="gts-select w-wide">
                   <option value="">선택</option>
                 </select>
               </td>
-              <th>업무명</th>
+              <td>업무명</td>
               <td>
-                <input type="text" class="gts-input">
+                <input type="text" class="gts-input w-wide">
               </td>
             </tr>
             <tr>
               <td>업무리스트</td>
-              <td colspan="4">
+              <td colspan="3">
                 <div class="list-wrap">
-                  <div class="list-topper mt-20 flex-group">
+                  <div class="list-topper flex-group mt-5">
                     <div class="suffix">
                       <a href="" class="btn tertiary">
+                        <i class="icon-move-column"></i>
                         행 순서 조절
                       </a>
                       <a href="" class="btn black-border">
@@ -1096,7 +1098,7 @@
         </table>
       </div>
     </div>
-    <div class="footer pt-10 pb-0">
+    <div class="footer pt-30 pb-0">
       <a href="" class="btn tertiary">취소</a>
       <a href="" class="btn primary">저장</a>
     </div>

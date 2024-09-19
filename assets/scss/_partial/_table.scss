@@ -92,6 +92,15 @@
     }
    } 
   }
+  &.dark-header{
+    table{
+      th{
+        background-color: #4c556b;
+        color: #ffffff;
+        font-size: 13px;
+      }
+    }
+  }
 }
 .minimal-table{
   border: 1px solid #dddddd;

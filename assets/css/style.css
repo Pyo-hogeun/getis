@@ -1403,6 +1403,12 @@ body:hover::-webkit-scrollbar, html:hover::-webkit-scrollbar, div:hover::-webkit
   background-image: url("../images/icon_flag.png");
 }
 
+.icon-move-column {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon_move_column.png");
+}
+
 body {
   background-color: #f0f0f0;
 }
@@ -4380,6 +4386,11 @@ table select.gts-select {
 .standard-table.align-c table thead tr th, .standard-table.align-c table thead tr td, .standard-table.align-c table tbody tr th, .standard-table.align-c table tbody tr td {
   padding: 2px;
   text-align: center;
+}
+.standard-table.dark-header table th {
+  background-color: #4c556b;
+  color: #ffffff;
+  font-size: 13px;
 }
 
 .minimal-table {
