@@ -1,37 +1,60 @@
 .editable-tab{
-  display: flex;
-  border-bottom: 1px solid #dddddd;
-  font-size: 0;
-  margin-bottom: -1px;
-  .tab{
-    position: relative;
-    display: inline-block;
-    height: 32px;
-    min-width: 150px;
-    font-size: 14px;
-    color: #777777;
-    padding: 8px 34px 6px 16px;
-    background-color: #fafafa;
-    border: 1px solid #dddddd;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    margin-bottom: -1px;
-    box-sizing: border-box;
-    line-height: 1;
-    cursor: pointer;
-    &.on{
-      border-bottom: 1px solid #ffffff;
-      background-color: #ffffff;
-      color: $success2;
-      font-weight: 700;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar-thumb{
+    // background-color: #dddddd;
+    // border-radius: 4px;
+    // transition: all 3s;
+  }
+  &::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+  }
+  &:hover{
+    &::-webkit-scrollbar-thumb{
+      background-color: #aaaaaa;
     }
-    .btn-delete{
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      &:hover{
-        background-color: $gray01;
+    &::-webkit-scrollbar{
+      background-color: #eeeeee;
+    }
+  }
+  -webkit-overflow-scrolling: touch;
+  .scroll-wrap{
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    font-size: 0;
+    margin-bottom: -1px;
+    transition: transform .3s;
+    .tab{
+      position: relative;
+      display: inline-block;
+      height: 32px;
+      min-width: 150px;
+      font-size: 14px;
+      color: #777777;
+      padding: 8px 34px 6px 16px;
+      background-color: #fafafa;
+      border: 1px solid #dddddd;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      margin-bottom: -1px;
+      box-sizing: border-box;
+      line-height: 1;
+      cursor: pointer;
+      &.on{
+        border-bottom: 1px solid #ffffff;
+        background-color: #ffffff;
+        color: $success2;
+        font-weight: 700;
+      }
+      .btn-delete{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        &:hover{
+          background-color: $gray01;
+        }
       }
     }
   }

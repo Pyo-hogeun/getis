@@ -170,6 +170,49 @@ function gnbSubmenu(){
 
   })
 }
+
+// tab navigator
+function tabNav(){
+  
+  const tabNav = document.getElementById('tabNav');
+  const scrollWrap = document.querySelector('.editable-tab .scroll-wrap');
+  const prev = tabNav.querySelector('.prev');
+  const next = tabNav.querySelector('.next');
+  const tabWrap = document.querySelector('.open-contents-status-bar .editable-tab');
+  const tab = tabWrap.querySelector('.tab');
+  const setContainerWidth = 1300;
+  if( scrollWrap.scrollWidth > setContainerWidth ){
+    tabNav.style.display = 'block';
+  } else {
+    tabNav.style.display = 'none';
+  }
+  let posX = 0;
+  let scroll = scrollWrap.scrollWidth;
+  prev.addEventListener('click', function(e){
+    let step = tab.offsetWidth * 5;
+    if( 0 < posX ){
+      posX -= step;
+      tabWrap.scrollLeft = posX;
+      next.disabled = false;
+      if (0 >= posX){
+        this.disabled = true
+      }
+    }
+  });
+  next.addEventListener('click', function(e){
+    let step = tab.offsetWidth * 5;
+    if( scroll - setContainerWidth > posX ){
+      posX += step;
+      tabWrap.scrollLeft = posX;
+      prev.disabled = false;
+      if( posX >  scroll - setContainerWidth) {
+        this.disabled = true;
+      }  
+    }
+  });
+
+
+}
 // 공통 색상
 const colorSet = ['#34d2d8', '#9a8af8', '#92d159', '#939b9b', '#eac012'];
 
@@ -180,5 +223,5 @@ document.addEventListener('DOMContentLoaded', function () {
   lnbAccordion();
   combo();
   gnbSubmenu();
- 
+  tabNav();
 });
