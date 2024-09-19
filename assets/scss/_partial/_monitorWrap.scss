@@ -3,22 +3,213 @@
     .header{
       @include flex-between;
       h3{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         color: #333;
+        margin: 0 0 10px 0;
+        .notice{
+          font-size: 13px;
+          color: #777;
+          font-weight: 400;
+        }
       }
+    }
+  }
+  .chart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    height: 240px;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    box-sizing: border-box;
+    .legend{
+      min-width: 50px;
+      padding: 27px 0 0 19px;
     }
   }
   .chart-group{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     .chart-item{
-      flex: 0 0 250px;
-      height: 250px;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 0 240px;
+      height: 240px;
       border: 1px solid #efefef;
       border-radius: 4px;
       box-sizing: border-box;
     }
+    .chart-title{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+    .chart-doughnut{
+      label{
+        .value{
+          font-size: 31px;
+        }
+      }
+    }
+  }
+}
 
+
+.monitor-list-wrap{
+  &.table-wrap{
+    // 좌측 열 고정 정의
+    table{
+      width: 100%;
+      overflow-x: auto;
+      .sticky-left{
+        position: sticky;
+        z-index: $zindexListSticky;
+      }
+      .minus{
+        color: #ff5252;
+      }
+      td{
+        padding: 6px 5px;
+        background-color: #FFF;
+        &.bg-total{
+          background-color: #eff7ff;
+        }
+        &.bg-stay{
+          background-color: #f2f2f2;
+        }
+      }
+      thead{
+        tr{
+          &:first-child{
+            th{
+              &:nth-of-type(1){
+                left: 0;
+              }
+              &:nth-of-type(2){
+                left: 50px;
+              }
+              &:nth-of-type(3){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px);
+                border-right: 1px solid #333;
+              }
+            }
+          }
+          &:last-child{
+            th{
+              &:nth-of-type(1){
+                left: 50px;
+              }
+              &:nth-of-type(2){
+                left: calc(50px + 80px);
+              }
+              &:nth-of-type(3){
+                left: calc(50px + 80px + 120px);
+              }
+              &:nth-of-type(4){
+                left: calc(50px + 80px + 120px + 120px);
+              }
+              &:nth-of-type(5){
+                left: calc(50px + 80px + 120px + 120px + 140px);
+              }
+              &:nth-of-type(6){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px);
+              }
+              &:nth-of-type(7){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px);
+              }
+              &:nth-of-type(8){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px);
+              }
+              &:nth-of-type(9){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px);
+              }
+              &:nth-of-type(10){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px + 80px);
+              }
+              &:nth-of-type(11){
+                left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px + 80px + 80px);
+                border-right: 1px solid #333;
+              }
+            }
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            &:nth-of-type(1){
+              left: 0;
+            }
+            &:nth-of-type(2){
+              left: 50px;
+            }
+            &:nth-of-type(3){
+              left: calc(50px + 80px);
+            }
+            &:nth-of-type(4){
+              left: calc(50px + 80px + 120px);
+            }
+            &:nth-of-type(5){
+              left: calc(50px + 80px + 120px + 120px);
+            }
+            &:nth-of-type(6){
+              left: calc(50px + 80px + 120px + 120px + 140px);
+            }
+            &:nth-of-type(7){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px);
+            }
+            &:nth-of-type(8){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px);
+            }
+            &:nth-of-type(9){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px);
+            }
+            &:nth-of-type(10){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px);
+            }
+            &:nth-of-type(11){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px + 80px);
+            }
+            &:nth-of-type(12){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px + 80px + 80px);
+              border-right: 1px solid #333;
+            }
+          }
+        }
+      }
+      tfoot{
+        tr{
+          td{
+            background-color: #eff7ff;
+            &:nth-of-type(1){
+              left: 0;
+            }
+            &:nth-of-type(2){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px);
+            }
+            &:nth-of-type(3){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px);
+            }
+            &:nth-of-type(4){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px);
+            }
+            &:nth-of-type(5){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px + 80px);
+            }
+            &:nth-of-type(6){
+              left: calc(50px + 80px + 120px + 120px + 140px + 80px + 80px + 80px + 80px + 80px + 80px);
+              border-right: 1px solid #333;
+            }
+          }
+        }
+      }
+    }
   }
 }

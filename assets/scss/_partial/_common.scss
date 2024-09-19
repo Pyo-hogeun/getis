@@ -32,6 +32,14 @@ abbr{
   }
 }
 
+//font-weight
+.fw-bold{
+  font-weight: 700;
+}
+.fw-regular{
+  font-weight: 400;
+}
+
 // 스크롤 스타일
 body, html, div, ul{
   &::-webkit-scrollbar-thumb{

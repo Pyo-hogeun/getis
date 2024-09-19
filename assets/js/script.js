@@ -170,12 +170,15 @@ function gnbSubmenu(){
 
   })
 }
+// 공통 색상
+const colorSet = ['#34d2d8', '#9a8af8', '#92d159', '#939b9b', '#eac012'];
+
+
 document.addEventListener('DOMContentLoaded', function () {
   lnbToggle();
   tab('.gts-lnb');
   lnbAccordion();
   combo();
   gnbSubmenu();
+ 
 });
-
-

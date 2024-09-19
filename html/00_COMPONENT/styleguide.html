@@ -386,7 +386,6 @@
   </div>
   <script>
     const ctxDhg = document.getElementById('chartDoughnutHalf');
-    const colorSet = ['#34d2d8', '#9a8af8', '#92d159', '#939b9b', '#eac012'];
     const DataDoughnut = {
       type: 'doughnut',
       data: {
@@ -532,12 +531,24 @@
         labels: ['후드','휀더'],
         datasets: [{
           label: 'a',
-          data: [100, 20],
+          data: [100, 20, 50, 60, 5],
           backgroundColor: colorSet[0]
         }, {
           label: 'b',
-          data: [59, 20],
+          data: [59, 100, 2, 120, 40],
           backgroundColor: colorSet[1]
+        },{
+          label: 'c',
+          data: [20, 40, 2, 120, 40],
+          backgroundColor: colorSet[2]
+        },{
+          label: 'd',
+          data: [5, 120, 2, 120, 40],
+          backgroundColor: colorSet[3]
+        },{
+          label: 'e',
+          data: [80, 5, 2, 120, 40],
+          backgroundColor: colorSet[4]
         }]
       },
       options: {

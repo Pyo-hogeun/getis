@@ -19,7 +19,7 @@
   }
 }
 
-.chart-pie{
+.chart-pie, .chart-bar{
   display: flex;
   .legend{
     min-width: 100px;
@@ -46,4 +46,45 @@
       }
     }
   }
+}
+
+.bar-horizon{
+  display: flex;
+  position: relative;
+  height: 20px;
+  &:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 16px;
+    width: 1px;
+    background-color: #777;
+  }
+  .bar-minus, .bar-plus{
+    position: relative;
+    flex: 0 0 50%;
+    .bar{
+      display: inline-block;
+      position: absolute;
+      height: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .bar-minus{
+    .bar{
+      right: 0;
+      background-color: $danger;
+    }
+  }
+  .bar-plus{
+    .bar{
+      left: 0;
+      background-color: #2565d6;
+    }
+  }
+  
 }

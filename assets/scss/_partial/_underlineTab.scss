@@ -1,0 +1,24 @@
+.underline-tab{
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+  .tab{
+    padding: 4px 9px;
+    font-size: 14px;
+    color: #777;
+    &.on{
+      position: relative;
+      font-weight: 700;
+      color: #333;
+      &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        background-color: #333;
+      }
+    }
+  }
+}

@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
 
   <script src="../../assets/js/script.js"></script>
+  <!-- chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 
   <title>GETIS</title>
 </head>
@@ -440,18 +443,131 @@
         </a>
       </div>
 
-      <div class="capsule-tab">
+      <div class="underline-tab">
         <a href="" class="tab on">제품률 현황</a>
         <a href="" class="tab">제품률 상세</a>
       </div>
 
-      <div class="monitor-wrap grid-wrap">
-        <div class="grid-container col-4">
+      <div class="monitor-wrap grid-wrap mt-20">
+        <div class="grid-container col-4 mr-10">
           <div class="header">
-            <h3>단계별 제품률 전체 현황 <span class="notice">※ MIP/VDR통합</span></h3>
+            <h3>단계별 제품률 전체 현황 <span class="notice ml-5">※ MIP/VDR통합</span></h3>
           </div>
           <div class="chart">
-            chart 영역
+            <div class="chart-bar" style="width: 300px; height: 100%">
+              <canvas id="chartBar" style="width: 300px; height: 100%"></canvas>
+              <div id="bar-legend-container" class="legend"></div>
+            </div>
+            <script>
+              const ctxBar = document.getElementById('chartBar');
+              const htmlLegendPlugin = {
+                id: 'htmlLegend',
+                afterUpdate(chart, args, options) {
+                  const ul = getOrCreateLegendList(chart, options.containerID);
+
+                  // Remove old legend items
+                  while (ul.firstChild) {
+                    ul.firstChild.remove();
+                  }
+
+                  // Reuse the built-in legendItems generator
+                  const items = chart.options.plugins.legend.labels.generateLabels(chart);
+
+                  items.forEach(item => {
+                    console.log(item);
+                    const li = document.createElement('li');
+                    li.classList.add('legend-item');
+
+                    li.onclick = () => {
+                      const { type } = chart.config;
+                      if (type === 'pie' || type === 'doughnut') {
+                        // Pie and doughnut charts only have a single dataset and visibility is per item
+                        chart.toggleDataVisibility(item.index);
+                      } else {
+                        chart.setDatasetVisibility(item.datasetIndex, !chart.isDatasetVisible(item.datasetIndex));
+                      }
+                      chart.update();
+                    };
+
+                    // Color box
+                    const boxSpan = document.createElement('span');
+                    boxSpan.classList.add('color-box');
+                    boxSpan.style.background = item.fillStyle;
+
+                    // Text
+                    const textContainer = document.createElement('p');
+                    textContainer.classList.add('label-text');
+                    const text = document.createTextNode(item.text);
+                    textContainer.appendChild(text);
+
+                    li.appendChild(boxSpan);
+                    li.appendChild(textContainer);
+                    ul.appendChild(li);
+                  });
+                }
+              };
+              const getOrCreateLegendList = (chart, id) => {
+                const legendContainer = document.getElementById(id);
+                let listContainer = legendContainer.querySelector('ul');
+
+                if (!listContainer) {
+                  listContainer = document.createElement('ul');
+                  listContainer.classList.add('legend-list-wrap');
+
+                  legendContainer.appendChild(listContainer);
+                }
+
+                return listContainer;
+              };
+
+              const DataBar = {
+                type: 'bar',
+                data: {
+                  labels: ['후드', '휀더'],
+                  datasets: [{
+                    label: 'a',
+                    data: [100, 20, 50, 60, 5],
+                    backgroundColor: colorSet[0]
+                  }, {
+                    label: 'b',
+                    data: [59, 100, 2, 120, 40],
+                    backgroundColor: colorSet[1]
+                  }, {
+                    label: 'c',
+                    data: [20, 40, 2, 120, 40],
+                    backgroundColor: colorSet[2]
+                  }, {
+                    label: 'd',
+                    data: [5, 120, 2, 120, 40],
+                    backgroundColor: colorSet[3]
+                  }, {
+                    label: 'e',
+                    data: [80, 5, 2, 120, 40],
+                    backgroundColor: colorSet[4]
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: { // defining min and max so hiding the dataset does not change scale range
+                      min: 0,
+                      max: 120
+                    }
+                  },
+                  borderRadius: 2,
+                  plugins: {
+                    htmlLegend: {
+                      // ID of the container to put the legend in
+                      containerID: 'bar-legend-container',
+                    },
+                    legend: {
+                      display: false,
+                    },
+                  },
+                },
+                plugins: [htmlLegendPlugin],
+              };
+              const barChart = new Chart(ctxBar, DataBar);
+            </script>
           </div>
         </div>
         <div class="grid-container col-8 flex-group">
@@ -460,26 +576,98 @@
               <h3>분류별 제품률 전체 현황</h3>
             </div>
             <div class="suffix">
-              <a href="" class="btn black-border">
+              <a href="" class="btn tertiary size-sm">
                 계산기
               </a>
-              <a href="" class="btn black-border">
+              <a href="" class="btn tertiary size-sm">
                 입력
               </a>
             </div>
           </div>
           <div class="chart-group">
             <div class="chart-item">
-              chart1
+              <div class="chart-title">대물 18파트</div>
+              <div class="chart-doughnut" style="width: 220px;">
+                <canvas id="chartDoughnutHalf01"></canvas>
+                <label for="chartDoughnutHalf01">
+                  <span class="title">Gauge 01</span>
+                  <span class="value">80%</span>
+                </label>
+              </div>
+              <script>
+                const ctxDhg01 = document.getElementById('chartDoughnutHalf01');
+                const DataDoughnut01 = {
+                  type: 'doughnut',
+                  data: {
+                    datasets: [{
+                      label: ['진행'],
+                      data: [80, 20],
+                      backgroundColor: [colorSet[0], '#DDD']
+                    }]
+                  },
+                  options: {
+                    rotation: -90,
+                    circumference: 180,
+                    borderWidth: 0,
+                    cutout: '60%',
+                    plugins: {
+                      tooltip: {
+                        enabled: false,
+                      }
+                    }
+                  }
+                }
+                const doughnutChart01 = new Chart(ctxDhg01, DataDoughnut01);
+            
+              </script>
             </div>
             <div class="chart-item">
-              chart2
+              <div class="chart-title">VDR A급 5파트</div>
+              <div class="chart-doughnut" style="width: 220px;">
+                <canvas id="chartDoughnutHalf02"></canvas>
+                <label for="chartDoughnutHalf02">
+                  <span class="title">Gauge 01</span>
+                  <span class="value">80%</span>
+                </label>
+              </div>
+              <script>
+                const ctxDhg02 = document.getElementById('chartDoughnutHalf02');
+                const DataDoughnut02 = {
+                  type: 'doughnut',
+                  data: {
+                    datasets: [{
+                      label: ['진행'],
+                      data: [70, 30],
+                      backgroundColor: [colorSet[1], '#DDD']
+                    }]
+                  },
+                  options: {
+                    rotation: -90,
+                    circumference: 180,
+                    borderWidth: 0,
+                    cutout: '60%',
+                    plugins: {
+                      tooltip: {
+                        enabled: false,
+                      }
+                    }
+                  }
+                }
+                const doughnutChart02 = new Chart(ctxDhg02, DataDoughnut02);
+            
+              </script>
             </div>
             <div class="chart-item">
-              chart3
+              <div class="chart-title">-</div>
+              <a href="" class="btn-add">
+                <i class="icon-plus-lg"></i>
+              </a>
             </div>
             <div class="chart-item">
-              chart4
+              <div class="chart-title">-</div>
+              <a href="" class="btn-add">
+                <i class="icon-plus-lg"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -489,39 +677,248 @@
         <div class="list-topper mt-20 flex-group">
           <div class="prefix">
             <span class="table-title">MIP 파트</span>
-            <span class="list-count">총 <em class="count">12</em>파트</span>
+            <span class="list-count">총 <em class="count fc-blue">12</em>파트</span>
           </div>
         </div>
-        <div class="table-wrap mt-10" style="height: 45vh;">
+        <div class="table-wrap monitor-list-wrap mt-10" style="height: 45vh;">
           <table class="layout-fixed">
             <colgroup>
+              <col style="width: 50px;">
+              <col style="width: 80px;"> <!--번호 -->
+              <col style="width: 120px;"> <!--PART NO -->
+              <col style="width: 120px;"> <!--PART NAME -->
+              <col style="width: 140px;"> <!--재질 -->
+              <col style="width: 80px;"> <!--두께 -->
+              <col style="width: 80px;"> <!--다이타입 -->
+              <!-- 비교차종 제품률 실적 -->
+              <col style="width: 80px;"> <!--제품중량 -->
+              <col style="width: 80px;"> <!--폭 -->
+              <col style="width: 80px;"> <!--피치 -->
+              <col style="width: 80px;"> <!--BLK중량 -->
+              <col style="width: 80px;"> <!--제품률 -->
+              <!-- 목표차종(생존단계) -->
+              <col style="width: 80px;"> <!--제품중량 -->
+              <col style="width: 80px;"> <!--폭 -->
+              <col style="width: 80px;"> <!--피치 -->
+              <col style="width: 80px;"> <!--BLK중량 -->
+              <col style="width: 80px;"> <!--제품률 -->
+              <!-- 목표차종 -->
+              <col style="width: 80px;"> <!--제품중량 -->
+              <col style="width: 80px;"> <!--폭 -->
+              <col style="width: 80px;"> <!--피치 -->
+              <col style="width: 80px;"> <!--BLK중량 -->
+              <col style="width: 80px;"> <!--제품률 -->
+              <!-- 제품률 비교 -->
+              <col style="width: 80px;"> <!--증감량 -->
+              <col style="width: 80px;"> <!--증감도 -->
             </colgroup>
             <thead class="sticky">
               <tr>
-                <th rowspan="2">
+                <th rowspan="2" class="sticky-left">
                   <input type="checkbox" name="" id="chk1" class="gts-chk">
                   <label for="chk1"></label>
                 </th>
-                <th colspan="6">목표차종 파트정보</th>
-                <th colspan="5">비교차종 제품률 실적</th>
+                <th colspan="6" class="sticky-left">목표차종 파트정보</th>
+                <th colspan="5" class="sticky-left">비교차종 제품률 실적</th>
+                <th colspan="5">목표차종(생존단계)</th>
+                <th colspan="5">목표차종 <select name="" id="" class="gts-select w-80 ml-10">
+                  <option value="">공법완료</option>
+                </select></th>
+                <th colspan="2">제품률 비교</th>
               </tr>
               <tr>
-                <th>번호</th>
-                <th>PART NO</th>
-                <th>PART NAME</th>
-                <th>재질</th>
-                <th>두께</th>
-                <th>다이타입</th>
-                
+                <th class="sticky-left">번호</th>
+                <th class="sticky-left">PART NO</th>
+                <th class="sticky-left">PART NAME</th>
+                <th class="sticky-left">재질</th>
+                <th class="sticky-left">두께</th>
+                <th class="sticky-left">다이타입</th>
+
+                <!-- 비교차종 제품률 실적 -->
+                <th class="sticky-left">제품중량</th>
+                <th class="sticky-left">폭</th>
+                <th class="sticky-left">피치</th>
+                <th class="sticky-left">BLK중량</th>
+                <th class="sticky-left">제품률</th>
+
+                <!-- 목표차종(생존단계) -->
                 <th>제품중량</th>
                 <th>폭</th>
                 <th>피치</th>
                 <th>BLK중량</th>
                 <th>제품률</th>
+                
+                <!-- 목표차종 -->
+                <th>제품중량</th>
+                <th>폭</th>
+                <th>피치</th>
+                <th>BLK중량</th>
+                <th>제품률</th>
+
+                <!-- 제품률비교 -->
+                <th>증감량</th>
+                <th>증감도</th>
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td class="sticky-left">
+                  <input type="checkbox" name="" id="" class="gts-chk">
+                  <label for=""></label>
+                </td>
+                <td class="sticky-left">1</td>
+                <td class="sticky-left">71112-K6700</td>
+                <td class="sticky-left">SIDE OTR LH</td>
+                <td class="sticky-left">SGACUD-E 60/60</td>
+                <td class="sticky-left">0.70</td>
+                <td class="sticky-left">싱글</td>
+
+                <!-- 비교차종 제품률 실적 -->
+                <td class="sticky-left bg-total">10.30</td>
+                <td class="sticky-left">1545</td>
+                <td class="sticky-left">2897</td>
+                <td class="sticky-left">22.84</td>
+                <td class="sticky-left">45.10</td>
+                
+                <!-- 목표차종(생존단계) -->
+                <td class="bg-total">10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+                
+                <!-- 목표차종 -->
+                <td class="bg-total">10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+
+                <!-- 제품률비교 -->
+                <td class="bg-total"><span class="minus">-4.88</span></td>
+                <td>
+                  <div class="bar-horizon">
+                    <div class="bar-minus">
+                      <span class="bar" style="width: 50%"></span>
+                    </div>
+                    <div class="bar-plus">
+                      <span class="bar"></span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="sticky-left">
+                  <input type="checkbox" name="" id="" class="gts-chk">
+                  <label for=""></label>
+                </td>
+                <td class="sticky-left">1</td>
+                <td class="sticky-left">71112-K6700</td>
+                <td class="sticky-left">SIDE OTR LH</td>
+                <td class="sticky-left">SGACUD-E 60/60</td>
+                <td class="sticky-left">0.70</td>
+                <td class="sticky-left">싱글</td>
+
+                <!-- 비교차종 제품률 실적 -->
+                <td class="sticky-left bg-total">10.30</td>
+                <td class="sticky-left">1545</td>
+                <td class="sticky-left">2897</td>
+                <td class="sticky-left">22.84</td>
+                <td class="sticky-left">45.10</td>
+                
+                <!-- 목표차종(생존단계) -->
+                <td class="bg-total">10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+                
+                <!-- 목표차종 -->
+                <td class="bg-total">10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+
+                <!-- 제품률비교 -->
+                <td class="bg-total">9.99</td>
+                <td>
+                  <div class="bar-horizon">
+                    <div class="bar-minus">
+                      <span class="bar"></span>
+                    </div>
+                    <div class="bar-plus">
+                      <span class="bar" style="width: 30%"></span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="sticky-left">
+                  <input type="checkbox" name="" id="" class="gts-chk">
+                  <label for=""></label>
+                </td>
+                <td class="sticky-left">1</td>
+                <td class="sticky-left">71112-K6700</td>
+                <td class="sticky-left">SIDE OTR LH</td>
+                <td class="sticky-left">SGACUD-E 60/60</td>
+                <td class="sticky-left">0.70</td>
+                <td class="sticky-left">싱글</td>
+
+                <!-- 비교차종 제품률 실적 -->
+                <td class="sticky-left bg-total">10.30</td>
+                <td class="sticky-left">1545</td>
+                <td class="sticky-left">2897</td>
+                <td class="sticky-left">22.84</td>
+                <td class="sticky-left">45.10</td>
+                
+                <!-- 목표차종(생존단계) -->
+                <td class="bg-total">10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+                
+                <!-- 목표차종 -->
+                <td class="bg-total">10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+
+                <!-- 제품률비교 -->
+                <td class="bg-stay bg-total"></td>
+                <td class="bg-stay"></td>
+              </tr>
             </tbody>
+            <tfoot>
+              <tr>
+                <td class="sticky-left align-r" colspan="7"><span class="fw-bold">MIP TOTAL</span></td>
+                <td class="sticky-left">9,999</td>
+                <td class="sticky-left"></td>
+                <td class="sticky-left"></td>
+                <td class="sticky-left">9,999</td>
+                <td class="sticky-left">9,999</td>
+
+                <!-- 비교차종 제품률 실적 -->
+                <td>10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+
+                <!-- 목표차종 -->
+                <td>10.30</td>
+                <td>1545</td>
+                <td>2897</td>
+                <td>22.84</td>
+                <td>45.10</td>
+
+                <!-- 제품률비교 -->
+                <td><span class="fw-bold">TOTAL</span></td>
+                <td><span class="minus">-0.4</span></td>
+              </tr>
+            </tfoot>
           </table>
         </div>
       </div>

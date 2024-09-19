@@ -32,6 +32,7 @@
 @import './_partial/inputSearch';
 @import './_partial/table';
 @import './_partial/capsuleTab';
+@import './_partial/underlineTab';
 @import './_partial/select';
 @import './_partial/checkbox';
 @import './_partial/radio';
@@ -45,7 +46,7 @@
 @import './_partial/combo';
 @import './_partial/toggleRadio';
 @import './_partial/calendar';
-// @import './_partial/chart';
+@import './_partial/chart';
 
 // 캘린더
 @import '../../node_modules/react-big-calendar/lib/sass/styles.scss';
