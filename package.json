@@ -15,6 +15,7 @@
     "antd": "^5.20.6",
     "browser-sync": "^3.0.2",
     "chart.js": "^4.4.4",
+    "chartjs-plugin-datalabels": "^2.2.0",
     "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
