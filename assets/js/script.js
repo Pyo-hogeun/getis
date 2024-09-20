@@ -174,21 +174,21 @@ function gnbSubmenu(){
 // tab navigator
 function tabNav(){
   
-  const tabNav = document.getElementById('tabNav');
+  const tabNav = document.querySelector('#tabNav');
   const scrollWrap = document.querySelector('.editable-tab .scroll-wrap');
-  const prev = tabNav.querySelector('.prev');
-  const next = tabNav.querySelector('.next');
+  const prev = tabNav?.querySelector('.prev');
+  const next = tabNav?.querySelector('.next');
   const tabWrap = document.querySelector('.open-contents-status-bar .editable-tab');
-  const tab = tabWrap.querySelector('.tab');
+  const tab = tabWrap?.querySelector('.tab');
   const setContainerWidth = 1300;
-  if( scrollWrap.scrollWidth > setContainerWidth ){
-    tabNav.style.display = 'block';
+  if( scrollWrap?.scrollWidth > setContainerWidth ){
+    tabNav?tabNav.style.display = 'block':false;
   } else {
-    tabNav.style.display = 'none';
+    tabNav?tabNav.style.display = 'none':false;
   }
   let posX = 0;
-  let scroll = scrollWrap.scrollWidth;
-  prev.addEventListener('click', function(e){
+  let scroll = scrollWrap?.scrollWidth;
+  prev?.addEventListener('click', function(e){
     let step = tab.offsetWidth * 5;
     if( 0 < posX ){
       posX -= step;
@@ -199,7 +199,7 @@ function tabNav(){
       }
     }
   });
-  next.addEventListener('click', function(e){
+  next?.addEventListener('click', function(e){
     let step = tab.offsetWidth * 5;
     if( scroll - setContainerWidth > posX ){
       posX += step;
