@@ -27,8 +27,6 @@ const DatePickerCustom = () => {
       locale={locale}
       placeholder='날짜를 선택하세요'
       suffixIcon={<IconCalender />} />
-    <ConfigProvider >
-    </ConfigProvider>
   </>)
 }
 

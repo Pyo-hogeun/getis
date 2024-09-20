@@ -37,8 +37,9 @@ const options = [
 ];
 const MultieSelect = () => {
   return (<>
+    {/* 필요한 형태로 모드를 변경해서 사용하세요 */}
     <Select
-      mode="multiple"
+      mode="tags"
       style={{
         width: '300px',
       }}
