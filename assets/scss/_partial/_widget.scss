@@ -365,6 +365,23 @@
       .item + .date{
         margin-top: 18px;
       }
+      .btn-more-wrap{
+        text-align: right;
+        margin-top: 16px;
+        a{
+          display: inline-flex;
+          height: 24px;
+          align-items: center;
+          gap: 4px;
+          color: $primary;
+          font-size: 13px;
+          line-height: 1.4;
+          font-weight: 700;
+          vertical-align: middle;
+          i{
+          }
+        }
+      }
     }
   }
 }
