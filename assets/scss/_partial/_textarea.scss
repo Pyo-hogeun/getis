@@ -1,12 +1,13 @@
-input.gts-input {
+textarea.gts-textarea {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 3px;
-  height: $inputHeight;
-  width: 140px;
-  padding-left: 10px;
+  height: 150px;
+  width: 200px;
+  padding: 6px;
   color: #333333;
   font-size: 14px;
+  resize: none;
 
   &:disabled {
     background-color: #f7f7f7;
@@ -74,16 +75,5 @@ input.gts-input {
       background: transparent;
       color: transparent;
     }
-  }
-  &[type="number"] {
-    padding-right: 10px;
-  }
-}
-
-table {
-  input.gts-input,
-  select.gts-select {
-    height: $inputHeightInTable;
-    font-size: 13px;
   }
 }

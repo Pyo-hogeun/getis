@@ -65,6 +65,7 @@
     <input type="text" class="gts-input" readonly value="스타일가이드 input disabled">
     <input type="text" class="gts-input" placeholder="place holder">
     <input type="text" class="gts-input error" placeholder="place holder" value="입력오류">
+    <input type="number" class="gts-input" placeholder="NUMBER(SPIN)" value="">
     <br><br>
     <div class="search-input">
       <input type="text" class="gts-input w-160" placeholder="검색 - button X">
@@ -86,6 +87,7 @@
     ~
     <input type="date" class="gts-input icon-calendar" value="24-08-05" placeholder="YYYY-MM-DD">
     <br><br>
+
     <select name="" id="" class="gts-select">
       <option value="">select</option>
     </select>
@@ -95,7 +97,12 @@
       <label for="toggleRadio01" class="mr-10"></label>
       비활성
     </div>
-    
+
+  </div>
+  <hr>
+  <h2>TEXTAREA</h2>
+  <div>
+    <textarea name="" id="" cols="30" rows="10" class="gts-textarea"></textarea>
   </div>
   <hr>
 
@@ -524,11 +531,11 @@
   </div>
   <script>
     const ctxBar = document.getElementById('chartBar');
-    
+
     const DataBar = {
       type: 'bar',
       data: {
-        labels: ['후드','휀더'],
+        labels: ['후드', '휀더'],
         datasets: [{
           label: 'a',
           data: [100, 20, 50, 60, 5],
@@ -537,15 +544,15 @@
           label: 'b',
           data: [59, 100, 2, 120, 40],
           backgroundColor: colorSet[1]
-        },{
+        }, {
           label: 'c',
           data: [20, 40, 2, 120, 40],
           backgroundColor: colorSet[2]
-        },{
+        }, {
           label: 'd',
           data: [5, 120, 2, 120, 40],
           backgroundColor: colorSet[3]
-        },{
+        }, {
           label: 'e',
           data: [80, 5, 2, 120, 40],
           backgroundColor: colorSet[4]

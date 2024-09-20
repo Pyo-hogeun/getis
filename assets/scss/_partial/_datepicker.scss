@@ -1,0 +1,30 @@
+
+//emotion css 로 변환 -->
+.gts-datepicker{
+  .css-lc42l8-MuiInputBase-input-MuiOutlinedInput-input{
+    height: 32px;
+    height: 32px;
+    width: 140px;
+    padding-left: 10px;
+    color: #333333;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+  }
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+  }
+  .css-lxfshk-MuiInputBase-root-MuiOutlinedInput-root
+  {
+    &.Mui-error{
+      .MuiOutlinedInput-notchedOutline{
+        border-color: $danger !important;
+      }
+    }
+    &.Mui-focused{  
+      .MuiOutlinedInput-notchedOutline{
+        border-width: 1px !important;
+      }
+    }
+  }
+}
