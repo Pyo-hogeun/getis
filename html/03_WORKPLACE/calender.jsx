@@ -386,7 +386,7 @@ const CalendarView = () => {
         formatDay={(locale, date) =>
           date.toLocaleString('en', { day: 'numeric' })
         }
-        showNavigation={false}
+        showNavigation={true}
         tileContent={({ date }) => {
           const filteredWorks = filterWorksByDate(date);
 
