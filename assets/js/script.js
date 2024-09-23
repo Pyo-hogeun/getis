@@ -182,7 +182,7 @@ function tabNav(){
   const tab = tabWrap?.querySelector('.tab');
   const setContainerWidth = 1300;
   if( scrollWrap?.scrollWidth > setContainerWidth ){
-    tabNav?tabNav.style.display = 'block':false;
+    tabNav?tabNav.style.display = 'inline-flex':false;
   } else {
     tabNav?tabNav.style.display = 'none':false;
   }

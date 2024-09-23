@@ -23,7 +23,6 @@
     position: relative;
     .editable-tab{
       max-width: 1300px;
-      background-color: yellow;
       overflow: auto;
       .tab{
         max-width: 200px;
@@ -35,14 +34,17 @@
     .nav{
       display: inline-flex;
       position: absolute;
-      right: -80px;
-      bottom: 0;
+      right: -65px;
+      bottom: 7px;
       background: #f8f8f8;
+      gap: 6px;
       button{
+        flex: 1 1 auto;
         border: 0;
         background-color: transparent;
-        width: 40px;
-        height: 30px;
+        // width: 40px;
+        // height: 30px;
+        padding: 0;
         display: inline-flex;
         align-items: center;
         justify-content: center;
