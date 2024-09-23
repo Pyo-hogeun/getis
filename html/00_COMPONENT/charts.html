@@ -1,0 +1,226 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <script src="../../assets/js/script.js"></script>
+
+  <title>GETIS</title>
+  <style>
+    hr {
+      margin: 40px 0;
+    }
+  </style>
+</head>
+
+<body style="background-color: #ffffff; padding: 10px;">
+
+  <!-- chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <h2>CHART doughnut</h2>
+  <div class="chart-doughnut" style="width: 125px;">
+    <canvas id="chartDoughnutHalf"></canvas>
+    <label for="chartDoughnutHalf">
+      <span class="title">Gauge 01</span>
+      <span class="value">80%</span>
+    </label>
+  </div>
+  <script>
+    const ctxDhg = document.getElementById('chartDoughnutHalf');
+    const DataDoughnut = {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          label: ['진행'],
+          data: [80, 20],
+          backgroundColor: ['#34d2d8', '#DDD']
+        }]
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        borderWidth: 0,
+        cutout: '60%',
+        plugins: {
+          tooltip: {
+            enabled: false,
+          }
+        }
+      }
+    }
+    const doughnutChart = new Chart(ctxDhg, DataDoughnut);
+
+  </script>
+
+  <h2>CHART Pie</h2>
+  <div class="chart-pie" style="width: 125px;">
+    <canvas id="chartPie"></canvas>
+    <div id="legend-container" class="legend"></div>
+  </div>
+  <script>
+    const ctxPie = document.getElementById('chartPie');
+    const htmlLegendPlugin = {
+      id: 'htmlLegend',
+      afterUpdate(chart, args, options) {
+        const ul = getOrCreateLegendList(chart, options.containerID);
+
+        // Remove old legend items
+        while (ul.firstChild) {
+          ul.firstChild.remove();
+        }
+
+        // Reuse the built-in legendItems generator
+        const items = chart.options.plugins.legend.labels.generateLabels(chart);
+
+        items.forEach(item => {
+          console.log(item);
+          const li = document.createElement('li');
+          li.classList.add('legend-item');
+
+          li.onclick = () => {
+            const { type } = chart.config;
+            if (type === 'pie' || type === 'doughnut') {
+              // Pie and doughnut charts only have a single dataset and visibility is per item
+              chart.toggleDataVisibility(item.index);
+            } else {
+              chart.setDatasetVisibility(item.datasetIndex, !chart.isDatasetVisible(item.datasetIndex));
+            }
+            chart.update();
+          };
+
+          // Color box
+          const boxSpan = document.createElement('span');
+          boxSpan.classList.add('color-box');
+          boxSpan.style.background = item.fillStyle;
+
+          // Text
+          const textContainer = document.createElement('p');
+          textContainer.classList.add('label-text');
+          const text = document.createTextNode(item.text);
+          textContainer.appendChild(text);
+
+          li.appendChild(boxSpan);
+          li.appendChild(textContainer);
+          ul.appendChild(li);
+        });
+      }
+    };
+    const getOrCreateLegendList = (chart, id) => {
+      const legendContainer = document.getElementById(id);
+      let listContainer = legendContainer.querySelector('ul');
+
+      if (!listContainer) {
+        listContainer = document.createElement('ul');
+        listContainer.classList.add('legend-list-wrap');
+
+        legendContainer.appendChild(listContainer);
+      }
+
+      return listContainer;
+    };
+    const DataPie = {
+      type: 'pie',
+      data: {
+        labels: [
+          'Pie1',
+          'Pie2',
+          'Pie3',
+          'Pie4',
+          'Pie5',
+        ],
+        datasets: [{
+          data: [20, 30, 5, 20, 25],
+          backgroundColor: colorSet,
+          datalabels: { //chartDataLabels 플러그인이 필요함
+            align: 'center', //라벨의 위치 
+            color: '#000',
+            // offset: 30 //라벨 offset
+            font: {
+              size: 14
+            }
+          }
+        }]
+      },
+      options: {
+        borderWidth: 0,
+        plugins: {
+          htmlLegend: {
+            // ID of the container to put the legend in
+            containerID: 'legend-container',
+          },
+          legend: {
+            display: false,
+          },
+        },
+      },
+      plugins: [htmlLegendPlugin, ChartDataLabels],
+    }
+    const pieChart = new Chart(ctxPie, DataPie);
+  </script>
+
+  <h2>CHART Bar</h2>
+  <div class="chart-bar" style="width: 500px; height: 500px">
+    <canvas id="chartBar" style="width: 500px; height: 500px"></canvas>
+    <div id="bar-legend-container" class="legend"></div>
+  </div>
+  <script>
+    const ctxBar = document.getElementById('chartBar');
+
+    const DataBar = {
+      type: 'bar',
+      data: {
+        labels: ['후드', '휀더'],
+        datasets: [{
+          label: 'a',
+          data: [100, 20, 50, 60, 5],
+          backgroundColor: colorSet[0]
+        }, {
+          label: 'b',
+          data: [59, 100, 2, 120, 40],
+          backgroundColor: colorSet[1]
+        }, {
+          label: 'c',
+          data: [20, 40, 2, 120, 40],
+          backgroundColor: colorSet[2]
+        }, {
+          label: 'd',
+          data: [5, 120, 2, 120, 40],
+          backgroundColor: colorSet[3]
+        }, {
+          label: 'e',
+          data: [80, 5, 2, 120, 40],
+          backgroundColor: colorSet[4]
+        }]
+      },
+      options: {
+        scales: {
+          y: { // defining min and max so hiding the dataset does not change scale range
+            min: 0,
+            max: 150
+          }
+        },
+        borderRadius: 2,
+        plugins: {
+          htmlLegend: {
+            // ID of the container to put the legend in
+            containerID: 'bar-legend-container',
+          },
+          legend: {
+            display: false,
+          },
+        },
+      },
+      plugins: [htmlLegendPlugin],
+    };
+    const barChart = new Chart(ctxBar, DataBar);
+  </script>
+
+
+</body>
+
+
+</html>
