@@ -69,9 +69,7 @@ const CalendarView = () => {
   const [calendarCreateModalOpen, setCalendarCreateModalOpen] = useState(false);
   const [calendarDetailModalOpen, setCalendarDetailModalOpen] = useState(false);
   const [isEditMode, setEditMode] = useState(false);
-  // const [selectedWork, setSelectedWork] = useState(
-  //   emptyWorkCalendarInfo,
-  // );
+  const [isOpenAddSchedule, setIsOpenAddSchedule] = useState(true);
   const [tooltip, setTooltip] = useState({
     visible: false,
     content: '',
@@ -405,6 +403,9 @@ const CalendarView = () => {
           );
         }}
         className={calendarStyle}
+        onClickDay={(v, e)=>{
+
+        }}
       />
       <Tooltip
         visible={tooltip.visible}

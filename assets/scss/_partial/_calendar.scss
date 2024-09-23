@@ -212,6 +212,7 @@
     }
   }
 }
+
 // <-- 여기까지 emotion css 로 변환
 .grid-wrap.task-list{
   margin-top: 30px;
@@ -274,6 +275,25 @@
           }
           &.goingto{
             background-color: #ffe32d;
+          }
+        }
+      }
+    }
+  }
+}
+.calendar-add-schedule{
+  .standard-table{
+    table{
+      .input-header{
+        display: flex;
+        margin-bottom: 2px;
+        justify-content: space-between;
+        align-items: flex-end;
+        .suffix{
+          font-size: 13px;
+          color: #777;
+          .count{
+            color: #2565d6;
           }
         }
       }
