@@ -75,7 +75,10 @@
         font-size: 13px;
         color: #333333;
         &:first-child{
+          position: sticky;
+          left: 0;
           border-left: 0;
+          background-color: #FFF;
         }
         &:last-child{
           border-right: 0;
@@ -89,7 +92,14 @@
           th, td{
             border-top: 0;
           }
+          th{
+            &:nth-of-type(1){
+              position: sticky;
+              left: 0;
+            }
+          }
         }
+
         &:last-child{
           th, td{
             // border-bottom: 0;
@@ -97,7 +107,7 @@
         }
         &.divide{
           td{
-            border-top: 1px solid #999;
+            // border-top: 1px solid #999;
           }
         }
       }
