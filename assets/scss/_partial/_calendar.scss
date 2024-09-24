@@ -282,6 +282,18 @@
   }
 }
 .calendar-add-schedule{
+  .header{
+    .btn-flag{
+      margin-left: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      &.on{
+        .icon-flag-square{
+          background-image: url('/assets/images/icon_flag_on_square.png');
+        }
+      }
+    }
+  }
   .standard-table{
     table{
       .input-header{
