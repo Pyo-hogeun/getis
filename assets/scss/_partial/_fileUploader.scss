@@ -1,0 +1,29 @@
+.file-uploader-wrap{
+  .file-uploader{
+    .ant-upload-wrapper{
+      .ant-upload.ant-upload-drag{
+        // border: 1px solid #DDD;
+        background-color: #FFF;
+        border-radius: 3px;
+        .ant-upload-drag-container{
+          color: #333;
+          height: 88px;;
+          .ant-upload-drag-icon{
+            img{
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    display: flex;
+    width: 100%;
+    padding: 10px 6px;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+    box-sizing: border-box;
+  }
+}

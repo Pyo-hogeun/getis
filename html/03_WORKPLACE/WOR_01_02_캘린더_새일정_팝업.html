@@ -789,7 +789,7 @@
                 <span class="require-suffix">분류</span>
               </th>
               <td>
-                <select name="" id="" class="gts-select">
+                <select name="" id="" class="gts-select w-wide">
                   <option value="">롤링생산관리</option>
                   <option value="">롤링생산관리</option>
                   <option value="">롤링생산관리</option>
@@ -855,12 +855,35 @@
             <tr>
               <th>첨부파일</th>
               <td colspan="3">
-                <div id="uploader"></div>
+                <div class="file-uploader-wrap">
+                  <div id="uploader" class="file-uploader"></div>
+                  <div class="footer">
+                    <div class="prefix">
+                      최대 300MB 제한
+                    </div>
+                    <div class="suffix">
+                      0개 / 0byte 추가됨
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>알림설정</th>
+              <td>
+                <select name="" id="" class="gts-select w-wide">
+                  <option value="">1주일</option>
+                </select>
+              </td>
+              <th>타일색상</th>
+              <td>
+                <div id="colorPicker" class="color-picker"></div>
               </td>
             </tr>
           </tbody>
         </table>
         <script type="module" src="../00_COMPONENT/Uploader.jsx"></script>
+        <script type="module" src="../00_COMPONENT/ColorPicker.jsx"></script>
       </div>
     </div>
     <div class="footer pt-30">

@@ -1,0 +1,13 @@
+.color-picker{
+  .ant-color-picker-trigger{
+    border-radius: 3px;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+    .ant-color-picker-color-block{
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+    }
+  }
+}
