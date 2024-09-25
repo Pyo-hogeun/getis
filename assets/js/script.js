@@ -239,7 +239,7 @@ function toggleListLayout(){
     }
   };
 
-  toggleFoldList.addEventListener('click', function(e){
+  toggleFoldList?.addEventListener('click', function(e){
     e.preventDefault();
     toggleSpreadList.classList.remove('disabled');
     if(currentStep < 2){
@@ -252,7 +252,7 @@ function toggleListLayout(){
       this.classList.add('disabled');
     }
   });
-  toggleSpreadList.addEventListener('click', function(e){
+  toggleSpreadList?.addEventListener('click', function(e){
     e.preventDefault();
     toggleFoldList.classList.remove('disabled');
     if(currentStep > 0){
