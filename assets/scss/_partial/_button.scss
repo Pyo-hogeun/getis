@@ -88,6 +88,13 @@
     font-size: 11px;
     padding: 4px 6px;
   }
+  // 공통 사이즈 class
+  @for $i from 1 through 50 {
+    &.w-#{10*$i} {
+      min-width: #{10*$i}px;
+      width: #{10*$i}px;
+    }
+  }
 }
 
 //tablet
