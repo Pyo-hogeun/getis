@@ -1,0 +1,44 @@
+.material-situation-table{
+  &.list-wrap{
+    .table-wrap{
+      table{
+        thead{
+          z-index: 2;
+          th{
+            &:first-child{
+              position: relative;
+            }
+            font-weight: 400;
+            white-space: nowrap;
+            &.sticky-left{
+              position: sticky;
+              z-index: $zindexListSticky;
+            }
+          }
+        }
+        tbody{
+          td{
+            &:first-child{
+              position: relative;
+            }
+            &:last-child{
+              border-right: 1px solid #ddd;
+            }
+            &.sticky-left{
+              position: sticky;
+              z-index: $zindexListSticky;
+            }
+            img.drawing{
+              width: 150px;
+            }
+          }
+          .divide{
+            td{
+              border-top: 1px solid #DDD;
+            }
+          }
+        }
+      }
+    }
+  }
+}
