@@ -390,73 +390,285 @@
 
   <div class="dim"></div>
 
-  <div class="layer-pop w-1000 total-approval">
+  <div class="layer-pop w-1400 total-approval">
     <div class="header">
-      <h3>통합 결제</h3>
+      <h3>원자재 등록</h3>
       <a href="" class="btn-close-pop"></a>
     </div>
     <div class="body">
-      <div class="list-wrap">
-        <div class="list-topper mt-20 mb-10">
-          <div class="suffix">
-            <a href="" class="btn primary w-80">결재</a>
-            <a href="" class="btn tertiary">저장</a>
-            <a href="" class="btn tertiary">결재문서 첨부</a>
-            <a href="" class="btn tertiary">수신부서 예약발송</a>
-            <a href="" class="btn tertiary">미리보기</a>
-          </div>
-        </div>
-        <div class="standard-table mb-20">
-          <table>
-            <colgroup>
-              <col style="width: 100px;">
-              <col style="width: 250px;">
-              <col style="width: 100px;">
-              <col style="width: auto;">
-            </colgroup>
-            <tbody>
-              <tr>
-                <th>기안자</th>
-                <td>홍길동</td>
-                <th>직급</th>
-                <td>로그인 정보 연계</td>
-              </tr>
-              <tr>
-                <th>부서</th>
-                <td>로그인 정보 연계</td>
-                <th>작성일</th>
-                <td>2024-05-09 11:44:55</td>
-              </tr>
-            </tbody>
-          </table>
-  
-          <table>
-            <colgroup>
-              <col style="width: 100px;">
-              <col style="width: auto">
-            </colgroup>
-            <tbody>
-              <tr>
-                <th>제목</th>
-                <td>
-                  <input type="text" class="gts-input w-wide" placeholder="직접 키인 (ex. QU2i차종 양산 밀메이커 선정 요청 및 T/O용 원자재 신청 (1차))">
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="capsule-tab mt-20 mb-20">
+        <a href="" class="tab">원자재 사양</a>
+        <a href="" class="tab on">BLK이미지</a>
       </div>
+      <div class="list-wrap">
+        <div class="image-template">
+          <table>
+            <colgroup>
+              <col style="width: 40px">
+              <col style="width: 220px">
+              <col style="width: 220px">
+              <col style="width: 220px">
+              <col style="width: 220px">
+              <col style="width: 220px">
+              <col style="width: 220px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th colspan="6">PART NAME</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="6">MIP</th>
+                <th>
+                  <input type="checkbox" name="" id="chk1" class="gts-chk">
+                  <label for="chk1"></label>
+                  <input type="text" value="SIDE OTR LH" disabled>
+                  
+                </th>
+                <th>
+                  <input type="checkbox" name="" id="chk2" class="gts-chk">
+                  <label for="chk2"></label>
+                  <input type="text" value="SIDE OTR RH" disabled>
+                  
+                </th>
+                <th>
+                  <input type="checkbox" name="" id="chk3" class="gts-chk">
+                  <label for="chk3"></label>
+                  <input type="text" value="FENDER LH" disabled>
+                  
+                </th>
+                <th>
+                  <input type="checkbox" name="" id="chk4" class="gts-chk">
+                  <label for="chk4"></label>
+                  <input type="text" value="FENDER RH" disabled>
+                  
+                </th>
+                <th>
+                  <input type="checkbox" name="" id="chk5" class="gts-chk">
+                  <label for="chk5"></label>
+                  <input type="text" value="ROOF" disabled>
+                  
+                </th>
+                <th>
+                  <input type="checkbox" name="" id="chk6" class="gts-chk">
+                  <label for="chk6"></label>
+                  <input type="text" value="ROOF(SUM)" disabled>
+                  
+                </th>
+              </tr>
+              <tr>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+              </tr>
+              <tr>
+                <th>
+                  <input type="checkbox" class="gts-chk" name="" id="chk7">
+                  <label for="chk7"></label>
+                  <input type="text" value="FRT DR OTR LH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" name="" id="chk8">
+                  <label for="chk8"></label>
+                  <input type="text" value="FRT DR OTR RH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" name="" id="chk9">
+                  <label for="chk9"></label>
+                  <input type="text" value="RR DR OTR LH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" name="" id="chk10">
+                  <label for="chk10"></label>
+                  <input type="text" value="RR DR OTR RH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" name="" id="chk11">
+                  <label for="chk11"></label>
+                  <input type="text" value="FRT DR INR LH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" name="" id="chk12">
+                  <label for="chk12"></label>
+                  <input type="text" value="FRT DR INR RH" disabled>
+                </th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk13">
+                  <label for="chk13"></label>
+                  <input type="text" value="RR DR INR LH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk14">
+                  <label for="chk14"></label>
+                  <input type="text" value="RR DR INR RH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk15">
+                  <label for="chk15"></label>
+                  <input type="text" value="HOOD OTR" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk16">
+                  <label for="chk16"></label>
+                  <input type="text" value="TAIL GATE OTR" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk17" disabled>
+                  <label for="chk17"></label>
+                  <input type="text" value="" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk18" disabled>
+                  <label for="chk18"></label>
+                  <input type="text" value="" disabled>
+                </th>
+              </tr>
+              <tr>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+              </tr>
 
-      <div class="editor">
-        GETIS 에디터 영역
+              <tr>
+                <th rowspan="6">VDR</th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk19">
+                  <label for="chk19"></label>
+                  <input type="text" value="HOOD INR" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk20">
+                  <label for="chk20"></label>
+                  <input type="text" value="TAIL GATE INR" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk21">
+                  <label for="chk21"></label>
+                  <input type="text" value="QTR INR LWR LH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk22">
+                  <label for="chk22"></label>
+                  <input type="text" value="QTR INR LWR RH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk23">
+                  <label for="chk23"></label>
+                  <input type="text" value="REF CTR PLR OTR LH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk24">
+                  <label for="chk24"></label>
+                  <input type="text" value="REF CTR PLR OTR RH" disabled>
+                </th>
+              </tr>
+              <tr>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+                <td><img src="../../assets/images/img_sample_blk.png" alt=""></td>
+              </tr>
+              <tr>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk25">
+                  <label for="chk25"></label>
+                  <input type="text" value="DASH" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk25" disabled>
+                  <label for="chk25"></label>
+                  <input type="text" value="" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk25" disabled>
+                  <label for="chk25"></label>
+                  <input type="text" value="" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk25" disabled>
+                  <label for="chk25"></label>
+                  <input type="text" value="" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk25" disabled>
+                  <label for="chk25"></label>
+                  <input type="text" value="" disabled>
+                </th>
+                <th>
+                  <input type="checkbox" class="gts-chk" id="chk25" disabled>
+                  <label for="chk25"></label>
+                  <input type="text" value="" disabled>
+                </th>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+              </tr>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+                <td class="blank"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-    <div class="footer pt-30">
-      <a href="" class="btn tertiary">닫기</a>
-      <a href="" class="btn primary ml-10">저장</a>
+    <div class="footer pt-30 flex-group">
+      <div class="prefix"></div>
+      <div class="suffix">
+        <a href="" class="btn tertiary">확정</a>
+        <a href="" class="btn tertiary">닫기</a>
+        <a href="" class="btn primary">저장</a>
+      </div>
     </div>
   </div>
 </body>
-
+<script>
+  // 체크박스 체크시 텍스트 수정 가능
+  $chk = document.querySelectorAll('input.gts-chk');
+  $chk.forEach((chk)=>{
+    chk.addEventListener('click', (e)=>{
+      let $target = e.target;
+      let $input = $target.parentElement.querySelector('input[type="text"]');
+      $target.checked?$input.disabled = false : $input.disabled = true;
+    })
+  })
+</script>
 
 </html>
