@@ -216,6 +216,55 @@ function tabNav(){
 // 공통 색상
 const colorSet = ['#34d2d8', '#9a8af8', '#92d159', '#939b9b', '#eac012'];
 
+// 리스트 상하 높이 조절 기능
+function toggleListLayout(){
+  const toggleFoldList = document.querySelector('.grid-size-toggle .btn-toggle-up');
+  const toggleSpreadList = document.querySelector('.grid-size-toggle .btn-toggle-down');
+  const list = document.querySelector('.resizable-list');
+  const infoArea = document.querySelector('.resizable-infoarea');
+  let currentStep = 1;
+  const gap = '200px';
+  let step = {
+    0:{
+      list : `calc(70vh - ${gap})`,
+      infoArea : `0`
+    },
+    1:{
+      list : `calc(50vh - ${gap})`,
+      infoArea : `calc(50vh - ${gap})`
+    },
+    2:{
+      list : `35px`,
+      infoArea : `calc(70vh - ${gap})`
+    }
+  };
+
+  toggleFoldList.addEventListener('click', function(e){
+    e.preventDefault();
+    toggleSpreadList.classList.remove('disabled');
+    if(currentStep < 2){
+      currentStep += 1;
+      list.style.height = step[currentStep].list;
+      list.style.minHeight = 0;
+      infoArea.style.height = step[currentStep].infoArea;
+    } 
+    if(currentStep == 2){
+      this.classList.add('disabled');
+    }
+  });
+  toggleSpreadList.addEventListener('click', function(e){
+    e.preventDefault();
+    toggleFoldList.classList.remove('disabled');
+    if(currentStep > 0){
+      currentStep -= 1;
+      list.style.height = step[currentStep].list;
+      infoArea.style.height = step[currentStep].infoArea;
+    }
+    if(currentStep == 0){
+      this.classList.add('disabled');
+    }
+  });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   lnbToggle();
@@ -224,4 +273,5 @@ document.addEventListener('DOMContentLoaded', function () {
   combo();
   gnbSubmenu();
   tabNav();
+  toggleListLayout();
 });
