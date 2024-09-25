@@ -130,7 +130,9 @@
       tbody{
         tr{
           &.selected, &:hover{
-            background-color: $listHoverBg;
+            td{
+              background-color: $listHoverBg;
+            }
           }
           &.has-rowspan{
             td{

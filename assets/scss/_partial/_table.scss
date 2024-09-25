@@ -1,30 +1,7 @@
 .table-header {
   @include flex-between;
 
-  .grid-size-toggle {
-    a {
-      display: inline-block;
-      width: 30px;
-      height: 26px;
-      border: solid 1px #777;
-      border-radius: 4px;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      &.btn-toggle-up {
-        background-image: url('../images/icon_resize_toggle_arrow_up.png');
-      }
-
-      &.btn-toggle-down {
-        background-image: url('../images/icon_resize_toggle_arrow_down.png');
-      }
-
-      &.disabled {
-        cursor: default;
-        opacity: 0.3;
-      }
-    }
-  }
+  
 }
 
 .standard-table {
