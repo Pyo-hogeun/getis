@@ -1,0 +1,32 @@
+.tag{
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 3px;
+  font-size: 11px;
+  height: 18px;
+  color: #FFF;
+  border-radius: 2px;
+  box-sizing: border-box;
+  &.complete{
+    background-color: #20bf7a;
+  }
+  &.incomplete{
+    background-color: #ff5252;
+  }
+  &.progress{
+    background-color: #2565d6;
+  }
+  &.goingto{
+    background-color: #ffe32d;
+  }
+
+  &.link{
+    &.dark{
+      background-color: #4d4d4d;
+      &.disabled{
+        background-color: #bfbfbf;
+        cursor: default;
+      }
+    }
+  }
+}
