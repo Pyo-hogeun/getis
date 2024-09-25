@@ -10,6 +10,7 @@
   padding-right: $contentPadPc;
   box-sizing: border-box;
   border-bottom: 1px solid #dddddd;
+  transition: .3s;
   @include flex-between($align : flex-end);
   
   .btn.reset{
