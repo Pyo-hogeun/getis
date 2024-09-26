@@ -1,0 +1,7 @@
+.mold-paint-table{
+  &.list-wrap{
+    .list-topper{
+      @include flex-group;
+    }
+  }
+}
