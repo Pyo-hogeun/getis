@@ -69,15 +69,18 @@
         background-color: #4c556b;
         color: #ffffff;
         font-size: 13px;
+        &.sticky-left{
+          position: sticky;
+          left: 0;
+        }
       }
       td{
         padding: 6px 0;
         font-size: 13px;
         color: #333333;
-        &:first-child{
+        &.sticky-left{
           position: sticky;
           left: 0;
-          border-left: 0;
           background-color: #FFF;
         }
         &:last-child{
