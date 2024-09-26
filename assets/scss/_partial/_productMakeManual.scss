@@ -1,0 +1,13 @@
+.product-make-manual{
+  .img-wrap{
+    width: 150px;
+    padding: 0 5px;
+    img{
+      width: 100%;
+    }
+  }
+  .vertical{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
