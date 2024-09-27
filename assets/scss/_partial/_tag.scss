@@ -7,7 +7,7 @@
   color: #FFF;
   border-radius: 2px;
   box-sizing: border-box;
-  &.complete{
+  &.complete, &.new{
     background-color: #20bf7a;
   }
   &.incomplete{

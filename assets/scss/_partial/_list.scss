@@ -61,6 +61,10 @@
         border-right: 1px solid #dddddd;
         border-bottom: 1px solid #dddddd;
         @include align;
+        &.align-l, &.align-r{
+          padding-left: 4px;
+          padding-right: 4px;
+        }
         
       }
       th{

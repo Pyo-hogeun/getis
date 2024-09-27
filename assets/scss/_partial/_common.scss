@@ -39,6 +39,9 @@ abbr{
 .fw-regular{
   font-weight: 400;
 }
+.fc-red{
+  color: $danger;
+}
 
 // 스크롤 스타일
 body, html, div, ul{
