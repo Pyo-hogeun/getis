@@ -1,7 +1,14 @@
-.mold-paint-table{
+.mold-paint-table,
+.mold-paint-history-table{
   &.list-wrap{
     .list-topper{
       @include flex-between;
     }
+  }
+  .color-chip{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
   }
 }
