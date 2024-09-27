@@ -1,0 +1,16 @@
+.design-standard{
+  .table-wrap{
+  }
+  .table-header{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding: 5px;
+    h4{
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      color: #333;
+    }
+  }
+}

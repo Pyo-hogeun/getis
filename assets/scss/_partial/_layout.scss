@@ -45,6 +45,9 @@ body{
         }
       }
     }
+    .content-footer{
+      @include flex-between
+    }
   }
   &.fold-lnb{
     .gts-lnb{
