@@ -5,10 +5,39 @@
       @include flex-between;
     }
   }
-  .color-chip{
-    display: inline-block;
-    width: 120px;
-    height: 30px;
-    border-radius: 4px;
+}
+.mold-paint-standard{
+  .description-box{
+    position: relative;
+    .btn.edit{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
+.color-chip{
+  display: inline-flex;
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,.1);
+  @for $i from 1 through 10{
+    &.w-#{10*$i}{
+      width: #{10*$i};
+    }
+  }
+  @for $i from 1 through 10{
+    &.h-#{10*$i}{
+      height: #{10*$i};
+    }
+  }
+  .color-part{
+    flex: 1 1 auto;
+    &:nth-of-type(1), &:nth-last-of-type(1){
+      flex: 0 1 20%;
+    }
   }
 }
