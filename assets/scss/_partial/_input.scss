@@ -43,6 +43,10 @@ input.gts-input {
   &.w-wide{
     width: 100%;
   }
+  &.size-sm{
+    height: 24px;
+    font-size: 12px;
+  }
 
   &.icon-search {
     padding-right: 35px;

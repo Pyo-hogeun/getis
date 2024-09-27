@@ -33,6 +33,17 @@
         flex: 0 1 #{20*$i}px;
       }
     }
+    .grid-wrap.chk-group{
+      // width: 300px;
+      .grid-container{
+        min-width: 50px;
+        label{
+          height: 20px;
+          line-height: 20px;
+          font-weight: 400;
+        }
+      }
+    }
   }
   .line-break{
     flex: 1 0 100%;
@@ -49,5 +60,26 @@
   &.no-border{
     border: 0;
     padding: 0;
+  }
+  .grid-wrap{
+    width: 100%;
+    .grid-container{
+      >ul{
+        >li{
+          margin-bottom: 6px;
+          .search-item{
+            display: flex;
+            gap: 4px;
+            width: 100%;
+            label{
+              flex: 0 0 80px;
+            }
+            .gts-input, .gts-select{
+              flex: 1 1 auto;
+            }
+          }
+        }
+      }
+    }
   }
 }             

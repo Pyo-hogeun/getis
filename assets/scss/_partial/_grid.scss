@@ -15,6 +15,13 @@
       }
     }
   }
+  @for $n from 1 through 10{
+    &.gap-#{$n*10}{
+      >.grid-container{
+        padding-right: ($n*10)+px;
+      }
+    }
+  }
   .handler-wrap{
     display: flex;
     justify-content: center;
