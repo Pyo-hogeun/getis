@@ -52,4 +52,10 @@ input[type="checkbox"].gts-chk{
       }
     }
   }
+  &.size-sm{
+    + label{
+      line-height: 24px;
+      height: 24px;
+    }
+  }
 }

@@ -35,6 +35,10 @@ const RangePickerStyle = css`
   background-color: #FFF;
   border-radius: 3px;
   border: 1px solid #dddddd;
+  &.size-sm{
+    height: 24px;
+    font-size: 12px;
+  }
 `;
 
 // Clear the existing HTML content
