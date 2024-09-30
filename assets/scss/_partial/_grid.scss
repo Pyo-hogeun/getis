@@ -19,6 +19,9 @@
     &.gap-#{$n*10}{
       >.grid-container{
         padding-right: ($n*10)+px;
+        &:last-child{
+          padding-right: 0;
+        }
       }
     }
   }
