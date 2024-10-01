@@ -1,4 +1,5 @@
 .underline-tab{
+  position: relative;
   display: flex;
   border-bottom: 1px solid #dddddd;
   .tab{
@@ -20,5 +21,10 @@
         background-color: #333;
       }
     }
+  }
+  .suffix{
+    position: absolute;
+    right: 0;
+    bottom: 8px;
   }
 }

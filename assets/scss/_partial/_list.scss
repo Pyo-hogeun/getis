@@ -8,6 +8,9 @@
       font-weight: 700;
       color: #333333;
       white-space: nowrap;
+      &.fs-16{
+        font-size: 16px;
+      }
     }
     .list-count{
       position: relative;

@@ -1,0 +1,61 @@
+.schedule-table{
+  thead{
+    th{
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+  tbody{
+    td{
+      font-size: 13px;
+
+    }
+  }
+  .month{
+    td{
+      background-color: #eee;
+    }
+  }
+  .graph-wrap{
+    td{
+      height: 100px;
+    }
+  }
+  .part{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .branch{
+      position: relative;
+      flex: 0 0 33%;
+      em{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .label{
+          font-size: 13px;
+          color: #333;
+          bottom: -15px;
+          white-space: nowrap;
+          font-style: normal;
+        }
+      }
+      &.upper{
+        em{
+          top: 10%;
+        }
+      }
+      &.mid{
+        em{
+          top: 50%;
+        }
+      }
+      &.lower{
+        em{
+          top: 90%;
+        }
+      }
+    }
+  }
+}
