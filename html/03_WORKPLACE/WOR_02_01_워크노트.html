@@ -8,6 +8,10 @@
 
   <script src="../../assets/js/script.js"></script>
 
+  <!-- chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
   <title>GETIS</title>
 </head>
 
@@ -425,8 +429,8 @@
 
       <div class="capsule-tab mt-10">
         <a href="" class="tab">캘린더</a>
-        <a href="" class="tab">워크노트</a>
-        <a href="" class="tab on">기준정보</a>
+        <a href="" class="tab on">워크노트</a>
+        <a href="" class="tab">기준정보</a>
       </div>
 
       <div class="list-search-box mt-10">
@@ -467,211 +471,780 @@
         </div>
       </div>
 
-      <div class="list-wrap">
-        <div class="list-topper mt-20 flex-group">
-          <div class="prefix">
-            <span class="table-title fs-16">업무리스트</span>
-          </div>
-          <div class="suffix">
-            <a href="" class="btn tertiary">
-              <i class="icon-excel-download prefix"></i>
-              엑셀다운로드
-            </a>
-            <a href="" class="btn tertiary">
-              <i class="icon-excel-upload prefix"></i>
-              엑셀업로드
-            </a>
-            <a href="" class="btn black-border">
-              <i class="icon-create prefix"></i>
-              업무추가
-            </a>
-            <a href="" class="btn black-border">
-              수정
-            </a>
-            <a href="" class="btn black-border">
-              <i class="icon-remove prefix"></i>
-              삭제
-            </a>
-            <a href="" class="btn black-border">
-              인쇄
-            </a>
-          </div>
-        </div>
-        <div class="table-wrap mt-10 schedule-table">
-          <table>
-            <colgroup>
-              <col style="width: 80px;">
-              <col style="width: auto;">
-              <col style="width: auto;">
-              <col style="width: auto;">
-              <col style="width: auto;">
-              <col style="width: auto;">
-            </colgroup>
-            <thead class="sticky">
-              <tr>
-                <th>구분</th>
-                <th>M</th>
-                <th>M+2</th>
-                <th>M+3</th>
-                <th>M+4</th>
-                <th>M+5</th>
-                <th>M+6</th>
-                <th>M+7</th>
-                <th>M+8</th>
-                <th>M+9</th>
-                <th>M+10</th>
-                <th>M+11</th>
-                <th>M+12</th>
-                <th>M+13</th>
-                <th>M+14</th>
-                <th>M+15</th>
-                <th>M+16</th>
-                <th>M+17</th>
-                <th>M+18</th>
-                <th>M+19</th>
-                <th>M+20</th>
-                <th>M+21</th>
-                <th>M+22</th>
-                <th>M+23</th>
-                <th>M+24</th>
-                <th>M+25</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="month">
-                <td>년월</td>
-                <td>20.1</td>
-                <td>20.2</td>
-                <td>20.3</td>
-                <td>20.4</td>
-                <td>20.5</td>
-                <td>20.6</td>
-                <td>20.7</td>
-                <td>20.8</td>
-                <td>20.9</td>
-                <td>20.10</td>
-                <td>20.11</td>
-                <td>20.12</td>
-                <td>21.1</td>
-                <td>21.2</td>
-                <td>21.3</td>
-                <td>21.4</td>
-                <td>21.5</td>
-                <td>21.6</td>
-                <td>21.7</td>
-                <td>21.8</td>
-                <td>21.9</td>
-                <td>21.10</td>
-                <td>21.11</td>
-                <td>21.12</td>
-                <td>22.1</td>
-              </tr>
-              <tr class="graph-wrap">
-                <td>CE차종<br>마스터 일정<br>(ver.1)</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="part">
-                    <!-- description
-                     part 하위에 3개의 branch가 존재하며, 이는 1/3분기를 뜻합니다. 
-                     포인트를 찍는 상하 높이 위치는 branch에 upper - mid - lower 클래스로 표현할수 있습니다. upper > mid > lower 순서대로 표현하면 겹칩을 최소화 할 수 있습니다.
-                    
-                     포인터의 라벨 텍스트는 겹침을 피하기 위해 개행을 막아뒀고, 필요시엔 br태그를 사용
+      <div class="grid-wrap gap-10 work-note">
+        <div class="grid-container col-3">
+          <div class="summary-wrap mt-20">
+            <div class="title fs-16">
+              업무요약
+            </div>
+            <div class="chart-container mt-10">
+              <span class="chart-title">
+                QX2i
+              </span>
+              
+              <div class="chart-doughnut" style="width: 125px;">
+                <canvas id="chartDoughnutHalf"></canvas>
+                <label for="chartDoughnutHalf">
+                  <span class="title">Gauge 01</span>
+                  <span class="value">80%</span>
+                </label>
+              </div>
+              <script>
+                const ctxDhg = document.getElementById('chartDoughnutHalf');
+                const DataDoughnut = {
+                  type: 'doughnut',
+                  data: {
+                    datasets: [{
+                      label: ['진행'],
+                      data: [80, 20],
+                      backgroundColor: ['#34d2d8', '#DDD']
+                    }]
+                  },
+                  options: {
+                    rotation: -90,
+                    circumference: 180,
+                    borderWidth: 0,
+                    cutout: '60%',
+                    plugins: {
+                      tooltip: {
+                        enabled: false,
+                      }
+                    }
+                  }
+                }
+                const doughnutChart = new Chart(ctxDhg, DataDoughnut);
+            
+              </script>
 
-                     도형은 HTML 특수문자로 표현, 필요시 추가하면 됨
-                    -->
-                    <span class="branch upper"> <!--1개월의 3분기 표현-->
-                      <em style="color: #ffe32d"><!--도형표현/색상css inline-->
-                        &#9650;
-                        <i class="label">OTR / MIP L4</i><!--라벨-->
-                      </em>
-                    </span>
-                    <span class="branch"></span>
-                    <span class="branch"></span>
-                  </div>
-                </td>
-                <td>
-                  <div class="part">
-                    <span class="branch mid"> <!--1개월의 3분기 표현-->
-                      <em style="color: #20bf7a"><!--도형표현/색상css inline-->
-                        &#9670;
-                        <i class="label">OTR / MIP L4</i><!--라벨-->
-                      </em>
-                    </span>
-                    <span class="branch"></span>
-                    <span class="branch"></span>
-                  </div>
-                </td>
-                <td>
-                  <div class="part">
-                    <span class="branch lower"> <!--1개월의 3분기 표현-->
-                      <em style="color: #ffe32d"><!--도형표현/색상css inline-->
-                        &#9650;
-                        <i class="label">TEX / TEX02 L4</i><!--라벨-->
-                      </em>
-                    </span>
-                    <span class="branch upper">
-                      <em style="color: #2565d6"><!--도형표현/색상css inline-->
-                        &#9650;
-                        <i class="label">OTR / MIP L4</i><!--라벨-->
-                      </em>
-                    </span>
-                    <span class="branch mid">
-                      <em style="color: #777777"><!--도형표현/색상css inline-->
-                        &#9679;
-                        <i class="label">OTR / MIP L4</i><!--라벨-->
-                      </em>
-                    </span>
-                  </div>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="list-footer flex-group">
-          <div class="prefix">
-            <select name="" id="" class="gts-select step">
-              <option value="">100</option>
-              <option value="">300</option>
-              <option value="">500</option>
-            </select>
-            <div class="total">&nbsp;/&nbsp;&nbsp;10,000</div>
-          </div>
-          <div class="center">
-            <div class="pagination">
-              <a href="" class="prev disabled"></a>
-              <a href="" class="to-first disabled"></a>
-              <a href="" class="page current">1</a>
-              <a href="" class="page">2</a>
-              <a href="" class="page">3</a>
-              <a href="" class="page">4</a>
-              <a href="" class="next"></a>
-              <a href="" class="to-last"></a>
+              <div class="chart-info">
+                <dl>
+                  <dt>현재시점</dt>
+                  <dd><span class="current-point">LP2</span></dd>
+                  <dt>금형개발</dt>
+                  <dd>
+                    <div>
+                      개발기간 :  21.5개월<br>
+                      양산일자 :  2025.10.01<br>
+                      생산공장 :  HM(인도)<br>
+                      생산대수 :  연간 11만대<br>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
             </div>
           </div>
-          <div class="suffix"></div>
+          <div class="management-indicators-wrap mt-20">
+            <div class="title fs-16">
+              관리지표
+            </div>
+            <div class="indicators-container mt-10">
+              <div class="item">
+                <span class="label">DIM'S</span>
+                <div class="data">
+                  <em>98.1</em> / 97
+                </div>
+              </div>
+              <div class="item">
+                <span class="label">외관</span>
+                <div class="data">
+                  <em>98.1</em> / 97
+                </div>
+              </div>
+              <div class="item">
+                <span class="label">제품률</span>
+                <div class="data">
+                  <em>50.2</em> %
+                </div>
+              </div>
+              <div class="item">
+                <span class="label">금형이관</span>
+                <div class="data">
+                  <em>10</em> / 15
+                </div>
+              </div>
+              <div class="item">
+                <span class="label">EQ</span>
+                <div class="chart-pie" style="width: 130px;">
+                  <canvas id="chartPie"></canvas>
+                  <div id="legend-container" class="legend"></div>
+                </div>
+                <script>
+                  const ctxPie = document.getElementById('chartPie');
+                  const htmlLegendPlugin = {
+                    id: 'htmlLegend',
+                    afterUpdate(chart, args, options) {
+                      const ul = getOrCreateLegendList(chart, options.containerID);
+              
+                      // Remove old legend items
+                      while (ul.firstChild) {
+                        ul.firstChild.remove();
+                      }
+              
+                      // Reuse the built-in legendItems generator
+                      const items = chart.options.plugins.legend.labels.generateLabels(chart);
+              
+                      items.forEach(item => {
+                        console.log(item);
+                        const li = document.createElement('li');
+                        li.classList.add('legend-item');
+              
+                        li.onclick = () => {
+                          const { type } = chart.config;
+                          if (type === 'pie' || type === 'doughnut') {
+                            // Pie and doughnut charts only have a single dataset and visibility is per item
+                            chart.toggleDataVisibility(item.index);
+                          } else {
+                            chart.setDatasetVisibility(item.datasetIndex, !chart.isDatasetVisible(item.datasetIndex));
+                          }
+                          chart.update();
+                        };
+              
+                        // Color box
+                        const boxSpan = document.createElement('span');
+                        boxSpan.classList.add('color-box');
+                        boxSpan.style.background = item.fillStyle;
+              
+                        // Text
+                        const textContainer = document.createElement('p');
+                        textContainer.classList.add('label-text');
+                        const text = document.createTextNode(item.text);
+                        textContainer.appendChild(text);
+              
+                        li.appendChild(boxSpan);
+                        li.appendChild(textContainer);
+                        ul.appendChild(li);
+                      });
+                    }
+                  };
+                  const getOrCreateLegendList = (chart, id) => {
+                    const legendContainer = document.getElementById(id);
+                    let listContainer = legendContainer.querySelector('ul');
+              
+                    if (!listContainer) {
+                      listContainer = document.createElement('ul');
+                      listContainer.classList.add('legend-list-wrap');
+              
+                      legendContainer.appendChild(listContainer);
+                    }
+              
+                    return listContainer;
+                  };
+                  const DataPie = {
+                    type: 'pie',
+                    data: {
+                      labels: [
+                        'Pie1',
+                        'Pie2',
+                        'Pie3',
+                        'Pie4',
+                        'Pie5',
+                      ],
+                      datasets: [{
+                        data: [20, 30, 5, 20, 25],
+                        backgroundColor: colorSet,
+                        datalabels: { //chartDataLabels 플러그인이 필요함
+                          align: 'center', //라벨의 위치 
+                          color: '#000',
+                          // offset: 30 //라벨 offset
+                          font: {
+                            size: 14
+                          }
+                        }
+                      }]
+                    },
+                    options: {
+                      borderWidth: 0,
+                      plugins: {
+                        htmlLegend: {
+                          // ID of the container to put the legend in
+                          containerID: 'legend-container',
+                        },
+                        legend: {
+                          display: false,
+                        },
+                      },
+                    },
+                    plugins: [htmlLegendPlugin, ChartDataLabels],
+                  }
+                  const pieChart = new Chart(ctxPie, DataPie);
+                </script>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="grid-container col-9">
+          <div class="list-wrap">
+            <div class="list-topper mt-20 flex-group">
+              <div class="prefix">
+                <span class="table-title fs-16">업무리스트</span>
+              </div>
+              <div class="suffix">
+                <a href="" class="btn tertiary">
+                  <i class="icon-excel-download prefix"></i>
+                  엑셀다운로드
+                </a>
+                <a href="" class="btn tertiary">
+                  <i class="icon-excel-upload prefix"></i>
+                  엑셀업로드
+                </a>
+                <a href="" class="btn black-border">
+                  <i class="icon-create prefix"></i>
+                  업무추가
+                </a>
+                <a href="" class="btn black-border">
+                  수정
+                </a>
+                <a href="" class="btn black-border">
+                  <i class="icon-remove prefix"></i>
+                  삭제
+                </a>
+                <a href="" class="btn black-border">
+                  인쇄
+                </a>
+              </div>
+            </div>
+            <div class="table-wrap mt-10 schedule-table" style="height: 280px;">
+              <table>
+                <colgroup>
+                  <col style="width: 80px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                  <col style="width: 60px;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>구분</th>
+                    <th>M</th>
+                    <th>M+2</th>
+                    <th>M+3</th>
+                    <th>M+4</th>
+                    <th>M+5</th>
+                    <th>M+6</th>
+                    <th>M+7</th>
+                    <th>M+8</th>
+                    <th>M+9</th>
+                    <th>M+10</th>
+                    <th>M+11</th>
+                    <th>M+12</th>
+                    <th>M+13</th>
+                    <th>M+14</th>
+                    <th>M+15</th>
+                    <th>M+16</th>
+                    <th>M+17</th>
+                    <th>M+18</th>
+                    <th>M+19</th>
+                    <th>M+20</th>
+                    <th>M+21</th>
+                    <th>M+22</th>
+                    <th>M+23</th>
+                    <th>M+24</th>
+                    <th>M+25</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="month">
+                    <td>년월</td>
+                    <td>20.1</td>
+                    <td>20.2</td>
+                    <td>20.3</td>
+                    <td>20.4</td>
+                    <td>20.5</td>
+                    <td>20.6</td>
+                    <td>20.7</td>
+                    <td>20.8</td>
+                    <td>20.9</td>
+                    <td>20.10</td>
+                    <td>20.11</td>
+                    <td>20.12</td>
+                    <td>21.1</td>
+                    <td>21.2</td>
+                    <td>21.3</td>
+                    <td>21.4</td>
+                    <td>21.5</td>
+                    <td>21.6</td>
+                    <td>21.7</td>
+                    <td>21.8</td>
+                    <td>21.9</td>
+                    <td>21.10</td>
+                    <td>21.11</td>
+                    <td>21.12</td>
+                    <td>22.1</td>
+                  </tr>
+                  <tr class="graph-wrap border-bottom">
+                    <td>CE차종<br>마스터 일정<br>(ver.1)</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <!-- description
+                          part 하위에 3개의 branch가 존재하며, 이는 1/3분기를 뜻합니다. 
+                          포인트를 찍는 상하 높이 위치는 branch에 upper - mid - lower 클래스로 표현할수 있습니다. upper > mid > lower 순서대로 표현하면 겹칩을 최소화 할 수 있습니다.
+                          
+                          포인터의 라벨 텍스트는 겹침을 피하기 위해 개행을 막아뒀고, 필요시엔 br태그를 사용
+    
+                          도형은 HTML 특수문자로 표현, 필요시 추가하면 됨
+                          특수문자 참고 : http://ieo.kr/?mode=utils&exec=specialchar
+                        -->
+                        <span class="branch upper"> <!--1개월의 3분기 표현-->
+                          <em style="color: #ffe32d"><!--도형표현/색상css inline-->
+                            &#9650;
+                            <i class="label">OTR / MIP L4</i><!--라벨-->
+                          </em>
+                        </span>
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="part">
+                        <span class="branch mid"> <!--1개월의 3분기 표현-->
+                          <em style="color: #20bf7a"><!--도형표현/색상css inline-->
+                            &#9670;
+                            <i class="label">OTR / MIP L4</i><!--라벨-->
+                          </em>
+                        </span>
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="part">
+                        <span class="branch lower"> <!--1개월의 3분기 표현-->
+                          <em style="color: #ffe32d"><!--도형표현/색상css inline-->
+                            &#9650;
+                            <i class="label">TEX / TEX02 L4</i><!--라벨-->
+                          </em>
+                        </span>
+                        <span class="branch upper">
+                          <em style="color: #2565d6"><!--도형표현/색상css inline-->
+                            &#9650;
+                            <i class="label">OTR / MIP L4</i><!--라벨-->
+                          </em>
+                        </span>
+                        <span class="branch mid">
+                          <em style="color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                            <i class="label">OTR / MIP L4</i><!--라벨-->
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch lower"> <!--1개월의 3분기 표현-->
+                          <em style="color: #ffe32d"><!--도형표현/색상css inline-->
+                            &#9650;
+                            <i class="label">TEX / TEX02 L4</i><!--라벨-->
+                          </em>
+                        </span>
+                        <span class="branch upper">
+                          <em style="color: #2565d6"><!--도형표현/색상css inline-->
+                            &#9733;
+                            <i class="label">OTR / MIP L4</i><!--라벨-->
+                          </em>
+                        </span>
+                        <span class="branch mid">
+                          <em style="color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="graph-wrap">
+                    <th class="bg-skyblue">개발</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <!-- description
+                         part 하위에 3개의 branch가 존재하며, 이는 1/3분기를 뜻합니다. 
+                         포인트를 찍는 상하 높이 위치는 branch에 upper - mid - lower 클래스로 표현할수 있습니다. upper > mid > lower 순서대로 표현하면 겹칩을 최소화 할 수 있습니다.
+                        
+                         포인터의 라벨 텍스트는 겹침을 피하기 위해 개행을 막아뒀고, 필요시엔 br태그를 사용
+    
+                         도형은 HTML 특수문자로 표현, 필요시 추가하면 됨
+                        -->
+                        <span class="branch"> <!--1개월의 3분기 표현-->
+                          <em style="font-size: 20px; color: #ffe32d"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"> <!--1개월의 3분기 표현-->
+                          <em style="font-size: 20px; color: #20bf7a"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"> <!--1개월의 3분기 표현-->
+                          <em style="font-size: 20px; color: #ffe32d"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #2565d6"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="graph-wrap">
+                    <th class="bg-skyblue">생관</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                        <span class="branch">
+                        </span>
+                      </div>
+    
+                      <!-- range형 bar -->
+                      <!-- 계산식으로 위치 표현 -->
+                      <!-- 아래 예시 : 20년4월 '12'일부터 '20'일 기간 표현 -->
+                      <span
+                        class="range"
+                        style="left: calc((100%/30)*12); width: calc((100%/30)*20);background-color: #bad1f8;"
+                      >AP1</span>
+                      <!-- 아래 예시 : 20년4월 '12'일부터 '20'일 기간 표현 -->
+                      <span
+                        class="range lower"
+                        style="left: calc((100%/30)*5); width: calc((100%/30)*35);background-color: #baecf8;"
+                      >P2</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <span
+                        class="range upper"
+                        style="left: calc((100%/30)*5); width: calc((100%/30)*100);background-color: #bad1f8;"
+                      >AP2</span>
+                    </td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"> <!--1개월의 3분기 표현-->
+                          <em style="font-size: 20px; color: #ffe32d"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #2565d6"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"></span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                        <span class="branch"></span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                        <span class="branch">
+                          <em style="font-size: 20px; color: #777777"><!--도형표현/색상css inline-->
+                            &#9679;
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr class="graph-wrap">
+                    <th class="bg-skyblue">품질Gate</th>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                        <span class="branch">
+                          <em class="circle" style="background-color:#2565d6;">
+                            G1
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="part">
+                        <span class="branch"></span>
+                        <span class="branch"></span>
+                        <span class="branch">
+                          <em class="circle" style="background-color:#777777;">
+                            G2
+                          </em>
+                        </span>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="list-wrap mt-10">
+            <div class="table-wrap task-list" style="height: 385px">
+              <table>
+                <colgroup>
+                  <col style="width: 50px">
+                  <col style="width: 100px">
+                  <col style="width: 80px">
+                  <col style="width: 80px">
+                  <col style="width: 100px">
+                  <col style="width: 120px">
+                  <col style="width: 250px">
+                  <col style="width: 80px">
+                  <col style="width: 80px">
+                  <col style="width: 80px">
+                  <col style="width: 80px">
+                  <col style="width: 80px">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th rowspan="2"></th>
+                    <th rowspan="2">업무분류</th>
+                    <th colspan="2">업무시점</th>
+                    <th>계획일자</th>
+                    <th rowspan="2">표준업무명</th>
+                    <th rowspan="2">표준업무설명</th>
+                    <th rowspan="2">업무상태</th>
+                    <th rowspan="2">업무화면<br>바로가기</th>
+                    <th rowspan="2">결과물</th>
+                    <th rowspan="2">샘플(양식)</th>
+                    <th rowspan="2">메일공유</th>
+                  </tr>
+                  <tr>
+                    <th>이벤트</th>
+                    <th>단위</th>
+                    <th>완료일자</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="align-c">
+                      <input type="checkbox" name="" id="chk1" class="gts-chk-star">
+                      <label for="chk1">
+                      </label>
+                    </td>
+                    <td>금형개발</td>
+                    <td>L2</td>
+                    <td>-4</td>
+                    <td>
+                      <div class="dates">
+                        <span class="expect">2024.08.01</span>
+                        <span class="complete">2024.08.01</span>
+                      </div>
+                    </td>
+                    <td>표준업무명표시</td>
+                    <td class="align-l">표준 업무 설명이렇게 나옵니다.(간략)</td>
+                    <td>
+                      <span class="tag complete">완료</span>
+                    </td>
+                    <td>
+                      <a href="" class="btn text-link">
+                        링크
+                        <i class="icon-link suffix"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="" class="btn size-sm primary">결과보기</a>
+                    </td>
+                    <td>
+                      <a href="" class="btn size-sm tertiary">상세보기</a>
+                    </td>
+                    <td>
+                      <a href="" class="btn size-sm tertiary">E-Mail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-c">
+                      <input type="checkbox" name="" id="chk1" class="gts-chk-star">
+                      <label for="chk1">
+                      </label>
+                    </td>
+                    <td>금형개발</td>
+                    <td>L2</td>
+                    <td>-4</td>
+                    <td>
+                      <div class="dates">
+                        <span class="expect">2024.08.01</span>
+                        <span class="complete">2024.08.01</span>
+                      </div>
+                    </td>
+                    <td>표준업무명표시</td>
+                    <td class="align-l">표준 업무 설명이렇게 나옵니다.(간략)</td>
+                    <td>
+                      <span class="tag progress">진행</span>
+                      <span class="tag goingto">예정</span>
+                      <span class="tag incomplete">미완</span>
+                    </td>
+                    <td>
+                      <a href="" class="btn text-link">
+                        링크
+                        <i class="icon-link suffix"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="" class="btn size-sm black">작성중</a>
+                    </td>
+                    <td>
+                      <a href="" class="btn size-sm tertiary">상세보기</a>
+                    </td>
+                    <td>
+                      <a href="" class="btn size-sm tertiary">E-Mail</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
+
+      
+
+      
     </div>
   </div>
 

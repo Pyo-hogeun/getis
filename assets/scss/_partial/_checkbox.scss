@@ -59,3 +59,53 @@ input[type="checkbox"].gts-chk{
     }
   }
 }
+input[type="checkbox"].gts-chk-star{
+  width: 0;
+  height: 0;
+  margin: 0;
+  & + label{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-left: -2px;
+    &:before{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/icon_star_on_black.png');
+      background-size: contain;
+    }
+  }
+  &:checked + label{
+    &:before{
+      background-image: url('../images/icon_star_yellow.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &:disabled{
+    & + label{
+      &:before{
+        border: 1px solid #dddddd;
+        background-color: #DDD;
+      }
+    }
+    &:checked + label{
+      &:before{
+        // background-image: url();
+      }
+    }
+  }
+  &.size-sm{
+    + label{
+      line-height: 24px;
+      height: 24px;
+    }
+  }
+}
