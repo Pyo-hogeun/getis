@@ -79,6 +79,7 @@
         &.sticky-left{
           position: sticky;
           left: 0;
+          z-index: 1;
         }
       }
       td{
@@ -89,6 +90,7 @@
           position: sticky;
           left: 0;
           background-color: #FFF;
+          z-index: 1;
         }
         &:last-child{
           border-right: 0;

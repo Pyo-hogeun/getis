@@ -14,7 +14,7 @@ $zindexGnb : 5;
 $zindexLnb : 3;
 $zindexDim: 3;
 $zindexLayerPop: 5;
-$zindexListSticky: 1;
+$zindexListSticky: 2;
 $zindexFloatButton: 5;
 $lnbDuration: 0.3s;
 $listFoldDuration: 0.03s;
@@ -26,7 +26,8 @@ $contentPadMobile: 20px;
 
 $inputHeight: 32px;
 $inputHeightInTable: 23px;
-$listHoverBg: #f2f8ff;
+// $listHoverBg: #f2f8ff;
+$listHoverBg: rgba(180,210,240, 0.2);
 
 // color
 $gray01: #F7F7F7;
