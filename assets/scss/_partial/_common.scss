@@ -30,6 +30,12 @@ abbr{
   .pl-#{5*$i}{
     padding-left: #{5*$i}px;
   }
+  .mg-#{5*$i}{
+    margin: #{5*$i}px;
+  }
+  .pd-#{5*$i}{
+    padding: #{5*$i}px;
+  }
 }
 
 //font-weight
