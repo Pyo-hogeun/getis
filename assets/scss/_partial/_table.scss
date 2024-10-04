@@ -57,6 +57,11 @@
       }
     }
   }
+  &.layout-fixed{
+    table{
+      table-layout: fixed;
+    }
+  }
   &.align-c{
    table{
     thead, tbody{
@@ -76,6 +81,14 @@
         color: #ffffff;
         font-size: 13px;
       }
+    }
+  }
+  .notice{
+    font-size: 13px;
+    color: #777;
+    font-weight: 400;
+    p{
+      margin: 4px 0;
     }
   }
 }

@@ -53,9 +53,19 @@ input[type="checkbox"].gts-chk{
     }
   }
   &.size-sm{
-    + label{
-      line-height: 24px;
-      height: 24px;
+    & + label{
+      line-height: 18px;
+      height: 18px;
+    }
+    table &{
+      & + label{
+        line-height: 14px;
+        height: 14px;
+        &:before{
+          width: 14px;
+          height: 14px;
+        }
+      }
     }
   }
 }
