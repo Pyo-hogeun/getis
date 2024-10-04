@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .first, .second{
+      display: flex;
+      width: 500px;
+      height: 100px;
+      background-color: yellow;
+      overflow-x: auto;
+    }
+    .first > span,
+    .second > span{
+      display: flex;
+      flex: 0 0 100px;
+      background-color: green;
+    }
+    .first > span:nth-of-type(odd), .second > span:nth-of-type(odd){
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="first">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="second" style="margin-top: 10px;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</body>
+<script>
+  $first = document.querySelector('.first');
+  $second = document.querySelector('.second');
+
+  $first.addEventListener('scroll', (e)=>{
+    $second.scrollLeft = e.target.scrollLeft;
+  })
+</script>
+</html>
