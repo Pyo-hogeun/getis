@@ -266,6 +266,26 @@ function toggleListLayout(){
   });
 }
 
+function scrollSync(origin, target, direction){
+  const $origin = document.querySelector(origin);
+  const $target = document.querySelector(target);
+  console.log(origin);
+  $origin.addEventListener('scroll', (e) => {
+    if(direction === 'horizon'){
+      $target.scrollLeft = e.target.scrollLeft;
+    } else if(direction === 'vertical'){
+      $target.scrollTop = e.target.scrollTop;
+    }
+  });
+  $target.addEventListener('scroll', (e) => {
+    if(direction === 'horizon'){
+      $origin.scrollLeft = e.target.scrollLeft;
+    } else if(direction === 'vertical'){
+      $origin.scrollTop = e.target.scrollTop;
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   lnbToggle();
   tab('.gts-lnb');

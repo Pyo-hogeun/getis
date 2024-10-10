@@ -85,6 +85,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 300px);
+    gap: 0;
     .grid-container{
       overflow: auto;
       &:nth-of-type(2),
@@ -127,10 +128,33 @@
     .table-wrap, .standard-table{
       height: 100%;
       box-sizing: border-box;
+      table{
+        th{
+          padding: 5px 0;
+        }
+      }
+    }
+    .scroll-sync.schedule{
+      .table-wrap{
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        &::-webkit-scrollbar{
+          height: 0;
+        }
+      }
+    }
+    .scroll-sync.part-list-first{
+      .table-wrap{
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        &::-webkit-scrollbar{
+          width: 0;
+        }
+      }
     }
   }
-  .dev-schedule-of-items{
-    &.list-wrap{
+  .schedule{
+    .list-wrap{
       .table-wrap{
         table{
           tbody{
