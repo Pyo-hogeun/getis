@@ -77,6 +77,7 @@
     text-align: center;
     .btn{
       min-width: 62px;
+      vertical-align: bottom;
     }
     @include flex-between
   }
