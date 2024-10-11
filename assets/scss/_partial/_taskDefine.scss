@@ -1,0 +1,27 @@
+.task-define{
+  &.grid-wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 15px 2px;
+    .grid-item{
+      .list-topper{
+        .table-title{
+          display: block;
+          height: 20px;
+          line-height: 20px;
+          margin-bottom: 5px;
+        }
+      }
+      .table-wrap{
+        height: 220px;
+        td{
+          &:nth-of-type(n+2){
+            text-align: left;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}

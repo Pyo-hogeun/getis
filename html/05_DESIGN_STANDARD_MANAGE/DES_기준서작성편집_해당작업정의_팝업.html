@@ -1,0 +1,976 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- packery.js -->
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+  <!-- draggie.js -->
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+  <script src="../../assets/js/script.js"></script>
+
+  <title>GETIS</title>
+</head>
+
+<body style="overflow: hidden">
+  <!-- gnb -->
+  <div class="gts-gnb flex-group">
+    <div class="prefix">
+      <div class="home">
+        <a href="" class="toggle-lnb">
+          <i class="icon-lnb-toggle"></i>
+        </a>
+        <h1>
+          <a href="">
+            <i class="logo">GETIS</i>
+          </a>
+        </h1>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li class="on">
+            <a href="">툴링 생산관리</a>
+            <ul class="sub-menu">
+              <li><a href="">G-PAMS</a></li>
+              <li><a href="">프레스금현생산 관리</a></li>
+              <li><a href="">신소재금형생산관리</a></li>
+              <li><a href="" class="on">플라스틱금형생산관리</a></li>
+              <li><a href="" class="disabled">disabled</a></li>
+            </ul>
+          </li>
+          <li><a href="">일반 관리</a></li>
+          <li><a href="">전동화 생산관리</a></li>
+          <li><a href="">협력사</a></li>
+          <li><a href="">공통</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="suffix">
+      <div class="gnb-menu">
+        <ul>
+          <li>
+            <a href="">
+              <i class="icon-istm" title="ISTM"></i>
+              <i class="icon-istm-on" title="ISTM"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-app" title="app"></i>
+              <i class="icon-app-on" title="app"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-memo" title="memo"></i>
+              <i class="icon-memo-on" title="memo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-help" title="help"></i>
+              <i class="icon-help-on" title="help"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-language" title="language"></i>
+              <i class="icon-language-on" title="language"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-mypage" title="mypage"></i>
+              <i class="icon-mypage-on" title="mypage"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mypage">
+        <a href=""><span class="name">홍길동</span>&nbsp;님<span class="department">(기준정보시스템팀)</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- /gnb -->
+  <div class="content-wrap">
+    <div class="gts-lnb">
+      <!-- tab -->
+      <div class="tab-container">
+        <div class="header">
+          <a href="" class="tab on" data-tab="tab-1"><i class="icon-star"></i>즐겨찾기</a>
+          <a href="" class="tab" data-tab="tab-2"><i class="icon-time"></i>최근메뉴</a>
+          <a href="" class="tab" data-tab="tab-3"><i class="icon-allmenu"></i>전체메뉴</a>
+        </div>
+        <div class="body">
+          <div class="tab-content-wrap">
+            <div class="tab-content tab-1 favorite-menu menu-tree on">
+              <ul class="depth--1">
+                <li class="">
+                  <a href="" class="has-depth">사용자 직접생성 폴더</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="selected-menu">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">가동관리</a></li>
+                    <li><a href="">no depth menu</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth">
+                    Folder 001
+                  </a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="">품목별 DIM'S 종합</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 NG 현황 조회</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 현황</a>
+                    </li>
+                    <li>
+                      <a href="">후드 힌지면 측정현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth open">
+                    Folder 002
+                  </a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="selected-menu">품목별 DIM'S 종합</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 NG 현황 조회</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 현황</a>
+                    </li>
+                    <li>
+                      <a href="">후드 힌지면 측정현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth">공장별 종합화면</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="">울산2공장</a>
+                    </li>
+                    <li>
+                      <a href="">광주2공장</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">즐겨찾기관리</a>
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-2 recent-menu">
+              <ul class="editable-list">
+                <li>
+                  <a href="" class="remove" title="삭제">
+                    <i class="icon-delete"></i>
+                  </a>
+                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
+                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
+                  <div class="date">22-04-16 07:14:44</div>
+                </li>
+                <li>
+                  <a href="" class="remove" title="삭제">
+                    <i class="icon-delete"></i>
+                  </a>
+                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
+                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
+                  <div class="date">22-04-16 07:14:44</div>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-3 all-menu menu-tree">
+              <ul class="depth--1">
+                <li class="">
+                  <a href="" class="has-depth open">가동관리</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="selected-menu">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">가동관리</a></li>
+                    <li><a href="">no depth menu</a></li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="" class="has-depth">품질관리</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">품질관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">품질관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">품질관리222글자수max 품질관리222글자수max</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">품질관리 depth max test</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="has-depth">품질관리222글자수max 품질관리222글자수max</a>
+                          <ul class="depth--2">
+                            <li>
+                              <a href="" class="has-depth">품질관리333</a>
+                              <ul class="depth--2">
+                                <li>
+                                  <a href="" class="has-depth">품질관리444</a>
+                                  <ul class="depth--2">
+                                    <li>
+                                      <a href="" class="has-depth">품질관리555</a>
+                                      <ul class="depth--2">
+                                        <li>
+                                          <a href="" class="has-depth">품질관리666</a>
+                                          <ul class="depth--2">
+                                            <li>
+                                              <a href="" class="has-depth">품질관리777</a>
+                                              <ul class="depth--2">
+                                                <li>
+                                                  <a href="" class="has-depth">품질관리888</a>
+                                                  <ul class="depth--2">
+                                                    <li>
+                                                      <a href="" class="has-depth">품질관리999</a>
+                                                      <ul class="depth--2">
+                                                        <li>
+                                                          <a href="" class="">품질관리00000000-- 메뉴길이 테스트</a>
+                                                        </li>
+                                                      </ul>
+                                                    </li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="" class="">운영관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- //tab -->
+    </div>
+  </div>
+
+  <div class="dim"></div>
+
+  <div class="layer-pop w-1200">
+    <div class="header">
+      <h3>해당 작업 정의</h3>
+      <a href="" class="btn-close-pop"></a>
+    </div>
+    <div class="body">
+      <div class="grid-wrap task-define mt-20">
+        <!-- 라인 -->
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title">라인</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 파트 -->
+        <div class="grid-item mr-10">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title">파트</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- 공정 -->
+        <div class="grid-item mr-10">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title">공정</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- 작업 -->
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title">작업</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="list-wrap">
+            <div class="list-topper">
+              <span class="table-title"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 40px">
+                  <col style="width: auto;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th>
+                      <input type="checkbox" class="gts-chk" id="chk1">
+                      <label for="chk1"></label>
+                    </th>
+                    <th>Lev3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" class="gts-chk" id="chk100">
+                      <label for="chk100"></label>
+                    </td>
+                    <td>TEXT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer mt-30">
+      <a href="" class="btn tertiary">닫기</a>
+      <a href="" class="btn primary">저장</a>
+    </div>
+  </div>
+</body>
+
+</html>
