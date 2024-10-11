@@ -1,0 +1,550 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- packery.js -->
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+  <!-- draggie.js -->
+  <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+  <script src="../../assets/js/script.js"></script>
+
+  <title>GETIS</title>
+</head>
+
+<body style="overflow: hidden">
+  <!-- gnb -->
+  <div class="gts-gnb flex-group">
+    <div class="prefix">
+      <div class="home">
+        <a href="" class="toggle-lnb">
+          <i class="icon-lnb-toggle"></i>
+        </a>
+        <h1>
+          <a href="">
+            <i class="logo">GETIS</i>
+          </a>
+        </h1>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li class="on">
+            <a href="">툴링 생산관리</a>
+            <ul class="sub-menu">
+              <li><a href="">G-PAMS</a></li>
+              <li><a href="">프레스금현생산 관리</a></li>
+              <li><a href="">신소재금형생산관리</a></li>
+              <li><a href="" class="on">플라스틱금형생산관리</a></li>
+              <li><a href="" class="disabled">disabled</a></li>
+            </ul>
+          </li>
+          <li><a href="">일반 관리</a></li>
+          <li><a href="">전동화 생산관리</a></li>
+          <li><a href="">협력사</a></li>
+          <li><a href="">공통</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="suffix">
+      <div class="gnb-menu">
+        <ul>
+          <li>
+            <a href="">
+              <i class="icon-istm" title="ISTM"></i>
+              <i class="icon-istm-on" title="ISTM"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-app" title="app"></i>
+              <i class="icon-app-on" title="app"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-memo" title="memo"></i>
+              <i class="icon-memo-on" title="memo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-help" title="help"></i>
+              <i class="icon-help-on" title="help"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-language" title="language"></i>
+              <i class="icon-language-on" title="language"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-mypage" title="mypage"></i>
+              <i class="icon-mypage-on" title="mypage"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mypage">
+        <a href=""><span class="name">홍길동</span>&nbsp;님<span class="department">(기준정보시스템팀)</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- /gnb -->
+  <div class="content-wrap">
+    <div class="gts-lnb">
+      <!-- tab -->
+      <div class="tab-container">
+        <div class="header">
+          <a href="" class="tab on" data-tab="tab-1"><i class="icon-star"></i>즐겨찾기</a>
+          <a href="" class="tab" data-tab="tab-2"><i class="icon-time"></i>최근메뉴</a>
+          <a href="" class="tab" data-tab="tab-3"><i class="icon-allmenu"></i>전체메뉴</a>
+        </div>
+        <div class="body">
+          <div class="tab-content-wrap">
+            <div class="tab-content tab-1 favorite-menu menu-tree on">
+              <ul class="depth--1">
+                <li class="">
+                  <a href="" class="has-depth">사용자 직접생성 폴더</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="selected-menu">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">가동관리</a></li>
+                    <li><a href="">no depth menu</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth">
+                    Folder 001
+                  </a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="">품목별 DIM'S 종합</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 NG 현황 조회</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 현황</a>
+                    </li>
+                    <li>
+                      <a href="">후드 힌지면 측정현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth open">
+                    Folder 002
+                  </a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="selected-menu">품목별 DIM'S 종합</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 NG 현황 조회</a>
+                    </li>
+                    <li>
+                      <a href="">총용접점 현황</a>
+                    </li>
+                    <li>
+                      <a href="">후드 힌지면 측정현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" class="has-depth">공장별 종합화면</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="">울산2공장</a>
+                    </li>
+                    <li>
+                      <a href="">광주2공장</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">즐겨찾기관리</a>
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-2 recent-menu">
+              <ul class="editable-list">
+                <li>
+                  <a href="" class="remove" title="삭제">
+                    <i class="icon-delete"></i>
+                  </a>
+                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
+                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
+                  <div class="date">22-04-16 07:14:44</div>
+                </li>
+                <li>
+                  <a href="" class="remove" title="삭제">
+                    <i class="icon-delete"></i>
+                  </a>
+                  <a href="" class="title">품목별 DIM’S 종합종합종합종합종합종합종합종합종합종합종합</a>
+                  <div class="location">광주2 > 프레스 > 품질관리 > 신차품질관리</div>
+                  <div class="date">22-04-16 07:14:44</div>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-3 all-menu menu-tree">
+              <ul class="depth--1">
+                <li class="">
+                  <a href="" class="has-depth open">가동관리</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">가동관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="selected-menu">가동관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">가동관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="">가동관리</a></li>
+                    <li><a href="">no depth menu</a></li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="" class="has-depth">품질관리</a>
+                  <ul class="depth--2">
+                    <li>
+                      <a href="" class="has-depth open">품질관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">품질관리</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="">품질관리222글자수max 품질관리222글자수max</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="" class="has-depth">품질관리 depth max test</a>
+                      <ul class="depth--2">
+                        <li>
+                          <a href="" class="">품질관리222</a>
+                        </li>
+                        <li>
+                          <a href="" class="has-depth">품질관리222글자수max 품질관리222글자수max</a>
+                          <ul class="depth--2">
+                            <li>
+                              <a href="" class="has-depth">품질관리333</a>
+                              <ul class="depth--2">
+                                <li>
+                                  <a href="" class="has-depth">품질관리444</a>
+                                  <ul class="depth--2">
+                                    <li>
+                                      <a href="" class="has-depth">품질관리555</a>
+                                      <ul class="depth--2">
+                                        <li>
+                                          <a href="" class="has-depth">품질관리666</a>
+                                          <ul class="depth--2">
+                                            <li>
+                                              <a href="" class="has-depth">품질관리777</a>
+                                              <ul class="depth--2">
+                                                <li>
+                                                  <a href="" class="has-depth">품질관리888</a>
+                                                  <ul class="depth--2">
+                                                    <li>
+                                                      <a href="" class="has-depth">품질관리999</a>
+                                                      <ul class="depth--2">
+                                                        <li>
+                                                          <a href="" class="">품질관리00000000-- 메뉴길이 테스트</a>
+                                                        </li>
+                                                      </ul>
+                                                    </li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="" class="">운영관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+                <li class="">
+                  <a href="" class="">보전관리</a>
+                </li>
+              </ul>
+              <div class="footer">
+                <div class="btn-group">
+                  <a href="" class="btn">Sitemap</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- //tab -->
+    </div>
+  </div>
+
+  <div class="dim"></div>
+
+  <div class="layer-pop w-1000">
+    <div class="header">
+      <h3>통합기준서 작성/편집</h3>
+      <a href="" class="btn-close-pop"></a>
+    </div>
+    <div class="body">
+      <div class="capsule-tab mt-10">
+        <a href="" class="tab">기준 내용</a>
+        <a href="" class="tab on">체크항목</a>
+        <a href="" class="tab">기준서 이력</a>
+      </div>
+
+      <div class="list-wrap">
+        <div class="list-topper mt-20 flex-group">
+          <div class="prefix">
+            <span class="table-title">체크항목 목록</span>
+          </div>
+          <div class="suffix">
+            <a href="" class="btn black-border">
+              <i class="icon-create prefix"></i>
+              등록
+            </a>
+            <a href="" class="btn black-border">
+              <i class="icon-remove prefix"></i>
+              삭제
+            </a>
+            <a href="" class="btn black-border">
+              해당작업정의
+            </a>
+          </div>
+        </div>
+        <div class="table-wrap mt-10" style="height: 200px">
+          <table>
+            <colgroup>
+              <col style="width: 80px">
+              <col style="width: 120px;">
+              <col style="width: 120px;">
+              <col style="width: auto">
+            </colgroup>
+            <thead class="sticky">
+              <tr>
+                <th>
+                  <input type="checkbox" name="" id="chk1" class="gts-chk">
+                  <label for="chk1"></label>
+                </th>
+                <th>구분</th>
+                <th>코드</th>
+                <th>체크항목 확인 내용</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" name="" id="chk2" class="gts-chk" checked>
+                  <label for="chk2"></label>
+                </td>
+                <td>
+                  <select name="" id="" class="gts-select w-110">
+                    <option value="">프레스로딩</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="text" class="gts-input w-110" value="P001">
+                </td>
+                <td>
+                  <div class="pl-5 pr-5">
+                    <input type="text" class="gts-input w-wide">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="list-wrap mt-20">
+        <div class="list-topper">
+          <span class="table-title">체크항목 작성</span>
+        </div>
+        <div class="editor mt-10 mb-10" style="height: 40vh; border: 1px solid gray">
+          에디터영역
+        </div>
+      </div>
+
+      <div class="standard-table">
+        <table>
+          <colgroup>
+            <col style="width: 100px;">
+            <col style="width: 120px;">
+            <col style="width: 120px;">
+            <col style="width: auto;">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>리버전</th>
+              <td>가나다라마바사</td>
+              <th>기준 변경 사유</th>
+              <td class="pl-5">
+                <input type="text" class="gts-input w-wide" placeholder="해당 칸에 변경사유를 적거나 신규등록을 입력해서 저장하시면 됩니다.">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="footer pt-30">
+      <a href="" class="btn tertiary">닫기</a>
+      <a href="" class="btn primary ml-10">저장</a>
+    </div>
+  </div>
+</body>
+<script>
+  // draggable
+  let pckry;
+  let gridElement;
+  let dragged;
+  let dropTargetWidth;
+  function setGrid(target) {
+    gridElement = document.querySelector('.grid');
+    let gridItems = document.querySelectorAll('.grid-item');
+    pckry = new Packery(gridElement, {
+      itemSelector: '.grid-item',
+      columnWidth: 373,
+      gutter: 10
+    });
+    pckry.getItemElements().forEach(function (gridItem) {
+      let draggie = new Draggabilly(gridItem, {
+        containment: '.grid',
+        handle: '.handler-move'
+      });
+      pckry.bindDraggabillyEvents(draggie);
+    });
+  }
+  
+  setGrid();
+
+  let appStorePckry;
+  let appStoreGridElement;
+
+  function setGridAppStore(){
+    appStoreGridElement = document.querySelector('.app-store .widget-grid .grid');
+    appStorePckry = new Packery(appStoreGridElement, {
+      itemSelector : '.widget-item',
+      columnWidth: 105,
+      gutter: 8
+    });
+    appStorePckry.getItemElements().forEach(function(gridItem){
+      let draggie = new Draggabilly(gridItem, {
+        containment: '.widget-grid .grid',
+        handle: '.handler'
+      })
+      appStorePckry.bindDraggabillyEvents(draggie);
+    })
+  }
+  setGridAppStore();
+</script>
+
+</html>
