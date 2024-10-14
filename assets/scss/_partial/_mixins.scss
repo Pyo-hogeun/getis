@@ -23,7 +23,10 @@
       transform: translate(-50%, -50%);
     }
 
-    .suffix {}
+    .suffix {
+      flex: 1 1 50%;
+      text-align: right;
+    }
   }
 }
 
