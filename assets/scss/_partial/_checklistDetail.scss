@@ -32,3 +32,20 @@
     }
   }
 }
+.checklist-detail-confirm{
+  .checklist-input{
+    table{
+      td{
+        text-align: center;
+      }
+    }
+    .align-l{
+      padding: 0 5px;
+      text-align: left;
+    }
+  }
+  .editor-content-wrap{
+    border: 1px solid #dddddd;
+    padding: 10px;
+  }
+}
