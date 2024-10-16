@@ -286,6 +286,26 @@ function toggleListLayout(stepHeightArr, gapHeight, stepLimitSet){
   });
 }
 
+function toggleContent(toggleTarget){
+  let target = document.querySelector(toggleTarget);
+  let originHeight = toggleTarget.offsetHeight;
+  const toggleFoldContent = document.querySelector('.grid-size-toggle .btn-toggle-up');
+  const toggleSpreadContent = document.querySelector('.grid-size-toggle .btn-toggle-down');
+  toggleFoldContent?.addEventListener('click', function(e){
+    e.preventDefault();
+    toggleFoldContent.classList.add('disabled');
+    toggleSpreadContent.classList.remove('disabled');
+    target.style.height = 0;
+  });
+  toggleSpreadContent?.addEventListener('click', function(e){
+    e.preventDefault();
+    toggleSpreadContent.classList.add('disabled');
+    toggleFoldContent.classList.remove('disabled');
+    target.style.height = 'auto';
+  });
+  
+}
+
 function scrollSync(origin, target, direction){
   const $origin = document.querySelector(origin);
   const $target = document.querySelector(target);
