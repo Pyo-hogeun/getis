@@ -1,0 +1,14 @@
+.chart-bar-custom {
+  position: relative;
+}
+.chart-bar-custom .bar {
+  position: absolute;
+}
+.chart-bar-custom .bar.blue {
+  background-color: #2565d6;
+}
+.chart-bar-custom.vertical .bar {
+  bottom: 0;
+  width: 10px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9wYXJ0aWFsL2NoYXJ0QmFyQ3VzdG9tLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTs7QUFDQTtFQUNFOztBQUNBO0VBQ0U7O0FBSUY7RUFDRTtFQUNBIiwiZmlsZSI6Il9wYXJ0aWFsL2NoYXJ0QmFyQ3VzdG9tLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jaGFydC1iYXItY3VzdG9te1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIC5iYXJ7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICYuYmx1ZXtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICMyNTY1ZDY7XG4gICAgfVxuICB9XG4gICYudmVydGljYWx7XG4gICAgLmJhcntcbiAgICAgIGJvdHRvbTogMDtcbiAgICAgIHdpZHRoOiAxMHB4O1xuICAgICAgXG4gICAgfVxuICB9XG59Il19 */

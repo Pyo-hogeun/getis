@@ -99,23 +99,25 @@
           background-color: #efefef;
         }
       }
-      tr{
-        &:first-child{
-          th, td{
-            border-top: 0;
-          }
-          th{
-            &:nth-of-type(1){
-              position: sticky;
-              left: 0;
-              z-index: 1;
+      thead, tbody{
+        tr{
+          &:first-child{
+            th, td{
+              border-top: 0;
+            }
+            th{
+              &:nth-of-type(1){
+                position: sticky;
+                left: 0;
+                z-index: 1;
+              }
             }
           }
-        }
-
-        &:last-child{
-          th, td{
-            // border-bottom: 0;
+  
+          &:last-child{
+            th, td{
+              // border-bottom: 0;
+            }
           }
         }
       }
@@ -123,6 +125,19 @@
         position: sticky;
         top: 0;
         z-index: $zindexListStickyHead;
+      }
+      .sticky-bottom{
+        position: sticky;
+        bottom: 0;
+        z-index: $zindexListStickyHead;
+        tr:first-child{
+          td{
+            border-top: 1px solid #777777;
+          }
+        }
+        td{
+          background-color: #FFF;
+        }
       }
       .editable{
         box-shadow: 0 0 2px 1px #78a2ef;
