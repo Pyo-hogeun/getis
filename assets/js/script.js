@@ -217,25 +217,34 @@ function tabNav(){
 const colorSet = ['#34d2d8', '#9a8af8', '#92d159', '#939b9b', '#eac012'];
 
 // 리스트 상하 높이 조절 기능
-function toggleListLayout(){
+function toggleListLayout(stepHeightArr, gapHeight){
   const toggleFoldList = document.querySelector('.grid-size-toggle .btn-toggle-up');
   const toggleSpreadList = document.querySelector('.grid-size-toggle .btn-toggle-down');
   const list = document.querySelector('.resizable-list');
   const infoArea = document.querySelector('.resizable-infoarea');
   let currentStep = 1;
-  const gap = '200px';
+
+  let stepArr = ['70vh', '50vh', '0vh'];
+  if (!!stepHeightArr){
+    stepArr = stepHeightArr;
+  }
+  let gap = '200px';
+  if(!!gapHeight){
+    console.log('gapHeight', gapHeight);
+    gap = gapHeight;
+  }
   let step = {
     0:{
-      list : `calc(70vh - ${gap})`,
-      infoArea : `0`
+      list : `calc(${stepArr[0]} - ${gap})`,
+      infoArea : `${stepArr[2]}`
     },
     1:{
-      list : `calc(50vh - ${gap})`,
-      infoArea : `calc(50vh - ${gap})`
+      list : `calc(${stepArr[1]} - ${gap})`,
+      infoArea : `calc(${stepArr[1]} - ${gap})`
     },
     2:{
-      list : `35px`,
-      infoArea : `calc(70vh - ${gap})`
+      list : `calc(${stepArr[2]} + 35px)`,
+      infoArea : `calc(${stepArr[0]} - ${gap})`
     }
   };
 
@@ -293,5 +302,4 @@ document.addEventListener('DOMContentLoaded', function () {
   combo();
   gnbSubmenu();
   tabNav();
-  toggleListLayout();
 });
