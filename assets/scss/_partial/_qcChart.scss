@@ -23,8 +23,8 @@
       }
     }
   }
-  .flex-group{
-    @include flex-between($align: center);
+  .title-bar.flex-group{
+    @include flex-between;
   }
   .dims-table{
     .list-topper{
