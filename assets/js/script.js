@@ -217,22 +217,33 @@ function tabNav(){
 const colorSet = ['#34d2d8', '#9a8af8', '#92d159', '#939b9b', '#eac012'];
 
 // 리스트 상하 높이 조절 기능
-function toggleListLayout(stepHeightArr, gapHeight){
+function toggleListLayout(stepHeightArr, gapHeight, stepLimitSet){
+  // stepHeightArr : 각 단계 높이값
+  // gapHeight : 높이를 조절하는 영역 외의 높이값
+  // stepLimitSet : 최대 조절 단계 수 설정
   const toggleFoldList = document.querySelector('.grid-size-toggle .btn-toggle-up');
   const toggleSpreadList = document.querySelector('.grid-size-toggle .btn-toggle-down');
   const list = document.querySelector('.resizable-list');
   const infoArea = document.querySelector('.resizable-infoarea');
   let currentStep = 1;
+  
 
-  let stepArr = ['70vh', '50vh', '0vh'];
+  let stepArr = ['70vh', '50vh', '0vh']; // 각 단계별 높이값
   if (!!stepHeightArr){
     stepArr = stepHeightArr;
   }
-  let gap = '200px';
+  let gap = '200px'; // 레이아웃 마진를 설정
   if(!!gapHeight){
     console.log('gapHeight', gapHeight);
     gap = gapHeight;
   }
+  const defaultLimit = 3;
+  let stepLimit = 3 - defaultLimit; //단계를 설정
+  if(!!stepLimitSet){
+    stepLimit = 3 - stepLimitSet
+  }
+
+
   let step = {
     0:{
       list : `calc(${stepArr[0]} - ${gap})`,
@@ -264,12 +275,12 @@ function toggleListLayout(stepHeightArr, gapHeight){
   toggleSpreadList?.addEventListener('click', function(e){
     e.preventDefault();
     toggleFoldList.classList.remove('disabled');
-    if(currentStep > 0){
+    if(currentStep > stepLimit){
       currentStep -= 1;
       list.style.height = step[currentStep].list;
       infoArea.style.height = step[currentStep].infoArea;
     }
-    if(currentStep == 0){
+    if(currentStep == stepLimit){
       this.classList.add('disabled');
     }
   });
