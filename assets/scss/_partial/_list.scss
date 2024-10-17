@@ -98,6 +98,7 @@
         &.blank{
           background-color: #efefef;
         }
+        
       }
       thead, tbody{
         tr{
@@ -113,10 +114,11 @@
               }
             }
           }
-  
-          &:last-child{
-            th, td{
-              // border-bottom: 0;
+          &.row-span{
+            td, th{
+              &:last-child{
+                border-right: 1px solid #DDD;
+              }
             }
           }
         }

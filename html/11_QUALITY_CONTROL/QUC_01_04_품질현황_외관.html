@@ -952,218 +952,251 @@
         </div>
       </div>
 
-      <div class="list-wrap">
-        <div class="list-topper mt-20 mb-10 flex-group">
-          <div class="prefix">
-            <span class="table-title">외관 현황</span>
-            <span class="list-count">총 <em class="count">000</em>건</span>
-          </div>
-          <div class="suffix">
-            <a href="" class="btn black-border">
-              저장/등록
-            </a>
-            <a href="" class="btn tertiary">
-              복사
-            </a>
-            <a href="" class="btn tertiary">
-              <i class="icon-excel-download prefix"></i>
-              엑셀다운로드
-            </a>
-            <a href="" class="btn tertiary">
-              PPT 다운로드
-            </a>
-            <a href="" class="btn tertiary"><i class="icon-printer"></i>인쇄</a>
+      <div class="grid-wrap gap-20">
+        <div class="grid-container col-7">
+          <div class="list-wrap">
+            <div class="list-topper mt-20 mb-10 flex-group">
+              <div class="prefix">
+                <span class="table-title">외관 현황</span>
+                <span class="list-count">총 <em class="count">000</em>건</span>
+              </div>
+              <div class="suffix">
+                <a href="" class="btn black-border">
+                  저장/등록
+                </a>
+                <a href="" class="btn tertiary">
+                  복사
+                </a>
+                <a href="" class="btn tertiary">
+                  <i class="icon-excel-download prefix"></i>
+                  엑셀다운로드
+                </a>
+                <a href="" class="btn tertiary">
+                  PPT 다운로드
+                </a>
+                <a href="" class="btn tertiary"><i class="icon-printer"></i>인쇄</a>
+              </div>
+            </div>
+    
+            <div class="table-wrap exterior-status" style="height: 40vh">
+              <table>
+                <colgroup>
+                  <col style="width: 40px;">
+                  <col style="width: 80px;">
+                  <col style="width: 100px;">
+                  <col style="width: 100px;">
+                  <col style="width: 100px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 50px;">
+                  <col style="width: 80px;">
+                </colgroup>
+                <thead class="sticky">
+                  <tr>
+                    <th rowspan="2"><input type="checkbox" class="gts-chk" id="chk1"><label for="chk1"></label></th>
+                    <th rowspan="2">순번</th>
+                    <th rowspan="2">품목</th>
+                    <th rowspan="2">외관점수</th>
+                    <th rowspan="2">AQL협의현황</th>
+                    <th>점수</th>
+                    <th colspan="3">초도</th>
+                    <th colspan="3">P1</th>
+                    <th colspan="3">P2</th>
+                    <th colspan="3">M</th>
+                    <th rowspan="2">특이사항</th>
+                  </tr>
+                  <tr>
+                    <th>건수</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2"><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
+                    <td rowspan="2">999</td>
+                    <td rowspan="2">SIDE OTR LH</td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2">
+                      <div class="score-wrap">
+                        <div class="status">
+                          <select name="" id="" class="gts-select size-sm w-80">
+                            <option value="">OKAY</option>
+                          </select>
+                        </div>
+                        <div class="score">
+                          <input type="number" class="gts-input size-sm w-80">
+                        </div>
+                      </div>
+                    </td>
+                    <td>점수</td>
+                    <td colspan="3">46(=15+21+10)</td>
+                    <td colspan="3">46(=15+21+10)</td>
+                    <td colspan="3">46(=15+21+10)</td>
+                    <td colspan="3">46(=15+21+10)</td>
+                    <td rowspan="2"></td>
+                  </tr>
+                  <tr class="row-span">
+                    <td>건수</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="table-wrap dims-status" style="height: 40vh">
-          <table>
-            <colgroup>
-              <col style="width: 40px;">
-              <col style="width: 80px;">
-              <col style="width: 100px;">
-              <col style="width: 100px;">
-              <col style="width: 120px;">
-              <col style="width: 80px;">
-              <col style="width: 85px;">
-            </colgroup>
-            <thead class="sticky">
-              <tr>
-                <th rowspan="2"><input type="checkbox" class="gts-chk" id="chk1"><label for="chk1"></label></th>
-                <th rowspan="2">순번</th>
-                <th rowspan="2">PartName</th>
-                <th rowspan="2">제작처</th>
-                <th rowspan="2">생산라인</th>
-                <th>상태</th>
-                <th>분류</th>
-              </tr>
-              <tr>
-                <th>현재점수</th>
-                <th>(List Box)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-red">NG</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" class="gts-chk" id="chk2"><label for="chk2"></label></td>
-                <td>999</td>
-                <td>SIDE OTR LH</td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="score-wrap">
-                    <div class="status">
-                      <span class="fc-blue">OKAY</span>
-                    </div>
-                    <div class="score">99.9</div>
-                  </div>
-                </td>
-                <td>
-                  <select name="" id="" class="gts-select w-80">
-                    <option value="">선택</option>
-                  </select>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="grid-container col-5">
+          <div class="list-wrap">
+            <div class="list-topper flex-group mt-35 mb-10">
+              <div class="prefix">
+                <div class="table-title">
+                  이벤트 별 외관 품질 현황
+                </div>
+              </div>
+            </div>
+            <div class="chart">
+              <div class="chart-bar" style="width: 90%; height: 300px">
+                <canvas id="chartBar2" style="width: 90%; height: 100%"></canvas>
+                <div id="bar-legend-container2" class="legend"></div>
+              </div>
+              <script>
+                const ctxBar2 = document.getElementById('chartBar2');
+                const htmlLegendPlugin2 = {
+                  id: 'htmlLegend',
+                  afterUpdate(chart, args, options) {
+                    const ul = getOrCreateLegendList(chart, options.containerID);
+  
+                    // Remove old legend items
+                    while (ul.firstChild) {
+                      ul.firstChild.remove();
+                    }
+  
+                    // Reuse the built-in legendItems generator
+                    const items = chart.options.plugins.legend.labels.generateLabels(chart);
+  
+                    items.forEach(item => {
+                      console.log(item);
+                      const li = document.createElement('li');
+                      li.classList.add('legend-item');
+  
+                      li.onclick = () => {
+                        const { type } = chart.config;
+                        if (type === 'pie' || type === 'doughnut') {
+                          // Pie and doughnut charts only have a single dataset and visibility is per item
+                          chart.toggleDataVisibility(item.index);
+                        } else {
+                          chart.setDatasetVisibility(item.datasetIndex, !chart.isDatasetVisible(item.datasetIndex));
+                        }
+                        chart.update();
+                      };
+  
+                      // Color box
+                      const boxSpan = document.createElement('span');
+                      boxSpan.classList.add('color-box');
+                      boxSpan.style.background = item.fillStyle;
+  
+                      // Text
+                      const textContainer = document.createElement('p');
+                      textContainer.classList.add('label-text');
+                      const text = document.createTextNode(item.text);
+                      textContainer.appendChild(text);
+  
+                      li.appendChild(boxSpan);
+                      li.appendChild(textContainer);
+                      ul.appendChild(li);
+                    });
+                  }
+                };
+                const getOrCreateLegendList2 = (chart, id) => {
+                  const legendContainer = document.getElementById(id);
+                  let listContainer = legendContainer.querySelector('ul');
+  
+                  if (!listContainer) {
+                    listContainer = document.createElement('ul');
+                    listContainer.classList.add('legend-list-wrap');
+  
+                    legendContainer.appendChild(listContainer);
+                  }
+  
+                  return listContainer;
+                };
+  
+                const DataBar2 = {
+                  type: 'bar',
+                  data: {
+                    labels: ['Total', 'MIP(자작)','MIP(외주)','VDR(자작)','VDR(외주)'],
+                    datasets: [{
+                      label: 'a',
+                      data: [100, 20, 50, 60, 5],
+                      backgroundColor: colorSet[0]
+                    }, {
+                      label: 'b',
+                      data: [59, 100, 2, 120, 40],
+                      backgroundColor: colorSet[1]
+                    }, {
+                      label: 'c',
+                      data: [20, 40, 2, 120, 40],
+                      backgroundColor: colorSet[2]
+                    }]
+                  },
+                  options: {
+                    indexAxis: 'x',
+                    scales: {
+                      x: { // defining min and max so hiding the dataset does not change scale range
+                        min: 0,
+                        max: 150
+                      }
+                    },
+                    width: 2,
+                    height: 2,
+                    borderRadius: 2,
+                    plugins: {
+                      htmlLegend: {
+                        // ID of the container to put the legend in
+                        containerID: 'bar-legend-container2',
+                      },
+                      legend: {
+                        display: false,
+                      },
+                    },
+                  },
+                  plugins: [htmlLegendPlugin2],
+                };
+                const barChart2 = new Chart(ctxBar2, DataBar2);
+              </script>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1173,6 +1206,5 @@
 </body>
 <script>
   toggleContent('.toggle-content');
-  scrollSync('.dims-status', '.dims-schedule', 'vertical');
 </script>
 </html>
