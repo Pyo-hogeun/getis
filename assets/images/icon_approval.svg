@@ -34,7 +34,7 @@
       }
     </style>
   </defs>
-  <g id="ic_업로드" transform="translate(-422 -588)">
+  <g id="ic_결재진행" transform="translate(-422 -588)">
     <rect id="사각형_150909" data-name="사각형 150909" class="cls-1" width="20" height="20" transform="translate(422 588)"/>
     <g id="그룹_124502" data-name="그룹 124502" transform="translate(-2 2)">
       <g id="사각형_150930" data-name="사각형 150930" class="cls-2" transform="translate(439 589) rotate(90)">
@@ -45,11 +45,11 @@
         <rect class="cls-6" width="12" height="10" rx="1"/>
         <rect class="cls-7" x="0.5" y="0.5" width="11" height="9" rx="0.5"/>
       </g>
-      <rect id="사각형_150913" data-name="사각형 150913" class="cls-3" width="5" height="1" transform="translate(429 595)"/>
-      <rect id="사각형_150915" data-name="사각형 150915" class="cls-4" width="2" height="1" transform="translate(429 597)"/>
-      <rect id="사각형_150917" data-name="사각형 150917" class="cls-3" width="4" height="1" transform="translate(429 599)"/>
+      <rect id="사각형_150913" data-name="사각형 150913" class="cls-3" width="5" height="1" transform="translate(434.328 595.25) rotate(135)"/>
+      <rect id="사각형_150915" data-name="사각형 150915" class="cls-4" width="3" height="1" transform="translate(429.379 595.957) rotate(45)"/>
+      <rect id="사각형_150947" data-name="사각형 150947" class="cls-3" width="5" height="1" transform="translate(433.707 601.121) rotate(180)"/>
     </g>
-    <g id="업로드" transform="translate(5175 6742.457) rotate(180)">
+    <g id="확인" transform="translate(-5704.957 5341.5) rotate(-90)">
       <g id="down" transform="translate(0.5)">
         <circle id="타원_2826" data-name="타원 2826" class="cls-4" cx="4" cy="4" r="4" transform="translate(4735 6136.457)"/>
         <g id="그룹_123997" data-name="그룹 123997" transform="translate(4736.171 6136.086)">

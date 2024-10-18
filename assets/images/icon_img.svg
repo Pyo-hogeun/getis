@@ -1,0 +1,41 @@
+<svg id="ic_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f6fb;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-3 {
+        fill: #666;
+      }
+
+      .cls-4 {
+        fill: #ffd152;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-6 {
+        fill: #4cbb58;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_149591" data-name="사각형 149591" class="cls-1" width="16" height="16" rx="2" transform="translate(2 2)"/>
+    </clipPath>
+  </defs>
+  <rect id="area" class="cls-2" width="20" height="20"/>
+  <g id="img">
+    <rect id="사각형_149356" data-name="사각형 149356" class="cls-3" width="16" height="16" rx="2" transform="translate(2 2)"/>
+    <circle id="타원_2705" data-name="타원 2705" class="cls-4" cx="2.5" cy="2.5" r="2.5" transform="translate(10 5)"/>
+    <g id="마스크_그룹_15" data-name="마스크 그룹 15" class="cls-5">
+      <path id="패스_202995" data-name="패스 202995" class="cls-6" d="M.239,13.076,5.4,7.912l8,8H.239Z" transform="translate(1.761 2.088)"/>
+    </g>
+  </g>
+</svg>

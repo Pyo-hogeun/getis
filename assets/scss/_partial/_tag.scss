@@ -7,7 +7,13 @@
   color: #FFF;
   border-radius: 2px;
   box-sizing: border-box;
-  &.complete, &.new{
+  &.new{
+    background-color: #c9e016;
+  }
+  &.modify{
+    background-color: #2daeff;
+  }
+  &.complete{
     background-color: #20bf7a;
   }
   &.incomplete{

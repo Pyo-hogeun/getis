@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15.571" viewBox="0 0 14 15.571">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(227,10,110,0.9);
+      }
+    </style>
+  </defs>
+  <g id="ic_arrow_pink" transform="translate(-72.658 -1094.429)">
+    <path id="합치기_64" data-name="합치기 64" class="cls-1" d="M3370.446,10952.208a1.2,1.2,0,0,1-1.2-1.2v-2.724h-1.385a1.2,1.2,0,0,1-.822-2.072l5.8-5.456a1.2,1.2,0,0,1,1.646,0l5.8,5.456a1.2,1.2,0,0,1-.822,2.072h-1.385v2.724a1.2,1.2,0,0,1-1.2,1.2Z" transform="translate(-3294 -9846)"/>
+    <rect id="사각형_150961" data-name="사각형 150961" class="cls-1" width="8.82" height="3" rx="1" transform="translate(75.248 1107)"/>
+  </g>
+</svg>

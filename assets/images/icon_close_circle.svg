@@ -1,0 +1,29 @@
+<svg id="ic_close_circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #eee;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #777;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <rect id="guide_" data-name="guide " class="cls-1" width="16" height="16" transform="translate(2 2)"/>
+  <circle id="타원_30" data-name="타원 30" class="cls-2" cx="8" cy="8" r="8" transform="translate(2 2)"/>
+  <g id="그룹_110124" data-name="그룹 110124" transform="translate(-235.826 -309.83)">
+    <line id="선_2268" data-name="선 2268" class="cls-3" y1="0.061" x2="8.389" transform="translate(248.813 316.885) rotate(135)"/>
+    <line id="선_2269" data-name="선 2269" class="cls-3" y1="8.389" x2="0.061" transform="translate(248.813 322.774) rotate(135)"/>
+  </g>
+</svg>

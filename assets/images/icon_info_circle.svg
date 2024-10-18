@@ -1,0 +1,23 @@
+<svg id="ic_info_solid" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,0,0,0);
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        fill: #2665d6;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <rect id="사각형_149638" data-name="사각형 149638" class="cls-1" width="16" height="16" transform="translate(2 2)"/>
+  <circle id="타원_2784" data-name="타원 2784" class="cls-2" cx="8" cy="8" r="8" transform="translate(2 2)"/>
+  <rect id="사각형_149639" data-name="사각형 149639" class="cls-3" width="1.65" height="6.108" transform="translate(9.176 8.404)"/>
+  <rect id="사각형_149640" data-name="사각형 149640" class="cls-3" width="1.65" height="1.65" transform="translate(9.175 5.488)"/>
+</svg>

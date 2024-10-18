@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #2d73d3;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #333;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #333;
+      }
+
+      .cls-6 {
+        fill: #ffeb3b;
+        stroke: rgba(0,0,0,0);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+
+      .cls-8 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_실적확정" transform="translate(-453 -588)">
+    <rect id="사각형_150919" data-name="사각형 150919" class="cls-1" width="20" height="20" transform="translate(453 588)"/>
+    <g id="사각형_150920" data-name="사각형 150920" class="cls-2" transform="translate(455 592)">
+      <rect class="cls-7" width="16" height="11" rx="2"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="15" height="10" rx="1.5"/>
+    </g>
+    <g id="사각형_150921" data-name="사각형 150921" class="cls-3" transform="translate(457 605)">
+      <rect class="cls-7" width="12" height="1"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="11"/>
+    </g>
+    <g id="사각형_150922" data-name="사각형 150922" class="cls-3" transform="translate(462.5 603)">
+      <rect class="cls-7" width="1" height="3"/>
+      <rect class="cls-8" x="0.5" y="0.5" height="2"/>
+    </g>
+    <rect id="사각형_150924" data-name="사각형 150924" class="cls-4" width="3" height="1" transform="translate(460.207 597) rotate(90)"/>
+    <rect id="사각형_150928" data-name="사각형 150928" class="cls-4" width="5" height="1" transform="translate(462.5 600) rotate(-90)"/>
+    <g id="down" transform="translate(-5671.957 5332.5) rotate(-90)">
+      <circle id="타원_2826" data-name="타원 2826" class="cls-5" cx="4" cy="4" r="4" transform="translate(4735 6136.457)"/>
+      <g id="그룹_123997" data-name="그룹 123997" transform="translate(4736.171 6136.086)">
+        <rect id="사각형_149855" data-name="사각형 149855" class="cls-6" width="1" height="3.8" transform="translate(1.251 4.181) rotate(-45)"/>
+        <rect id="사각형_149856" data-name="사각형 149856" class="cls-6" width="1" height="2.8" transform="translate(1.959 4.888) rotate(-135)"/>
+      </g>
+    </g>
+    <rect id="사각형_150929" data-name="사각형 150929" class="cls-4" width="2" height="1" transform="translate(465.5 600) rotate(-90)"/>
+  </g>
+</svg>

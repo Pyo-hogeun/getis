@@ -1,0 +1,56 @@
+<svg id="ic_calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #777;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #777;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_149360" data-name="사각형 149360" class="cls-1" width="16" height="16" transform="translate(2 2)"/>
+  <rect id="사각형_149359" data-name="사각형 149359" class="cls-1" width="20" height="20"/>
+  <g id="그룹_123777" data-name="그룹 123777" transform="translate(-8821 -3085.001)">
+    <rect id="사각형_148343" data-name="사각형 148343" class="cls-2" width="16" height="3" transform="translate(8823.002 3089.001)"/>
+    <g id="그룹_23974" data-name="그룹 23974" transform="translate(8772.002 2118.3)">
+      <rect id="사각형_30" data-name="사각형 30" class="cls-2" width="2" height="2" transform="translate(54 975.701)"/>
+      <rect id="사각형_31" data-name="사각형 31" class="cls-2" width="2" height="2" transform="translate(58 975.701)"/>
+      <rect id="사각형_32" data-name="사각형 32" class="cls-2" width="2" height="2" transform="translate(62 975.701)"/>
+      <rect id="사각형_33" data-name="사각형 33" class="cls-2" width="2" height="2" transform="translate(54 979.701)"/>
+      <rect id="사각형_34" data-name="사각형 34" class="cls-2" width="2" height="2" transform="translate(58 979.701)"/>
+      <rect id="사각형_35" data-name="사각형 35" class="cls-2" width="2" height="2" transform="translate(62 979.701)"/>
+    </g>
+    <g id="사각형_149362" data-name="사각형 149362" class="cls-3" transform="translate(8823.002 3089.001)">
+      <rect class="cls-5" width="16" height="14"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="15" height="13"/>
+    </g>
+    <g id="사각형_149361" data-name="사각형 149361" class="cls-4" transform="translate(8826.002 3087.001)">
+      <rect class="cls-5" width="1" height="3" rx="0.5"/>
+      <rect class="cls-6" x="0.5" y="0.5" height="2"/>
+    </g>
+    <g id="사각형_149363" data-name="사각형 149363" class="cls-4" transform="translate(8835.002 3087.001)">
+      <rect class="cls-5" width="1" height="3" rx="0.5"/>
+      <rect class="cls-6" x="0.5" y="0.5" height="2"/>
+    </g>
+  </g>
+</svg>

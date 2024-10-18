@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #2565d6;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #333;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_그래프" transform="translate(-422 -588)">
+    <rect id="사각형_150909" data-name="사각형 150909" class="cls-1" width="20" height="20" transform="translate(422 588)"/>
+    <g id="사각형_150943" data-name="사각형 150943" class="cls-2" transform="translate(430 591)">
+      <rect class="cls-4" width="4" height="14" rx="1"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="3" height="13" rx="0.5"/>
+    </g>
+    <g id="사각형_150944" data-name="사각형 150944" class="cls-3" transform="translate(425 599)">
+      <rect class="cls-4" width="4" height="6" rx="1"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="3" height="5" rx="0.5"/>
+    </g>
+    <g id="사각형_150945" data-name="사각형 150945" class="cls-3" transform="translate(435 595)">
+      <rect class="cls-4" width="4" height="10" rx="1"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="3" height="9" rx="0.5"/>
+    </g>
+  </g>
+</svg>

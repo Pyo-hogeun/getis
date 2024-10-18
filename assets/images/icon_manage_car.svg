@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #2565d6;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #333;
+      }
+
+      .cls-5 {
+        fill: #333;
+      }
+
+      .cls-6 {
+        fill: #ffeb3b;
+      }
+
+      .cls-7, .cls-8 {
+        stroke: none;
+      }
+
+      .cls-8 {
+        fill: #333;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_자동차관리" transform="translate(-422 -588)">
+    <rect id="사각형_150909" data-name="사각형 150909" class="cls-1" width="20" height="20" transform="translate(422 588)"/>
+    <g id="ic_자동차" transform="translate(424 596)">
+      <g id="패스_203205" data-name="패스 203205" class="cls-2" transform="translate(3.603 0)">
+        <path class="cls-7" d="M 10.19873046875 4.5 L -0.4659603536128998 4.5 L 1.036932468414307 1.696203708648682 C 1.494899988174438 0.9384071826934814 1.970813155174255 0.4999997615814209 3.034740447998047 0.4999997615814209 L 8.047360420227051 0.4999997615814209 C 9.354270935058594 0.4999997615814209 10.19873046875 1.111679792404175 10.19873046875 2.058339834213257 L 10.19873046875 4.5 Z"/>
+        <path class="cls-8" d="M 3.034740447998047 0.9999997615814209 C 2.197285175323486 0.9999997615814209 1.859429836273193 1.304487466812134 1.471414566040039 1.943995475769043 L 0.3693532943725586 3.999999761581421 L 9.69873046875 3.999999761581421 L 9.69873046875 2.058339834213257 C 9.69873046875 1.051019668579102 8.3231201171875 0.9999997615814209 8.047360420227051 0.9999997615814209 L 3.034740447998047 0.9999997615814209 M 3.034740447998047 -4.76837158203125e-07 L 8.047360420227051 -4.76837158203125e-07 C 9.597370147705078 -4.76837158203125e-07 10.69873046875 0.7977499961853027 10.69873046875 2.058339834213257 L 10.69873046875 5 L -1.30126953125 5 L 0.6022205352783203 1.448849678039551 C 1.090980529785156 0.6366996765136719 1.691300392150879 -4.76837158203125e-07 3.034740447998047 -4.76837158203125e-07 Z"/>
+      </g>
+      <g id="사각형_150934" data-name="사각형 150934" class="cls-3" transform="translate(0 4)">
+        <rect class="cls-7" width="16" height="5" rx="1"/>
+        <rect class="cls-9" x="0.5" y="0.5" width="15" height="4" rx="0.5"/>
+      </g>
+      <g id="타원_2926" data-name="타원 2926" class="cls-4" transform="translate(10 6)">
+        <circle class="cls-7" cx="2" cy="2" r="2"/>
+        <circle class="cls-9" cx="2" cy="2" r="1.5"/>
+      </g>
+      <g id="타원_2927" data-name="타원 2927" class="cls-4" transform="translate(2 6)">
+        <circle class="cls-7" cx="2" cy="2" r="2"/>
+        <circle class="cls-9" cx="2" cy="2" r="1.5"/>
+      </g>
+    </g>
+    <g id="그룹_124503" data-name="그룹 124503" transform="translate(1 4)">
+      <rect id="사각형_150935" data-name="사각형 150935" class="cls-5" width="10" height="8" rx="2" transform="translate(430 587)"/>
+      <rect id="사각형_150936" data-name="사각형 150936" class="cls-6" width="4" height="1" transform="translate(434.5 593) rotate(-90)"/>
+      <rect id="사각형_150937" data-name="사각형 150937" class="cls-6" width="2" height="1" transform="translate(432.5 593) rotate(-90)"/>
+      <rect id="사각형_150938" data-name="사각형 150938" class="cls-6" width="3" height="1" transform="translate(436.5 593) rotate(-90)"/>
+    </g>
+  </g>
+</svg>

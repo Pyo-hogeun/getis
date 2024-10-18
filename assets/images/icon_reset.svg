@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #333;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-3, .cls-5 {
+        stroke: #ffe32d;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #2565d6;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-linejoin: round;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="ic_초기화" transform="translate(-422 -588)">
+    <rect id="사각형_150909" data-name="사각형 150909" class="cls-1" width="20" height="20" transform="translate(422 588)"/>
+    <g id="그룹_124502" data-name="그룹 124502" transform="translate(-2 2)">
+      <g id="사각형_150930" data-name="사각형 150930" class="cls-2" transform="translate(439 589) rotate(90)">
+        <rect class="cls-7" width="12" height="10" rx="1"/>
+        <rect class="cls-8" x="0.5" y="0.5" width="11" height="9" rx="0.5"/>
+      </g>
+      <g id="사각형_150910" data-name="사각형 150910" class="cls-2" transform="translate(436.5 591.5) rotate(90)">
+        <rect class="cls-7" width="12" height="10" rx="1"/>
+        <rect class="cls-8" x="0.5" y="0.5" width="11" height="9" rx="0.5"/>
+      </g>
+    </g>
+    <g id="초기화" transform="translate(-554.762 8290.42) rotate(-135)">
+      <g id="그룹_93759" data-name="그룹 93759" transform="translate(4744.979 6131.978) rotate(90)">
+        <path id="패스_55064" data-name="패스 55064" class="cls-3" d="M42.979,140.609a2.479,2.479,0,0,1-1.417-4.514" transform="translate(-40.5 -135.65)"/>
+        <path id="패스_55065" data-name="패스 55065" class="cls-4" d="M48,134.75a2.479,2.479,0,0,1,1.417,4.514" transform="translate(-45.521 -134.75)"/>
+        <path id="패스_55066" data-name="패스 55066" class="cls-5" d="M41.571,135.821h.708v.708" transform="translate(-41.217 -135.467)"/>
+        <path id="패스_55067" data-name="패스 55067" class="cls-6" d="M52.994,147.244h-.708v-.708" transform="translate(-48.39 -142.64)"/>
+      </g>
+    </g>
+  </g>
+</svg>

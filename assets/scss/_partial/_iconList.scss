@@ -1,0 +1,44 @@
+.icon-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #FFF;
+  li{
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
+    &:hover{
+      background-color: #EFEFEF;
+    }
+  }
+  .png, .svg{
+    flex: 1 1 50%;
+    // width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #DDD;
+    margin-bottom: 4px;
+  }
+  .png:before{
+    content: 'png';
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+  }
+  .svg:before{
+    content: 'svg';
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+  }
+  .filename{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+.weather-icon-list{
+  background-color: #FFF;
+}

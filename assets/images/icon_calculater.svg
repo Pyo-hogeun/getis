@@ -1,0 +1,54 @@
+<svg id="ic_calculat" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #777;
+      }
+
+      .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #777;
+      }
+
+      .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_149360" data-name="사각형 149360" class="cls-1" width="16" height="16" transform="translate(2 2)"/>
+  <rect id="사각형_149359" data-name="사각형 149359" class="cls-1" width="20" height="20"/>
+  <g id="그룹_123777" data-name="그룹 123777" transform="translate(3.002 3)">
+    <path id="사각형_148343" data-name="사각형 148343" class="cls-2" d="M2,0H12a2,2,0,0,1,2,2V6a0,0,0,0,1,0,0H0A0,0,0,0,1,0,6V2A2,2,0,0,1,2,0Z" transform="translate(-0.002)"/>
+    <g id="그룹_23974" data-name="그룹 23974" transform="translate(3 6)">
+      <rect id="사각형_30" data-name="사각형 30" class="cls-2" width="2" height="2" rx="0.4" transform="translate(-1.002 1)"/>
+      <rect id="사각형_31" data-name="사각형 31" class="cls-2" width="2" height="2" rx="0.4" transform="translate(1.998 1)"/>
+      <rect id="사각형_33" data-name="사각형 33" class="cls-2" width="2" height="2" rx="0.4" transform="translate(-1.002 4)"/>
+      <rect id="사각형_34" data-name="사각형 34" class="cls-2" width="2" height="2" rx="0.4" transform="translate(1.998 4)"/>
+      <rect id="사각형_150843" data-name="사각형 150843" class="cls-2" width="3" height="5" rx="0.4" transform="translate(5.998 1)"/>
+    </g>
+    <g id="사각형_149362" data-name="사각형 149362" class="cls-3" transform="translate(-0.002 2)">
+      <rect class="cls-5" width="14" height="12" rx="2"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="13" height="11" rx="1.5"/>
+    </g>
+    <g id="사각형_150844" data-name="사각형 150844" class="cls-4" transform="translate(0.998 1)">
+      <rect class="cls-5" width="12" height="4" rx="0.6"/>
+      <rect class="cls-6" x="-0.5" y="-0.5" width="13" height="5" rx="1.1"/>
+    </g>
+  </g>
+</svg>

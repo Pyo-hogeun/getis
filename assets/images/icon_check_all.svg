@@ -34,7 +34,7 @@
       }
     </style>
   </defs>
-  <g id="ic_업로드" transform="translate(-422 -588)">
+  <g id="ic_일괄입력" transform="translate(-422 -588)">
     <rect id="사각형_150909" data-name="사각형 150909" class="cls-1" width="20" height="20" transform="translate(422 588)"/>
     <g id="그룹_124502" data-name="그룹 124502" transform="translate(-2 2)">
       <g id="사각형_150930" data-name="사각형 150930" class="cls-2" transform="translate(439 589) rotate(90)">
@@ -49,14 +49,11 @@
       <rect id="사각형_150915" data-name="사각형 150915" class="cls-4" width="2" height="1" transform="translate(429 597)"/>
       <rect id="사각형_150917" data-name="사각형 150917" class="cls-3" width="4" height="1" transform="translate(429 599)"/>
     </g>
-    <g id="업로드" transform="translate(5175 6742.457) rotate(180)">
-      <g id="down" transform="translate(0.5)">
-        <circle id="타원_2826" data-name="타원 2826" class="cls-4" cx="4" cy="4" r="4" transform="translate(4735 6136.457)"/>
-        <g id="그룹_123997" data-name="그룹 123997" transform="translate(4736.171 6136.086)">
-          <rect id="사각형_149854" data-name="사각형 149854" class="cls-5" width="1" height="4" transform="translate(2.316 2)"/>
-          <rect id="사각형_149855" data-name="사각형 149855" class="cls-5" width="1" height="3.415" transform="translate(2.829 6.742) rotate(-135)"/>
-          <rect id="사각형_149856" data-name="사각형 149856" class="cls-5" width="1" height="3.438" transform="translate(3.536 6.035) rotate(135)"/>
-        </g>
+    <g id="확인" transform="translate(-5704.957 5341.5) rotate(-90)">
+      <circle id="타원_2826" data-name="타원 2826" class="cls-4" cx="4" cy="4" r="4" transform="translate(4735.5 6136.457)"/>
+      <g id="그룹_123997" data-name="그룹 123997" transform="translate(4736.009 6136.086)">
+        <rect id="사각형_149855" data-name="사각형 149855" class="cls-5" width="1" height="2.6" transform="translate(2.571 5.024) rotate(-135)"/>
+        <rect id="사각형_149856" data-name="사각형 149856" class="cls-5" width="1" height="3.6" transform="translate(5.117 6.156) rotate(135)"/>
       </g>
     </g>
   </g>

@@ -33,9 +33,12 @@ $listHoverBg: rgba(180,210,240, 0.2);
 // color
 $gray01: #F7F7F7;
 $gray02: #DDDDDD;
+
+
 //main
 $primary: #2665d6;
 $secondary: #002c5f;
+$red : #ff5252;
 
 $themeHyundaiBg : $secondary;
 $themeKiaBg : #05141f;
@@ -44,9 +47,28 @@ $themeKiaLnbBg : #eff1f5;
 $success: #20bf7a;
 $success2: #407fef;
 $warning: #ffe32d;
-$danger: #ff5252; 
+$danger: $red; 
 //background
 $blue01: #F6F9FB;
 $blue02: #F1F6FB; //카드형UI배경
 $scada: #D5E4F6; //스카다에서 원활한 상태
 
+
+// font color
+$fontColorDefault: #333;
+$fontColorLightgray: #777;
+$fontColorPrimary: $primary;
+
+// table
+$thBgPrimary : #4c556b;
+$thBgSecond : #f8f8f8;
+$thBgThird : #eff7ff;
+$thFontColor: #FFF;
+$borderTable: #DDD;
+
+//button
+$buttonBgPrimary: $primary;
+$buttonBgPrimary: #FFF;
+$buttonFontColorTertiary: #777;
+$buttonFontColorTertiaryHover: #0048a5;
+$buttonBorderTertiary: #DDD;
