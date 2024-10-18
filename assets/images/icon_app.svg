@@ -1,0 +1,51 @@
+<svg id="Btn_APP" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: rgba(185,185,185,0.5);
+      }
+
+      .cls-3 {
+        fill: #20bf7a;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #88a1be;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.6px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
+  <g id="사각형_150670" data-name="사각형 150670" class="cls-2" transform="translate(19 19)">
+    <rect class="cls-5" width="10" height="10" rx="2"/>
+    <rect class="cls-6" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
+  </g>
+  <g id="사각형_150671" data-name="사각형 150671" class="cls-2" transform="translate(19 7)">
+    <rect class="cls-5" width="10" height="10" rx="2"/>
+    <rect class="cls-6" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
+  </g>
+  <rect id="사각형_150766" data-name="사각형 150766" class="cls-3" width="10" height="10" rx="2" transform="translate(7 19)"/>
+  <g id="사각형_150767" data-name="사각형 150767" class="cls-2" transform="translate(7 7)">
+    <rect class="cls-5" width="10" height="10" rx="2"/>
+    <rect class="cls-6" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
+  </g>
+  <path id="패스_203154" data-name="패스 203154" class="cls-4" d="M-8106.089-14356.26l1.478,1.345,2.886-2.886" transform="translate(8127.888 14368.918)"/>
+</svg>

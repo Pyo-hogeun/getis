@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #777;
+      }
+
+      .cls-2 {
+        fill: #333;
+        opacity: 0;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #333;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="btn_expand_more" transform="translate(-1820 -677)">
+    <g id="사각형_150683" data-name="사각형 150683" class="cls-1" transform="translate(1820 677)">
+      <rect class="cls-4" width="24" height="24" rx="4"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="23" height="23" rx="3.5"/>
+    </g>
+    <g id="ic_expand_more" transform="translate(1824 697) rotate(-90)">
+      <rect id="area" class="cls-2" width="16" height="16"/>
+      <path id="arrow" class="cls-3" d="M0,4,4,0,8,4" transform="translate(12 10) rotate(180)"/>
+    </g>
+  </g>
+</svg>

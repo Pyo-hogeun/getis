@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #dedede;
+      }
+
+      .cls-2 {
+        fill: #d9d9d9;
+      }
+
+      .cls-3 {
+        fill: #b6b6b6;
+      }
+
+      .cls-4 {
+        fill: #9c9c9c;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Img_Default_Img" data-name="Img_Default Img" transform="translate(0.162)">
+    <g id="사각형_150690" data-name="사각형 150690" class="cls-1" transform="translate(-0.162)">
+      <rect class="cls-6" width="100" height="100"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="99" height="99"/>
+    </g>
+    <rect id="사각형_150684" data-name="사각형 150684" class="cls-2" width="86" height="63" transform="translate(7.838 7)"/>
+    <path id="다각형_26" data-name="다각형 26" class="cls-3" d="M12,0,24,15H0Z" transform="translate(31.837 36)"/>
+    <path id="다각형_25" data-name="다각형 25" class="cls-4" d="M16.5,0,33,21H0Z" transform="translate(40.837 30)"/>
+    <circle id="타원_2904" data-name="타원 2904" class="cls-5" cx="4" cy="4" r="4" transform="translate(67.838 19)"/>
+    <rect id="사각형_150685" data-name="사각형 150685" class="cls-2" width="57" height="4" rx="2" transform="translate(7.838 74)"/>
+    <rect id="사각형_150686" data-name="사각형 150686" class="cls-2" width="30" height="4" rx="2" transform="translate(7.838 84)"/>
+    <rect id="사각형_150687" data-name="사각형 150687" class="cls-2" width="4" height="4" rx="2" transform="translate(77.838 89)"/>
+    <rect id="사각형_150688" data-name="사각형 150688" class="cls-2" width="4" height="4" rx="2" transform="translate(83.838 89)"/>
+    <rect id="사각형_150689" data-name="사각형 150689" class="cls-2" width="4" height="4" rx="2" transform="translate(89.838 89)"/>
+  </g>
+</svg>

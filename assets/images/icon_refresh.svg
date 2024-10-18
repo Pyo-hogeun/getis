@@ -1,0 +1,48 @@
+<svg id="ic_reflash" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0.2);
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: rgba(255,0,0,0.2);
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-5 {
+        stroke: #333;
+      }
+
+      .cls-3, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke: #2665d6;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-6 {
+        stroke: #2565d6;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_150647" data-name="사각형 150647" class="cls-1" width="16" height="16"/>
+  <rect id="사각형_150646" data-name="사각형 150646" class="cls-2" width="12" height="12" transform="translate(2 2)"/>
+  <path id="패스_55065" data-name="패스 55065" class="cls-3" d="M0,0A4.488,4.488,0,0,1,4.429,4.545,4.59,4.59,0,0,1,3.1,7.792a4.465,4.465,0,0,1-.569.484" transform="translate(8.908 3.513) rotate(13)"/>
+  <path id="패스_55066" data-name="패스 55066" class="cls-4" d="M0,0H2.143V2.143" transform="translate(5.167 3.252) rotate(13)"/>
+  <path id="패스_55067" data-name="패스 55067" class="cls-5" d="M2.143,2.143H0V0" transform="translate(9.715 10.178) rotate(13)"/>
+  <path id="패스_203116" data-name="패스 203116" class="cls-6" d="M4.445,7.852A4.381,4.381,0,0,1,0,3.539,4.237,4.237,0,0,1,1.334.459,4.427,4.427,0,0,1,1.9,0" transform="translate(4.539 3.677) rotate(13)"/>
+</svg>

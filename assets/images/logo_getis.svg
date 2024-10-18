@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="56" viewBox="0 0 96 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 36px;
+        font-family: Lalezar-Regular, Lalezar;
+        letter-spacing: 0.016em;
+      }
+    </style>
+  </defs>
+  <text id="GETIS" class="cls-1"><tspan x="3.936" y="35">GETIS</tspan></text>
+</svg>

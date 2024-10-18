@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #f9d53d;
+      }
+
+      .cls-5 {
+        fill: #f7b43e;
+      }
+
+      .cls-6 {
+        fill: #1a1a1a;
+      }
+
+      .cls-7 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.2px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_151001" data-name="사각형 151001" class="cls-1" width="20" height="19.748"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Weather_Small_야간_맑음" transform="translate(-36 -1)">
+    <rect id="사각형_150998" data-name="사각형 150998" class="cls-2" width="24" height="24" transform="translate(36 1)"/>
+    <g id="그룹_124532" data-name="그룹 124532" transform="translate(38 3.127)">
+      <g id="그룹_124531" data-name="그룹 124531" class="cls-3" transform="translate(0 0)">
+        <path id="패스_203310" data-name="패스 203310" class="cls-4" d="M18.231,11.612A9.552,9.552,0,0,1,8.68,2.061,9.412,9.412,0,0,1,8.9.034,9.552,9.552,0,1,0,20.258,11.39a9.412,9.412,0,0,1-2.027.222" transform="translate(-0.822 -0.02)"/>
+        <path id="패스_203311" data-name="패스 203311" class="cls-5" d="M14.322,17.248A9.54,9.54,0,0,1,6.114,2.81,9.546,9.546,0,1,0,19.209,15.9a9.478,9.478,0,0,1-4.887,1.344" transform="translate(-0.883 -1.686)"/>
+        <path id="패스_203312" data-name="패스 203312" class="cls-6" d="M19.831,11.531a.555.555,0,0,0-.516-.15,8.844,8.844,0,0,1-1.9.211,9.008,9.008,0,0,1-9-9A8.9,8.9,0,0,1,8.624.685.555.555,0,0,0,7.964.013,10.046,10.046,0,0,0,0,9.72a.555.555,0,0,0,1.111,0,8.93,8.93,0,0,1,6.275-8.4A9.726,9.726,0,0,0,7.3,2.6,10.112,10.112,0,0,0,17.41,12.7a9.641,9.641,0,0,0,1.266-.083,9.053,9.053,0,0,1-2.726,4.115.555.555,0,0,0,.711.844,10.2,10.2,0,0,0,3.332-5.553.556.556,0,0,0-.161-.494" transform="translate(0 0)"/>
+        <path id="패스_203313" data-name="패스 203313" class="cls-7" d="M3.993,34.6a9.558,9.558,0,0,0,13.556,4.151" transform="translate(-2.396 -20.758)"/>
+      </g>
+    </g>
+  </g>
+</svg>

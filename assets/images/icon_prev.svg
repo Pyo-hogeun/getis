@@ -1,0 +1,17 @@
+<svg id="ic_prev_more" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #333;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="16" height="16"/>
+  <path id="arrow" class="cls-2" d="M0,4,4,0,8,4" transform="translate(6 12) rotate(-90)"/>
+</svg>

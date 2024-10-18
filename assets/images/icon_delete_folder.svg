@@ -1,0 +1,25 @@
+<svg id="ic_delete_folder" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="16" height="16"/>
+  <g id="그룹_124443" data-name="그룹 124443" transform="translate(2 2)">
+    <path id="패스_203176" data-name="패스 203176" class="cls-2" d="M.5.5v11h11v-9H5.8l-2-2Z"/>
+    <path id="패스_203177" data-name="패스 203177" class="cls-3" d="M1,1H3.587L5.3,2.707,5.59,3H11v8H1ZM0,0V12H12V2H6L4,0Z"/>
+    <rect id="사각형_150696" data-name="사각형 150696" class="cls-2" width="4.999" height="1" transform="translate(3.5 6.351)"/>
+    <rect id="사각형_150697" data-name="사각형 150697" class="cls-3" width="4.999" height="1" transform="translate(4.586 4.73) rotate(45)"/>
+    <rect id="사각형_150704" data-name="사각형 150704" class="cls-3" width="4.999" height="1" transform="translate(8.12 5.437) rotate(135)"/>
+  </g>
+</svg>

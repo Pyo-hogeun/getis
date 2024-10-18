@@ -1,0 +1,25 @@
+<svg id="ic_time" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #002c5f;
+      }
+
+      .cls-3 {
+        fill: #002c5f;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <circle id="타원_2633" data-name="타원 2633" class="cls-2" cx="7" cy="7" r="7" transform="translate(3 3)"/>
+  <g id="그룹_123453" data-name="그룹 123453" transform="translate(-185 -116)">
+    <rect id="사각형_148482" data-name="사각형 148482" class="cls-3" width="1" height="5" transform="translate(194.5 121.5)"/>
+    <rect id="사각형_148483" data-name="사각형 148483" class="cls-3" width="1" height="4" transform="translate(197.837 128.864) rotate(140)"/>
+  </g>
+</svg>

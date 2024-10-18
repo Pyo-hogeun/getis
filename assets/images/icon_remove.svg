@@ -1,0 +1,25 @@
+<svg id="ic_minus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #ff5252;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="16" height="16"/>
+  <g id="그룹_123998" data-name="그룹 123998" transform="translate(-302.5 -380.5)">
+    <path id="패스_203170" data-name="패스 203170" class="cls-2" d="M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" transform="translate(303.5 381.5)"/>
+    <g id="그룹_110124" data-name="그룹 110124" transform="translate(60.174 70.17)">
+      <rect id="사각형_149858" data-name="사각형 149858" class="cls-3" width="8" height="2" transform="translate(246.326 317.33)"/>
+    </g>
+  </g>
+</svg>

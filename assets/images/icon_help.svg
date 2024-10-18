@@ -1,0 +1,55 @@
+<svg id="Btn_Help" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-3 {
+        fill: #20bf7a;
+        font-size: 12px;
+        font-family: Pretendard-ExtraBold, Pretendard;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+      }
+
+      .cls-4 {
+        fill: #88a1be;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: rgba(185,185,185,0.5);
+      }
+
+      .cls-7 {
+        filter: url(#_);
+      }
+    </style>
+    <filter id="_" x="9.25" y="8.75" width="9.5" height="16.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
+  <g id="패스_203194" data-name="패스 203194" class="cls-2" transform="translate(7 7)">
+    <path class="cls-5" d="M5,0H17a4.764,4.764,0,0,1,5,4.486V15.251a4.764,4.764,0,0,1-5,4.486H13.724L8.067,22V19.736H5a4.764,4.764,0,0,1-5-4.486V4.486A4.764,4.764,0,0,1,5,0Z"/>
+    <path class="cls-6" d="M 5 1 C 2.794389724731445 1 1 2.563610076904297 1 4.485549926757812 L 1 15.25086975097656 C 1 17.17280960083008 2.794389724731445 18.73641967773438 5 18.73641967773438 L 9.066510200500488 18.73641967773438 L 9.066510200500488 20.52286911010742 L 13.53178977966309 18.73641967773438 L 17 18.73641967773438 C 19.20561027526855 18.73641967773438 21 17.17280960083008 21 15.25086975097656 L 21 4.485549926757812 C 21 2.563610076904297 19.20561027526855 1 17 1 L 5 1 M 5 0 L 17 0 C 19.76141929626465 0 22 2.008249282836914 22 4.485549926757812 L 22 15.25086975097656 C 22 17.72817039489746 19.76141929626465 19.73641967773438 17 19.73641967773438 L 13.72441005706787 19.73641967773438 L 8.066510200500488 22 L 8.066510200500488 19.73641967773438 L 5 19.73641967773438 C 2.238580703735352 19.73641967773438 0 17.72817039489746 0 15.25086975097656 L 0 4.485549926757812 C 0 2.008249282836914 2.238580703735352 0 5 0 Z"/>
+  </g>
+  <g class="cls-7" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <text id="_2" data-name="?" class="cls-3" transform="translate(14 21)"><tspan x="-3.348" y="0">?</tspan></text>
+  </g>
+  <rect id="사각형_150771" data-name="사각형 150771" class="cls-4" width="2" height="7" rx="1" transform="translate(25 13) rotate(90)"/>
+  <rect id="사각형_150772" data-name="사각형 150772" class="cls-4" width="2" height="4" rx="1" transform="translate(22 16) rotate(90)"/>
+  <rect id="사각형_150773" data-name="사각형 150773" class="cls-4" width="2" height="6" rx="1" transform="translate(24 19) rotate(90)"/>
+</svg>

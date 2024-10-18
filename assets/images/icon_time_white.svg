@@ -1,0 +1,22 @@
+<svg id="ic_time" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <circle id="타원_2633" data-name="타원 2633" class="cls-2" cx="7" cy="7" r="7" transform="translate(3 3)"/>
+  <path id="합치기_10" data-name="합치기 10" class="cls-3" d="M-7263.453,2698.5h-.047v-5h1v4.58l2.337,2.784-.766.643Z" transform="translate(7273 -2688)"/>
+</svg>

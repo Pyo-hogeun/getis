@@ -1,0 +1,16 @@
+<svg id="ic_star" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #ffe32d;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <path id="star" class="cls-2" d="M15.893,6.162l-3.69,3.6.871,5.079a.354.354,0,0,1-.513.373L8,12.812l-4.561,2.4a.354.354,0,0,1-.513-.373L3.8,9.759l-3.69-3.6a.354.354,0,0,1,.2-.6l5.1-.741L7.683.2a.354.354,0,0,1,.634,0L10.6,4.818l5.1.741A.354.354,0,0,1,15.893,6.162Z" transform="translate(2 2.3)"/>
+</svg>

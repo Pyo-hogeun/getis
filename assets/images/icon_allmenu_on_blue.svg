@@ -1,0 +1,61 @@
+<svg id="ic_allmenu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #407fef;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        filter: url(#area-2);
+      }
+
+      .cls-6 {
+        filter: url(#area);
+      }
+    </style>
+    <filter id="area">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.2" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="area-2">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2"/>
+      <feFlood flood-opacity="0.2" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <rect id="area-3" data-name="area" class="cls-1" width="20" height="20"/>
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="area-4" data-name="area" class="cls-2" width="20" height="20"/>
+    </g>
+  </g>
+  <g id="그룹_123464" data-name="그룹 123464" transform="translate(4 5)">
+    <g data-type="innerShadowGroup">
+      <rect id="area-5" data-name="area" class="cls-3" width="18" height="18" transform="translate(-3 -4)"/>
+      <g class="cls-5" transform="matrix(1, 0, 0, 1, -4, -5)">
+        <rect id="area-6" data-name="area" class="cls-4" width="18" height="18" transform="translate(1 1)"/>
+      </g>
+    </g>
+    <rect id="사각형_148486" data-name="사각형 148486" class="cls-4" width="9" height="1" transform="translate(4.429)"/>
+    <rect id="사각형_148489" data-name="사각형 148489" class="cls-4" width="1.5" height="1" transform="translate(0.276)"/>
+    <rect id="사각형_148485" data-name="사각형 148485" class="cls-4" width="9" height="1" transform="translate(4.429 5)"/>
+    <rect id="사각형_148488" data-name="사각형 148488" class="cls-4" width="1.5" height="1" transform="translate(0.276 5)"/>
+    <rect id="사각형_148487" data-name="사각형 148487" class="cls-4" width="1.5" height="1" transform="translate(0.276 10)"/>
+    <rect id="사각형_148484" data-name="사각형 148484" class="cls-4" width="9" height="1" transform="translate(4.429 10)"/>
+  </g>
+</svg>

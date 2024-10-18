@@ -1,0 +1,55 @@
+<svg id="Btn_flag" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #2565d6;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #333;
+      }
+
+      .cls-4 {
+        fill: #333;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="사각형_150856" data-name="사각형 150856" class="cls-1">
+    <rect class="cls-6" width="16" height="16" rx="4"/>
+    <rect class="cls-7" x="0.5" y="0.5" width="15" height="15" rx="3.5"/>
+  </g>
+  <g id="Ic_Flag">
+    <rect id="BG" class="cls-2" width="16" height="16"/>
+    <g id="그룹_124458" data-name="그룹 124458">
+      <g id="사각형_150801" data-name="사각형 150801" class="cls-3" transform="translate(6 5)">
+        <rect class="cls-6" width="1" height="7"/>
+        <rect class="cls-7" x="0.5" y="0.5" height="6"/>
+      </g>
+      <g id="타원_2910" data-name="타원 2910" class="cls-4" transform="translate(5 10)">
+        <circle class="cls-6" cx="1.5" cy="1.5" r="1.5"/>
+        <circle class="cls-7" cx="1.5" cy="1.5" r="1"/>
+      </g>
+      <path id="다각형_29" data-name="다각형 29" class="cls-5" d="M2.5,0,5,6H0Z" transform="translate(12 4) rotate(90)"/>
+    </g>
+  </g>
+</svg>

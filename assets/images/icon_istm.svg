@@ -1,0 +1,63 @@
+<svg id="Btn_ISTM" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: rgba(185,185,185,0.5);
+      }
+
+      .cls-3 {
+        fill: #20bf7a;
+      }
+
+      .cls-4 {
+        fill: #88a1be;
+        font-size: 10px;
+        font-family: HyundaiSansHeadOffice-Bold, Hyundai Sans Head Office;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        filter: url(#ISTM);
+      }
+    </style>
+    <filter id="ISTM" x="6" y="7" width="24" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
+  <g id="Icon_ISTM" transform="translate(8128 14370)">
+    <g id="사각형_150620" data-name="사각형 150620" class="cls-2" transform="translate(-8121 -14346)">
+      <path class="cls-5" d="M1,0H5A1,1,0,0,1,6,1V5A0,0,0,0,1,6,5H0A0,0,0,0,1,0,5V1A1,1,0,0,1,1,0Z"/>
+      <path class="cls-6" d="M1,.5H5a.5.5,0,0,1,.5.5V4.5a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V1A.5.5,0,0,1,1,.5Z"/>
+    </g>
+    <path id="사각형_150621" data-name="사각형 150621" class="cls-3" d="M1,0H5A1,1,0,0,1,6,1V11a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1A1,1,0,0,1,1,0Z" transform="translate(-8113 -14352)"/>
+    <g id="사각형_150622" data-name="사각형 150622" class="cls-2" transform="translate(-8105 -14349)">
+      <path class="cls-5" d="M1,0H5A1,1,0,0,1,6,1V8A0,0,0,0,1,6,8H0A0,0,0,0,1,0,8V1A1,1,0,0,1,1,0Z"/>
+      <path class="cls-6" d="M1,.5H5a.5.5,0,0,1,.5.5V7.5a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V1A.5.5,0,0,1,1,.5Z"/>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, -8128, -14370)">
+      <text id="ISTM-2" data-name="ISTM" class="cls-4" transform="translate(6 7)"><tspan x="0.05" y="9">ISTM</tspan></text>
+    </g>
+  </g>
+</svg>

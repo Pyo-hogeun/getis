@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="32.651" viewBox="0 0 41 32.651">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: rgba(208,208,208,0.49);
+      }
+
+      .cls-1 {
+        opacity: 0.403;
+      }
+
+      .cls-2 {
+        opacity: 0.695;
+      }
+
+      .cls-3 {
+        fill: #1a1a1a;
+      }
+
+      .cls-4 {
+        fill: #f0f0f0;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-10, .cls-6 {
+        fill: none;
+      }
+
+      .cls-6 {
+        stroke: #1a1a1a;
+      }
+
+      .cls-7 {
+        fill: #b6b6b6;
+      }
+
+      .cls-8 {
+        fill: #9c9c9c;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+
+      .cls-11 {
+        filter: url(#사각형_150684);
+      }
+    </style>
+    <filter id="사각형_150684" x="0" y="0" width="41" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#aacae6" flood-opacity="0.502" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Img_APP_Default" transform="translate(-1255.487 -858.05)">
+    <ellipse id="타원_2905" data-name="타원 2905" class="cls-1" cx="15.5" cy="2" rx="15.5" ry="2" transform="translate(1260.488 886.702)"/>
+    <ellipse id="타원_2906" data-name="타원 2906" class="cls-2" cx="12.5" cy="1" rx="12.5" ry="1" transform="translate(1263.487 887.05)"/>
+    <rect id="사각형_150685" data-name="사각형 150685" class="cls-3" width="18" height="1" rx="0.5" transform="translate(1267.488 887.571)"/>
+    <rect id="사각형_150686" data-name="사각형 150686" class="cls-3" width="8" height="1" transform="translate(1275.487 888.006) rotate(-90)"/>
+    <g data-type="innerShadowGroup">
+      <rect id="사각형_150684-2" data-name="사각형 150684" class="cls-4" width="41" height="26" rx="3" transform="translate(1255.487 858.05)"/>
+      <g class="cls-11" transform="matrix(1, 0, 0, 1, 1255.49, 858.05)">
+        <rect id="사각형_150684-3" data-name="사각형 150684" class="cls-5" width="41" height="26" rx="3"/>
+      </g>
+      <g id="사각형_150684-4" data-name="사각형 150684" class="cls-6" transform="translate(1255.487 858.05)">
+        <rect class="cls-9" width="41" height="26" rx="3"/>
+        <rect class="cls-10" x="0.5" y="0.5" width="40" height="25" rx="2.5"/>
+      </g>
+    </g>
+    <rect id="사각형_150756" data-name="사각형 150756" class="cls-7" width="5" height="3" transform="translate(1266.487 873.05)"/>
+    <rect id="사각형_150757" data-name="사각형 150757" class="cls-8" width="5" height="8" transform="translate(1273.487 868.05)"/>
+    <rect id="사각형_150758" data-name="사각형 150758" class="cls-7" width="5" height="5" transform="translate(1280.487 871.05)"/>
+  </g>
+</svg>

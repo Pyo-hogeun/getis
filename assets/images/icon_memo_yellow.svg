@@ -1,0 +1,53 @@
+<svg id="Btn_Memo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: rgba(185,185,185,0.5);
+      }
+
+      .cls-3 {
+        fill: #a8a8a8;
+      }
+
+      .cls-4 {
+        fill: #f3c300;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        filter: url(#패스_203155);
+      }
+    </style>
+    <filter id="패스_203155" x="11.232" y="10.312" width="13.521" height="13.521" filterUnits="userSpaceOnUse">
+      <feOffset dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
+  <g id="사각형_150669" data-name="사각형 150669" class="cls-2" transform="translate(7 7)">
+    <rect class="cls-5" width="22" height="22" rx="4"/>
+    <rect class="cls-6" x="0.5" y="0.5" width="21" height="21" rx="3.5"/>
+  </g>
+  <rect id="사각형_150673" data-name="사각형 150673" class="cls-3" width="2" height="12" rx="1" transform="translate(24 23) rotate(90)"/>
+  <g class="cls-7" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="패스_203155-2" data-name="패스 203155" class="cls-4" d="M3,0H3A2,2,0,0,1,5,2v9L3,13,1,11V2A2,2,0,0,1,3,0Z" transform="translate(20.47 9.85) rotate(45)"/>
+  </g>
+</svg>

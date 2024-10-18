@@ -1,0 +1,25 @@
+<svg id="ic_new_window" data-name="ic_new window" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="16" height="16"/>
+  <g id="그룹_124451" data-name="그룹 124451" transform="translate(2 2)">
+    <path id="패스_203185" data-name="패스 203185" class="cls-2" d="M0,0V12H4.984v-.924H.923V.923H11.077V5.492H12V0Z"/>
+    <rect id="사각형_150726" data-name="사각형 150726" class="cls-3" width="12" height="1" transform="translate(0 2.923)"/>
+    <rect id="사각형_150727" data-name="사각형 150727" class="cls-2" width="12" height="1" transform="translate(0 2.923)"/>
+    <rect id="사각형_150728" data-name="사각형 150728" class="cls-2" width="1" height="5.5" transform="translate(8.75 6.5)"/>
+    <rect id="사각형_150729" data-name="사각형 150729" class="cls-2" width="5.5" height="1" transform="translate(6.5 8.75)"/>
+  </g>
+</svg>

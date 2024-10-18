@@ -1,0 +1,17 @@
+<svg id="ic_chevron_right" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff5252;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #777;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="12" height="12"/>
+  <path id="arrow" class="cls-2" d="M0,4,4,0,8,4" transform="translate(8 2) rotate(90)"/>
+</svg>

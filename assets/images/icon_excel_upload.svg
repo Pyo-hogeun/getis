@@ -1,0 +1,52 @@
+<svg id="ic_excel_up" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #278b3c;
+      }
+
+      .cls-4 {
+        stroke: #e0e0e0;
+        stroke-width: 0.4px;
+      }
+
+      .cls-5 {
+        fill: #ff5252;
+        stroke: rgba(0,0,0,0);
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <g id="excel" transform="translate(-1)">
+    <path id="패스_203024" data-name="패스 203024" class="cls-2" d="M0,.778,14-1V15L0,13.222Z" transform="translate(2 2)"/>
+    <path id="패스_15816" data-name="패스 15816" class="cls-3" d="M23.824,48.927h2.2l-2.9-4.369,2.409-3.631h-2.2L22.028,42.9l-1.306-1.97H18.516l2.409,3.631-2.9,4.369h2.2l1.8-2.708Z" transform="translate(-13.028 -35.927)"/>
+  </g>
+  <g id="up" transform="translate(-4726 -6128.457)">
+    <g id="타원_2826" data-name="타원 2826" class="cls-4" transform="translate(4735 6137.457)">
+      <circle class="cls-6" cx="5" cy="5" r="5"/>
+      <circle class="cls-7" cx="5" cy="5" r="4.8"/>
+    </g>
+    <g id="그룹_123997" data-name="그룹 123997" transform="translate(4737.171 6139.457)">
+      <rect id="사각형_149854" data-name="사각형 149854" class="cls-5" width="1" height="5" transform="translate(2.316 0.742)"/>
+      <rect id="사각형_149855" data-name="사각형 149855" class="cls-5" width="1" height="4" transform="translate(2.122 0.707) rotate(-45)"/>
+      <rect id="사각형_149856" data-name="사각형 149856" class="cls-5" width="1" height="4" transform="translate(2.828 0) rotate(45)"/>
+    </g>
+  </g>
+</svg>

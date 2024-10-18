@@ -1,0 +1,24 @@
+<svg id="ic_close" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+
+      .cls-3 {
+        fill: #777;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="36" height="36"/>
+  <rect id="guide_" data-name="guide " class="cls-2" width="24" height="24" transform="translate(6 6)"/>
+  <path id="패스_203023" data-name="패스 203023" class="cls-3" d="M21.824,0,12,9.825,2.175,0,0,2.176,9.824,12,0,21.823,2.175,24,12,14.176,21.824,24,24,21.823,14.175,12,24,2.176Z" transform="translate(6 6)"/>
+</svg>

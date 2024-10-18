@@ -1,0 +1,69 @@
+<svg id="Btn_Memo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: rgba(185,185,185,0.5);
+      }
+
+      .cls-3 {
+        fill: #20bf7a;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #002c5f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.6px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#합치기_7);
+      }
+
+      .cls-8 {
+        filter: url(#사각형_150669);
+      }
+    </style>
+    <filter id="사각형_150669" x="6.25" y="7" width="23.5" height="24.35" filterUnits="userSpaceOnUse">
+      <feOffset dy="1.6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur"/>
+      <feFlood flood-color="#0f9af0" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="합치기_7" x="12.75" y="12.125" width="10.5" height="12.75" filterUnits="userSpaceOnUse">
+      <feOffset dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
+  <g class="cls-8" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <g id="사각형_150669-2" data-name="사각형 150669" class="cls-2" transform="translate(7 7)">
+      <rect class="cls-5" width="22" height="22" rx="4"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="21" height="21" rx="3.5"/>
+    </g>
+  </g>
+  <g class="cls-7" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="합치기_7-2" data-name="합치기 7" class="cls-3" d="M-520-215.764c.009-.013-.023-5.012,2.872-6.382A2.7,2.7,0,0,1-518.2-224.3a2.7,2.7,0,0,1,2.7-2.7,2.7,2.7,0,0,1,2.7,2.7,2.7,2.7,0,0,1-1.084,2.163c2.882,1.382,2.879,6.355,2.884,6.372s-1.986.014-4.094.014C-517.474-215.75-520.005-215.756-520-215.764Z" transform="translate(533.5 239.38)"/>
+  </g>
+  <path id="패스_203165" data-name="패스 203165" class="cls-4" d="M-8106.475-14356.586l1.864,1.671,3.234-3.249" transform="translate(8125.926 14375.067)"/>
+</svg>

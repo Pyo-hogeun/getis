@@ -1,0 +1,38 @@
+<svg id="ic_time" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #4f5050;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        filter: url(#타원_2633);
+      }
+    </style>
+    <filter id="타원_2633">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#05151e" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <g data-type="innerShadowGroup">
+    <circle id="타원_2633-2" data-name="타원 2633" class="cls-2" cx="7" cy="7" r="7" transform="translate(3 3)"/>
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <circle id="타원_2633-3" data-name="타원 2633" class="cls-3" cx="7" cy="7" r="7" transform="translate(3 3)"/>
+    </g>
+  </g>
+  <path id="합치기_10" data-name="합치기 10" class="cls-3" d="M-7263.453,2698.5h-.047v-5h1v4.58l2.337,2.784-.766.643Z" transform="translate(7273 -2688)"/>
+</svg>

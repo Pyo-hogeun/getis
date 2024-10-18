@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2565d6;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #4f5050;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        filter: url(#star);
+      }
+    </style>
+    <filter id="star">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#05151e" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Icon_Star" transform="translate(-16 -4)">
+    <rect id="BG_Icon_Star" class="cls-1" width="20" height="20" transform="translate(16 4)"/>
+    <g data-type="innerShadowGroup">
+      <path id="star-2" data-name="star" class="cls-2" d="M15.893,6.162l-3.69,3.6.871,5.079a.354.354,0,0,1-.513.373L8,12.812l-4.561,2.4a.354.354,0,0,1-.513-.373L3.8,9.759l-3.69-3.6a.354.354,0,0,1,.2-.6l5.1-.741L7.683.2a.354.354,0,0,1,.634,0L10.6,4.818l5.1.741A.354.354,0,0,1,15.893,6.162Z" transform="translate(18 6.3)"/>
+      <g class="cls-4" transform="matrix(1, 0, 0, 1, 16, 4)">
+        <path id="star-3" data-name="star" class="cls-3" d="M15.893,6.162l-3.69,3.6.871,5.079a.354.354,0,0,1-.513.373L8,12.812l-4.561,2.4a.354.354,0,0,1-.513-.373L3.8,9.759l-3.69-3.6a.354.354,0,0,1,.2-.6l5.1-.741L7.683.2a.354.354,0,0,1,.634,0L10.6,4.818l5.1.741A.354.354,0,0,1,15.893,6.162Z" transform="translate(2 2.3)"/>
+      </g>
+    </g>
+  </g>
+</svg>

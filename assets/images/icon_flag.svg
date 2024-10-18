@@ -1,0 +1,42 @@
+<svg id="Ic_Flag" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #2565d6;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #333;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect id="BG" class="cls-1" width="16" height="16"/>
+  <g id="그룹_124458" data-name="그룹 124458" transform="translate(5 4)">
+    <g id="사각형_150801" data-name="사각형 150801" class="cls-2" transform="translate(1 1)">
+      <rect class="cls-5" width="1" height="7"/>
+      <rect class="cls-6" x="0.5" y="0.5" height="6"/>
+    </g>
+    <g id="타원_2910" data-name="타원 2910" class="cls-3" transform="translate(0 6)">
+      <circle class="cls-5" cx="1.5" cy="1.5" r="1.5"/>
+      <circle class="cls-6" cx="1.5" cy="1.5" r="1"/>
+    </g>
+    <path id="다각형_29" data-name="다각형 29" class="cls-4" d="M2.5,0,5,6H0Z" transform="translate(7) rotate(90)"/>
+  </g>
+</svg>

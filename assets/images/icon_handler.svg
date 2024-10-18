@@ -1,0 +1,25 @@
+<svg id="btn_handler" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+
+      .cls-3 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <rect id="BG_btn" class="cls-1" width="20" height="20"/>
+  <rect id="사각형_150734" data-name="사각형 150734" class="cls-2" width="16" height="16" transform="translate(2 2)"/>
+  <rect id="사각형_150732" data-name="사각형 150732" class="cls-3" width="2" height="12" transform="translate(6 4)"/>
+  <rect id="사각형_150733" data-name="사각형 150733" class="cls-3" width="2" height="12" transform="translate(12 4)"/>
+</svg>

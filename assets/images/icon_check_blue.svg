@@ -1,0 +1,21 @@
+<svg id="ic_chk" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #2665d6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_150320" data-name="사각형 150320" class="cls-1" width="16" height="16"/>
+  <path id="패스_203072" data-name="패스 203072" class="cls-2" d="M2465.3,4052.584l3.288,3.288,6.185-5.872" transform="translate(-2461.801 -4044.5)"/>
+</svg>

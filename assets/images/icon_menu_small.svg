@@ -1,0 +1,32 @@
+<svg id="ic_menu_small" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="16" height="16"/>
+  <g id="패스_203186" data-name="패스 203186" class="cls-2" transform="translate(3 3)">
+    <path class="cls-4" d="M 7.466358184814453 9.5 L 0.5 9.5 L 0.5 0.5 L 9.5 0.5 L 9.5 7.434080123901367 L 7.466358184814453 9.5 Z"/>
+    <path class="cls-5" d="M 1 1 L 1 9 L 7.256946563720703 9 L 9 7.229280471801758 L 9 1 L 1 1 M 0 0 L 10 0 L 10 7.638890266418457 L 7.675780296325684 10 L 0 10 L 0 0 Z"/>
+  </g>
+  <rect id="사각형_150736" data-name="사각형 150736" class="cls-3" width="6" height="1" transform="translate(5 6)"/>
+  <rect id="사각형_150737" data-name="사각형 150737" class="cls-3" width="6" height="1" transform="translate(5 8)"/>
+</svg>

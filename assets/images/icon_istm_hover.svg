@@ -1,0 +1,101 @@
+<svg id="Btn_ISTM" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: rgba(185,185,185,0.5);
+      }
+
+      .cls-3 {
+        fill: #20bf7a;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+        font-family: HyundaiSansHeadOffice-Bold, Hyundai Sans Head Office;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        filter: url(#ISTM);
+      }
+
+      .cls-8 {
+        filter: url(#사각형_150622);
+      }
+
+      .cls-9 {
+        filter: url(#사각형_150621);
+      }
+
+      .cls-10 {
+        filter: url(#사각형_150620);
+      }
+    </style>
+    <filter id="사각형_150620" x="6.25" y="24" width="7.5" height="7.35" filterUnits="userSpaceOnUse">
+      <feOffset dy="1.6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur"/>
+      <feFlood flood-color="#0f9af0" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_150621" x="14.25" y="18" width="7.5" height="13.35" filterUnits="userSpaceOnUse">
+      <feOffset dy="1.6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur-2"/>
+      <feFlood flood-color="#0f9af0" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_150622" x="22.25" y="21" width="7.5" height="10.35" filterUnits="userSpaceOnUse">
+      <feOffset dy="1.6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur-3"/>
+      <feFlood flood-color="#0f9af0" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="ISTM" x="6" y="7" width="24" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-4"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
+  <g id="Icon_ISTM" transform="translate(8128 14370)">
+    <g class="cls-10" transform="matrix(1, 0, 0, 1, -8128, -14370)">
+      <g id="사각형_150620-2" data-name="사각형 150620" class="cls-2" transform="translate(7 24)">
+        <path class="cls-5" d="M1,0H5A1,1,0,0,1,6,1V5A0,0,0,0,1,6,5H0A0,0,0,0,1,0,5V1A1,1,0,0,1,1,0Z"/>
+        <path class="cls-6" d="M1,.5H5a.5.5,0,0,1,.5.5V4.5a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V1A.5.5,0,0,1,1,.5Z"/>
+      </g>
+    </g>
+    <g class="cls-9" transform="matrix(1, 0, 0, 1, -8128, -14370)">
+      <path id="사각형_150621-2" data-name="사각형 150621" class="cls-3" d="M1,0H5A1,1,0,0,1,6,1V11a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1A1,1,0,0,1,1,0Z" transform="translate(15 18)"/>
+    </g>
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, -8128, -14370)">
+      <g id="사각형_150622-2" data-name="사각형 150622" class="cls-2" transform="translate(23 21)">
+        <path class="cls-5" d="M1,0H5A1,1,0,0,1,6,1V8A0,0,0,0,1,6,8H0A0,0,0,0,1,0,8V1A1,1,0,0,1,1,0Z"/>
+        <path class="cls-6" d="M1,.5H5a.5.5,0,0,1,.5.5V7.5a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V1A.5.5,0,0,1,1,.5Z"/>
+      </g>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, -8128, -14370)">
+      <text id="ISTM-2" data-name="ISTM" class="cls-4" transform="translate(6 7)"><tspan x="0.05" y="9">ISTM</tspan></text>
+    </g>
+  </g>
+</svg>

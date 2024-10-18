@@ -1,0 +1,35 @@
+<svg id="ic_search_white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="20" height="20"/>
+  <g id="그룹_123020" data-name="그룹 123020" transform="translate(1 1)">
+    <g id="타원_483" data-name="타원 483" class="cls-2" transform="translate(1 1)">
+      <circle class="cls-4" cx="7" cy="7" r="7"/>
+      <circle class="cls-5" cx="7" cy="7" r="6.25"/>
+    </g>
+    <rect id="사각형_148204" data-name="사각형 148204" class="cls-3" width="6" height="1.5" transform="translate(13.061 12) rotate(45)"/>
+  </g>
+</svg>

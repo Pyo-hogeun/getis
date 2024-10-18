@@ -1,0 +1,48 @@
+<svg id="ic_Printer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: #333;
+      }
+
+      .cls-4 {
+        fill: #777;
+      }
+
+      .cls-5 {
+        fill: #ff5252;
+      }
+
+      .cls-6, .cls-8 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-8 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <rect id="BG" class="cls-1" width="20" height="20"/>
+  <g id="사각형_150803" data-name="사각형 150803" class="cls-2" transform="translate(3 9)">
+    <rect class="cls-6" width="14" height="7" rx="1"/>
+    <rect class="cls-7" x="0.5" y="0.5" width="13" height="6" rx="0.5"/>
+  </g>
+  <g id="패스_203196" data-name="패스 203196" class="cls-3" transform="translate(5 4)">
+    <path class="cls-6" d="M 9.5 5.5 L 0.5 5.5 L 0.5 0.5 L 8.515814781188965 0.5 L 9.5 1.681022047996521 L 9.5 5.5 Z"/>
+    <path class="cls-8" d="M 1 1 L 1 5 L 9 5 L 9 1.862043857574463 L 8.28162956237793 1 L 1 1 M 0 0 L 8.75 0 L 10 1.5 L 10 6 L 0 6 L 0 0 Z"/>
+  </g>
+  <rect id="사각형_150804" data-name="사각형 150804" class="cls-4" width="6" height="1" transform="translate(7 6)"/>
+  <rect id="사각형_150805" data-name="사각형 150805" class="cls-5" width="3" height="1" transform="translate(12 13)"/>
+</svg>

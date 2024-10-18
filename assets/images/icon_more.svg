@@ -1,0 +1,33 @@
+<svg id="ic_url" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #2665d6;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="16" height="16"/>
+  <g id="그룹_123115" data-name="그룹 123115" transform="translate(-8025 -3277.999)">
+    <g id="사각형_148570" data-name="사각형 148570" class="cls-2" transform="translate(8027.8 3285.799)">
+      <rect class="cls-3" width="11.2" height="1.6"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="10.2" height="0.6"/>
+    </g>
+    <g id="사각형_148571" data-name="사각형 148571" class="cls-2" transform="translate(8032.6 3280.999)">
+      <rect class="cls-3" width="1.6" height="11.2"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="0.6" height="10.2"/>
+    </g>
+  </g>
+</svg>
