@@ -10,45 +10,38 @@
       }
 
       .cls-3 {
-        fill: #fff;
-        stroke: #2665d6;
+        fill: #2566d6;
       }
 
       .cls-4 {
-        stroke: none;
+        fill: #2663d1;
       }
 
       .cls-5 {
-        fill: none;
+        fill: #2565d7;
+      }
+
+      .cls-6 {
+        fill: #2766d6;
+      }
+
+      .cls-7 {
+        fill: #2765d6;
+      }
+
+      .cls-8 {
+        fill: #2765d7;
       }
     </style>
   </defs>
   <rect id="area" class="cls-1" width="16" height="16"/>
   <g id="그룹_123115" data-name="그룹 123115" transform="translate(-8025 -3277.999)">
     <rect id="사각형_148340" data-name="사각형 148340" class="cls-2" width="1.2" height="7" transform="translate(8037.95 3279.999) rotate(45)"/>
-    <g id="사각형_148430" data-name="사각형 148430" class="cls-3" transform="translate(8033 3279.999)">
-      <rect class="cls-4" width="6" height="1"/>
-      <rect class="cls-5" x="0.5" y="0.5" width="5"/>
-    </g>
-    <g id="사각형_148431" data-name="사각형 148431" class="cls-3" transform="translate(8038 3279.999)">
-      <rect class="cls-4" width="1" height="6"/>
-      <rect class="cls-5" x="0.5" y="0.5" height="5"/>
-    </g>
-    <g id="사각형_148569" data-name="사각형 148569" class="cls-3" transform="translate(8038 3287.999)">
-      <rect class="cls-4" width="1" height="4"/>
-      <rect class="cls-5" x="0.5" y="0.5" height="3"/>
-    </g>
-    <g id="사각형_148570" data-name="사각형 148570" class="cls-3" transform="translate(8027 3290.999)">
-      <rect class="cls-4" width="12" height="1"/>
-      <rect class="cls-5" x="0.5" y="0.5" width="11"/>
-    </g>
-    <g id="사각형_148571" data-name="사각형 148571" class="cls-3" transform="translate(8027 3279.999)">
-      <rect class="cls-4" width="1" height="12"/>
-      <rect class="cls-5" x="0.5" y="0.5" height="11"/>
-    </g>
-    <g id="사각형_148572" data-name="사각형 148572" class="cls-3" transform="translate(8027 3279.999)">
-      <rect class="cls-4" width="4" height="1"/>
-      <rect class="cls-5" x="0.5" y="0.5" width="3"/>
-    </g>
+    <rect id="사각형_148430" data-name="사각형 148430" class="cls-3" width="6" height="1" transform="translate(8033 3279.999)"/>
+    <rect id="사각형_148431" data-name="사각형 148431" class="cls-4" width="1" height="6" transform="translate(8038 3279.999)"/>
+    <rect id="사각형_148569" data-name="사각형 148569" class="cls-5" width="1" height="4" transform="translate(8038 3287.999)"/>
+    <rect id="사각형_148570" data-name="사각형 148570" class="cls-6" width="12" height="1" transform="translate(8027 3290.999)"/>
+    <rect id="사각형_148571" data-name="사각형 148571" class="cls-7" width="1" height="12" transform="translate(8027 3279.999)"/>
+    <rect id="사각형_148572" data-name="사각형 148572" class="cls-8" width="4" height="1" transform="translate(8027 3279.999)"/>
   </g>
 </svg>

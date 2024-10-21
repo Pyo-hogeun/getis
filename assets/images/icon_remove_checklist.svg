@@ -1,32 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
   <defs>
     <style>
-      .cls-1, .cls-2 {
-        fill: #fff;
-      }
-
       .cls-1 {
+        fill: #fff;
         opacity: 0;
       }
 
       .cls-2 {
-        stroke: #707070;
-      }
-
-      .cls-3 {
-        stroke: none;
-      }
-
-      .cls-4 {
-        fill: none;
+        fill: #707070;
       }
     </style>
   </defs>
-  <g id="_-" data-name="-" transform="translate(-5 -5)">
-    <rect id="bg" class="cls-1" width="10" height="10" transform="translate(5 5)"/>
-    <g id="사각형_150852" data-name="사각형 150852" class="cls-2" transform="translate(5 9.5)">
-      <rect class="cls-3" width="10" height="1"/>
-      <rect class="cls-4" x="0.5" y="0.5" width="9"/>
-    </g>
+  <g id="_-" data-name="-" transform="translate(-5 -4.5)">
+    <rect id="사각형_151047" data-name="사각형 151047" class="cls-1" width="10" height="10" transform="translate(5 4.5)"/>
+    <rect id="사각형_150852" data-name="사각형 150852" class="cls-2" width="10" height="1" transform="translate(5 9)"/>
   </g>
 </svg>
