@@ -386,6 +386,48 @@
       }
     }
   }
+  &.task-system{
+    .title{
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .link-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      .link-item{
+        display: inline-flex;
+        height: 108px;
+        width: 108px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f4f8fa;
+        border-radius: 8px;
+        .title{
+          margin-top: 10px;
+        }
+      }
+    }
+    .link-list{
+      margin-top: 12px;
+      .link-item{
+        display: flex;
+        align-items: center;
+        padding-left: 18px;
+        height: 44px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        background-image: url('../images/icon_next.svg');
+        background-position: right 12px center;
+        background-repeat: no-repeat;
+        margin-bottom: 12px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 // 게시글 상세보기 팝업
