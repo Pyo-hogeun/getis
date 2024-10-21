@@ -23,14 +23,14 @@
       display: block;
       width: 100%;
       left: 0;
-      top: 140px;
+      top: 120px;
       .weather-img{
         position: absolute;
         display: inline-block;
         left: 62px;
         top: 0;
       }
-      .temperature{
+      > .temperature{
         position: absolute;
         display: inline-block;
         right: 40px;
@@ -79,11 +79,13 @@
       .weather-quarters{
         position: absolute;
         top: 196px;
-        left: 46px;
-        right: 46px;
+        left: 50%;
+        width: 300px;
+        transform: translateX(-50%);
         >ul{
           display: flex;
           justify-content: space-between;
+          gap: 15px;
           >li{
             text-align: center;
             .time{
@@ -91,8 +93,11 @@
               color: #777777;
             }
             .weather{
-              i{
+              img{
                 vertical-align: bottom;
+              }
+              .temperature{
+                font-size: 14px;
               }
             }
           }
