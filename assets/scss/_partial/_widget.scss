@@ -23,17 +23,17 @@
       display: block;
       width: 100%;
       left: 0;
-      top: 120px;
+      top: 70px;
       .weather-img{
         position: absolute;
         display: inline-block;
-        left: 62px;
+        left: 35px;
         top: 0;
       }
       > .temperature{
         position: absolute;
         display: inline-block;
-        right: 40px;
+        right: 64px;
         top: 30px;
         font-size: 60px;
         font-weight: 300;
@@ -44,7 +44,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
-        top: 150px;
+        top: 165px;
         left: 42px;
         right: 42px;
         .label{
@@ -78,7 +78,7 @@
       }
       .weather-quarters{
         position: absolute;
-        top: 196px;
+        top: 220px;
         left: 50%;
         width: 300px;
         transform: translateX(-50%);
