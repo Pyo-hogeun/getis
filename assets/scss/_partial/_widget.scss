@@ -399,10 +399,10 @@
     .link-grid{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      gap: 8px 12px;
       .link-item{
         display: inline-flex;
-        height: 108px;
+        height: 86px;
         width: 108px;
         align-items: center;
         justify-content: center;
@@ -410,12 +410,12 @@
         background-color: #f4f8fa;
         border-radius: 8px;
         .title{
-          margin-top: 10px;
+          margin-top: 6px;
         }
       }
     }
     .link-list{
-      margin-top: 12px;
+      margin-top: 8px;
       .link-item{
         display: flex;
         align-items: center;
@@ -426,7 +426,7 @@
         background-image: url('../images/icon_next.svg');
         background-position: right 12px center;
         background-repeat: no-repeat;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         &:last-child{
           margin-bottom: 0;
         }
