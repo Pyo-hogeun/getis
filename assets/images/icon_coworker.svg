@@ -5,7 +5,18 @@
             <path d="M12.308 25.5c-2.304 0-5.686-.134-8.448-1.292-1.409-.591-2.498-1.393-3.237-2.384-.87-1.169-1.294-2.61-1.294-4.405 0-4.39 1.665-8.48 4.687-11.516C6.802 3.105 10.426 1.5 13.961 1.5c3.45 0 6.98 1.645 9.686 4.514 2.891 3.066 4.484 7.116 4.484 11.405 0 1.827-.454 3.29-1.389 4.47-.791.999-1.954 1.803-3.456 2.39-3.105 1.211-6.99 1.211-8.452 1.211h-.464l-.362-.002c-.202 0-.434.003-.68.005-.304.003-.649.007-1.02.007z" style="stroke:none" transform="translate(-12274.73 -1229.684)"/>
             <path d="M13.961 3c-1.51 0-3.108.352-4.621 1.018-1.55.683-3.023 1.7-4.26 2.943C2.339 9.715.83 13.428.83 17.42c0 2.69 1.113 4.358 3.61 5.405C6.952 23.878 10.134 24 12.308 24c.363 0 .704-.003 1.004-.007.25-.002.486-.005.696-.005l.826.002c1.385 0 5.064 0 7.906-1.11 1.251-.487 2.202-1.135 2.826-1.923.717-.905 1.065-2.062 1.065-3.538 0-3.905-1.447-7.59-4.075-10.375C20.132 4.474 16.999 3 13.96 3m0-3c7.846 0 15.67 7.487 15.67 17.419 0 9.931-12.126 9.57-15.623 9.57-3.498 0-16.179.736-16.179-9.57C-2.17 7.113 6.116 0 13.961 0z" style="fill:#333;stroke:none" transform="translate(-12274.73 -1229.684)"/>
         </g>
-        <g data-name="타원 2938" transform="translate(-12270.535 -1246.552)" style="stroke:#333;stroke-width:3px;fill:#fff">
+        <g data-name="사각형 151050" style="stroke:#333;stroke-width:3px;fill:#fff">
+            <path style="stroke:none" d="M0 0h13v22H0z" transform="translate(-12256 -1224)"/>
+            <path style="fill:none" d="M1.5 1.5h10v19h-10z" transform="translate(-12256 -1224)"/>
+        </g>
+        <g data-name="사각형 151053" style="stroke:#333;stroke-width:3px;fill:#fff">
+            <path style="stroke:none" d="M0 0h10v12H0z" transform="translate(-12263 -1214)"/>
+            <path style="fill:none" d="M1.5 1.5h7v9h-7z" transform="translate(-12263 -1214)"/>
+        </g>
+        <path data-name="사각형 151054" transform="translate(-12251 -1213)" style="fill:#333" d="M0 0h3v3H0z"/>
+        <path data-name="사각형 151055" transform="translate(-12251 -1218)" style="fill:#333" d="M0 0h3v3H0z"/>
+        <path data-name="사각형 151056" transform="translate(-12251 -1208)" style="fill:#333" d="M0 0h3v3H0z"/>
+        <g data-name="타원 2940" transform="translate(-12270.535 -1246.552)" style="stroke:#333;stroke-width:3px;fill:#fff">
             <circle cx="9.766" cy="9.766" r="9.766" style="stroke:none"/>
             <circle cx="9.766" cy="9.766" r="8.266" style="fill:none"/>
         </g>
