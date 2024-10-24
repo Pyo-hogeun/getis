@@ -28,4 +28,21 @@
       margin-left: 10px;
     }
   }
+  .color-table{
+    width: 100%;
+    thead{
+      th{
+        background-color: #002c5f;
+        color: #fff;
+        font-weight: 400;
+        padding: 10px 0;
+        border: 1px solid #fff;
+      }
+    }
+    tbody{
+      td{
+        border: 1px solid #eee;
+      }
+    }
+  }
 }
