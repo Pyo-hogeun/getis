@@ -148,6 +148,13 @@
               display: inline-block;
             }
           }
+          [class*="icon-"]{
+            width: 36px;
+            height: 36px;
+            background-size: 216px;
+            background-image: url('../images/gnb_menu_icons.png');
+            background-repeat: no-repeat;
+          }
         }
       }
     }
@@ -167,4 +174,44 @@
       }
     }
   }
+}
+
+
+// gnb icons
+$height: 36px;
+.icon-istm{
+  background-position: 0 0;
+}
+.icon-app{
+  background-position: -($height*1) 0;
+}
+.icon-memo{
+  background-position: -($height*2) 0;
+}
+.icon-help{
+  background-position: -($height*3) 0;
+}
+.icon-language{
+  background-position: -($height*4) 0;
+}
+.icon-mypage{
+  background-position: -($height*5) 0;
+}
+.icon-istm-on{
+  background-position: 0 -35px;
+}
+.icon-app-on{
+  background-position: -($height*1) -35px;
+}
+.icon-memo-on{
+  background-position: -($height*2) -35px;
+}
+.icon-help-on{
+  background-position: -($height*3) -35px;
+}
+.icon-language-on{
+  background-position: -($height*4) -35px;
+}
+.icon-mypage-on{
+  background-position: -($height*5) -35px;
 }
