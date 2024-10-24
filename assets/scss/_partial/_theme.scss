@@ -7,45 +7,8 @@
     background-color: $themeKiaBg;
     .gnb-menu{
       a{
-        i:first-child{
-          &.icon-istm{
-            background-image: url('../images/icon_istm_yellow.png');
-          }
-          &.icon-app{
-            background-image: url('../images/icon_app_yellow.png');
-          }
-          &.icon-memo{
-            background-image: url('../images/icon_memo_yellow.png');
-          }
-          &.icon-help{
-            background-image: url('../images/icon_help_yellow.png');
-          }
-          &.icon-language{
-            background-image: url('../images/icon_language_yellow.png');
-          }
-          &.icon-mypage{
-            background-image: url('../images/icon_mypage_yellow.png');
-          }
-        }
-        i:last-child{
-          &.icon-istm-on{
-            background-image: url('../images/icon_istm_yellow_hover.png');
-          }
-          &.icon-app-on{
-            background-image: url('../images/icon_app_yellow_hover.png');
-          }
-          &.icon-memo-on{
-            background-image: url('../images/icon_memo_yellow_hover.png');
-          }
-          &.icon-help-on{
-            background-image: url('../images/icon_help_yellow_hover.png');
-          }
-          &.icon-language-on{
-            background-image: url('../images/icon_language_yellow_hover.png');
-          }
-          &.icon-mypage-on{
-            background-image: url('../images/icon_mypage_yellow_hover.png');
-          }
+        [class*="icon-"]{
+          background-image: url('../images/gnb_menu_icons_kia.png');
         }
       }
     }

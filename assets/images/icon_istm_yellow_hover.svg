@@ -10,7 +10,7 @@
       }
 
       .cls-2 {
-        stroke: rgba(185,185,185,0.5);
+        stroke: #f3c300;
       }
 
       .cls-3 {

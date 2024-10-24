@@ -1,7 +1,7 @@
 <svg id="Btn_APP" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
   <defs>
     <style>
-      .cls-1, .cls-2 {
+      .cls-1, .cls-2, .cls-3 {
         fill: #fff;
       }
 
@@ -14,37 +14,41 @@
       }
 
       .cls-3 {
-        fill: #f3c300;
-      }
-
-      .cls-4, .cls-6 {
-        fill: none;
+        stroke: #f3c300;
       }
 
       .cls-4 {
+        fill: #f3c300;
+      }
+
+      .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-5 {
         stroke: #002c5f;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 1.6px;
       }
 
-      .cls-5 {
+      .cls-6 {
         stroke: none;
       }
 
-      .cls-7 {
+      .cls-8 {
         filter: url(#사각형_150767);
       }
 
-      .cls-8 {
+      .cls-9 {
         filter: url(#사각형_150766);
       }
 
-      .cls-9 {
+      .cls-10 {
         filter: url(#사각형_150671);
       }
 
-      .cls-10 {
+      .cls-11 {
         filter: url(#사각형_150670);
       }
     </style>
@@ -78,26 +82,26 @@
     </filter>
   </defs>
   <rect id="Area_Btn" class="cls-1" width="36" height="36"/>
-  <g class="cls-10" transform="matrix(1, 0, 0, 1, 0, 0)">
+  <g class="cls-11" transform="matrix(1, 0, 0, 1, 0, 0)">
     <g id="사각형_150670-2" data-name="사각형 150670" class="cls-2" transform="translate(19 19)">
-      <rect class="cls-5" width="10" height="10" rx="2"/>
-      <rect class="cls-6" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
+      <rect class="cls-6" width="10" height="10" rx="2"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
+    </g>
+  </g>
+  <g class="cls-10" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <g id="사각형_150671-2" data-name="사각형 150671" class="cls-3" transform="translate(19 7)">
+      <rect class="cls-6" width="10" height="10" rx="2"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
     </g>
   </g>
   <g class="cls-9" transform="matrix(1, 0, 0, 1, 0, 0)">
-    <g id="사각형_150671-2" data-name="사각형 150671" class="cls-2" transform="translate(19 7)">
-      <rect class="cls-5" width="10" height="10" rx="2"/>
-      <rect class="cls-6" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
-    </g>
+    <rect id="사각형_150766-2" data-name="사각형 150766" class="cls-4" width="10" height="10" rx="2" transform="translate(7 19)"/>
   </g>
   <g class="cls-8" transform="matrix(1, 0, 0, 1, 0, 0)">
-    <rect id="사각형_150766-2" data-name="사각형 150766" class="cls-3" width="10" height="10" rx="2" transform="translate(7 19)"/>
-  </g>
-  <g class="cls-7" transform="matrix(1, 0, 0, 1, 0, 0)">
     <g id="사각형_150767-2" data-name="사각형 150767" class="cls-2" transform="translate(7 7)">
-      <rect class="cls-5" width="10" height="10" rx="2"/>
-      <rect class="cls-6" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
+      <rect class="cls-6" width="10" height="10" rx="2"/>
+      <rect class="cls-7" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
     </g>
   </g>
-  <path id="패스_203154" data-name="패스 203154" class="cls-4" d="M-8106.089-14356.26l1.478,1.345,2.886-2.886" transform="translate(8127.888 14368.918)"/>
+  <path id="패스_203154" data-name="패스 203154" class="cls-5" d="M-8106.089-14356.26l1.478,1.345,2.886-2.886" transform="translate(8127.888 14368.918)"/>
 </svg>

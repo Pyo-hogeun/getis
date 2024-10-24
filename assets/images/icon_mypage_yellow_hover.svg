@@ -1,4 +1,4 @@
-<svg id="Btn_Memo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+<svg id="Btn_담당자" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -10,7 +10,7 @@
       }
 
       .cls-2 {
-        stroke: rgba(185,185,185,0.5);
+        stroke: #f3c300;
       }
 
       .cls-3 {
